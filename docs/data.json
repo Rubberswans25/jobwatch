@@ -1,8 +1,13 @@
 {
- "generated": "2026-10-13T02:04:57+00:00",
- "scanned": 13093,
- "boards": 73,
+ "generated": "2026-10-13T17:19:46+00:00",
+ "scanned": 8752,
+ "boards": 64,
  "errors": [
+  {
+   "company": "Anduril",
+   "board": "greenhouse",
+   "error": "failed after 2 tries: The read operation timed out"
+  },
   {
    "company": "Apple",
    "board": "workday",
@@ -15,11 +20,11 @@
   }
  ],
  "dropped": {
-  "not a student req": 12699,
-  "no Summer/Fall 2027": 65,
-  "non-ME discipline": 87,
-  "below threshold": 54,
-  "off-target season in title": 127,
+  "not a student req": 8401,
+  "no Summer/Fall 2027": 49,
+  "non-ME discipline": 79,
+  "off-target season in title": 114,
+  "below threshold": 53,
   "no mechanical signal": 5
  },
  "jobs": [
@@ -69,104 +74,6 @@
      [
       "title: engineering internship",
       5
-     ]
-    ]
-   },
-   "first_seen": "2026-10-13T02:04:57+00:00"
-  },
-  {
-   "id": "gh:andurilindustries:5153187007",
-   "title": "2027 Mechanical Engineer Intern",
-   "location": "Atlanta, Georgia, United States; Boston, Massachusetts, United States; Broomfield, Colorado, United States; Colorado Springs, Colorado, United States; Costa Mesa, California, United States; Fort Collins, Colorado, United States; Irvine, California, United States; Reston, Virginia, United States; Seattle, Washington, United States",
-   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5153187007?gh_jid=5153187007",
-   "posted": "2026-10-05T19:17:56-04:00",
-   "body": "Anduril Industries is a defense technology company with a mission to transform U.S. and allied military capabilities with advanced technology. By bringing the expertise, technology, and business model of the 21st century\u2019s most innovative companies to the defense industry, Anduril is changing how military systems are designed, built and sold. Anduril\u2019s family of systems is powered by Lattice OS, an AI-powered operating system that turns thousands of data streams into a realtime, 3D command and control center. As the world enters an era of strategic competition, Anduril is committed to bringing cutting-edge autonomy, AI, computer vision, sensor fusion, and networking technology to the military in months, not years. We are seeking Mechanical Engineer Interns for Summer 2027 ! This is a paid, in-person,&nbsp;12-week&nbsp;internship. &nbsp; &nbsp; WHAT YOU\u2019LL DO &nbsp; Design &amp; build prototypes, analyze failures, and transition successful projects into production. &nbsp; Present design reviews, run analysis, visit vendors, design &amp; execute hardware test plans. &nbsp; Use first&nbsp;principles&nbsp;physics as a basis for every decision. &nbsp; Travel to test sites and vendors as needed. &nbsp; &nbsp; REQUIRED QUALIFICATIONS &nbsp; Must be pursuing a bachelor\u2019s or&nbsp;master\u2019s degree&nbsp;in Mechanical Engineering, Mathematics, Physics, or any related field. &nbsp; Must be returning to school at the end of the internship to continue academic studies for at least one quarter or semester. &nbsp; Must be a U.S. Person due to required access to U.S. export-controlled information or facilities; U.S. clearance eligibility may be required depending on program. &nbsp; Ability to complete an in-person 12-week internship in one of our offices in summer 2027. &nbsp; &nbsp; PREFERRED QUALIFICATIONS &nbsp; Collegiate project team or laboratory experience. &nbsp; Currently enrolled in an&nbsp;undergrad&nbsp;or graduate engineering program. &nbsp; CAD skills (any platform) and ability to make&nbsp;high-quality&nbsp;engineering drawings that meet common industry standards. &nbsp; Demonstrated hands-on fabrication skills. &nbsp; High competence with, and fluid use of, engineering first principles. &nbsp; Prior internship experience and/or leadership on a collegiate project team or laboratory. &nbsp; Experience in NX/Teamcenter and/or&nbsp;Solidworks. &nbsp; Experience with FEA and/or CFD analysis tools. &nbsp; Ability to integrate electrical components into designs (motors, controllers, sensors etc.). &nbsp; Experience with machining, sheet metal, injection molding, and 3D printing. &nbsp; US Salary Range $30 &mdash; $45 USD The salary range for this role is an estimate based on a wide range of compensation factors, inclusive of base salary only. Actual salary offer may vary based on (but not limited to) work experience, education and/or training, critical skills, and/or business considerations. Highly competitive equity grants are included in the majority of full time offers; and are considered part of Anduril's total compensation package. Additionally, Anduril offers top-tier benefits for full-time employees, including: &nbsp; &nbsp; Benefits At Anduril, we invest in our people. Our comprehensive, competitive benefits package (available at little to no cost to employees) ensures you\u2019re supported in health, recovery, and whatever comes next.&nbsp; For more information, Explore Our Benefits . &nbsp; Protecting Yourself from Recruitment Scams Anduril is committed to maintaining the integrity of our Talent acquisition process and the security of our candidates. We've observed a rise in sophisticated phishing and fraudulent schemes where individuals impersonate Anduril representatives, luring job seekers with false interviews or job offers. These scammers often attempt to extract payment or sensitive personal information. To ensure your safety and help you navigate your job search with confidence, please keep the following critical points in mind: No Financial Requests:&nbsp; Anduril will never solicit payment or demand personal financial details (such as banking information, credit card numbers, or social security numbers) at any stage of our hiring process. Our legitimate recruitment is entirely free for candidates. Please always verify communications: Direct from Anduril: If you receive an email from one of our recruiters, it will only come from an @anduril.com address. Via Agency Partner: If contacted by a recruiting agency for an Anduril role, their email will clearly identify their agency. If you suspect any suspicious activity, please verify the agency's authenticity by reaching out to contact@anduril.com .&nbsp; Exercise Caution with Unsolicited Outreach: &nbsp;If you receive any communication that appears suspicious, contains grammatical errors, or makes unusual requests, do not engage. Always confirm the sender's email domain is @anduril.com before providing any personal information or clicking on links. What to Do If You Suspect Fraud: &nbsp;Should you encounter any questionable or fraudulent outreach claiming to be from Anduril, please report it immediately to&nbsp; contact@anduril.com . Your proactive caution is invaluable in protecting your personal information and upholding the security and trustworthiness of our recruitment efforts. &nbsp; Data Privacy To view Anduril's candidate data privacy policy, please visit https://anduril.com/applicant-privacy-notice/ . &nbsp; &nbsp; By submitting your application, you consent to Anduril Industries using a third-party service provider to conduct pre-employment risk, integrity, and due diligence screening and assessing potential risks as part of your application process. This third-party service provider provides risk-intelligence services that may include analysis of sanctions and watchlists, adverse media, public-record information, and other lawful open-source or commercial data sources. This third-party service provider does not act as a consumer reporting agency. Use of this provider helps to ensure compliance with applicable laws and protect technology, intellectual property, and organizational security.",
-   "company": "Anduril",
-   "score": {
-    "total": 70,
-    "fit": 42,
-    "loc": 10,
-    "traj": 18,
-    "tier": "A",
-    "why": [
-     [
-      "title: mechanical",
-      6
-     ],
-     [
-      "body: engineering drawings",
-      6
-     ],
-     [
-      "body: test plan",
-      6
-     ],
-     [
-      "body: injection molding",
-      5
-     ],
-     [
-      "body: drawings",
-      4
-     ],
-     [
-      "body: sheet metal",
-      4
-     ],
-     [
-      "body: machining",
-      4
-     ],
-     [
-      "body: doe",
-      4
-     ]
-    ]
-   },
-   "first_seen": "2026-10-13T02:04:57+00:00"
-  },
-  {
-   "id": "gh:andurilindustries:5257682007",
-   "title": "2027 Reliability Engineer Intern",
-   "location": "Costa Mesa, California, United States",
-   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5257682007?gh_jid=5257682007",
-   "posted": "2026-10-05T20:01:25-04:00",
-   "body": "Anduril Industries is a defense technology company with a mission to transform U.S. and allied military capabilities with advanced technology. By bringing the expertise, technology, and business model of the 21st century\u2019s most innovative companies to the defense industry, Anduril is changing how military systems are designed, built and sold. Anduril\u2019s family of systems is powered by Lattice OS, an AI-powered operating system that turns thousands of data streams into a realtime, 3D command and control center. As the world enters an era of strategic competition, Anduril is committed to bringing cutting-edge autonomy, AI, computer vision, sensor fusion, and networking technology to the military in months, not years. The Reliability Engineering team collaborates with our broader Engineering organization to ensure our products meet or exceed mission performance requirements, withstand challenging environmental conditions, and satisfy all customer specifications. As a Reliability Engineering Intern at Anduril, you will gain knowledge of advanced Reliability tools and methodologies to drive excellence into our products. You will support the Systems, Hardware, &amp; Software Engineering teams across the product development lifecycle by participating in Failure Modes &amp; Effects Analysis, predictive analysis, qualification test planning, field performance monitoring, and root cause &amp; corrective action activities. The right person for this role enjoys hands-on work, loves to build processes, and can work efficiently across multi-disciplinary teams. WHAT YOU\u2019LL DO Support review of system block diagrams, interface control documents, and schematics for compliance, redundancy, and accuracy against requirements. Proactively identify product risks and drive root cause analysis &amp; corrective actions. Support Failure Modes &amp; Effects Analysis activities and collaborate with other Engineering teams to implement product improvements for Reliability. Support predictive reliability analysis efforts to calculate failure rates and Mean Time Between Failure metrics, utilizing Anduril requirements, specifications, and MIL-HDBK-217 Plus. Support the development of Maintainability prediction models using MIL-HDBK-472. Develop R&amp;D and Qualification Test plans to ensure appropriate requirements coverage. Work with Quality and Manufacturing Engineering to ensure inspection and acceptance test gates are in place and documented against requirements. Perform Weibull analysis utilizing data from Qualification campaigns and from fielded assets. Use data analysis techniques to highlight key problem areas for deployed products, propose corrective actions, and drive to closure. REQUIRED QUALIFICATIONS Must be pursuing a bachelor\u2019s or master\u2019s degree in Mechanical Engineering, Aerospace Engineering, Electrical Engineering, Systems Engineering, or a related field. Must be returning to school at the end of the internship to continue academic studies for at least one quarter or semester. Must be a U.S. Person due to required access to U.S. export-controlled information or facilities; U.S. clearance eligibility may be required depending on program. Ability to complete a 12-week in-person internship in one of our offices in summer 2027. PREFERRED QUALIFICATIONS Prior internship experience and/or leadership on a collegiate project team or laboratory. Demonstrated hands-on fabrication skills. Exposure to test plan development, test data acquisition, data analysis, and failure analysis techniques Exposure to reliability analysis techniques, such as FMEA/FMECA, predictive modeling, Weibull analysis, and Fault Tree Analysis Technical writing experience developing standards, specifications, user guides, and policies Collegiate project team, machine shop, or laboratory experience. High competence with, and fluid use of, engineering first principles. Strong problem-solving and communication skills, with the ability to collaborate cross-functionally Proficiency with the Microsoft Office Suite of tools US Hourly Range $28 &mdash; $40 USD The salary range for this role is an estimate based on a wide range of compensation factors, inclusive of base salary only. Actual salary offer may vary based on (but not limited to) work experience, education and/or training, critical skills, and/or business considerations. Highly competitive equity grants are included in the majority of full time offers; and are considered part of Anduril's total compensation package. Additionally, Anduril offers top-tier benefits for full-time employees, including: &nbsp; &nbsp; Benefits At Anduril, we invest in our people. Our comprehensive, competitive benefits package (available at little to no cost to employees) ensures you\u2019re supported in health, recovery, and whatever comes next.&nbsp; For more information, Explore Our Benefits . &nbsp; Protecting Yourself from Recruitment Scams Anduril is committed to maintaining the integrity of our Talent acquisition process and the security of our candidates. We've observed a rise in sophisticated phishing and fraudulent schemes where individuals impersonate Anduril representatives, luring job seekers with false interviews or job offers. These scammers often attempt to extract payment or sensitive personal information. To ensure your safety and help you navigate your job search with confidence, please keep the following critical points in mind: No Financial Requests:&nbsp; Anduril will never solicit payment or demand personal financial details (such as banking information, credit card numbers, or social security numbers) at any stage of our hiring process. Our legitimate recruitment is entirely free for candidates. Please always verify communications: Direct from Anduril: If you receive an email from one of our recruiters, it will only come from an @anduril.com address. Via Agency Partner: If contacted by a recruiting agency for an Anduril role, their email will clearly identify their agency. If you suspect any suspicious activity, please verify the agency's authenticity by reaching out to contact@anduril.com .&nbsp; Exercise Caution with Unsolicited Outreach: &nbsp;If you receive any communication that appears suspicious, contains grammatical errors, or makes unusual requests, do not engage. Always confirm the sender's email domain is @anduril.com before providing any personal information or clicking on links. What to Do If You Suspect Fraud: &nbsp;Should you encounter any questionable or fraudulent outreach claiming to be from Anduril, please report it immediately to&nbsp; contact@anduril.com . Your proactive caution is invaluable in protecting your personal information and upholding the security and trustworthiness of our recruitment efforts. &nbsp; Data Privacy To view Anduril's candidate data privacy policy, please visit https://anduril.com/applicant-privacy-notice/ . &nbsp; &nbsp; By submitting your application, you consent to Anduril Industries using a third-party service provider to conduct pre-employment risk, integrity, and due diligence screening and assessing potential risks as part of your application process. This third-party service provider provides risk-intelligence services that may include analysis of sanctions and watchlists, adverse media, public-record information, and other lawful open-source or commercial data sources. This third-party service provider does not act as a consumer reporting agency. Use of this provider helps to ensure compliance with applicable laws and protect technology, intellectual property, and organizational security.",
-   "company": "Anduril",
-   "score": {
-    "total": 65,
-    "fit": 47,
-    "loc": 0,
-    "traj": 18,
-    "tier": "A",
-    "why": [
-     [
-      "title: reliability",
-      11
-     ],
-     [
-      "body: qualification test",
-      8
-     ],
-     [
-      "body: root cause",
-      7
-     ],
-     [
-      "body: failure analysis",
-      6
-     ],
-     [
-      "body: test plan",
-      6
-     ],
-     [
-      "body: fmea",
-      5
-     ],
-     [
-      "body: doe",
-      4
      ]
     ]
    },
@@ -791,37 +698,6 @@
    "first_seen": "2026-10-13T02:04:57+00:00"
   },
   {
-   "id": "gh:andurilindustries:5257674007",
-   "title": "2027 Quality & Test Engineer Intern",
-   "location": "Ashville, Ohio, United States; Costa Mesa, California, United States; Irvine, California, United States; Quonset, Rhode Island, United States; Santa Ana, California, United States",
-   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5257674007?gh_jid=5257674007",
-   "posted": "2026-10-05T19:57:30-04:00",
-   "body": "Anduril Industries is a defense technology company with a mission to transform U.S. and allied military capabilities with advanced technology. By bringing the expertise, technology, and business model of the 21st century\u2019s most innovative companies to the defense industry, Anduril is changing how military systems are designed, built and sold. Anduril\u2019s family of systems is powered by Lattice OS, an AI-powered operating system that turns thousands of data streams into a realtime, 3D command and control center. As the world enters an era of strategic competition, Anduril is committed to bringing cutting-edge autonomy, AI, computer vision, sensor fusion, and networking technology to the military in months, not years. WHAT YOU\u2019LL DO Own a portion of the production quality support process for a certain product or set of products. Conduct data analysis and data mining to identify trends and patterns in product quality. Develop and maintain KPIs &amp; OKR metrics to track product quality and identify areas for improvement and drive improvement through a cross-functional team. Lead a project that transforms an element of the quality engineering team \u2013 a process, new inspection method, or complex data analytic method(s) Will support Anduril\u2019s quality management system and manage changes to documentation and training at the conclusion of the project Write documentation required for successful quality management for hardware at scale, such as work instructions, quality plans, inspection requirements, etc. Work with technicians and other engineers hands-on, building and measuring prototype hardware Possibly travel to suppliers to do initial sourcing work, solve ongoing production issues, and implement quality procedures REQUIRED QUALIFICATIONS Must be pursuing a bachelor\u2019s or master\u2019s degree in Engineering, Math, or a hard science. Must be returning to school at the end of the internship to continue academic studies for at least one quarter or semester. Must be a U.S. Person due to required access to U.S. export-controlled information or facilities; U.S. clearance eligibility may be required depending on program. Ability to complete a 12-week in-person internship in one of our offices in summer 2027. PREFERRED QUALIFICATIONS Internships or school related experience in a relevant field, preferably manufacturing, quality, supply chain or design of electromechanical hardware Demonstrated ability to creatively problem solve issues related electromechanical hardware in a resource-constrained environment Demonstrated in-kind or direct team leadership skills Personal experience with inspection systems, data analysis, numeric methods, MatLab or other software packages. A genuine interest in data analysis, process improvement, and thirst for learning Previous experience leading project and working with data collection, analysis, and driving improvements. Hands-on experience with R/C and/or autonomous flight vehicles, flight controllers, or other related control systems Software scripting experience in any language US Hourly Range $32 &mdash; $40 USD The salary range for this role is an estimate based on a wide range of compensation factors, inclusive of base salary only. Actual salary offer may vary based on (but not limited to) work experience, education and/or training, critical skills, and/or business considerations. Highly competitive equity grants are included in the majority of full time offers; and are considered part of Anduril's total compensation package. Additionally, Anduril offers top-tier benefits for full-time employees, including: &nbsp; &nbsp; Benefits At Anduril, we invest in our people. Our comprehensive, competitive benefits package (available at little to no cost to employees) ensures you\u2019re supported in health, recovery, and whatever comes next.&nbsp; For more information, Explore Our Benefits . &nbsp; Protecting Yourself from Recruitment Scams Anduril is committed to maintaining the integrity of our Talent acquisition process and the security of our candidates. We've observed a rise in sophisticated phishing and fraudulent schemes where individuals impersonate Anduril representatives, luring job seekers with false interviews or job offers. These scammers often attempt to extract payment or sensitive personal information. To ensure your safety and help you navigate your job search with confidence, please keep the following critical points in mind: No Financial Requests:&nbsp; Anduril will never solicit payment or demand personal financial details (such as banking information, credit card numbers, or social security numbers) at any stage of our hiring process. Our legitimate recruitment is entirely free for candidates. Please always verify communications: Direct from Anduril: If you receive an email from one of our recruiters, it will only come from an @anduril.com address. Via Agency Partner: If contacted by a recruiting agency for an Anduril role, their email will clearly identify their agency. If you suspect any suspicious activity, please verify the agency's authenticity by reaching out to contact@anduril.com .&nbsp; Exercise Caution with Unsolicited Outreach: &nbsp;If you receive any communication that appears suspicious, contains grammatical errors, or makes unusual requests, do not engage. Always confirm the sender's email domain is @anduril.com before providing any personal information or clicking on links. What to Do If You Suspect Fraud: &nbsp;Should you encounter any questionable or fraudulent outreach claiming to be from Anduril, please report it immediately to&nbsp; contact@anduril.com . Your proactive caution is invaluable in protecting your personal information and upholding the security and trustworthiness of our recruitment efforts. &nbsp; Data Privacy To view Anduril's candidate data privacy policy, please visit https://anduril.com/applicant-privacy-notice/ . &nbsp; &nbsp; By submitting your application, you consent to Anduril Industries using a third-party service provider to conduct pre-employment risk, integrity, and due diligence screening and assessing potential risks as part of your application process. This third-party service provider provides risk-intelligence services that may include analysis of sanctions and watchlists, adverse media, public-record information, and other lawful open-source or commercial data sources. This third-party service provider does not act as a consumer reporting agency. Use of this provider helps to ensure compliance with applicable laws and protect technology, intellectual property, and organizational security.",
-   "company": "Anduril",
-   "score": {
-    "total": 43,
-    "fit": 21,
-    "loc": 4,
-    "traj": 18,
-    "tier": "B",
-    "why": [
-     [
-      "title: test",
-      11
-     ],
-     [
-      "title: quality",
-      6
-     ],
-     [
-      "body: doe",
-      4
-     ]
-    ]
-   },
-   "first_seen": "2026-10-13T02:04:57+00:00"
-  },
-  {
    "id": "ab:forgeatomics:0d0dd1a7-813c-4b8a-be5b-1da8f66cf864",
    "title": "Mechanical Engineering Internship/Co-op",
    "location": "El Segundo",
@@ -1140,33 +1016,6 @@
      [
       "title: engineering internship",
       5
-     ]
-    ]
-   },
-   "first_seen": "2026-10-13T02:04:57+00:00"
-  },
-  {
-   "id": "gh:andurilindustries:5257690007",
-   "title": "2027 Systems Engineer Intern",
-   "location": "Boston, Massachusetts, United States; Costa Mesa, California, United States; Fort Collins, Colorado, United States; Reston, Virginia, United States; Seattle, Washington, United States",
-   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5257690007?gh_jid=5257690007",
-   "posted": "2026-10-05T20:08:43-04:00",
-   "body": "Anduril Industries is a defense technology company with a mission to transform U.S. and allied military capabilities with advanced technology. By bringing the expertise, technology, and business model of the 21st century\u2019s most innovative companies to the defense industry, Anduril is changing how military systems are designed, built and sold. Anduril\u2019s family of systems is powered by Lattice OS, an AI-powered operating system that turns thousands of data streams into a realtime, 3D command and control center. As the world enters an era of strategic competition, Anduril is committed to bringing cutting-edge autonomy, AI, computer vision, sensor fusion, and networking technology to the military in months, not years. WHAT YOU\u2019LL DO Assist the systems engineer team in building out new products to satisfy customer requirements in new and challenging mission areas Contribute technical inputs to engineering execution plans Develop tools to be used in oversight to a multi-disciplinary team of engineers through all phases of program execution up to and including delivery and operation of capabilities on-orbit Assist in process development for mission and system level trade studies and analysis to balance risk, cost, and performance REQUIRED QUALIFICATIONS Must be pursuing a bachelor\u2019s or master\u2019s degree in Computer Science, Computer Engineering, Software Engineering, Mathematics, Physics, or a related field. Must be returning to school at the end of the internship to continue academic studies for at least one quarter or semester. Must be a U.S. Person due to required access to U.S. export-controlled information or facilities; U.S. clearance eligibility may be required depending on program. Ability to complete a 12-week in-person internship in one of our offices in summer 2027. PREFERRED QUALIFICATIONS Strong technical communication skills, providing the ability to deliver critical technical briefings and conclusions to technical leadership Strong technical fundamentals in an engineering discipline Working knowledge of systems engineering principles Matlab experience Experience in Linux US Hourly Range $32 &mdash; $48 USD The salary range for this role is an estimate based on a wide range of compensation factors, inclusive of base salary only. Actual salary offer may vary based on (but not limited to) work experience, education and/or training, critical skills, and/or business considerations. Highly competitive equity grants are included in the majority of full time offers; and are considered part of Anduril's total compensation package. Additionally, Anduril offers top-tier benefits for full-time employees, including: &nbsp; &nbsp; Benefits At Anduril, we invest in our people. Our comprehensive, competitive benefits package (available at little to no cost to employees) ensures you\u2019re supported in health, recovery, and whatever comes next.&nbsp; For more information, Explore Our Benefits . &nbsp; Protecting Yourself from Recruitment Scams Anduril is committed to maintaining the integrity of our Talent acquisition process and the security of our candidates. We've observed a rise in sophisticated phishing and fraudulent schemes where individuals impersonate Anduril representatives, luring job seekers with false interviews or job offers. These scammers often attempt to extract payment or sensitive personal information. To ensure your safety and help you navigate your job search with confidence, please keep the following critical points in mind: No Financial Requests:&nbsp; Anduril will never solicit payment or demand personal financial details (such as banking information, credit card numbers, or social security numbers) at any stage of our hiring process. Our legitimate recruitment is entirely free for candidates. Please always verify communications: Direct from Anduril: If you receive an email from one of our recruiters, it will only come from an @anduril.com address. Via Agency Partner: If contacted by a recruiting agency for an Anduril role, their email will clearly identify their agency. If you suspect any suspicious activity, please verify the agency's authenticity by reaching out to contact@anduril.com .&nbsp; Exercise Caution with Unsolicited Outreach: &nbsp;If you receive any communication that appears suspicious, contains grammatical errors, or makes unusual requests, do not engage. Always confirm the sender's email domain is @anduril.com before providing any personal information or clicking on links. What to Do If You Suspect Fraud: &nbsp;Should you encounter any questionable or fraudulent outreach claiming to be from Anduril, please report it immediately to&nbsp; contact@anduril.com . Your proactive caution is invaluable in protecting your personal information and upholding the security and trustworthiness of our recruitment efforts. &nbsp; Data Privacy To view Anduril's candidate data privacy policy, please visit https://anduril.com/applicant-privacy-notice/ . &nbsp; &nbsp; By submitting your application, you consent to Anduril Industries using a third-party service provider to conduct pre-employment risk, integrity, and due diligence screening and assessing potential risks as part of your application process. This third-party service provider provides risk-intelligence services that may include analysis of sanctions and watchlists, adverse media, public-record information, and other lawful open-source or commercial data sources. This third-party service provider does not act as a consumer reporting agency. Use of this provider helps to ensure compliance with applicable laws and protect technology, intellectual property, and organizational security.",
-   "company": "Anduril",
-   "score": {
-    "total": 37,
-    "fit": 9,
-    "loc": 10,
-    "traj": 18,
-    "tier": "B",
-    "why": [
-     [
-      "title: systems",
-      5
-     ],
-     [
-      "body: doe",
-      4
      ]
     ]
    },
@@ -1504,33 +1353,6 @@
    "first_seen": "2026-10-13T02:04:57+00:00"
   },
   {
-   "id": "gh:andurilindustries:5153218007",
-   "title": "2027 Manufacturing Engineer Intern",
-   "location": "Atlanta, Georgia, United States; Boston, Massachusetts, United States; Broomfield, Colorado, United States; Colorado Springs, Colorado, United States; Costa Mesa, California, United States; Fort Collins, Colorado, United States; Irvine, California, United States; Seattle, Washington, United States",
-   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5153218007?gh_jid=5153218007",
-   "posted": "2026-10-05T19:17:56-04:00",
-   "body": "Anduril Industries is a defense technology company with a mission to transform U.S. and allied military capabilities with advanced technology. By bringing the expertise, technology, and business model of the 21st century\u2019s most innovative companies to the defense industry, Anduril is changing how military systems are designed, built and sold. Anduril\u2019s family of systems is powered by Lattice OS, an AI-powered operating system that turns thousands of data streams into a realtime, 3D command and control center. As the world enters an era of strategic competition, Anduril is committed to bringing cutting-edge autonomy, AI, computer vision, sensor fusion, and networking technology to the military in months, not years. We are seeking Manufacturing Engineer Interns for Summer 2027 ! This is a paid, in-person,&nbsp;12-week&nbsp;internship. As a Manufacturing Engineer&nbsp;Intern,&nbsp;you will work on projects supporting teams designing and building aerospace structures using carbon fiber composite material systems. As an intern you will have direct exposure to engineers designing and analyzing composite structures in aerospace programs, and to technicians manufacturing those structures. &nbsp; &nbsp; WHAT YOU\u2019LL DO &nbsp; Receive problem statements guidelines, requirements, and reporting milestones &nbsp; Independently perform trade studies, designs, and generate solutions for approval &nbsp; Execute the procurement of hardware as necessary to implement solutions &nbsp; Test, verify, and&nbsp;demonstrate&nbsp;the effectiveness of your solutions &nbsp; &nbsp; REQUIRED QUALIFICATIONS &nbsp; Must be pursuing a bachelor\u2019s or&nbsp;master\u2019s degree in&nbsp;Mechanical Engineering,&nbsp;Aerospace&nbsp;Engineering, or a related field. &nbsp; Must be returning to school at the end of the internship to continue academic studies for at least one quarter or semester.&nbsp; &nbsp; Must be a U.S. Person due to required access to U.S. export-controlled information or facilities; U.S. clearance eligibility may be required depending on program.&nbsp; &nbsp; Ability to complete an in-person 12-week internship in one of our offices in summer 2027. &nbsp; PREFERRED QUALIFICATIONS &nbsp; Previous&nbsp;experience leading project and working with data collection, analysis, and driving improvements. &nbsp; Hands-on experience with R/C and/or autonomous flight vehicles, flight controllers, or other related control systems &nbsp; Software scripting experience in any language &nbsp; US Salary Range $30 &mdash; $40 USD The salary range for this role is an estimate based on a wide range of compensation factors, inclusive of base salary only. Actual salary offer may vary based on (but not limited to) work experience, education and/or training, critical skills, and/or business considerations. Highly competitive equity grants are included in the majority of full time offers; and are considered part of Anduril's total compensation package. Additionally, Anduril offers top-tier benefits for full-time employees, including: &nbsp; &nbsp; Benefits At Anduril, we invest in our people. Our comprehensive, competitive benefits package (available at little to no cost to employees) ensures you\u2019re supported in health, recovery, and whatever comes next.&nbsp; For more information, Explore Our Benefits . &nbsp; Protecting Yourself from Recruitment Scams Anduril is committed to maintaining the integrity of our Talent acquisition process and the security of our candidates. We've observed a rise in sophisticated phishing and fraudulent schemes where individuals impersonate Anduril representatives, luring job seekers with false interviews or job offers. These scammers often attempt to extract payment or sensitive personal information. To ensure your safety and help you navigate your job search with confidence, please keep the following critical points in mind: No Financial Requests:&nbsp; Anduril will never solicit payment or demand personal financial details (such as banking information, credit card numbers, or social security numbers) at any stage of our hiring process. Our legitimate recruitment is entirely free for candidates. Please always verify communications: Direct from Anduril: If you receive an email from one of our recruiters, it will only come from an @anduril.com address. Via Agency Partner: If contacted by a recruiting agency for an Anduril role, their email will clearly identify their agency. If you suspect any suspicious activity, please verify the agency's authenticity by reaching out to contact@anduril.com .&nbsp; Exercise Caution with Unsolicited Outreach: &nbsp;If you receive any communication that appears suspicious, contains grammatical errors, or makes unusual requests, do not engage. Always confirm the sender's email domain is @anduril.com before providing any personal information or clicking on links. What to Do If You Suspect Fraud: &nbsp;Should you encounter any questionable or fraudulent outreach claiming to be from Anduril, please report it immediately to&nbsp; contact@anduril.com . Your proactive caution is invaluable in protecting your personal information and upholding the security and trustworthiness of our recruitment efforts. &nbsp; Data Privacy To view Anduril's candidate data privacy policy, please visit https://anduril.com/applicant-privacy-notice/ . &nbsp; &nbsp; By submitting your application, you consent to Anduril Industries using a third-party service provider to conduct pre-employment risk, integrity, and due diligence screening and assessing potential risks as part of your application process. This third-party service provider provides risk-intelligence services that may include analysis of sanctions and watchlists, adverse media, public-record information, and other lawful open-source or commercial data sources. This third-party service provider does not act as a consumer reporting agency. Use of this provider helps to ensure compliance with applicable laws and protect technology, intellectual property, and organizational security.",
-   "company": "Anduril",
-   "score": {
-    "total": 35,
-    "fit": 7,
-    "loc": 10,
-    "traj": 18,
-    "tier": "B",
-    "why": [
-     [
-      "body: doe",
-      4
-     ],
-     [
-      "title: manufacturing",
-      3
-     ]
-    ]
-   },
-   "first_seen": "2026-10-13T02:04:57+00:00"
-  },
-  {
    "id": "lv:hermeus:ee3a4109-b6e7-4ed5-8981-a483b3936e5a",
    "title": "Build Reliability Engineering Intern - Spring/Summer 2027",
    "location": "Atlanta, GA",
@@ -1644,7 +1466,7 @@
    "title": "Test Engineering Intern Summer 2027",
    "location": "Wallops Island, VA",
    "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8003529003",
-   "posted": "2026-10-12T22:03:22-04:00",
+   "posted": "2026-10-13T13:18:26-04:00",
    "body": "ABOUT ROCKET LAB Rocket Lab is the end-to-end space company building rockets, spacecraft, and critical subsystems that keep the world connected, protected, expand humanity\u2019s reach to the Moon, Mars, and beyond. We move fast, build real hardware for meaningful missions, and make the impossible routine. Come shape the future with us. As a&nbsp;Test Engineering&nbsp;Intern based at Rocket Lab\u2019s site in&nbsp;Wallops Island,&nbsp;Virginia&nbsp;you will have the opportunity&nbsp;to&nbsp;work&nbsp;alongside the flight operations crew and gain hands-on exposure to live test/launch operations while directly improving the tools and procedures that make those operations more efficient, repeatable, and safe.&nbsp;The&nbsp;Test &amp; Launch Operations&nbsp;team&nbsp;are&nbsp;the crew&nbsp;directly responsible&nbsp;for launching Rocket Lab's Electron and Neutron vehicles&nbsp;and running the various test campaigns that feed into it.&nbsp; WHAT YOU\u2019LL GET TO DO &nbsp; As an intern, you will work closely with your mentor and other employees within the department to apply your knowledge and grow your skills both technically and professionally&nbsp; Work with a fast-paced group of professionals to apply engineering and industry concepts to solve&nbsp;real challenges&nbsp; Attend frequent 1:1\u2019s with mentors and supervisors to&nbsp;facilitate&nbsp;success and learning while providing progress updates&nbsp; Enjoy tech talks and network with other interns and employees through social and professional events&nbsp; YOU\u2019LL BRING THESE QUALIFICATIONS &nbsp; Ideal candidates will thrive in ambiguity and are excited to work in small, high-performing teams that are focused on continued learning and growth. Success in this position will be measured by the knowledge and experience you bring to the role, your ability to lead development projects without supervision, and your ability to successfully collaborate across teams to deliver results.&nbsp; Must be enrolled in a bachelor\u2019s, master's or doctorate degree program in&nbsp;an&nbsp;engineering&nbsp;or&nbsp;physics&nbsp;discipline&nbsp;and&nbsp;have at least one semester of school remaining post internship&nbsp; GPA of 3.0 or above&nbsp; 3+ months of applied engineering experience (internship, laboratory, and personal/team project experience is applicable)&nbsp; THESE QUALIFICATIONS WOULD BE NICE TO HAVE &nbsp; GPA of 3.5 or above&nbsp; 6+ months of applied engineering experience (internship, laboratory, and personal/team project experience is applicable)&nbsp; Experience with&nbsp;scripting or automation of sequences/processes&nbsp; Proficient in Python&nbsp; 3D Printing experience&nbsp; Computer-aided design and manufacturing (CAD/CAM) experience&nbsp; Siemens NX experience&nbsp; ADDITIONAL REQUIREMENTS &nbsp; Able to work full-time, on-site for a minimum of 12 consecutive weeks beginning May or June 2027 COMPENSATION AND OTHER BENEFITS &nbsp; Pay Range&nbsp;VA: $25.00 USD Hourly&nbsp;&nbsp; You may be eligible for a stipend to subsidize relocation costs&nbsp; The expected salary range for the position is displayed in accordance with the state of Virginia\u2019s pay transparency requirements. Final agreed upon compensation is based upon individual qualifications and experience.&nbsp; Base salary is only one part of Rocket Lab\u2019s compensation package for this role.&nbsp;You may be eligible for company stock, or cash incentives, and&nbsp;can purchase discounted stock through Rocket Lab\u2019s Employee Stock Purchase Program. Employee benefits also include medical, dental, and vision insurance coverage; 401(k) retirement plan options; paid vacation, holidays, and sick leave; paid parental leave; and other discounts and perks.&nbsp;&nbsp; Base Pay Range (VA Only) $25 &mdash; $25 USD WHAT TO EXPECT &nbsp; We\u2019re on a mission to unlock the potential of space to improve life on Earth, but that\u2019s not an easy task. It takes hard work, determination, relentless innovation, teamwork, grit, and an unwavering commitment to achieving what others often deem impossible. Our people out-think, out-work, and out-pace. We pride ourselves on having each other\u2019s backs, checking our egos at the door, and rolling up our sleeves on all tasks big and small. We thrive under pressure, work to tight deadlines, and our focus is always on how we can deliver, rather than dwelling on the challenges that stand in the way.&nbsp; &nbsp; Important information: FOR CANDIDATES SEEKING TO WORK IN US OFFICES ONLY: To conform to U.S. Government space technology export regulations, including the International Traffic in Arms Regulations (ITAR), Rocket Lab Employees must be a U.S. citizen, lawful U.S. permanent resident (i.e., current Green Card holder), or lawfully admitted into the U.S. as a refugee or granted asylum, or be eligible to obtain the required authorizations from the U.S. Department of State and/or the U.S. Department of Commerce, as applicable. Learn more about ITAR here . Rocket Lab provides equal employment opportunities to all employees and applicants for employment and prohibits discrimination and harassment of any type without regard to race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state, or local laws. This policy applies to all terms and conditions of employment at Rocket Lab, including recruiting, hiring, placement, promotion, termination, layoff, recall, transfer, leaves of absence, compensation, and training. Applicants requiring a reasonable accommodation for the application/interview process for a job in the United States should contact Giulia Johnson at g.biow@rocketlabusa.com. This dedicated resource is intended solely to assist job seekers with disabilities whose disability prevents them from being able to apply/interview. Only messages left for this purpose will be considered. A response to your request may take up to two business days. FOR CANDIDATES SEEKING TO WORK IN NEW ZEALAND OFFICES ONLY: For security reasons, background checks will be undertaken prior to any employment offers being made to an applicant.&nbsp; These checks will include nationality checks as it is a requirement of this position that you be eligible to access equipment and data regulated by the United States' International Traffic in Arms Regulations.&nbsp; Under these Regulations, you may be ineligible for this role if you do not hold citizenship of Australia, Japan, New Zealand, Switzerland, the European Union, or a country that is part of NATO, or if you hold ineligible dual citizenship or nationality.&nbsp; For more information on these Regulations, click here ITAR Regulations.",
    "company": "Rocket Lab",
    "score": {
@@ -2186,41 +2008,6 @@
  ],
  "review": [
   {
-   "company": "Anduril",
-   "title": "2027 Electrical Engineer Intern",
-   "location": "Atlanta, Georgia, United States; Boston, Massachusetts, United States; Broomfield, Colorado, United States; Colorado Springs, Colorado, United States; Costa Mesa, California, United States; Fort Collins, Colorado, United States; Irvine, California, United States; Reston, Virginia, United States; Seattle, Washington, United States",
-   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5148101007?gh_jid=5148101007",
-   "reason": "non-ME discipline"
-  },
-  {
-   "company": "Anduril",
-   "title": "2027 Flight Software Engineer Intern",
-   "location": "Costa Mesa, California, United States",
-   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5239083007?gh_jid=5239083007",
-   "reason": "non-ME discipline"
-  },
-  {
-   "company": "Anduril",
-   "title": "2027 Industrial Engineer Intern",
-   "location": "Ashville, Ohio, United States; Costa Mesa, California, United States",
-   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5255593007?gh_jid=5255593007",
-   "reason": "scored 26, below tier B"
-  },
-  {
-   "company": "Anduril",
-   "title": "2027 Software Engineer Intern",
-   "location": "Atlanta, Georgia, United States; Boston, Massachusetts, United States; Broomfield, Colorado, United States; Colorado Springs, Colorado, United States; Costa Mesa, California, United States; Fort Collins, Colorado, United States; Irvine, California, United States; Reston, Virginia, United States; Seattle, Washington, United States",
-   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5148079007?gh_jid=5148079007",
-   "reason": "non-ME discipline"
-  },
-  {
-   "company": "Anduril",
-   "title": "2027 Supply Chain Intern",
-   "location": "Costa Mesa, California, United States; Fort Collins, Colorado, United States; Quincy, Massachusetts, United States; Santa Ana, California, United States; Waltham, Massachusetts, United States",
-   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5255827007?gh_jid=5255827007",
-   "reason": "non-ME discipline"
-  },
-  {
    "company": "Astranis",
    "title": "Antenna Intern (Summer 2027)",
    "location": "San Francisco",
@@ -2629,16 +2416,16 @@
   {
    "company": "Rocket Lab",
    "title": "Manufacturing Engineering Intern Summer 2027",
-   "location": "Wallops Island, VA",
-   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7996623003",
-   "reason": "scored 27, below tier B"
+   "location": "Middle River, MD",
+   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7988835003",
+   "reason": "scored 29, below tier B"
   },
   {
    "company": "Rocket Lab",
    "title": "Manufacturing Engineering Intern Summer 2027",
-   "location": "Middle River, MD",
-   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7988835003",
-   "reason": "scored 29, below tier B"
+   "location": "Wallops Island, VA",
+   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7996623003",
+   "reason": "scored 27, below tier B"
   },
   {
    "company": "Rocket Lab",
@@ -2678,13 +2465,6 @@
   {
    "company": "Rocket Lab",
    "title": "Security Analyst Intern Summer 2027",
-   "location": "Albuquerque, NM",
-   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986874003",
-   "reason": "non-ME discipline"
-  },
-  {
-   "company": "Rocket Lab",
-   "title": "Security Analyst Intern Summer 2027",
    "location": "Middle River, MD",
    "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986963003",
    "reason": "non-ME discipline"
@@ -2698,6 +2478,13 @@
   },
   {
    "company": "Rocket Lab",
+   "title": "Security Analyst Intern Summer 2027",
+   "location": "Albuquerque, NM",
+   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986874003",
+   "reason": "non-ME discipline"
+  },
+  {
+   "company": "Rocket Lab",
    "title": "Structural Analysis Intern Summer 2027",
    "location": "Long Beach, CA",
    "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986690003",
@@ -2706,15 +2493,15 @@
   {
    "company": "Rocket Lab",
    "title": "Supply Chain Intern Summer 2027",
-   "location": "Middle River, MD",
-   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7990063003",
+   "location": "Long Beach, CA",
+   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7984568003",
    "reason": "non-ME discipline"
   },
   {
    "company": "Rocket Lab",
    "title": "Supply Chain Intern Summer 2027",
-   "location": "Long Beach, CA",
-   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7984568003",
+   "location": "Middle River, MD",
+   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7990063003",
    "reason": "non-ME discipline"
   },
   {
