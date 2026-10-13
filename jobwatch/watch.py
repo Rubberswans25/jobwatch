@@ -79,7 +79,13 @@ def run(dry=False, explain=False, only=None, skip=None, quiet=False):
         c = {"name": name, **v}      # adapters read the keys their platform needs
         t0 = time.time()
         try:
-            return name, v, ADAPTERS[v["board"]](c), None, time.time() - t0
+            jobs = ADAPTERS[v["board"]](c)
+            if v.get("match"):
+                # company listed on a parent's board (Fluke on Fortive, Instron on ITW):
+                # keep postings that name it
+                m = re.compile(v["match"], re.I)
+                jobs = [j for j in jobs if m.search(f"{j['title']} {j['location']} {j['body']}")]
+            return name, v, jobs, None, time.time() - t0
         except Exception as e:
             return name, v, [], str(e) or type(e).__name__, time.time() - t0
 

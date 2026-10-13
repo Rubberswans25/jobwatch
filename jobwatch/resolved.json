@@ -1,10 +1,16 @@
 {
  "10x Genomics": {
   "board": null,
+  "rejected": [
+   "Kula.ai HTML (careers.kula.ai/10xgenomics); no adapter"
+  ],
   "trajectory": 13
  },
  "24M Technologies": {
   "board": null,
+  "rejected": [
+   "Rippling board 24m-technologies-job-board, 0 jobs"
+  ],
   "trajectory": 10
  },
  "3M": {
@@ -22,8 +28,12 @@
   "verified": true
  },
  "ASML": {
-  "board": null,
-  "trajectory": 17
+  "board": "workday",
+  "host": "wd3",
+  "site": "ASMLEXT1",
+  "tenant": "asml",
+  "trajectory": 17,
+  "verified": true
  },
  "Abbott": {
   "board": "workday",
@@ -34,16 +44,30 @@
   "verified": true
  },
  "Abiomed": {
-  "board": null,
-  "trajectory": 13
+  "board": "workday",
+  "host": "wd5",
+  "match": "Abiomed|Danvers",
+  "note": "parent Johnson & Johnson's board",
+  "site": "JJ",
+  "tenant": "jj",
+  "trajectory": 13,
+  "verified": true
  },
  "AeroVironment": {
-  "board": null,
-  "trajectory": 11
+  "board": "workday",
+  "host": "wd1",
+  "site": "AVAV",
+  "tenant": "avav",
+  "trajectory": 11,
+  "verified": true
  },
  "Aerospace Corporation": {
-  "board": null,
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd5",
+  "site": "External",
+  "tenant": "aero",
+  "trajectory": 12,
+  "verified": true
  },
  "Agilent Technologies": {
   "board": "workday",
@@ -80,18 +104,26 @@
   "verified": true
  },
  "Align Technology": {
-  "board": null,
+  "board": "pinpoint",
   "rejected": [
    "greenhouse/align is A-LIGN"
   ],
-  "trajectory": 12
+  "slug": "jobs-aligntech",
+  "trajectory": 12,
+  "verified": true
  },
  "Amazon Lab126": {
   "board": null,
+  "rejected": [
+   "amazon.jobs custom JSON (team-lab126); no adapter yet"
+  ],
   "trajectory": 16
  },
  "Amazon Robotics": {
   "board": null,
+  "rejected": [
+   "amazon.jobs custom JSON (team-amazon-robotics); no adapter yet"
+  ],
   "trajectory": 16
  },
  "Analog Devices": {
@@ -118,7 +150,8 @@
  "Apple": {
   "board": null,
   "rejected": [
-   "not on Workday (jobs.apple.com; 422 from every wd host)"
+   "not on Workday (jobs.apple.com; 422 from every wd host)",
+   "jobs.apple.com is a custom site; data only in page hydration JSON"
   ],
   "trajectory": 20
  },
@@ -146,18 +179,22 @@
   "verified": true
  },
  "Archer Aviation": {
-  "board": null,
+  "board": "greenhouse",
   "rejected": [
    "greenhouse/archer is Archer Veterinary Clinic"
   ],
-  "trajectory": 13
+  "slug": "archer56",
+  "trajectory": 13,
+  "verified": true
  },
  "Arthrex": {
-  "board": null,
+  "base": "https://careers.arthrex.com",
+  "board": "successfactors",
   "rejected": [
    "smartrecruiters/arthrex lists 1 stray posting"
   ],
-  "trajectory": 11
+  "trajectory": 11,
+  "verified": true
  },
  "Astranis": {
   "board": "greenhouse",
@@ -166,11 +203,18 @@
   "verified": true
  },
  "Astrobotic": {
-  "board": null,
-  "trajectory": 10
+  "board": "greenhouse",
+  "match": "Astrobotic|Pittsburgh|Mojave",
+  "note": "parent Voyager Technologies' board",
+  "slug": "voyagertechnologiesinc",
+  "trajectory": 10,
+  "verified": true
  },
  "Atlas Copco": {
   "board": null,
+  "rejected": [
+   "new SuccessFactors CSB JSON API (jobs.atlascopcogroup.com); no adapter"
+  ],
   "trajectory": 11
  },
  "Aurora Flight Sciences": {
@@ -203,16 +247,22 @@
   "verified": true
  },
  "BAE Systems": {
-  "board": null,
-  "trajectory": 11
+  "base": "https://jobs.baesystems.com/us/en",
+  "board": "phenom",
+  "trajectory": 11,
+  "verified": true
  },
  "BETA Technologies": {
-  "board": null,
-  "trajectory": 13
+  "board": "greenhouse",
+  "slug": "betatechnologiesinc",
+  "trajectory": 13,
+  "verified": true
  },
  "BWX Technologies": {
-  "board": null,
-  "trajectory": 11
+  "base": "https://careers.bwxt.com",
+  "board": "successfactors",
+  "trajectory": 11,
+  "verified": true
  },
  "Badger Meter": {
   "board": "workday",
@@ -232,6 +282,9 @@
  },
  "Ballard Power": {
   "board": null,
+  "rejected": [
+   "Paycor HTML; no adapter"
+  ],
   "trajectory": 10
  },
  "Beckman Coulter": {
@@ -252,12 +305,16 @@
  },
  "Bell Textron": {
   "board": null,
+  "rejected": [
+   "Taleo REST (textron.taleo.net); no adapter"
+  ],
   "trajectory": 10
  },
  "Bio-Rad": {
   "board": null,
   "rejected": [
-   "ashby/bio is bio.xyz"
+   "ashby/bio is bio.xyz",
+   "Clinch Talent HTML (careers.bio-rad.com); no adapter"
   ],
   "trajectory": 12
  },
@@ -271,6 +328,9 @@
  },
  "Blue Canyon Technologies": {
   "board": null,
+  "rejected": [
+   "BambooHR JSON (bluecanyontech.bamboohr.com); no adapter"
+  ],
   "trajectory": 10
  },
  "Blue Origin": {
@@ -283,6 +343,7 @@
  },
  "BlueHalo": {
   "board": null,
+  "covered_by": "AeroVironment",
   "trajectory": 11
  },
  "Boeing": {
@@ -297,11 +358,13 @@
   "verified": true
  },
  "Boom Supersonic": {
-  "board": null,
+  "board": "rippling",
   "rejected": [
    "ashby/boom is boompay.app"
   ],
-  "trajectory": 12
+  "slug": "boom-supersonic",
+  "trajectory": 12,
+  "verified": true
  },
  "BorgWarner": {
   "board": "workday",
@@ -320,8 +383,10 @@
   "verified": true
  },
  "Boston Metal": {
-  "board": null,
-  "trajectory": 11
+  "board": "workable",
+  "slug": "boston-metal",
+  "trajectory": 11,
+  "verified": true
  },
  "Boston Scientific": {
   "board": "eightfold",
@@ -331,11 +396,18 @@
   "verified": true
  },
  "Brooks Automation": {
-  "board": null,
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd1",
+  "site": "Brooks_External_Site",
+  "tenant": "brooksauto",
+  "trajectory": 12,
+  "verified": true
  },
  "Bruker": {
   "board": null,
+  "rejected": [
+   "iCIMS HTML (worldwidecareers-bruker.icims.com); no adapter"
+  ],
   "trajectory": 12
  },
  "Burkert": {
@@ -354,11 +426,16 @@
   "verified": true
  },
  "Capella Space": {
-  "board": null,
-  "trajectory": 11
+  "board": "greenhouse",
+  "match": "Capella",
+  "note": "parent IonQ's board",
+  "slug": "ionq",
+  "trajectory": 11,
+  "verified": true
  },
  "Carbon": {
   "board": "greenhouse",
+  "note": "Carbon, Inc. (3D printing); Bay Area mfg/mech roles",
   "postings": 12,
   "slug": "carbon",
   "trajectory": 11,
@@ -373,8 +450,10 @@
   "verified": true
  },
  "Castelion": {
-  "board": null,
-  "trajectory": 13
+  "board": "greenhouse",
+  "slug": "castelioncorporation",
+  "trajectory": 13,
+  "verified": true
  },
  "CesiumAstro": {
   "board": "lever",
@@ -384,8 +463,10 @@
   "verified": true
  },
  "Chart Industries": {
-  "board": null,
-  "trajectory": 11
+  "base": "https://jobs.chartindustries.com",
+  "board": "successfactors",
+  "trajectory": 11,
+  "verified": true
  },
  "Cognex": {
   "board": "workday",
@@ -407,8 +488,13 @@
   "verified": true
  },
  "Crane Aerospace and Electronics": {
-  "board": null,
-  "trajectory": 11
+  "board": "workday",
+  "host": "wd5",
+  "note": "parent Crane Company's board",
+  "site": "Careers",
+  "tenant": "cranecompany",
+  "trajectory": 11,
+  "verified": true
  },
  "Curtiss-Wright": {
   "board": "workday",
@@ -433,6 +519,9 @@
  },
  "Desktop Metal": {
   "board": null,
+  "rejected": [
+   "no ATS; 3 static listings, apply by email"
+  ],
   "trajectory": 10
  },
  "Dexcom": {
@@ -444,8 +533,12 @@
   "verified": true
  },
  "Donaldson": {
-  "board": null,
-  "trajectory": 10
+  "board": "workday",
+  "host": "wd115",
+  "site": "DonaldsonCareers",
+  "tenant": "donaldson",
+  "trajectory": 10,
+  "verified": true
  },
  "Draper": {
   "board": "workday",
@@ -474,13 +567,17 @@
  "ESS Inc": {
   "board": null,
   "rejected": [
-   "greenhouse/ess is cBEYONData + SMX"
+   "greenhouse/ess is cBEYONData + SMX",
+   "no public feed found"
   ],
   "trajectory": 10
  },
  "Eaton": {
-  "board": null,
-  "trajectory": 12
+  "board": "eightfold",
+  "domain": "eaton.com",
+  "host": "eaton.eightfold.ai",
+  "trajectory": 12,
+  "verified": true
  },
  "Edwards Lifesciences": {
   "board": "workday",
@@ -492,26 +589,39 @@
  },
  "Edwards Vacuum": {
   "board": null,
-  "trajectory": 11
- },
- "Electra": {
-  "board": null,
-  "trajectory": 11
- },
- "Electric Hydrogen": {
-  "board": null,
-  "trajectory": 12
- },
- "Emerson": {
-  "board": null,
   "rejected": [
-   "workday/emerson/Emerson_College_Staff: suspect, one-word name, owner adds other words: 'Emerson College | Emerson College | Emerson College'"
+   "on parent Atlas Copco Group's CSB JSON API; no adapter"
   ],
   "trajectory": 11
  },
+ "Electra": {
+  "board": "greenhouse",
+  "slug": "electrasteel",
+  "trajectory": 11,
+  "verified": true
+ },
+ "Electric Hydrogen": {
+  "board": "greenhouse",
+  "slug": "eh2",
+  "trajectory": 12,
+  "verified": true
+ },
+ "Emerson": {
+  "board": "oracle",
+  "careers": "emerson.com",
+  "host": "hdjq.fa.us2.oraclecloud.com",
+  "rejected": [
+   "workday/emerson/Emerson_College_Staff: suspect, one-word name, owner adds other words: 'Emerson College | Emerson College | Emerson College'"
+  ],
+  "site": "CX_1",
+  "trajectory": 11,
+  "verified": true
+ },
  "Endress Hauser": {
-  "board": null,
-  "trajectory": 11
+  "base": "https://careers.endress.com",
+  "board": "successfactors",
+  "trajectory": 11,
+  "verified": true
  },
  "Entegris": {
   "board": "workday",
@@ -522,8 +632,12 @@
   "verified": true
  },
  "Eos Energy": {
-  "board": null,
-  "trajectory": 10
+  "board": "workday",
+  "host": "wd1",
+  "site": "EoS",
+  "tenant": "eosenergystorage",
+  "trajectory": 10,
+  "verified": true
  },
  "Epirus": {
   "board": "greenhouse",
@@ -547,8 +661,10 @@
   "verified": true
  },
  "Festo": {
-  "board": null,
-  "trajectory": 10
+  "base": "https://jobs.festo.com",
+  "board": "successfactors",
+  "trajectory": 10,
+  "verified": true
  },
  "Figure AI": {
   "board": "greenhouse",
@@ -559,6 +675,9 @@
  },
  "Firefly Aerospace": {
   "board": null,
+  "rejected": [
+   "ClearCompany HRMDirect HTML; no adapter"
+  ],
   "trajectory": 11
  },
  "Flowserve": {
@@ -570,12 +689,21 @@
   "verified": true
  },
  "Fluence": {
-  "board": null,
-  "trajectory": 11
+  "board": "workday",
+  "host": "wd12",
+  "site": "fluenceenergy-jobs",
+  "tenant": "fluenceenergy",
+  "trajectory": 11,
+  "verified": true
  },
  "Fluke": {
-  "board": null,
-  "trajectory": 12
+  "board": "eightfold",
+  "domain": "fortive.com",
+  "host": "fortive.eightfold.ai",
+  "match": "Fluke",
+  "note": "parent Fortive's board",
+  "trajectory": 12,
+  "verified": true
  },
  "Forge Atomics": {
   "board": "ashby",
@@ -598,15 +726,23 @@
  },
  "Formulatrix": {
   "board": null,
+  "rejected": [
+   "no ATS; static WordPress pages"
+  ],
   "trajectory": 11
  },
  "Fortive": {
-  "board": null,
-  "trajectory": 13
+  "board": "eightfold",
+  "domain": "fortive.com",
+  "host": "fortive.eightfold.ai",
+  "trajectory": 13,
+  "verified": true
  },
  "Freeform": {
-  "board": null,
-  "trajectory": 13
+  "board": "greenhouse",
+  "slug": "freeformfuturecorp",
+  "trajectory": 13,
+  "verified": true
  },
  "GE Aerospace": {
   "board": "workday",
@@ -642,14 +778,23 @@
  },
  "General Atomics": {
   "board": null,
+  "rejected": [
+   "Kenexa BrassRing (partnerid 25539), needs session token; no adapter"
+  ],
   "trajectory": 11
  },
  "General Dynamics Mission Systems": {
   "board": null,
+  "rejected": [
+   "iCIMS HTML (careers-gdms.icims.com); no adapter"
+  ],
   "trajectory": 11
  },
  "General Fusion": {
   "board": null,
+  "rejected": [
+   "ADP Workforce Now JSON; no adapter"
+  ],
   "trajectory": 10
  },
  "General Motors": {
@@ -671,7 +816,8 @@
  "Google": {
   "board": null,
   "rejected": [
-   "google.wd501/GOCJobs is GOC Services India only; Google has no public ATS feed"
+   "google.wd501/GOCJobs is GOC Services India only; Google has no public ATS feed",
+   "google.com/about/careers is a custom site, HTML only"
   ],
   "trajectory": 20
  },
@@ -685,11 +831,16 @@
  },
  "Grundfos": {
   "board": null,
+  "rejected": [
+   "new SuccessFactors CSB JSON API (jobs.grundfos.com); no adapter"
+  ],
   "trajectory": 10
  },
  "Hadrian": {
-  "board": null,
-  "trajectory": 14
+  "board": "ashby",
+  "slug": "hadrian-automation",
+  "trajectory": 14,
+  "verified": true
  },
  "Hamilton Company": {
   "board": "workday",
@@ -737,6 +888,9 @@
  },
  "HighRes Biosolutions": {
   "board": null,
+  "rejected": [
+   "Paycom, needs session JWT; 0 jobs"
+  ],
   "trajectory": 11
  },
  "Hitachi Energy": {
@@ -748,8 +902,12 @@
   "verified": true
  },
  "Hologic": {
-  "board": null,
-  "trajectory": 12
+  "board": "oracle",
+  "careers": "careers.hologic.com",
+  "host": "ebwb.fa.us2.oraclecloud.com",
+  "site": "CX",
+  "trajectory": 12,
+  "verified": true
  },
  "Honeywell": {
   "board": "oracle",
@@ -760,31 +918,43 @@
   "verified": true
  },
  "Howmet Aerospace": {
-  "board": null,
-  "trajectory": 11
+  "board": "oracle",
+  "careers": "howmet.com",
+  "host": "fa-exty-saasfaprod1.fa.ocs.oraclecloud.com",
+  "site": "CX_1",
+  "trajectory": 11,
+  "verified": true
  },
  "IDEX": {
-  "board": null,
+  "board": "workday",
+  "host": "wd5",
   "rejected": [
    "workday/idexcorp/IDEX_Careers: suspect, owner 'Fluid Management Operations Inc | CVI Laser, LLC | CVI Laser, LLC'"
   ],
-  "trajectory": 11
+  "site": "IDEX_Careers",
+  "tenant": "idexcorp",
+  "trajectory": 11,
+  "verified": true
  },
  "IMI": {
   "board": null,
   "rejected": [
-   "greenhouse/imi: sparse, 2 posting(s), owner 'IMI'"
+   "greenhouse/imi: sparse, 2 posting(s), owner 'IMI'",
+   "custom vacancy pages behind Cloudflare"
   ],
   "trajectory": 10
  },
  "INFICON": {
-  "board": null,
-  "trajectory": 11
+  "board": "smartrecruiters",
+  "slug": "INFICON2",
+  "trajectory": 11,
+  "verified": true
  },
  "ITT": {
   "board": null,
   "rejected": [
-   "smartrecruiters/ittinc: stale, newest posting over a year old, owner 'ITT Inc.'"
+   "smartrecruiters/ittinc: stale, newest posting over a year old, owner 'ITT Inc.'",
+   "iCIMS HTML (careersenus-itt-inc.icims.com); no adapter"
   ],
   "trajectory": 10
  },
@@ -807,8 +977,14 @@
   "verified": true
  },
  "Instron": {
-  "board": null,
-  "trajectory": 13
+  "board": "workday",
+  "host": "wd5",
+  "match": "Instron|Norwood",
+  "note": "on parent ITW's board",
+  "site": "External",
+  "tenant": "itw",
+  "trajectory": 13,
+  "verified": true
  },
  "Insulet": {
   "board": "workday",
@@ -828,11 +1004,16 @@
  },
  "Intuitive Machines": {
   "board": null,
+  "rejected": [
+   "ADP Workforce Now JSON; no adapter"
+  ],
   "trajectory": 11
  },
  "Intuitive Surgical": {
-  "board": null,
-  "trajectory": 16
+  "board": "smartrecruiters",
+  "slug": "intuitive",
+  "trajectory": 16,
+  "verified": true
  },
  "Jabil": {
   "board": "workday",
@@ -844,6 +1025,9 @@
  },
  "Joby Aviation": {
   "board": null,
+  "rejected": [
+   "iCIMS HTML (careers-jobyaviation.icims.com); no adapter"
+  ],
   "trajectory": 13
  },
  "Johnson Controls": {
@@ -863,8 +1047,10 @@
   "verified": true
  },
  "K2 Space": {
-  "board": null,
-  "trajectory": 12
+  "board": "greenhouse",
+  "slug": "k2spacecorporation",
+  "trajectory": 12,
+  "verified": true
  },
  "KLA": {
   "board": "workday",
@@ -882,15 +1068,23 @@
   "verified": true
  },
  "Keysight Technologies": {
-  "board": null,
-  "trajectory": 14
+  "board": "jibe",
+  "host": "jobs.keysight.com",
+  "trajectory": 14,
+  "verified": true
  },
  "Kratos Defense": {
   "board": null,
+  "rejected": [
+   "Pereless ATS, blocked"
+  ],
   "trajectory": 10
  },
  "L3Harris": {
   "board": null,
+  "rejected": [
+   "TalentBrew/Radancy (careers.l3harris.com); no adapter"
+  ],
   "trajectory": 11
  },
  "Lam Research": {
@@ -901,8 +1095,11 @@
   "verified": true
  },
  "Lockheed Martin": {
-  "board": null,
-  "trajectory": 12
+  "board": "eightfold",
+  "domain": "lockheedmartin.com",
+  "host": "lockheedmartin.eightfold.ai",
+  "trajectory": 12,
+  "verified": true
  },
  "Loft Orbital": {
   "board": "lever",
@@ -912,8 +1109,10 @@
   "verified": true
  },
  "MITRE": {
-  "board": null,
-  "trajectory": 11
+  "base": "https://careers.mitre.org/us/en",
+  "board": "phenom",
+  "trajectory": 11,
+  "verified": true
  },
  "MKS Instruments": {
   "board": "workday",
@@ -948,11 +1147,15 @@
   "verified": true
  },
  "Masimo": {
-  "board": null,
+  "board": "oracle",
+  "careers": "masimo.com",
+  "host": "egcu.fa.us6.oraclecloud.com",
   "rejected": [
    "smartrecruiters/masimo lists 1 stray posting"
   ],
-  "trajectory": 11
+  "site": "CX",
+  "trajectory": 11,
+  "verified": true
  },
  "Medtronic": {
   "board": "workday",
@@ -964,10 +1167,16 @@
  },
  "Meta": {
   "board": null,
+  "rejected": [
+   "metacareers.com: custom GraphQL, only a sitemap is public"
+  ],
   "trajectory": 19
  },
  "Mettler Toledo": {
   "board": null,
+  "rejected": [
+   "Avature HTML (careers.mt.com); no adapter"
+  ],
   "trajectory": 12
  },
  "Micron": {
@@ -994,8 +1203,12 @@
   "verified": true
  },
  "Motiv Space Systems": {
-  "board": null,
-  "trajectory": 10
+  "board": "greenhouse",
+  "match": "Motiv",
+  "note": "parent Rocket Lab's board",
+  "slug": "rocketlab",
+  "trajectory": 10,
+  "verified": true
  },
  "Munters": {
   "board": "workday",
@@ -1021,6 +1234,9 @@
  },
  "Nel Hydrogen": {
   "board": null,
+  "rejected": [
+   "Teamtailor RSS (careers.nelhydrogen.com/jobs.rss); no adapter"
+  ],
   "trajectory": 10
  },
  "Neuralink": {
@@ -1031,8 +1247,12 @@
   "verified": true
  },
  "Nordson": {
-  "board": null,
-  "trajectory": 11
+  "board": "workday",
+  "host": "wd501",
+  "site": "nordsoncareers",
+  "tenant": "nordsonhcm",
+  "trajectory": 11,
+  "verified": true
  },
  "Northrop Grumman": {
   "board": "workday",
@@ -1071,6 +1291,9 @@
  },
  "Parker Hannifin": {
   "board": null,
+  "rejected": [
+   "parkercareers.ttcportals.com behind Cloudflare challenge"
+  ],
   "trajectory": 11
  },
  "Pentair": {
@@ -1082,8 +1305,12 @@
   "verified": true
  },
  "Pfeiffer Vacuum": {
-  "board": null,
-  "trajectory": 11
+  "base": "https://jobs.buschvacuum.com/pfeiffervacuum",
+  "board": "successfactors",
+  "match": "Pfeiffer",
+  "note": "parent Busch Group's site",
+  "trajectory": 11,
+  "verified": true
  },
  "Planet Labs": {
   "board": "greenhouse",
@@ -1110,6 +1337,9 @@
  },
  "Powin": {
   "board": null,
+  "rejected": [
+   "assets bought by FlexGen; Rippling v2 board; no adapter"
+  ],
   "trajectory": 10
  },
  "Pratt and Whitney": {
@@ -1127,6 +1357,7 @@
  },
  "Quaise Energy": {
   "board": "greenhouse",
+  "note": "Quaise Energy, Inc, Houston",
   "postings": 8,
   "slug": "quaise",
   "trajectory": 11,
@@ -1144,18 +1375,25 @@
  },
  "Quanterix": {
   "board": null,
+  "rejected": [
+   "Paycor HTML; no adapter"
+  ],
   "trajectory": 11
  },
  "QuantumScape": {
-  "board": null,
-  "trajectory": 11
+  "base": "https://careers.quantumscape.com",
+  "board": "successfactors",
+  "trajectory": 11,
+  "verified": true
  },
  "REGENT": {
-  "board": null,
+  "board": "ashby",
   "rejected": [
    "greenhouse/regent is Regent LP (Beverly Hills holding co)"
   ],
-  "trajectory": 11
+  "slug": "regent",
+  "trajectory": 11,
+  "verified": true
  },
  "RTX": {
   "board": "workday",
@@ -1166,14 +1404,19 @@
   "verified": true
  },
  "Radiant": {
-  "board": null,
+  "board": "ashby",
   "rejected": [
    "ashby/radiant is radiant.co"
   ],
-  "trajectory": 12
+  "slug": "radiant-industries",
+  "trajectory": 12,
+  "verified": true
  },
  "Redwire": {
   "board": null,
+  "rejected": [
+   "Clinch Talent HTML (careers.rdw.com); no adapter"
+  ],
   "trajectory": 10
  },
  "Redwood Materials": {
@@ -1263,14 +1506,23 @@
  },
  "SMC Corporation": {
   "board": null,
+  "rejected": [
+   "custom JSON (careers.smcusa.com/api/mcp/jobs); no adapter"
+  ],
   "trajectory": 10
  },
  "SPX FLOW": {
   "board": null,
+  "rejected": [
+   "SuccessFactors classic XML (company=spxflowP); no adapter"
+  ],
   "trajectory": 10
  },
  "Safran": {
   "board": null,
+  "rejected": [
+   "safran-group.com/jobs blocked (403)"
+  ],
   "trajectory": 11
  },
  "Saronic": {
@@ -1290,10 +1542,14 @@
  },
  "Scaled Composites": {
   "board": null,
+  "rejected": [
+   "ADP Workforce Now JSON; no adapter"
+  ],
   "trajectory": 11
  },
  "Seurat Technologies": {
   "board": "greenhouse",
+  "note": "Seurat Technologies, Wilmington MA",
   "postings": 5,
   "slug": "seurat",
   "trajectory": 11,
@@ -1323,11 +1579,13 @@
   "verified": true
  },
  "Sila": {
-  "board": null,
+  "board": "greenhouse",
   "rejected": [
    "lever/sila is Sila Services (HVAC/plumbing)"
   ],
-  "trajectory": 11
+  "slug": "silananotechnologies",
+  "trajectory": 11,
+  "verified": true
  },
  "Skydio": {
   "board": "ashby",
@@ -1355,11 +1613,16 @@
  },
  "Spirax Sarco": {
   "board": null,
+  "rejected": [
+   "Cornerstone CSOD, needs bearer token; no adapter"
+  ],
   "trajectory": 10
  },
  "Spirit AeroSystems": {
-  "board": null,
-  "trajectory": 10
+  "board": "jibe",
+  "host": "careers.spiritaero.com",
+  "trajectory": 10,
+  "verified": true
  },
  "Stanley Black and Decker": {
   "board": "workday",
@@ -1376,8 +1639,10 @@
   "verified": true
  },
  "Stratasys": {
-  "board": null,
-  "trajectory": 10
+  "base": "https://careers.stratasys.com",
+  "board": "successfactors",
+  "trajectory": 10,
+  "verified": true
  },
  "Stratolaunch": {
   "board": "greenhouse",
@@ -1395,8 +1660,10 @@
   "verified": true
  },
  "Sublime Systems": {
-  "board": null,
-  "trajectory": 11
+  "board": "lever",
+  "slug": "SublimeSystems",
+  "trajectory": 11,
+  "verified": true
  },
  "Sulzer": {
   "board": "workday",
@@ -1407,28 +1674,47 @@
   "verified": true
  },
  "Swagelok": {
-  "board": null,
-  "trajectory": 11
+  "base": "https://jobs.swagelok.com/us/en",
+  "board": "phenom",
+  "trajectory": 11,
+  "verified": true
  },
  "Symbotic": {
-  "board": null,
-  "trajectory": 14
+  "board": "workday",
+  "host": "wd504",
+  "site": "Symbotic",
+  "tenant": "symbotic",
+  "trajectory": 14,
+  "verified": true
  },
  "TA Instruments": {
   "board": null,
+  "rejected": [
+   "on parent Waters' iCIMS; no adapter"
+  ],
   "trajectory": 12
  },
  "TAE Technologies": {
   "board": null,
+  "rejected": [
+   "UKG UltiPro + ashby/tae-power-solutions; no adapter"
+  ],
   "trajectory": 11
  },
  "Tecan": {
-  "board": null,
-  "trajectory": 11
+  "base": "https://careers.tecan.com",
+  "board": "successfactors",
+  "trajectory": 11,
+  "verified": true
  },
  "Tektronix": {
-  "board": null,
-  "trajectory": 12
+  "board": "eightfold",
+  "domain": "ralliant.com",
+  "host": "ralliant.eightfold.ai",
+  "match": "Tektronix",
+  "note": "parent Ralliant's board",
+  "trajectory": 12,
+  "verified": true
  },
  "Teledyne FLIR": {
   "board": "workday",
@@ -1445,11 +1731,16 @@
   "verified": true
  },
  "TerraPower": {
-  "board": null,
-  "trajectory": 13
+  "board": "greenhouse",
+  "slug": "terrapowerllc",
+  "trajectory": 13,
+  "verified": true
  },
  "Tesla": {
   "board": null,
+  "rejected": [
+   "tesla.com/careers blocked (Akamai 403)"
+  ],
   "trajectory": 16
  },
  "Texas Instruments": {
@@ -1462,6 +1753,9 @@
  },
  "Textron Systems": {
   "board": null,
+  "rejected": [
+   "DirectEmployers/Taleo (careers.textron.com); no adapter"
+  ],
   "trajectory": 10
  },
  "Thermo Fisher Scientific": {
@@ -1482,6 +1776,9 @@
  },
  "TransDigm": {
   "board": null,
+  "rejected": [
+   "no central board; each operating unit hires separately"
+  ],
   "trajectory": 11
  },
  "Trimble": {
@@ -1500,12 +1797,16 @@
   "verified": true
  },
  "Type One Energy": {
-  "board": null,
-  "trajectory": 11
+  "board": "rippling",
+  "slug": "type-one-energy-group",
+  "trajectory": 11,
+  "verified": true
  },
  "Umbra": {
-  "board": null,
-  "trajectory": 11
+  "board": "workable",
+  "slug": "umbra-1",
+  "trajectory": 11,
+  "verified": true
  },
  "Ursa Major": {
   "board": "greenhouse",
@@ -1514,8 +1815,10 @@
   "verified": true
  },
  "VAT Group": {
-  "board": null,
-  "trajectory": 11
+  "base": "https://careers.vatvalve.com",
+  "board": "successfactors",
+  "trajectory": 11,
+  "verified": true
  },
  "Valar Atomics": {
   "board": "greenhouse",
@@ -1537,12 +1840,16 @@
   "verified": true
  },
  "Veeco": {
-  "board": null,
-  "trajectory": 12
+  "base": "https://careers.veeco.com",
+  "board": "successfactors",
+  "trajectory": 12,
+  "verified": true
  },
  "Venus Aerospace": {
-  "board": null,
-  "trajectory": 10
+  "board": "lever",
+  "slug": "venusaero",
+  "trajectory": 10,
+  "verified": true
  },
  "Victaulic": {
   "board": "workday",
@@ -1553,18 +1860,24 @@
   "verified": true
  },
  "VulcanForms": {
-  "board": "smartrecruiters",
-  "postings": 1,
-  "slug": "vulcanformsinc",
-  "trajectory": 12,
-  "verified": true
+  "board": null,
+  "rejected": [
+   "smartrecruiters/vulcanformsinc: stale, 5 postings all from 2019"
+  ],
+  "trajectory": 12
  },
  "Waters Corporation": {
   "board": null,
+  "rejected": [
+   "iCIMS HTML (uscareers-waters.icims.com); no adapter"
+  ],
   "trajectory": 13
  },
  "Watson-Marlow": {
   "board": null,
+  "rejected": [
+   "on parent Spirax's Cornerstone CSOD; no adapter"
+  ],
   "trajectory": 10
  },
  "Watts Water Technologies": {
@@ -1579,8 +1892,10 @@
   "verified": true
  },
  "Westinghouse": {
-  "board": null,
-  "trajectory": 11
+  "base": "https://careers.westinghousenuclear.com",
+  "board": "successfactors",
+  "trajectory": 11,
+  "verified": true
  },
  "Wisk Aero": {
   "board": "workday",
@@ -1615,16 +1930,22 @@
   "verified": true
  },
  "Zap Energy": {
-  "board": null,
-  "trajectory": 11
+  "board": "rippling",
+  "slug": "zap-energy-careers",
+  "trajectory": 11,
+  "verified": true
  },
  "Zimmer Biomet": {
-  "board": null,
-  "trajectory": 11
+  "base": "https://careers.zimmerbiomet.com/us/en",
+  "board": "phenom",
+  "trajectory": 11,
+  "verified": true
  },
  "Zipline": {
-  "board": null,
-  "trajectory": 14
+  "board": "greenhouse",
+  "slug": "flyzipline",
+  "trajectory": 14,
+  "verified": true
  },
  "iRobot": {
   "board": "workday",

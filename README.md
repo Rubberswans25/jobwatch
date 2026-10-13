@@ -49,6 +49,14 @@ a wrong site name returns 200 with 0 jobs, not an error, so those are added by h
 | oracle | `host`, `site`, `careers` | Oracle Cloud HCM `recruitingCEJobRequisitions` |
 | successfactors | `base` | SAP Career Site Builder HTML search, `<base>/search/?q=` |
 | jibe | `host` | `<host>/api/jobs?keywords=` |
+| rippling | `slug` | `api.rippling.com/platform/api/ats/v1/board/<slug>/jobs` |
+| phenom | `base` (locale root, e.g. `https://careers.mitre.org/us/en`) | `POST <origin>/widgets` refineSearch |
+
+Any entry can also carry `"match": "<regex>"`. The scan then keeps only postings
+whose title, location or body match it. This covers companies listed on a
+parent's board: Fluke and Tektronix (Fortive, Ralliant), Instron (ITW), Abiomed
+(J&J), Capella (IonQ), Motiv (Rocket Lab), Astrobotic (Voyager), Pfeiffer (Busch).
+Subsidiaries whose parent is already scanned in full use `"covered_by"` instead.
 
 Workday notes, all checked against live tenants: `limit` is capped at 20,
 `total` is only filled on the first page (0 afterwards), and `searchText` is
@@ -57,8 +65,9 @@ student reqs with the tenant's own facets (worker type "Intern", job family
 "Interns", and so on), falls back to `searchText` only when no such facet exists,
 then fetches each matching job for its description, location and start date.
 
-Eightfold, Oracle, SuccessFactors and Jibe cannot filter to student reqs server
-side either; each lists broadly, keeps intern/co-op titles, then reads detail only
+Eightfold, Oracle, SuccessFactors, Jibe, Phenom, Rippling and SmartRecruiters
+cannot filter to student reqs server side either (or carry no description in the
+list); each lists broadly, keeps intern/co-op titles, then reads detail only
 for those. Eightfold pages are fixed at 10 and Microsoft's tenant returns 429 when
 pushed, so its pages are fetched one at a time with backoff.
 
@@ -267,8 +276,14 @@ say it out loud.
 
 ## Honest limits
 
-- No public feed: Apple, Google, Meta, Tesla (403), and anything else in
-  `resolved.json` whose `rejected` note says so. Check those by hand.
+- About 50 companies have no feed this scanner reads. Each `"board": null` entry
+  in `resolved.json` says why under `rejected`: no public feed (Apple, Google,
+  Meta, Tesla, Parker, Safran) or an ATS without an adapter yet (iCIMS: Waters,
+  Joby, GDMS, Bruker, ITT; Amazon's own JSON: Amazon Robotics, Lab126;
+  BrassRing: General Atomics; Taleo: Bell; ADP, Paycor, Cornerstone and the new
+  SuccessFactors JSON UI: Atlas Copco, Edwards, Grundfos). Check those by hand.
+- Workable rate-limits by IP (429). The runner's IP is fresh each run, so this
+  mostly bites when probing a lot from one machine.
 - Microsoft's Eightfold tenant rate-limits. A scan that hits it too hard gets 429s,
   which are retried with backoff but can still surface as a board error.
 - GitHub Actions cron drifts. Twenty minutes is a request, not a promise.

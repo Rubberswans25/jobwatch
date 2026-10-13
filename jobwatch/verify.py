@@ -16,7 +16,8 @@ slug back:
   workable         account "name" from the widget API
   workday          hiringOrganization.name on the first few postings
   pinpoint         <title> of <slug>.pinpointhq.com
-  eightfold, jibe, successfactors, oracle
+  rippling         the opening of the first posting's description
+  eightfold, jibe, successfactors, oracle, phenom
                    the company's own careers host the entry was copied from
 
 Verdicts:
@@ -37,6 +38,10 @@ OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "resolved.json")
 UA = "Mozilla/5.0 (compatible; jobwatch-verify/2.0)"
 STOP = {"inc", "corp", "corporation", "company", "co", "the", "and", "technologies",
         "technology", "group", "systems", "labs", "laboratories", "ai", "us", "usa"}
+
+
+# platforms whose entries are copied by hand from the company's own careers site
+WEB_BOARDS = ("eightfold", "jibe", "successfactors", "oracle", "phenom")
 
 
 def _get(url, js=True, data=None):
@@ -102,7 +107,16 @@ def owner(v):
     if b == "pinpoint":
         h = _get(f"https://{s}.pinpointhq.com/", js=False)
         return _html_owner(h, r"$^"), len(_get(f"https://{s}.pinpointhq.com/postings.json").get("data", []))
-    if b in ("eightfold", "jibe", "successfactors", "oracle"):
+    if b == "rippling":
+        api = f"https://api.rippling.com/platform/api/ats/v1/board/{s}/jobs"
+        jobs = _get(api)
+        own = ""
+        if jobs:
+            desc = _get(f"{api}/{jobs[0]['uuid']}").get("description") or {}
+            own = "body: " + re.sub(r"<[^>]+>|\s+", " ", " ".join(
+                x for x in desc.values() if isinstance(x, str)))[:160]
+        return own, len(jobs)
+    if b in WEB_BOARDS:
         # entries are added by hand from the company's own careers site, so the host
         # they were found on is the identity; oracle tenants are opaque, use "careers"
         host = v.get("careers") or v.get("domain") or v.get("host") or v.get("base", "")
@@ -164,11 +178,13 @@ def judge(name, own, n):
 
 
 def board_key(v):
+    """Identity of the feed; entries sharing a parent's board differ by "match"."""
+    m = (v.get("match") or "",) if v.get("match") else ()
     if v.get("board") == "workday":
-        return ("workday", v.get("tenant"), str(v.get("site")))
-    if v.get("board") in ("eightfold", "jibe", "successfactors", "oracle"):
-        return (v["board"], v.get("domain") or v.get("host") or v.get("base"), str(v.get("site") or ""))
-    return (v.get("board"), (v.get("slug") or "").lower())
+        return ("workday", v.get("tenant"), str(v.get("site"))) + m
+    if v.get("board") in WEB_BOARDS:
+        return (v["board"], v.get("domain") or v.get("host") or v.get("base"), str(v.get("site") or "")) + m
+    return (v.get("board"), (v.get("slug") or "").lower()) + m
 
 
 def main(fix):

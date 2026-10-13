@@ -92,27 +92,37 @@ def ashby(c):
 
 
 def smartrecruiters(c):
-    out, offset = [], 0
+    """The list endpoint carries no description and its "ref" is an API URL, so
+    student titles get a detail request and links point at the public job page."""
+    api = f"https://api.smartrecruiters.com/v1/companies/{c['slug']}/postings"
+    items, offset = [], 0
     while True:
-        d = _req(f"https://api.smartrecruiters.com/v1/companies/{c['slug']}/postings"
-                 f"?limit=100&offset={offset}")
-        items = d.get("content", [])
-        for j in items:
-            loc = j.get("location") or {}
-            out.append({
-                "id": f"sr:{c['slug']}:{j.get('id')}",
-                "title": j.get("name", ""),
-                "location": ", ".join(x for x in [loc.get("city"), loc.get("region"),
-                                                  loc.get("country")] if x),
-                "url": j.get("ref", "") or
-                       f"https://jobs.smartrecruiters.com/{c['slug']}/{j.get('id')}",
-                "posted": j.get("releasedDate", "") or "",
-                "body": clean(json.dumps(j.get("jobAd", ""))),
-            })
-        offset += len(items)
-        if len(items) < 100 or offset >= d.get("totalFound", 0):
+        d = _req(f"{api}?limit=100&offset={offset}")
+        page = d.get("content", [])
+        items += page
+        offset += len(page)
+        if len(page) < 100 or offset >= d.get("totalFound", 0):
             break
-    return out
+
+    def one(j):
+        body = ""
+        if WD_TITLE.search(j.get("name", "")):
+            try:
+                secs = (_req(f"{api}/{j['id']}").get("jobAd") or {}).get("sections") or {}
+                body = " ".join((v or {}).get("text", "") for v in secs.values() if isinstance(v, dict))
+            except RuntimeError:
+                pass
+        loc = j.get("location") or {}
+        return {
+            "id": f"sr:{c['slug']}:{j.get('id')}",
+            "title": j.get("name", ""),
+            "location": ", ".join(x for x in [loc.get("city"), loc.get("region"),
+                                              loc.get("country")] if x),
+            "url": f"https://jobs.smartrecruiters.com/{c['slug']}/{j.get('id')}",
+            "posted": j.get("releasedDate", "") or "",
+            "body": clean(body),
+        }
+    return _pool(one, items)
 
 
 def workable(c):
@@ -333,31 +343,39 @@ def oracle(c):
 def successfactors(c):
     """SAP SuccessFactors Career Site Builder: c needs base (https://jobs.teradyne.com).
     No JSON API and the RSS feed stops at 20 items, so the HTML search is paged
-    (25 rows) and each matching job page is read for its description."""
+    and each matching job page is read for its description. Job links are
+    site-absolute, so base is reduced to its origin for those."""
     base = c["base"].rstrip("/")
+    origin = "/".join(base.split("/")[:3])
     found = {}
     for q in (c.get("q") or "intern,co-op").split(","):
-        row = 0
+        row, seen = 0, set()
         while row < 1000:
             t = _text(f"{base}/search/?q={urllib.parse.quote(q.strip())}&startrow={row}")
-            rows = re.findall(r'<tr class="data-row">(.*?)</tr>', t, re.S)
-            for r in rows:
-                a = re.search(r'href="([^"]+)" class="jobTitle-link">([^<]+)', r) or \
-                    re.search(r'class="jobTitle-link" href="([^"]+)">([^<]+)', r)
-                loc = re.search(r'class="jobLocation">\s*([^<]+?)\s*<', r)
-                if a and WD_TITLE.search(a.group(2)):
-                    found.setdefault(a.group(1), (html.unescape(a.group(2)).strip(),
-                                                  loc.group(1) if loc else ""))
-            total = re.search(r"Results <b>[^<]*</b> of <b>(\d+)", t)
-            row += 25
-            if not rows or not total or row >= int(total.group(1)):
+            # two layouts: table rows (Teradyne) and tiles (Arthrex); both mark the
+            # title with class="jobTitle-link" and repeat it for the phone view
+            links = list(re.finditer(r'<a\b([^>]*class="jobTitle-link[^"]*"[^>]*)>\s*([^<]+?)\s*</a>', t))
+            new = 0
+            for k, a in enumerate(links):
+                href = re.search(r'href="([^"]+)"', a.group(1))
+                if not href or href.group(1) in seen:
+                    continue
+                seen.add(href.group(1)); new += 1
+                if href.group(1) in found or not WD_TITLE.search(a.group(2)):
+                    continue
+                tail = t[a.end():links[k + 1].start() if k + 1 < len(links) else a.end() + 4000]
+                loc = re.search(r'(?:class="jobLocation"|section-location-value")>\s*([^<]+?)\s*<', tail)
+                found[href.group(1)] = (html.unescape(a.group(2)).strip(), loc.group(1) if loc else "")
+            total = re.search(r"(?:Results <b>[^<]*</b> of <b>|Showing \d+ to \d+ of )(\d+)", t)
+            row += new
+            if not new or not total or row >= int(total.group(1)):
                 break
 
     def detail(item):
         path, (title, loc) = item
         body, posted = "", ""
         try:
-            t = _text(base + path)
+            t = _text(origin + path)
             i = t.find('class="jobdescription"')
             if i >= 0:
                 end = min([k for k in (t.find('class="jobmarkets"', i), t.find("social-apply", i))
@@ -373,9 +391,9 @@ def successfactors(c):
             pass
         jid = re.search(r"/(\d+)/?$", path)
         return {
-            "id": f"sf:{base.split('//')[-1]}:{jid.group(1) if jid else path}",
+            "id": f"sf:{origin.split('//')[-1]}:{jid.group(1) if jid else path}",
             "title": title, "location": html.unescape(loc),
-            "url": base + path, "posted": posted, "body": clean(body),
+            "url": origin + path, "posted": posted, "body": clean(body),
         }
     return _pool(detail, list(found.items()))
 
@@ -412,6 +430,74 @@ def jibe(c):
     return out
 
 
+def rippling(c):
+    """Rippling ATS: c needs slug (boom-supersonic). The list has no description, so
+    student titles are read one by one from the detail endpoint."""
+    api = f"https://api.rippling.com/platform/api/ats/v1/board/{c['slug']}/jobs"
+    keep = [j for j in _req(api) if WD_TITLE.search(j.get("name", ""))]
+
+    def detail(j):
+        d = {}
+        try:
+            d = _req(f"{api}/{j['uuid']}")
+        except RuntimeError:
+            pass
+        desc = d.get("description") or {}
+        return {
+            "id": f"rp:{c['slug']}:{j['uuid']}",
+            "title": j.get("name", ""),
+            "location": (j.get("workLocation") or {}).get("label", "") or "",
+            "url": j.get("url", ""),
+            "posted": d.get("createdOn", "") or "",
+            "body": clean(" ".join(v for v in desc.values() if isinstance(v, str))),
+        }
+    return _pool(detail, keep)
+
+
+def phenom(c):
+    """Phenom People career sites: c needs base, the site's locale root
+    (https://careers.mitre.org/us/en). Search is POST /widgets "refineSearch";
+    each job page embeds its description in phApp.ddo."""
+    base = c["base"].rstrip("/")
+    origin = "/".join(base.split("/")[:3])
+    found = {}
+    for q in (c.get("q") or "intern,co-op").split(","):
+        start = 0
+        while start < 1000:
+            d = _req(f"{origin}/widgets", data=json.dumps({
+                "ddoKey": "refineSearch", "pageName": "search-results", "from": start,
+                "size": 50, "jobs": True, "counts": False, "keywords": q.strip(),
+                "global": True, "siteType": "external", "selected_fields": {}}).encode())
+            r = d.get("refineSearch") or {}
+            page = (r.get("data") or {}).get("jobs") or []
+            for j in page:
+                if WD_TITLE.search(j.get("title", "")):
+                    found.setdefault(j.get("jobId"), j)
+            start += len(page)
+            if not page or start >= (r.get("totalHits") or 0):
+                break
+
+    def detail(j):
+        body = j.get("descriptionTeaser", "")
+        try:
+            t = _text(f"{base}/job/{j['jobId']}")
+            m = re.search(r"phApp\.ddo\s*=\s*(\{.*?\});\s*phApp", t, re.S)
+            if m:
+                body = ((json.loads(m.group(1)).get("jobDetail") or {}).get("data") or {}) \
+                    .get("job", {}).get("description") or body
+        except (RuntimeError, ValueError):
+            pass
+        return {
+            "id": f"ph:{origin.split('//')[-1]}:{j['jobId']}",
+            "title": j.get("title", ""),
+            "location": "; ".join(j.get("multi_location") or [j.get("location", "")]),
+            "url": f"{base}/job/{j['jobId']}",
+            "posted": j.get("postedDate", "") or "",
+            "body": clean(body),
+        }
+    return _pool(detail, list(found.values()))
+
+
 ADAPTERS = {
     "greenhouse": greenhouse,
     "lever": lever,
@@ -424,4 +510,6 @@ ADAPTERS = {
     "oracle": oracle,
     "successfactors": successfactors,
     "jibe": jibe,
+    "rippling": rippling,
+    "phenom": phenom,
 }

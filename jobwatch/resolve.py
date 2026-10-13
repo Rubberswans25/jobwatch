@@ -44,7 +44,7 @@ PROBES = [
     ("pinpoint",        "https://{s}.pinpointhq.com/postings.json",            "data"),
 ]
 
-WD_HOSTS = ["wd1", "wd5", "wd3", "wd12", "wd10", "wd101", "wd103", "wd105", "wd108",
+WD_HOSTS = ["wd1", "wd5", "wd3", "wd12", "wd10", "wd101", "wd103", "wd105", "wd108", "wd115", "wd504",
             "wd501", "wd502", "wd503"]
 WD_ALIAS = {"RTX": ["globalhr"], "Northrop Grumman": ["ngc"], "Applied Materials": ["amat"],
             "Johnson and Johnson": ["jj"], "Becton Dickinson": ["bdx"], "GE HealthCare": ["gehc"],
