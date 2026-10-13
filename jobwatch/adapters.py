@@ -18,8 +18,8 @@ def _req(url, data=None, headers=None):
             with urllib.request.urlopen(r, timeout=TIMEOUT) as resp:
                 return json.loads(resp.read().decode("utf-8", "replace"))
         except urllib.error.HTTPError as e:
-            if e.code in (401, 403, 404):
-                raise RuntimeError(f"HTTP {e.code} — check slug/tenant") from None
+            if e.code in (400, 401, 403, 404, 422):
+                raise RuntimeError(f"HTTP {e.code} — check slug/tenant/site") from None
             last = f"HTTP {e.code}"
         except Exception as e:
             last = str(e)
@@ -30,7 +30,8 @@ def _req(url, data=None, headers=None):
 def clean(t):
     if not t:
         return ""
-    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html.unescape(t))).strip()
+    # unescape twice: some feeds (Workday) double-encode, e.g. "&amp;#xa;"
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html.unescape(html.unescape(t)))).strip()
 
 
 def greenhouse(c):
@@ -107,32 +108,117 @@ def workable(c):
     } for j in d.get("jobs", [])]
 
 
-def workday(c):
-    """Workday CXS. Needs tenant + site, e.g.
-       https://<tenant>.wd1.myworkdayjobs.com/en-US/<site>  ->
-       tenant=<tenant>, site=<site>, host=wd1"""
-    host = c.get("host", "wd1")
-    base = f"https://{c['tenant']}.{host}.myworkdayjobs.com"
-    api = f"{base}/wday/cxs/{c['tenant']}/{c['site']}/jobs"
-    out, offset = [], 0
-    while True:
-        payload = json.dumps({"appliedFacets": {}, "limit": 20,
-                              "offset": offset, "searchText": c.get("q", "intern")}).encode()
-        d = _req(api, data=payload)
-        posts = d.get("jobPostings", [])
-        for j in posts:
-            path = j.get("externalPath", "")
-            out.append({
-                "id": f"wd:{c['tenant']}:{path}",
-                "title": j.get("title", ""),
-                "location": j.get("locationsText", "") or "",
-                "url": f"{base}/en-US/{c['site']}{path}",
-                "posted": j.get("postedOn", "") or "",
-                "body": clean(j.get("bulletFields") and " ".join(j["bulletFields"]) or ""),
-            })
-        offset += len(posts)
-        if len(posts) < 20 or offset >= d.get("total", 0) or offset >= 100:
+def pinpoint(c):
+    """Pinpoint: https://<slug>.pinpointhq.com/postings.json, all postings, no paging.
+    Body is split across several HTML fields; there is no posted date."""
+    d = _req(f"https://{c['slug']}.pinpointhq.com/postings.json")
+    out = []
+    for j in d.get("data", []):
+        loc = j.get("location") or {}
+        body = " ".join(j.get(k) or "" for k in ("description", "key_responsibilities",
+                                                  "skills_knowledge_expertise", "benefits"))
+        out.append({
+            "id": f"pp:{c['slug']}:{j.get('id')}",
+            "title": j.get("title", ""),
+            "location": ", ".join(x.strip() for x in [loc.get("city"), loc.get("province")] if x),
+            "url": j.get("url", ""),
+            "posted": "",
+            "body": clean(body),
+        })
+    return out
+
+
+# Workday CXS. Verified live against nvidia, micron, globalhr (RTX), ngc and others.
+#   POST {base}/wday/cxs/{tenant}/{site}/jobs  {"appliedFacets", "limit"<=20, "offset", "searchText"}
+#   GET  {base}/wday/cxs/{tenant}/{site}{externalPath}  -> jobPostingInfo.jobDescription
+# Quirks: "total" is only filled on the first page (0 afterwards), and searchText is
+# fuzzy ("intern" matches nearly every req at Micron), so student roles are selected
+# with the tenant's own facets (workerSubType "Intern (Fixed Term)", jobFamilyGroup
+# "Interns", ...) and searchText is only a fallback when no such facet exists.
+WD_STUDENT = re.compile(r"intern|co-?op|student|universit|univ\b|campus|trainee|"
+                        r"praktik|werkstudent|stagiaire|placement", re.I)
+WD_TITLE   = re.compile(r"\b(intern|interns|internship|co[-\s]?op)\b", re.I)
+WD_PAGE, WD_MAX_PAGES = 20, 40
+
+
+def _wd_facets(facets):
+    """{facetParameter: [value ids]} for every non-location facet value that names
+    a student worker type or job family."""
+    out = {}
+    for f in facets or []:
+        param, vals = f.get("facetParameter", ""), f.get("values") or []
+        if vals and "facetParameter" in vals[0]:          # nested group (locations)
+            continue
+        if param.lower().startswith("location"):
+            continue
+        ids = [v["id"] for v in vals if v.get("id") and WD_STUDENT.search(v.get("descriptor", ""))]
+        if ids:
+            out[param] = ids
+    return out
+
+
+def _wd_list(api, facets, q):
+    posts, offset = [], 0
+    for _ in range(WD_MAX_PAGES):
+        d = _req(api, data=json.dumps({"appliedFacets": facets, "limit": WD_PAGE,
+                                       "offset": offset, "searchText": q}).encode())
+        if offset == 0:
+            total = d.get("total", 0)
+        page = d.get("jobPostings") or []
+        posts += page
+        offset += WD_PAGE
+        if len(page) < WD_PAGE or offset >= total:
             break
+    return posts
+
+
+def workday(c):
+    """c needs tenant, site (str or list of str) and host (wd1, wd5, ...)."""
+    from concurrent.futures import ThreadPoolExecutor
+    host, tenant = c.get("host") or "wd1", c["tenant"]
+    sites = c["site"] if isinstance(c["site"], list) else [c["site"]]
+    base = f"https://{tenant}.{host}.myworkdayjobs.com"
+    found = {}
+    for site in sites:
+        api = f"{base}/wday/cxs/{tenant}/{site}/jobs"
+        first = _req(api, data=json.dumps({"appliedFacets": {}, "limit": 1, "offset": 0,
+                                           "searchText": ""}).encode())
+        facets = _wd_facets(first.get("facets"))
+        if facets:
+            # values inside one facet OR together, separate facets AND, so query each
+            queries = [({k: v}, "") for k, v in facets.items()]
+        else:
+            queries = [({}, q) for q in (c.get("q") or "intern,co-op").split(",")]
+        for fac, q in queries:
+            for j in _wd_list(api, fac, q.strip()):
+                path = j.get("externalPath")
+                if path and WD_TITLE.search(j.get("title", "")):
+                    found.setdefault(path, (site, j))
+
+    def detail(item):
+        path, (site, j) = item
+        info = {}
+        try:
+            info = _req(f"{base}/wday/cxs/{tenant}/{site}{path}").get("jobPostingInfo") or {}
+        except RuntimeError:
+            pass
+        locs = [info.get("location") or j.get("locationsText", "")] + \
+               list(info.get("additionalLocations") or [])
+        req = info.get("jobReqId") or path.rsplit("/", 1)[-1]
+        return {
+            "id": f"wd:{tenant}:{req}",
+            "title": j.get("title", ""),
+            "location": "; ".join(x for x in locs if x),
+            "url": info.get("externalUrl") or f"{base}/en-US/{site}{path}",
+            "posted": info.get("startDate") or j.get("postedOn", "") or "",
+            "body": clean(info.get("jobDescription", "")),
+        }
+
+    out, ids = [], set()
+    with ThreadPoolExecutor(8) as ex:
+        for j in ex.map(detail, found.items()):
+            if j["id"] not in ids:            # same req listed on several sites
+                ids.add(j["id"]); out.append(j)
     return out
 
 
@@ -143,4 +229,5 @@ ADAPTERS = {
     "smartrecruiters": smartrecruiters,
     "workable": workable,
     "workday": workday,
+    "pinpoint": pinpoint,
 }

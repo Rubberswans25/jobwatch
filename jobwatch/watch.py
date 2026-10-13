@@ -4,6 +4,7 @@ jobwatch — scan every resolved company board, keep Summer/Fall 2027 mechanical
 student roles, rank by fit + location + trajectory, publish docs/data.json.
 """
 import argparse, json, os, re, sys, time
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -15,6 +16,8 @@ RESOLVED = os.path.join(ROOT, "resolved.json")
 SCORING  = os.path.join(ROOT, "scoring.json")
 STATE    = os.path.join(ROOT, "seen.json")
 OUT      = os.path.join(REPO, "docs", "data.json")
+WORKERS  = 8
+FAIL_FRACTION = 0.25   # --ci exits 1 when more than this share of boards error
 
 SEASON_OK  = re.compile(r"(summer\s*(?:/|&|and|-|,|\s)?\s*fall\s*2027|summer\s*2027|fall\s*2027)", re.I)
 SEASON_BAD = re.compile(r"(spring\s*2027|winter\s*2027|summer\s*2026|fall\s*2026|spring\s*2026|"
@@ -68,21 +71,34 @@ def run(dry=False, explain=False, only=None, skip=None, quiet=False):
     boards = [(n, v) for n, v in sorted(resolved.items()) if v.get("board")]
     live, errors, review, scanned, dropped = [], [], [], 0, {}
 
-    for i, (name, v) in enumerate(boards, 1):
-        if only and v["board"] not in only:  continue
-        if skip and v["board"] in skip:      continue
+    todo = [(n, v) for n, v in boards
+            if not (only and v["board"] not in only) and not (skip and v["board"] in skip)]
+
+    def fetch(item):
+        name, v = item
         c = {"name": name, "board": v["board"], "slug": v.get("slug"),
              "tenant": v.get("tenant"), "site": v.get("site"),
-             "host": v.get("host", "wd1"), "q": v.get("q", "intern")}
+             "host": v.get("host", "wd1"), "q": v.get("q")}
         t0 = time.time()
-        if not quiet:
-            print(f"[{i:>3}/{len(boards)}] {name:<30} {v['board']:<16}", end=" ", flush=True)
         try:
-            jobs = ADAPTERS[v["board"]](c)
-            if not quiet: print(f"{len(jobs):>5} postings  {time.time()-t0:.1f}s", flush=True)
+            return name, v, ADAPTERS[v["board"]](c), None, time.time() - t0
         except Exception as e:
-            if not quiet: print(f"ERROR {e}", flush=True)
-            errors.append({"company": name, "board": v["board"], "error": str(e)})
+            return name, v, [], str(e) or type(e).__name__, time.time() - t0
+
+    # boards are independent and Workday ones need a detail request per posting,
+    # so scan several at once; results are folded in on this thread
+    results = []
+    with ThreadPoolExecutor(WORKERS) as ex:
+        for k, r in enumerate(ex.map(fetch, todo), 1):
+            name, v, jobs, err, dt = r
+            if not quiet:
+                msg = f"ERROR {err}" if err else f"{len(jobs):>5} postings  {dt:.1f}s"
+                print(f"[{k:>3}/{len(todo)}] {name:<30} {v['board']:<16} {msg}", flush=True)
+            results.append(r)
+
+    for name, v, jobs, err, _ in results:
+        if err:
+            errors.append({"company": name, "board": v["board"], "error": err})
             continue
         scanned += len(jobs)
         for j in jobs:
@@ -106,7 +122,9 @@ def run(dry=False, explain=False, only=None, skip=None, quiet=False):
             live.append({**j, "company": name, "score": s, "first_seen": first})
 
     live.sort(key=lambda x: -x["score"]["total"])
-    payload = {"generated": now, "scanned": scanned, "boards": len(boards),
+    run_url = (f"{os.environ['GITHUB_SERVER_URL']}/{os.environ['GITHUB_REPOSITORY']}"
+               f"/actions/runs/{os.environ['GITHUB_RUN_ID']}") if os.environ.get("GITHUB_RUN_ID") else ""
+    payload = {"generated": now, "run_url": run_url, "scanned": scanned, "boards": len(todo),
                "errors": errors, "dropped": dropped, "jobs": live,
                "review": sorted(review, key=lambda x: (x["company"], x["title"]))}
     if not dry:
@@ -124,13 +142,34 @@ def run(dry=False, explain=False, only=None, skip=None, quiet=False):
     return payload
 
 
+def report_ci(payload):
+    """Surface board errors in the Actions UI; exit non-zero if the scan is mostly broken."""
+    errs, n = payload["errors"], payload["boards"]
+    for e in errs:
+        print(f"::warning title=board error::{e['company']} ({e['board']}): {e['error']}")
+    summary = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary:
+        with open(summary, "a") as f:
+            f.write(f"### jobwatch scan\n\n{payload['scanned']} postings from {n - len(errs)}/{n} "
+                    f"boards, {len(payload['jobs'])} matches, {len(errs)} board errors\n\n")
+            if errs:
+                f.write("| company | board | error |\n|---|---|---|\n")
+                f.writelines(f"| {e['company']} | {e['board']} | {e['error']} |\n" for e in errs)
+    if payload["scanned"] == 0 or len(errs) > n * FAIL_FRACTION:
+        print(f"::error::{len(errs)}/{n} boards failed, treating the scan as broken")
+        sys.exit(1)
+
+
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--dry", action="store_true")
     p.add_argument("--explain", action="store_true")
     p.add_argument("--quiet", action="store_true")
+    p.add_argument("--ci", action="store_true", help="annotate errors for GitHub Actions")
     p.add_argument("--only"); p.add_argument("--skip")
     a = p.parse_args()
-    run(a.dry, a.explain,
-        set(a.only.split(",")) if a.only else None,
-        set(a.skip.split(",")) if a.skip else None, a.quiet)
+    out = run(a.dry, a.explain,
+              set(a.only.split(",")) if a.only else None,
+              set(a.skip.split(",")) if a.skip else None, a.quiet)
+    if a.ci:
+        report_ci(out)
