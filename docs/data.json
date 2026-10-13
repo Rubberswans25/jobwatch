@@ -1,17 +1,23 @@
 {
- "generated": "2026-10-13T20:44:56+00:00",
- "run_url": "",
- "scanned": 17963,
+ "generated": "2026-10-13T22:04:35+00:00",
+ "run_url": "https://github.com/irogers5890/jobwatch/actions/runs/38475226171",
+ "scanned": 17965,
  "boards": 208,
- "errors": [],
+ "errors": [
+  {
+   "company": "Jabil",
+   "board": "workday",
+   "error": "failed after 3 tries: HTTP 429"
+  }
+ ],
  "dropped": {
-  "non-ME discipline": 527,
-  "no Summer/Fall 2027": 3314,
+  "non-ME discipline": 525,
+  "no Summer/Fall 2027": 3310,
   "degree-level blocker": 6,
-  "below threshold": 366,
+  "below threshold": 365,
   "no mechanical signal": 116,
-  "off-target season in title": 370,
-  "not a student req": 13067
+  "off-target season in title": 373,
+  "not a student req": 13072
  },
  "jobs": [
   {
@@ -1537,6 +1543,41 @@
    "first_seen": "2026-10-13T02:04:57+00:00"
   },
   {
+   "id": "wd:globalhr:01881306",
+   "title": "Aero Propulsion Systems Intern (Summer 2027)(Onsite)",
+   "location": "US-CT-EAST HARTFORD-G ~ 400 Main St ~ BLDG G",
+   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CT-EAST-HARTFORD-G--400-Main-St--BLDG-G/Aero-Propulsion-Systems-Intern--Summer-2027--Onsite-_01881306",
+   "posted": "2026-10-13",
+   "body": "Date Posted: 2026-10-13 Country: United States of America Location: US-CT-EAST HARTFORD-G ~ 400 Main St ~ BLDG G Position Role Type: Onsite U.S. Citizen, U.S. Person, or Immigration Status Requirements: U.S. citizenship is required, as only U.S. citizens are authorized to access information under this program/contract. Security Clearance Type: None/Not Required Security Clearance Status: Not Required Are you ready to explore the world of aerospace and defense? Do you want to learn from and collaborate with some of the greatest minds in the industry? At RTX, our internships, co-ops and full-time careers provide an exceptional foundation to work on complex problems, advance your skills and create a safer, more connected world. Discover opportunities to make a difference at RTX. What You Will Do The Aero Thermal Fluids (ATF) organization is responsible for the functional aerodynamic design, analysis and performance of components and modules throughout Pratt & Whitney commercial and military engine product lines. The Aero Propulsion Systems teams are part of the ATF organization focused on the aerodynamic design and analysis of high-performance military exhaust systems, including bypass duct and nozzle aerodynamics, augmentor combustion, and exhaust system cooling design, as well as propulsion system acoustics and aeromechanics, and commercial engine inlet / nacelle aerodynamics. We are seeking motivated college interns with strong technical, problem solving, and communication skills to join our team and be part of continuing Pratt & Whitney's industry leadership in current and next generation military propulsion systems. As an Aero Propulsion Systems Intern at Pratt & Whitney, you will\u2026\u2026 Perform aerodynamic and thermal analyses in support of aircraft engine and technology development Process analytical and rig / engine test data to inform design decisions and root cause analyses Coordinate analyses, review with subject matter experts, and communicate results as part of a cross-discipline team (aero, design, structures) \u200b\u200b What You Will Learn Engineering interns at Pratt & Whitney work on challenging, meaningful, and impactful projects across our business. Our intern program seeks to help you develop an understanding of the aerospace industry and learn about our company and its operations. Qualifications You Must Have \u200b Must be pursuing Bachelor\u2019s or Advanced degree Mechanical Engineering, Aerospace Engineering, or related Science, Technology, Engineering or Mathematics (STEM) field and actively enrolled through the completion of the intern session. Experience with modeling and/or Computational Fluid Dynamics (CFD), including tools such as Fluent, Star-CCM+, CharLES, or similar Minimum Cumulative GPA of 3.0 Experience may be obtained through on-the-job experience, research, coursework, or projects Qualifications We Prefer\u200b DoD Security Clearance\u200b Experience with Meshing Experience with Lofting and CAD Experience with ANSYS / FEA What We Offer Our values drive our actions, behaviors, and performance with a vision for a safer, more connected world. At RTX we value: Safety, Trust, Respect, Accountability, Collaboration, and Innovation. Relocation Eligibility Learn More & Apply Now! Please ensure the role type defined below is appropriate for your needs before applying to this role. This position is classified as: Onsite: Employees who are working in Onsite roles will work primarily onsite. This includes all production and maintenance employees, as they are essential to the development of our products. As part of our commitment to maintaining a secure hiring process, candidates may be asked to attend select steps of the interview process in-person at one of our office locations, regardless of whether the role is designated as on-site, hybrid or remote. The salary range for this role is 37,000 USD - 82,000 USD. The salary range provided is a good faith estimate representative of all experience levels. RTX considers several factors when extending an offer, including but not limited to, the role, function and associated responsibilities, a candidate\u2019s work experience, location, education/training, and key skills. Hired applicants may be eligible for benefits, including but not limited to, medical, dental, vision, life insurance, short-term disability, long-term disability, 401(k) match, flexible spending accounts, flexible work schedules, employee assistance program, Employee Scholar Program, parental leave, paid time off, and holidays. Specific benefits are dependent upon the specific business unit as well as whether or not the position is covered by a collective-bargaining agreement. Hired applicants may be eligible for annual short-term and/or long-term incentive compensation programs depending on the level of the position and whether or not it is covered by a collective-bargaining agreement. Payments under these annual programs are not guaranteed and are dependent upon a variety of factors including, but not limited to, individual performance, business unit performance, and/or the company\u2019s performance. This role is a U.S.-based role. If the successful candidate resides in a U.S. territory, the appropriate pay structure and benefits will apply. RTX anticipates the application window closing approximately 40 days from the date the notice was posted. However, factors such as candidate flow and business necessity may require RTX to shorten or extend the application window. RTX is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability or veteran status, or any other applicable state or federal protected class. RTX provides affirmative action in employment for qualified Individuals with a Disability and Protected Veterans in compliance with Section 503 of the Rehabilitation Act and the Vietnam Era Veterans\u2019 Readjustment Assistance Act. Privacy Policy and Terms: Click on this link to read the Policy and Terms",
+   "company": "RTX",
+   "score": {
+    "total": 51,
+    "base": 39,
+    "fit": 26,
+    "loc": 0,
+    "traj": 13,
+    "fresh": 12,
+    "age": 0.9,
+    "age_basis": "posted",
+    "tier": "B",
+    "why": [
+     [
+      "title: propulsion",
+      14
+     ],
+     [
+      "body: root cause",
+      7
+     ],
+     [
+      "title: systems",
+      5
+     ]
+    ]
+   },
+   "first_seen": "2026-10-13T22:04:35+00:00"
+  },
+  {
    "id": "wd:globalhr:01879955",
    "title": "Systems Engineering Test Equipment Intern (Summer 2027)",
    "location": "US-CA-EL SEGUNDO-R01 ~ 2000 E Imperial Hwy ~ BLDG R01",
@@ -1989,6 +2030,45 @@
     ]
    },
    "first_seen": "2026-10-13T20:39:35+00:00"
+  },
+  {
+   "id": "wd:globalhr:01872585",
+   "title": "Mechanical Engineering Co-op (Summer/Fall 2027)",
+   "location": "US-IL-ROCKFORD-P6 ~ 4747 Harrison Ave ~ 4747 HARRISON AVE-P6",
+   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-IL-ROCKFORD-P6--4747-Harrison-Ave--4747-HARRISON-AVE-P6/Mechanical-Engineering-Co-op--Summer-Fall-2027-_01872585",
+   "posted": "2026-10-13",
+   "body": "Date Posted: 2026-10-13 Country: United States of America Location: US-IL-ROCKFORD-P6 ~ 4747 Harrison Ave ~ 4747 HARRISON AVE-P6 Position Role Type: Onsite U.S. Citizen, U.S. Person, or Immigration Status Requirements: U.S. citizenship is required, as only U.S. citizens are authorized to access information under this program/contract. Security Clearance Type: None/Not Required Security Clearance Status: Not Required Are you ready to explore the world of aerospace and defense? Do you want to learn from and collaborate with some of the greatest minds in the industry? At RTX, our internships, co-ops and full-time careers provide an exceptional foundation to work on complex problems, advance your skills and create a safer, more connected world. Discover opportunities to make a difference at RTX. What You Will Do Immerse yourself in a full-time, Monday-Friday co-op session, that will run May/June- December (including the Fall semester; it is expected students will take a semester off from coursework to fully engage with this working mentorship opportunity).\u200b As a Mechanical Engineering Co-op at Collins Aerospace, you will work with Electric Power Systems which designs, tests, and manufactures aircraft generators (Constant Freq, Variable Freq, High Voltage DC, and other generator types) and motors (Permanent Magnet, Induction, and other motor types). The Electrical Power Generator and Motors Department covers all activities and designs for you to support the product from cradle to grave related effort. You will be exposed to requirement discussions with the customer, product design experience, customer interaction, and product support along with Root Cause evaluation. Development and qualification testing is also supported in our group which you may have the chance to witness and support. Support the Electric Power Generator and Motor product lines in a variety of different ways. Interact with customers and provide support to them and their products in the field. Gain experience with the professional workplace support, interaction, responsibility etc. Travel opportunities may occur depending on what role you are supporting. Support team activities (writing CRs, supporting test, supporting assembly, writing reports and other documents). What You Will Learn Gain experience with the professional workplace support, interaction, responsibility etc. Generator product experience and manufacturing practices. Function and responsibility of the wider company activities. Understanding of the wider company products and their impact to air travel. Qualifications You Must Have Must be pursuing a Bachelor\u2019s or Advanced degree in Mechanical Engineering, Electrical Engineering, or Aerospace Engineering and actively enrolled through the completion of the internship/co-op session. Experience with MATLAB or Computer Aided Design (CAD) software such as Creo, SolidWorks, and/or NX Experience may be obtained through on-the-job experience, research, coursework, or projects. Qualifications We Prefer Experience in Microsoft Office (Excel, Word, PowerPoint, and/or Outlook) Experience managing projects Experience working on cross-functional teams A minimum of 60 hours of credit by the start of the internship / co-op session Prior RTX internship, co-op, or work experience What We Offer Our values drive our actions, behaviors, and performance with a vision for a safer, more connected world. At RTX we value: Trust, Respect, Accountability, Collaboration, and Innovation. Relocation Eligibility Learn More & Apply Now! Please consider the following role type definition as you apply for this role. Onsite : Employees who are working in Onsite roles will work primarily onsite. This includes all production and maintenance employees, as they are essential to the development of our products. As part of our commitment to maintaining a secure hiring process, candidates may be asked to attend select steps of the interview process in-person at one of our office locations, regardless of whether the role is designated as on-site, hybrid or remote. The salary range for this role is 37,000 USD - 82,000 USD. The salary range provided is a good faith estimate representative of all experience levels. RTX considers several factors when extending an offer, including but not limited to, the role, function and associated responsibilities, a candidate\u2019s work experience, location, education/training, and key skills. Hired applicants may be eligible for benefits, including but not limited to, medical, dental, vision, life insurance, short-term disability, long-term disability, 401(k) match, flexible spending accounts, flexible work schedules, employee assistance program, Employee Scholar Program, parental leave, paid time off, and holidays. Specific benefits are dependent upon the specific business unit as well as whether or not the position is covered by a collective-bargaining agreement. Hired applicants may be eligible for annual short-term and/or long-term incentive compensation programs depending on the level of the position and whether or not it is covered by a collective-bargaining agreement. Payments under these annual programs are not guaranteed and are dependent upon a variety of factors including, but not limited to, individual performance, business unit performance, and/or the company\u2019s performance. This role is a U.S.-based role. If the successful candidate resides in a U.S. territory, the appropriate pay structure and benefits will apply. RTX anticipates the application window closing approximately 40 days from the date the notice was posted. However, factors such as candidate flow and business necessity may require RTX to shorten or extend the application window. RTX is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability or veteran status, or any other applicable state or federal protected class. RTX provides affirmative action in employment for qualified Individuals with a Disability and Protected Veterans in compliance with Section 503 of the Rehabilitation Act and the Vietnam Era Veterans\u2019 Readjustment Assistance Act. Privacy Policy and Terms: Click on this link to read the Policy and Terms",
+   "company": "RTX",
+   "score": {
+    "total": 49,
+    "base": 37,
+    "fit": 24,
+    "loc": 0,
+    "traj": 13,
+    "fresh": 12,
+    "age": 0.9,
+    "age_basis": "posted",
+    "tier": "B",
+    "why": [
+     [
+      "body: qualification test",
+      8
+     ],
+     [
+      "body: root cause",
+      7
+     ],
+     [
+      "title: mechanical",
+      6
+     ],
+     [
+      "body: solidworks",
+      3
+     ]
+    ]
+   },
+   "first_seen": "2026-10-13T22:04:35+00:00"
   },
   {
    "id": "gh:astranis:4705640006",
@@ -2492,49 +2572,6 @@
    "first_seen": "2026-10-13T20:39:35+00:00"
   },
   {
-   "id": "ef:qualcomm.com:3095750",
-   "title": "Wireless Systems Engineering Internship - Summer 2027",
-   "location": "San Diego, CA, US; Boxborough, MA, US; NJ,US; Santa Clara, CA, US",
-   "url": "https://careers.qualcomm.com/careers/job/446720740637",
-   "posted": "2026-09-18",
-   "body": "Company: Qualcomm Technologies, Inc. Job Area: Interns Group, Interns Group > Interim Engineering Intern - Systems General Summary: About Qualcomm Qualcomm relentlessly innovates transforming businesses, enriching lives and fortifying societies. Our solutions are pivotal in crafting a smarter, interconnected world. Building on our nearly 40-year history of era-defining technology breakthroughs, we deliver leading-edge AI, high performance, lower-power computing, and unrivaled connectivity. We\u2019re proud to be the partner of choice to many of the world\u2019s largest enterprises. Together with our ecosystem partners, we enable next-generation digital transformation. At Qualcomm, we are engineering human progress. Join Us in Shaping the Future At Qualcomm, we're committed to engineering human progress by delivering intelligent computing everywhere. We're passionate about harnessing the power of technology to transform industries and improve lives. Our early career programs offer limitless opportunities for growth, mentorship, and meaningful work. By joining our team, you'll be part of a community that's pushing the boundaries of what's possible in AI, computing, and connectivity. With a global footprint spanning over 30 countries, you'll have the chance to collaborate with diverse talent and contribute to projects that are shaping the future of technology. Our early career programs are designed to attract inventive minds, offering a platform to contribute to our long-term innovation pipeline. You'll be part of a community that values collaboration, creativity, and continuous learning. Our programs provide real-world experience, technical skills, and professional development opportunities, empowering you to make a meaningful impact and achieve your career goals. Join us for our U.S. 2027 summer intern class ! Maximize Your Opportunities: Our internship hiring model routes candidates from this application into multiple project specific roles. Your \"Profile Visibility\" choice will guide how we manage your data across our systems. To be considered for the full breadth of internship opportunities, select the option to use your profile data for \"Any Roles Globally\". If you choose to limit your data to \"Only The Role I'm Applying For\", it will restrict the opportunity for you to be considered across matching internship opportunities. You can update your profile visibility preferences at any time through the Candidate Home Portal. Steps: Log Into Your Eightfold Candidate Home Account Hover Over The \"Profile\" Dropdown Open Settings Edit \"Profile Visibility\" Role Overview As a Qualcomm Wireless Systems Engineering Intern , you\u2019ll have the opportunity to push the boundaries of what exists and help establish the new standards for tomorrow. You will work as an equal contributor on a team of leading engineers to innovate on CDMA Application Specific Integrated Circuits (ASICs) and architect, analyze, and simulate cutting-edge, next-generation wireless networks. This internship supports the Wireless Systems Engineering track . Based on your resume you will be aligned to projects within this track. Minimum Qualifications Currently enrolled in a bachelor\u2019s, master\u2019s, or Ph.D. degree program in computer engineering, computer science, electrical engineering, or a related field Must be available for 11\u201314 weeks during Summer 2027 (May\u2013September) Expected graduation date of Nove mber 2027 or later 1+ years of academic experience with programming languages such as C, C++, Python Preferred Qualifications Currently enrolled in a Master\u2019s or PhD degree program in computer engineering, electrical engineering, or a related field Candidates actively pursuing a degree with an anticipated graduation between Nove mber 2027 and June 2028 Communication theory, stochastic processes, linear algebra, signal processing, information theory, channel coding, probability and random processes, applied mathematics, RF interfaces, and digital mitigation of RF distortion Bayesian inference or upper layer protocol design experience including 3GPP IMS, NAS, MAC/RLC/PDCP and RRC, IP, UDP, TCP, HTTP, routing Experience with wireless standards (LTE, WiFi, 5G, UMTS) Knowledge and/or experience in MIMO, OFDM, CDMA PHY/MAC layer systems design for 5G (sub-6 and mmWave), spectrum sharing, and next-generation WiFi Systems design for M2M, cellular V2X communication, and industrial IoT Knowledge of modem architecture, software engineering and simulation design, microprocessor architecture, embedded software, application layer protocols (TCP/IP, UDP, ICMP) Test automation framework design and development using Python Experience with cellular systems, voice/data, test equipment/tools, and systems performance analysis Good understanding of AI/ML concepts such as deep learning, reinforcement learning, on-device learning, transfer learning, ML frameworks (PyTorch, Keras), and wireless domain ML Ability to program effectively in C/C++, Python, and/or Matlab Qualcomm\u2019s Internship Program Our interns join world-class teams to help define and build what is next for mobility and the world. You\u2019ll be paired with a mentor with visibility to your project and team, receive support from your manager, and have access to the entire Qualcomm employee community to ensure your success. To round out your summer internship, we host professional development workshops, social events, cross-functional speaker sessions, and an executive speaker series. In addition to competitive hourly pay and accrued vacation time, you will receive relocation coverage and furnished housing accommodations for the duration of your internship. Internship opportunities may be available in the following locations, depending on team and project needs : Austin, Boulder, Boxborough, Bridgewater, Chandler, Irvine, New York City, Louisville, Raleigh, San Diego, Santa Clara, and Seattle. Application Process By applying here, you are expressing interest in one of our many 2027 Qualcomm Wireless Systems Engineering internships . It is important to note that this is not a job posting for a specific role. We will review resumes on an ongoing basis, and a recruiter may reach out to you. Future Employment Considerations This internship aligns to a potential role that is not eligible for Qualcomm immigration sponsorship. Export Control Notice This role may require an export license for candidates with citizenship in certain countries (see current country list below \u2013 subject to change). Qualcomm, like other companies, is experiencing significant delays in the export license process. Please be advised that if an export license is required, you may not be able to start work with Qualcomm until the license is granted, which may impact your ability to participate in the internship. Countries requiring export : Armenia, Azerbaijan, Belarus, Burma (Myanmar), Cambodia, China, Cuba, Georgia, Hong Kong, Iran, Iraq, Kazakhstan, Kyrgyzstan, Laos, Libya, Macau, Moldova, Mongolia, Nicaragua, North Korea, Russia, Sudan, Syria, Tajikistan, Turkmenistan, Ukraine, Uzbekistan, Venezuela, Vietnam, and Yemen. Applicants : Qualcomm is an equal opportunity employer. If you are an individual with a disability and need an accommodation during the application/hiring process, rest assured that Qualcomm is committed to providing an accessible process. You may e-mail disability-accomodations@qualcomm.com or call Qualcomm's toll-free number found here . Upon request, Qualcomm will provide reasonable accommodations to support individuals with disabilities to be able participate in the hiring process. Qualcomm is also committed to making our workplace accessible for individuals with disabilities. (Keep in mind that this email address is used to provide reasonable accommodations for individuals with disabilities. We will not respond here to requests for updates on applications or resume inquiries). To all Staffing and Recruiting Agencies : Our Careers Site is only for individuals seeking a job at Qualcomm. Staffing and recruiting agencies and individuals being represented by an agency are not authorized to use this site or to submit profiles, applications or resumes, and any such submissions will be considered unsolicited. Qualcomm does not accept unsolicited resumes or applications from agencies. Please do not forward resumes to our jobs alias, Qualcomm employees or any other company location. Qualcomm is not responsible for any fees related to unsolicited resumes/applications. EEO Employer: Qualcomm is an equal opportunity employer; all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, Veteran status, or any other protected classification. Qualcomm expects its employees to abide by all applicable policies and procedures, including but not limited to security and other requirements regarding protection of Company confidential information and other confidential and/or proprietary information, to the extent those requirements are permissible under applicable law. Pay range and Other Compensation & Benefits : $17.00 - $98.00 The above pay scale reflects the broad, minimum to maximum, pay scale for this job code for the location for which it has been posted. Even more importantly, please note that salary is only one component of total compensation at Qualcomm. We also offer a competitive annual discretionary bonus program and opportunity for annual RSU grants (employees on sales-incentive plans are not eligible for our annual bonus). In addition, our highly competitive benefits package is designed to support your success at work, at home, and at play. Your recruiter will be happy to discuss all that Qualcomm has to offer \u2013 and you can review more details about our US benefits at this link . If you would like more information about this role, please contact Qualcomm Careers .",
-   "company": "Qualcomm",
-   "score": {
-    "total": 46,
-    "base": 46,
-    "fit": 21,
-    "loc": 8,
-    "traj": 17,
-    "fresh": 0,
-    "age": 25.9,
-    "age_basis": "posted",
-    "tier": "B",
-    "why": [
-     [
-      "title: systems",
-      5
-     ],
-     [
-      "title: engineering intern",
-      5
-     ],
-     [
-      "title: engineering internship",
-      5
-     ],
-     [
-      "body: doe",
-      4
-     ],
-     [
-      "body: python",
-      2
-     ]
-    ]
-   },
-   "first_seen": "2026-10-13T20:39:35+00:00"
-  },
-  {
    "id": "ef:qualcomm.com:3095747",
    "title": "Automotive Engineering Internship \u2013 Summer 2027",
    "location": "San Diego, CA, US",
@@ -2567,6 +2604,49 @@
      ],
      [
       "body: fmea",
+      5
+     ],
+     [
+      "body: doe",
+      4
+     ],
+     [
+      "body: python",
+      2
+     ]
+    ]
+   },
+   "first_seen": "2026-10-13T20:39:35+00:00"
+  },
+  {
+   "id": "ef:qualcomm.com:3095750",
+   "title": "Wireless Systems Engineering Internship - Summer 2027",
+   "location": "San Diego, CA, US; Boxborough, MA, US; NJ,US; Santa Clara, CA, US",
+   "url": "https://careers.qualcomm.com/careers/job/446720740637",
+   "posted": "2026-09-18",
+   "body": "Company: Qualcomm Technologies, Inc. Job Area: Interns Group, Interns Group > Interim Engineering Intern - Systems General Summary: About Qualcomm Qualcomm relentlessly innovates transforming businesses, enriching lives and fortifying societies. Our solutions are pivotal in crafting a smarter, interconnected world. Building on our nearly 40-year history of era-defining technology breakthroughs, we deliver leading-edge AI, high performance, lower-power computing, and unrivaled connectivity. We\u2019re proud to be the partner of choice to many of the world\u2019s largest enterprises. Together with our ecosystem partners, we enable next-generation digital transformation. At Qualcomm, we are engineering human progress. Join Us in Shaping the Future At Qualcomm, we're committed to engineering human progress by delivering intelligent computing everywhere. We're passionate about harnessing the power of technology to transform industries and improve lives. Our early career programs offer limitless opportunities for growth, mentorship, and meaningful work. By joining our team, you'll be part of a community that's pushing the boundaries of what's possible in AI, computing, and connectivity. With a global footprint spanning over 30 countries, you'll have the chance to collaborate with diverse talent and contribute to projects that are shaping the future of technology. Our early career programs are designed to attract inventive minds, offering a platform to contribute to our long-term innovation pipeline. You'll be part of a community that values collaboration, creativity, and continuous learning. Our programs provide real-world experience, technical skills, and professional development opportunities, empowering you to make a meaningful impact and achieve your career goals. Join us for our U.S. 2027 summer intern class ! Maximize Your Opportunities: Our internship hiring model routes candidates from this application into multiple project specific roles. Your \"Profile Visibility\" choice will guide how we manage your data across our systems. To be considered for the full breadth of internship opportunities, select the option to use your profile data for \"Any Roles Globally\". If you choose to limit your data to \"Only The Role I'm Applying For\", it will restrict the opportunity for you to be considered across matching internship opportunities. You can update your profile visibility preferences at any time through the Candidate Home Portal. Steps: Log Into Your Eightfold Candidate Home Account Hover Over The \"Profile\" Dropdown Open Settings Edit \"Profile Visibility\" Role Overview As a Qualcomm Wireless Systems Engineering Intern , you\u2019ll have the opportunity to push the boundaries of what exists and help establish the new standards for tomorrow. You will work as an equal contributor on a team of leading engineers to innovate on CDMA Application Specific Integrated Circuits (ASICs) and architect, analyze, and simulate cutting-edge, next-generation wireless networks. This internship supports the Wireless Systems Engineering track . Based on your resume you will be aligned to projects within this track. Minimum Qualifications Currently enrolled in a bachelor\u2019s, master\u2019s, or Ph.D. degree program in computer engineering, computer science, electrical engineering, or a related field Must be available for 11\u201314 weeks during Summer 2027 (May\u2013September) Expected graduation date of Nove mber 2027 or later 1+ years of academic experience with programming languages such as C, C++, Python Preferred Qualifications Currently enrolled in a Master\u2019s or PhD degree program in computer engineering, electrical engineering, or a related field Candidates actively pursuing a degree with an anticipated graduation between Nove mber 2027 and June 2028 Communication theory, stochastic processes, linear algebra, signal processing, information theory, channel coding, probability and random processes, applied mathematics, RF interfaces, and digital mitigation of RF distortion Bayesian inference or upper layer protocol design experience including 3GPP IMS, NAS, MAC/RLC/PDCP and RRC, IP, UDP, TCP, HTTP, routing Experience with wireless standards (LTE, WiFi, 5G, UMTS) Knowledge and/or experience in MIMO, OFDM, CDMA PHY/MAC layer systems design for 5G (sub-6 and mmWave), spectrum sharing, and next-generation WiFi Systems design for M2M, cellular V2X communication, and industrial IoT Knowledge of modem architecture, software engineering and simulation design, microprocessor architecture, embedded software, application layer protocols (TCP/IP, UDP, ICMP) Test automation framework design and development using Python Experience with cellular systems, voice/data, test equipment/tools, and systems performance analysis Good understanding of AI/ML concepts such as deep learning, reinforcement learning, on-device learning, transfer learning, ML frameworks (PyTorch, Keras), and wireless domain ML Ability to program effectively in C/C++, Python, and/or Matlab Qualcomm\u2019s Internship Program Our interns join world-class teams to help define and build what is next for mobility and the world. You\u2019ll be paired with a mentor with visibility to your project and team, receive support from your manager, and have access to the entire Qualcomm employee community to ensure your success. To round out your summer internship, we host professional development workshops, social events, cross-functional speaker sessions, and an executive speaker series. In addition to competitive hourly pay and accrued vacation time, you will receive relocation coverage and furnished housing accommodations for the duration of your internship. Internship opportunities may be available in the following locations, depending on team and project needs : Austin, Boulder, Boxborough, Bridgewater, Chandler, Irvine, New York City, Louisville, Raleigh, San Diego, Santa Clara, and Seattle. Application Process By applying here, you are expressing interest in one of our many 2027 Qualcomm Wireless Systems Engineering internships . It is important to note that this is not a job posting for a specific role. We will review resumes on an ongoing basis, and a recruiter may reach out to you. Future Employment Considerations This internship aligns to a potential role that is not eligible for Qualcomm immigration sponsorship. Export Control Notice This role may require an export license for candidates with citizenship in certain countries (see current country list below \u2013 subject to change). Qualcomm, like other companies, is experiencing significant delays in the export license process. Please be advised that if an export license is required, you may not be able to start work with Qualcomm until the license is granted, which may impact your ability to participate in the internship. Countries requiring export : Armenia, Azerbaijan, Belarus, Burma (Myanmar), Cambodia, China, Cuba, Georgia, Hong Kong, Iran, Iraq, Kazakhstan, Kyrgyzstan, Laos, Libya, Macau, Moldova, Mongolia, Nicaragua, North Korea, Russia, Sudan, Syria, Tajikistan, Turkmenistan, Ukraine, Uzbekistan, Venezuela, Vietnam, and Yemen. Applicants : Qualcomm is an equal opportunity employer. If you are an individual with a disability and need an accommodation during the application/hiring process, rest assured that Qualcomm is committed to providing an accessible process. You may e-mail disability-accomodations@qualcomm.com or call Qualcomm's toll-free number found here . Upon request, Qualcomm will provide reasonable accommodations to support individuals with disabilities to be able participate in the hiring process. Qualcomm is also committed to making our workplace accessible for individuals with disabilities. (Keep in mind that this email address is used to provide reasonable accommodations for individuals with disabilities. We will not respond here to requests for updates on applications or resume inquiries). To all Staffing and Recruiting Agencies : Our Careers Site is only for individuals seeking a job at Qualcomm. Staffing and recruiting agencies and individuals being represented by an agency are not authorized to use this site or to submit profiles, applications or resumes, and any such submissions will be considered unsolicited. Qualcomm does not accept unsolicited resumes or applications from agencies. Please do not forward resumes to our jobs alias, Qualcomm employees or any other company location. Qualcomm is not responsible for any fees related to unsolicited resumes/applications. EEO Employer: Qualcomm is an equal opportunity employer; all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, Veteran status, or any other protected classification. Qualcomm expects its employees to abide by all applicable policies and procedures, including but not limited to security and other requirements regarding protection of Company confidential information and other confidential and/or proprietary information, to the extent those requirements are permissible under applicable law. Pay range and Other Compensation & Benefits : $17.00 - $98.00 The above pay scale reflects the broad, minimum to maximum, pay scale for this job code for the location for which it has been posted. Even more importantly, please note that salary is only one component of total compensation at Qualcomm. We also offer a competitive annual discretionary bonus program and opportunity for annual RSU grants (employees on sales-incentive plans are not eligible for our annual bonus). In addition, our highly competitive benefits package is designed to support your success at work, at home, and at play. Your recruiter will be happy to discuss all that Qualcomm has to offer \u2013 and you can review more details about our US benefits at this link . If you would like more information about this role, please contact Qualcomm Careers .",
+   "company": "Qualcomm",
+   "score": {
+    "total": 46,
+    "base": 46,
+    "fit": 21,
+    "loc": 8,
+    "traj": 17,
+    "fresh": 0,
+    "age": 25.9,
+    "age_basis": "posted",
+    "tier": "B",
+    "why": [
+     [
+      "title: systems",
+      5
+     ],
+     [
+      "title: engineering intern",
+      5
+     ],
+     [
+      "title: engineering internship",
       5
      ],
      [
@@ -4827,41 +4907,6 @@
      [
       "body: python",
       2
-     ]
-    ]
-   },
-   "first_seen": "2026-10-13T20:39:35+00:00"
-  },
-  {
-   "id": "wd:jabil:J2466618",
-   "title": "Automation Engineering Intern",
-   "location": "Clinton, MA; Devens, MA",
-   "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Clinton-MA/Automation-Engineering-Intern_J2466618",
-   "posted": "2026-10-08",
-   "body": "At Jabil (NYSE: JBL), we are proud to be a trusted partner for the world's top brands, offering comprehensive engineering, supply chain, and manufacturing solutions. With 60 years of experience across industries and a vast network of over 100 sites worldwide, Jabil combines global reach with local expertise to deliver both scalable and customized solutions. Our commitment extends beyond business success as we strive to build sustainable processes that minimize environmental impact and foster vibrant and diverse communities around the globe. Summary of Program Jabil\u2019s Summer Internship Program was recognized as one of the Top 100 Internship Programs in the country for 2026 by WayUp. This is the result of a holistic and engaging experience that summer interns at Jabil experience. As a result, interns that are a part of this program for summer 2027 will get to engage with members of Jabil\u2019s leadership team and participate in events related to professional development, networking & socializing, and community engagement. In addition, interns will have the opportunity to work with each other in committees, be assigned a mentor, tour some of Jabil\u2019s facilities and much more! If this sounds like a program you want to be a part of and you want to work for a company that strives to make EVERYTHING BETTER and ANYTHING POSSIBLE, then apply today. What Will You Do? Design, develop, and integrate automated systems, including robotic cells, PLC-controlled machinery, and vision inspection systems Program and configure PLCs (e.g., Rockwell, Siemens), HMIs, and industrial robots (e.g., Fanuc, Universal Robots Conduct thorough testing, debugging, and troubleshooting of automation equipment and software Collaborate with cross-functional teams, including production, engineering, and maintenance, to identify automation opportunities and implement solutions Develop and maintain technical documentation, including electrical schematics, mechanical drawings, and operational procedures Participate in equipment installation, commissioning, and validation activities Provide technical support and training to production and maintenance personnel on automated systems Stay updated on emerging automation technologies and industry best practices Identify and implement continuous improvement initiatives to enhance automation performance and reliability Ensure compliance with safety regulations and quality standards in all automation projects How Will You Get Here? Education Currently pursuing a Bachelor's degree in Mechatronics, Mechanical Engineering, Electrical Engineering, or a related engineering discipline Experience Previous internship, project work, or academic experience related to manufacturing, process improvement, or industrial engineering is a plus. Experience working on engineering projects, process mapping, or data analysis through coursework is beneficial. Preferred Qualifications Experience using Microsoft Visio, Microsoft Project, or AutoCAD. Exposure to Lean Manufacturing, Continuous Improvement, or Six Sigma concepts. Interest in manufacturing operations, production systems, and process optimization. Strong organizational and time management skills. The hourly pay range for this role is $16.00 - $32.00. Job-related, non-discriminatory factors used to determine the actual offered rate include qualifications and experience, geographic location, education, external market data, and consideration of internal equity. As part of the total rewards package, Jabil offers benefits to enhance your health, wealth, and resilient self. These include medical, dental, and vision insurance plans; paid time off; paid parental leave; company-paid holidays subject to change yearly; 401(k) retirement plan; and employee stock purchase plan. BE AWARE OF FRAUD: When applying for a job at Jabil you will be contacted via correspondence through our official job portal with a jabil.com e-mail address; direct phone call from a member of the Jabil team; or direct e-mail with a jabil.com e-mail address. Jabil does not request payments for interviews or at any other point during the hiring process. Jabil will not ask for your personal identifying information such as a social security number, birth certificate, financial institution, driver\u2019s license number or passport information over the phone or via e-mail. If you believe you are a victim of identity theft, contact the Federal Bureau of Investigations internet crime hotline (www.ic3.gov), the Federal Trade Commission identity theft hotline (www.identitytheft.gov) and/or your local police department. Any scam job listings should be reported to whatever website it was posted in. Jabil, including its subsidiaries, is an equal opportunity employer and considers qualified applicants for employment without regard to race, color, religion, national origin, sex, sexual orientation, gender identity, age, disability, genetic information, veteran status, or any other characteristic protected by law. Accessibility Accommodation If you are a qualified individual with a disability, you have the right to request a reasonable accommodation if you are unable or limited in your ability to use or access Jabil.com/Careers site as a result of your disability. You can request a reasonable accommodation by sending an e-mail to Always_Accessible@Jabil.com or calling 727-803-7988 with the nature of your request and contact information. Please do not direct any other general employment related questions to this e-mail or phone number. Please note that only those inquiries concerning a request for reasonable accommodation will be responded to. #whereyoubelong #AWorldofPossibilities #EarlyCareer",
-   "company": "Jabil",
-   "score": {
-    "total": 38,
-    "base": 32,
-    "fit": 13,
-    "loc": 8,
-    "traj": 11,
-    "fresh": 6,
-    "age": 5.9,
-    "age_basis": "posted",
-    "tier": "B",
-    "why": [
-     [
-      "title: engineering intern",
-      5
-     ],
-     [
-      "body: drawings",
-      4
-     ],
-     [
-      "body: doe",
-      4
      ]
     ]
    },
@@ -8760,6 +8805,13 @@
   },
   {
    "company": "BAE Systems",
+   "title": "Fault Management, Space Vehicle Systems Engineering Intern, Summer 2027",
+   "location": "Boulder, Colorado, United States; Broomfield, Colorado, United States; Westminster, Colorado, United States",
+   "url": "https://jobs.baesystems.com/us/en/job/131121BR",
+   "reason": "scored 21, below tier B"
+  },
+  {
+   "company": "BAE Systems",
    "title": "Hardware Engineering Intern III, Summer 2027 (Onsite)",
    "location": "San Diego, California, United States",
    "url": "https://jobs.baesystems.com/us/en/job/129896BR",
@@ -10719,20 +10771,6 @@
    "reason": "non-ME discipline"
   },
   {
-   "company": "Jabil",
-   "title": "Computer Systems Analyst Intern",
-   "location": "St. Petersburg/Tampa, FL",
-   "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/St-PetersburgTampa-FL/Computer-Systems-Analyst-Intern_J2464586-1",
-   "reason": "no mechanical signal"
-  },
-  {
-   "company": "Jabil",
-   "title": "Enterprise Solutions Intern",
-   "location": "St. Petersburg/Tampa, FL",
-   "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/St-PetersburgTampa-FL/Enterprise-Solutions-Intern_J2464889",
-   "reason": "scored 15, below tier B"
-  },
-  {
    "company": "Johnson Controls",
    "title": "Accounting & Finance Intern",
    "location": "Milwaukee-Wisconsin-United States of America",
@@ -11189,6 +11227,13 @@
   },
   {
    "company": "NVIDIA",
+   "title": "Sparse Linear Algebra Libraries Intern - Summer 2027",
+   "location": "US, CA, Santa Clara",
+   "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Sparse-Linear-Algebra-Libraries-Intern---Summer-2027_JR2027429",
+   "reason": "no mechanical signal"
+  },
+  {
+   "company": "NVIDIA",
    "title": "VLSI Physical Design CAD Intern - Summer 2027",
    "location": "Taiwan, Hsinchu",
    "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Taiwan-Hsinchu/VLSI-Physical-Design-CAD-Intern---Summer-2027_JR2025048",
@@ -11248,13 +11293,6 @@
    "title": "2027 Systems Engineer Intern - Chantilly VA",
    "location": "United States-Virginia-Chantilly",
    "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Virginia-Chantilly/XMLNAME-2027-Software-Engineer-Intern---Chantilly-VA_R10255633",
-   "reason": "scored 17, below tier B"
-  },
-  {
-   "company": "Northrop Grumman",
-   "title": "2027-Systems Engineer Intern - McClellan CA",
-   "location": "United States-California-McClellan",
-   "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-California-McClellan/XMLNAME-2027-Systems-Engineer-Intern---McClellan-CA_R10255163",
    "reason": "scored 17, below tier B"
   },
   {
