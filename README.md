@@ -152,12 +152,13 @@ mechanical discipline, no PhD/MBA requirement. Then three weighted components:
 
 | Component | Cap | What it measures |
 |---|---|---|
-| fit | 60 | title and body keywords — fluid, valve, propulsion, GSE, test stand, cracking pressure, P&ID, leak, fixture, cycle life, root cause |
-| location | 10 | Boston area high, New England next, LA/Bay low, remote negative |
-| trajectory | 20 | per company, from `companies.txt` |
+| fit | 60 | title and body keywords from the resume and portfolio: test stands and fixtures, mechanisms and actuators, GD&T and tolerance stacks, P&IDs and leak testing, DFM/DFA, machine vision and hardware-software integration. Product design, mechanical design and hardware engineering titles weigh most because they lead to the best-paid full-time offers; quality and sustaining titles still count, at lower weight. Return or full-time offer language +10. Technician, inspector, operator and assembler titles are penalised, as are unpaid or for-credit roles |
+| pay | +15 / -6 | the undergrad pay the posting states, as USD per hour (annual / 2080, monthly / 173, CAD/EUR/GBP converted): +15 at $55/hr and up, +12 at $48, +9 at $42, +6 at $37, +3 at $33, 0 at $29, -3 at $25, -6 below. No stated pay scores 0; company-wide scales wider than 2.2x (Qualcomm's "$17 - $98") count as unstated |
+| location | 8 | Boston area and the Bay Area / Seattle tech hubs highest, NYC next, LA, San Diego and Austin after, remote negative |
+| trajectory | 20 | per company, from `companies.txt`: expected pay (intern rate and the full-time offer it leads to) first, then scale and career path. Big tech and semiconductor equipment at the top, industrial fluid-component makers at 9 |
 | freshness | +12 / -8 | age of the posting: +12 within 2 days, +9 within 5, +6 within 10, +3 within 3 weeks, 0 to 5 weeks, -4 to 60 days, -8 after |
 
-Tier A at 48, tier B at 30. Tiers use fit + location + trajectory only, so an
+Tier A at 50, tier B at 32. Tiers use fit + pay + location + trajectory, so an
 older strong fit is never hidden. Freshness is added on top for ranking, so a
 good fit posted this week sorts above an equally good one that has been up for
 two months and is likely saturated. The steps live under `freshness` in
@@ -167,6 +168,10 @@ Age is measured from when the posting went live, as the board reports it
 (Greenhouse `first_published`, Lever `createdAt`, Workday `startDate`, and so
 on, normalised to a date). Boards that give no date (Pinpoint) fall back to
 when jobwatch first picked the posting up.
+
+`companies.txt` is the only place to edit trajectory; the scan reads it on every
+run. Every card shows the stated pay (or "pay not stated"), and the dashboard can
+sort by highest stated pay.
 
 The dashboard shows both dates on every card: **Posted** (from the board) and
 **first picked up by jobwatch** (from `seen.json`). A newly added board's

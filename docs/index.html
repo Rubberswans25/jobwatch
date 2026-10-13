@@ -56,6 +56,7 @@ h1{font-size:19px;margin:0}
 .dates b{font-weight:600;color:var(--ink)}
 .fr{font-size:11px;border-radius:6px;padding:1px 6px;border:1px solid var(--line);color:var(--mut)}
 .fr.up{color:var(--a);border-color:var(--a)} .fr.down{color:var(--warn);border-color:var(--warn)}
+.pay{font-weight:650;color:var(--ink)}
 .act{margin-top:10px;display:flex;gap:7px;flex-wrap:wrap;align-items:center}
 .act button{font:inherit;font-size:12.5px;padding:5px 10px;border-radius:7px;
   border:1px solid var(--line);background:transparent;color:var(--mut);cursor:pointer}
@@ -90,6 +91,7 @@ details{margin-top:22px;color:var(--mut);font-size:12.5px}
     <select id="sort" aria-label="sort">
       <option value="score">sort: fit + freshness</option>
       <option value="fit">sort: best fit (ignore age)</option>
+      <option value="pay">sort: highest stated pay</option>
       <option value="posted">sort: newest posted</option>
       <option value="found">sort: newest found</option>
       <option value="company">sort: company</option>
@@ -134,6 +136,8 @@ const fmtDay=iso=>{ const d=new Date(iso.length===10?iso+"T12:00:00Z":iso);
   return isNaN(d)?"":d.toLocaleDateString(undefined,{month:"short",day:"numeric",year:d.getFullYear()!==new Date().getFullYear()?"numeric":undefined}); };
 const ago=d=>d===null?"":d<1?"today":d<2?"1 day ago":`${Math.floor(d)} days ago`;
 const PREF="jobwatch.view.v1";
+const fmtPay=v=>v>=100?Math.round(v):(Math.round(v*2)/2).toString().replace(/\.0$/,"");
+const midPay=j=>j.score.rate?(j.score.rate[0]+j.score.rate[1])/2:-1;
 
 function setStatus(id,v){
   const cur=st(id);
@@ -167,7 +171,8 @@ function cardFor(j){
       ${isNew&&!status?'<span class="new">NEW</span>':''}
     </div>
     <div class="sub">${esc(j.location||"location n/a")} ·
-      fit ${s.fit} / loc ${s.loc} / trajectory ${s.traj}
+      ${s.rate?`<span class="pay">$${fmtPay(s.rate[0])}${s.rate[1]>s.rate[0]?`–${fmtPay(s.rate[1])}`:''}/hr</span> · `:'pay not stated · '}
+      fit ${s.fit} / pay ${s.pay>0?'+':''}${s.pay??0} / loc ${s.loc} / trajectory ${s.traj}
       <span class="fr ${fr>0?'up':fr<0?'down':''}" title="freshness points in the ranking">freshness ${fr>0?'+':''}${fr}</span></div>
     <div class="dates">${posted!==null?`Posted <b>${fmtDay(j.posted)}</b> (${ago(posted)})`:'Posting date not given by the board'}
       ${found!==null?` · first picked up by jobwatch <b>${fmtDay(j.first_seen)}</b> (${ago(found)})`:''}</div>
@@ -219,6 +224,7 @@ function render(){
   if(sort==="posted") jobs.sort((a,b)=>(ageOf(a)??1e9)-(ageOf(b)??1e9));
   else if(sort==="found") jobs.sort(newest("first_seen"));
   else if(sort==="fit") jobs.sort((a,b)=>base(b)-base(a));
+  else if(sort==="pay") jobs.sort((a,b)=>midPay(b)-midPay(a)||b.score.total-a.score.total);
   else if(sort==="company") jobs.sort((a,b)=>a.company.localeCompare(b.company));
   else jobs.sort((a,b)=>b.score.total-a.score.total);
 

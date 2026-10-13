@@ -90,6 +90,72 @@ def freshness(posted, first_seen, now, r, board_first=""):
     return min(pts, r["caps"].get("freshness", pts)), round(age, 1), basis
 
 
+# pay: "$35 - $44 per hour", "$28 — $40 USD The salary range", "$85,000.00 - $122,200.00 / year"
+_NUM = r"\$\s?(\d[\d,]*(?:\.\d+)?)\s?([kK])?"
+PAY_RE = re.compile(_NUM + r"(?:\s?(?:-|–|—|to)\s?(?:USD\s?)?" + _NUM + r")?", re.I)
+PAY_UNIT = [(re.compile(r"per hour|/\s?h(?:ou)?r|an hour|hourly|\bhr\b", re.I), 1.0),
+            (re.compile(r"per week|/\s?w(?:ee)?k|weekly", re.I), 1 / 40),
+            (re.compile(r"per month|/\s?mo(?:nth)?\b|monthly", re.I), 1 / 173),
+            (re.compile(r"per year|/\s?y(?:ea)?r|annual|a year|salary of|\bbase salary", re.I), 1 / 2080)]
+PAY_CTX = re.compile(r"pay|salary|compensation|wage|rate|usd|range", re.I)
+PAY_GRAD = re.compile(r"master|ph\.?d|doctoral|\bgrad(?:uate)?\b(?! from)", re.I)
+PAY_UG = re.compile(r"undergrad|bachelor|\bbs\b|b\.s\.", re.I)
+FX = [(re.compile(r"\bCAD\b|C\$"), 0.72), (re.compile(r"€|\bEUR\b"), 1.08), (re.compile(r"£|\bGBP\b"), 1.27)]
+
+
+def pay_rate(text):
+    """(low, high) USD/hour from the pay ranges a posting states, or None.
+    Benefit amounts ($850 commute credit) are skipped by requiring a unit or a
+    pay word next to the number. When undergrad and grad rates are both listed,
+    the undergrad ones are used."""
+    ug, other = [], []
+    for m in PAY_RE.finditer(text or ""):
+        after, before = text[m.end():m.end() + 45], text[max(0, m.start() - 60):m.start()]
+        vals = [float(v.replace(",", "")) * (1000 if k else 1)
+                for v, k in ((m.group(1), m.group(2)), (m.group(3), m.group(4))) if v]
+        mult = next((f for rx, f in PAY_UNIT if rx.search(after)), None)
+        if mult is None:
+            if not PAY_CTX.search(after + before):
+                continue
+            mult = 1 / 2080 if min(vals) >= 20000 else 1.0     # bare range: infer from size
+        fx = next((f for rx, f in FX if rx.search(after + before[-10:])), 1.0)
+        hr = [v * mult * fx for v in vals]
+        if not all(15 <= h <= 200 for h in hr):
+            continue
+        # a rate's own label is the nearest one, after ("$41/hr for Undergrad") or
+        # before ("Undergraduate: $30/hour")
+        a, b = after[:30], before[-30:]
+        labels = [(m.start(), kind) for kind, rx in (("ug", PAY_UG), ("grad", PAY_GRAD))
+                  for m in rx.finditer(a)] + \
+                 [(len(b) - m.end(), kind) for kind, rx in (("ug", PAY_UG), ("grad", PAY_GRAD))
+                  for m in rx.finditer(b)]
+        kind = min(labels)[1] if labels else None
+        own = re.match(r"[^$]{0,12}?\bfor\s+(?:the\s+)?", a)    # "$53/hr for Graduate"
+        if own:
+            tail = a[own.end():own.end() + 14]
+            kind = "ug" if PAY_UG.match(tail) else "grad" if PAY_GRAD.match(tail) else kind
+        if kind == "ug":
+            ug.extend(hr)
+        elif kind is None:
+            other.extend(hr)
+    vals = ug or other
+    if not vals or max(vals) > 2.2 * min(vals):
+        return None          # "$17.00 - $98.00 broad, minimum to maximum" says nothing about this role
+    return (round(min(vals), 2), round(max(vals), 2))
+
+
+def pay_points(rate, r):
+    """Points for the midpoint hourly rate; 0 when the posting states no pay."""
+    p = r.get("pay") or {}
+    if not rate:
+        return p.get("unknown", 0)
+    mid = sum(rate) / 2
+    for floor, pts in p.get("steps", []):
+        if mid >= floor:
+            return pts
+    return p.get("below", 0)
+
+
 def score(j, traj, r, fresh=(0, None, "")):
     tl, bl, ll = j["title"].lower(), j["body"].lower(), j["location"].lower()
     fit, why = 0, []
@@ -99,18 +165,27 @@ def score(j, traj, r, fresh=(0, None, "")):
         if kw in bl: fit += p; why.append([f"body: {kw}", p])
     for kw, p in r["penalties"].items():
         if kw in bl or kw in tl: fit += p; why.append([kw, p])
+    for kw, p in r.get("title_penalties", {}).items():     # "technician" in a body is just a coworker
+        if kw in tl: fit += p; why.append([f"title: {kw}", p])
+    for rx, p in r.get("title_penalty_patterns", {}).items():  # grad-only reqs, not "Undergraduate"
+        m = re.search(rx, tl)
+        if m: fit += p; why.append([f"title: {m.group(0)}", p])
     fit = max(0, min(fit, r["caps"]["fit"]))
     loc = r["location_default"]
     for kw, p in r["location_weights"].items():
         if kw in ll: loc = max(loc, p) if p > 0 else min(loc, p)
     loc = max(-10, min(loc, r["caps"]["location"]))
+    rate = pay_rate(j["body"])
+    pay = min(pay_points(rate, r), r["caps"].get("pay", 99))
+    if rate: why.append([f"pay ${(rate[0] + rate[1]) / 2:.0f}/hr", pay])
     traj = min(traj, r["caps"]["trajectory"])
-    base = fit + loc + traj
+    base = fit + loc + traj + pay
     pts, age, basis = fresh
     why.sort(key=lambda x: -x[1])
     # tier comes from base so an aging strong fit stays visible; the ranking
     # total adds freshness so a new good fit sorts above an older, saturated one
     return {"total": base + pts, "base": base, "fit": fit, "loc": loc, "traj": traj,
+            "pay": pay, "rate": rate,
             "fresh": pts, "age": age, "age_basis": basis,
             "tier": "A" if base >= r["tier_a"] else "B" if base >= r["tier_b"] else "C",
             "why": why[:8]}
@@ -124,6 +199,12 @@ def run(dry=False, explain=False, only=None, skip=None, quiet=False):
     rules    = json.load(open(SCORING))
     seen     = json.load(open(STATE)) if os.path.exists(STATE) else {}
     board_first = seen.setdefault("_boards", {})     # company -> first scan time
+    # companies.txt is where trajectory is edited; resolved.json keeps a copy from probe time
+    traj_of = {}
+    for line in open(os.path.join(ROOT, "companies.txt"), encoding="utf-8"):
+        n, _, t = line.strip().partition("|")
+        if n and not n.startswith("#") and t.strip().isdigit():
+            traj_of[n.strip()] = int(t)
     now_dt   = datetime.now(timezone.utc)
     now      = now_dt.isoformat(timespec="seconds")
 
@@ -177,7 +258,8 @@ def run(dry=False, explain=False, only=None, skip=None, quiet=False):
                 continue
             first = seen.get(j["id"], {}).get("first_seen", now)
             j["posted"] = posted_date(j.get("posted"), now_dt)
-            s = score(j, v.get("trajectory", 10), rules, freshness(j["posted"], first, now_dt, rules, bfirst))
+            s = score(j, traj_of.get(name, v.get("trajectory", 10)), rules,
+                      freshness(j["posted"], first, now_dt, rules, bfirst))
             if s["tier"] == "C" and not rules.get("keep_tier_c"):
                 dropped["below threshold"] = dropped.get("below threshold", 0) + 1
                 review.append({"company": name, "title": j["title"], "location": j["location"],

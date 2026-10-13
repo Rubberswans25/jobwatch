@@ -79,15 +79,19 @@ def lever(c):
 
 
 def ashby(c):
-    d = _req(f"https://api.ashbyhq.com/posting-api/job-board/{c['slug']}")
+    d = _req(f"https://api.ashbyhq.com/posting-api/job-board/{c['slug']}?includeCompensation=true")
     jobs = d.get("jobs", d if isinstance(d, list) else [])
+
+    def pay(j):        # "$200K – $250K"; only some boards fill it in
+        t = (j.get("compensation") or {}).get("compensationTierSummary")
+        return f" Pay range: {t}." if t else ""
     return [{
         "id": f"ab:{c['slug']}:{j.get('id')}",
         "title": j.get("title", ""),
         "location": j.get("location", "") or "",
         "url": j.get("jobUrl") or j.get("applyUrl", ""),
         "posted": j.get("publishedAt", "") or "",
-        "body": clean(j.get("descriptionPlain") or j.get("descriptionHtml", "")),
+        "body": clean(j.get("descriptionPlain") or j.get("descriptionHtml", "")) + pay(j),
     } for j in jobs]
 
 
@@ -148,6 +152,8 @@ def pinpoint(c):
         loc = j.get("location") or {}
         body = " ".join(j.get(k) or "" for k in ("description", "key_responsibilities",
                                                   "skills_knowledge_expertise", "benefits"))
+        if j.get("compensation_visible") and j.get("compensation"):
+            body += f" Compensation: {j['compensation']}."      # "$110,000 - $180,000 / year"
         posted = ""
         if WD_TITLE.search(j.get("title", "")) and j.get("url"):
             try:
@@ -430,7 +436,11 @@ def jibe(c):
                     "url": f"https://{host}/careers-home/jobs/{j.get('slug') or rid}",
                     "posted": j.get("posted_date", "") or "",
                     "body": clean(" ".join(j.get(k) or "" for k in
-                                           ("description", "responsibilities", "qualifications"))),
+                                           ("description", "responsibilities", "qualifications"))
+                                  # AMD puts its pay range in tag fields ("USD $83,200.00/Yr.")
+                                  + " Pay: " + " ".join(str(t) for k, v in j.items() if k.startswith("tags")
+                                                        for t in (v if isinstance(v, list) else [v])
+                                                        if "$" in str(t))),
                 })
             page += 1
             if len(jobs) < 100 or (page - 1) * 100 >= (d.get("totalCount") or 0):

@@ -1,20 +1,20 @@
 # name | trajectory(1-20)
-# trajectory = comp + scale + career path. Fit is scored separately from the role text.
+# trajectory = expected pay (intern rate and the full-time offer it leads to) first, then scale and career path. Fit is scored separately from the role text.
 Apple|20
 Google|20
-NVIDIA|19
-Meta|19
+NVIDIA|20
+Meta|20
 Microsoft|19
-Amazon Robotics|16
-Amazon Lab126|16
+Amazon Robotics|18
+Amazon Lab126|19
 Qualcomm|17
 Applied Materials|17
-Lam Research|16
-KLA|16
+Lam Research|18
+KLA|18
 ASML|17
-Intel|14
-AMD|15
-Micron|14
+Intel|13
+AMD|17
+Micron|16
 Texas Instruments|15
 Analog Devices|15
 Teradyne|14
@@ -28,29 +28,29 @@ Brooks Automation|12
 Tesla|16
 Anduril|18
 Shield AI|15
-SpaceX|18
-Neuralink|17
-Figure AI|16
+SpaceX|17
+Neuralink|18
+Figure AI|17
 Boston Dynamics|16
 Agility Robotics|14
-Apptronik|13
+Apptronik|14
 Symbotic|14
-Zipline|14
-Skydio|13
-Saronic|14
-Castelion|13
+Zipline|15
+Skydio|14
+Saronic|15
+Castelion|14
 Epirus|13
 CHAOS Industries|13
 Hermeus|12
 Boom Supersonic|12
-Joby Aviation|13
+Joby Aviation|14
 Archer Aviation|13
 Wisk Aero|12
 BETA Technologies|13
 REGENT|11
 Electra|11
 Varda|13
-Astranis|12
+Astranis|13
 Rocket Lab|13
 Blue Origin|15
 Stoke Space|12
@@ -73,9 +73,9 @@ Loft Orbital|11
 True Anomaly|12
 Ursa Major|11
 Motiv Space Systems|10
-Helion|14
+Helion|15
 Commonwealth Fusion|14
-Pacific Fusion|12
+Pacific Fusion|13
 Zap Energy|11
 Type One Energy|11
 TAE Technologies|11
@@ -84,7 +84,7 @@ Kairos Power|12
 Oklo|13
 TerraPower|13
 X-energy|11
-Radiant|12
+Radiant|13
 Valar Atomics|10
 BWX Technologies|11
 Westinghouse|11
@@ -115,7 +115,7 @@ Freeform|13
 Machina Labs|12
 VulcanForms|12
 Seurat Technologies|11
-Formlabs|16
+Formlabs|13
 Markforged|11
 Desktop Metal|10
 Carbon|11
@@ -147,13 +147,13 @@ Keysight Technologies|14
 Tektronix|12
 Fluke|12
 Fortive|13
-Intuitive Surgical|16
+Intuitive Surgical|18
 Stryker|14
 Medtronic|13
 Boston Scientific|14
-Johnson and Johnson|13
+Johnson and Johnson|14
 Abiomed|13
-Insulet|14
+Insulet|13
 Edwards Lifesciences|13
 Dexcom|13
 Abbott|12
@@ -167,20 +167,20 @@ Masimo|11
 GE HealthCare|12
 Align Technology|12
 Draper|12
-MITRE|11
-Aerospace Corporation|12
+MITRE|12
+Aerospace Corporation|13
 RTX|13
 Collins Aerospace|12
 Pratt and Whitney|13
-Lockheed Martin|12
-Northrop Grumman|12
-Boeing|12
+Lockheed Martin|13
+Northrop Grumman|13
+Boeing|13
 BAE Systems|11
 General Dynamics Mission Systems|11
 L3Harris|11
 Kratos Defense|10
 AeroVironment|11
-General Atomics|11
+General Atomics|12
 Textron Systems|10
 Bell Textron|10
 Sierra Nevada Corporation|10
@@ -203,41 +203,41 @@ TransDigm|11
 Howmet Aerospace|11
 Hexcel|10
 Spirit AeroSystems|10
-Parker Hannifin|11
-Emerson|11
-Swagelok|11
-ITT|10
-Flowserve|10
-IDEX|11
-Watts Water Technologies|10
-Pentair|10
-Xylem|10
-Grundfos|10
-Alfa Laval|10
-Chart Industries|11
-Atlas Copco|11
-Edwards Vacuum|11
-Pfeiffer Vacuum|11
-VAT Group|11
-INFICON|11
-Nordson|11
-Graco|11
-Watson-Marlow|10
-SPX FLOW|10
-Donaldson|10
-Victaulic|10
-Spirax Sarco|10
-IMI|10
-Festo|10
-SMC Corporation|10
-Burkert|10
-Sulzer|10
-Endress Hauser|11
-Alicat Scientific|10
-Badger Meter|10
-Yokogawa|10
-Ingersoll Rand|10
-Bose|13
+Parker Hannifin|9
+Emerson|9
+Swagelok|9
+ITT|9
+Flowserve|9
+IDEX|9
+Watts Water Technologies|9
+Pentair|9
+Xylem|9
+Grundfos|9
+Alfa Laval|9
+Chart Industries|9
+Atlas Copco|9
+Edwards Vacuum|9
+Pfeiffer Vacuum|9
+VAT Group|9
+INFICON|9
+Nordson|9
+Graco|9
+Watson-Marlow|9
+SPX FLOW|9
+Donaldson|9
+Victaulic|9
+Spirax Sarco|9
+IMI|9
+Festo|9
+SMC Corporation|9
+Burkert|9
+Sulzer|9
+Endress Hauser|9
+Alicat Scientific|9
+Badger Meter|9
+Yokogawa|9
+Ingersoll Rand|9
+Bose|12
 Sonos|12
 SharkNinja|12
 Lutron Electronics|12
@@ -249,7 +249,7 @@ iRobot|10
 Garmin|13
 Keurig Dr Pepper|11
 Whirlpool|10
-Procter and Gamble|12
+Procter and Gamble|13
 Strive Robotics|11
 Pickle Robot|11
 Locus Robotics|11
@@ -261,8 +261,8 @@ Gecko Robotics|13
 GrayMatter Robotics|11
 Bright Machines|11
 Nuro|12
-Zoox|15
-Waymo|17
+Zoox|17
+Waymo|19
 Aurora Innovation|13
 Serve Robotics|11
 Toyota Research Institute|13
@@ -314,14 +314,14 @@ Trimble|11
 Hexagon|11
 Renishaw|11
 Mitutoyo|10
-CoreWeave|14
-Crusoe|13
+CoreWeave|17
+Crusoe|15
 Equinix|12
 Digital Realty|11
 Vantage Data Centers|11
 Aligned Data Centers|11
-Lambda|13
-SLB|13
+Lambda|15
+SLB|14
 Baker Hughes|12
 Halliburton|11
 NOV|10
@@ -340,4 +340,4 @@ Alstom|10
 Air Liquide|11
 Linde|11
 Air Products|11
-Impulse Space|12
+Impulse Space|13
