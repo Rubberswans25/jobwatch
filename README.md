@@ -155,8 +155,26 @@ mechanical discipline, no PhD/MBA requirement. Then three weighted components:
 | fit | 60 | title and body keywords — fluid, valve, propulsion, GSE, test stand, cracking pressure, P&ID, leak, fixture, cycle life, root cause |
 | location | 10 | Boston area high, New England next, LA/Bay low, remote negative |
 | trajectory | 20 | per company, from `companies.txt` |
+| freshness | +12 / -8 | age of the posting: +12 within 2 days, +9 within 5, +6 within 10, +3 within 3 weeks, 0 to 5 weeks, -4 to 60 days, -8 after |
 
-Tier A at 48, tier B at 30.
+Tier A at 48, tier B at 30. Tiers use fit + location + trajectory only, so an
+older strong fit is never hidden. Freshness is added on top for ranking, so a
+good fit posted this week sorts above an equally good one that has been up for
+two months and is likely saturated. The steps live under `freshness` in
+`scoring.json`.
+
+Age is measured from when the posting went live, as the board reports it
+(Greenhouse `first_published`, Lever `createdAt`, Workday `startDate`, and so
+on, normalised to a date). Boards that give no date (Pinpoint) fall back to
+when jobwatch first picked the posting up.
+
+The dashboard shows both dates on every card: **Posted** (from the board) and
+**first picked up by jobwatch** (from `seen.json`). A newly added board's
+postings all show as picked up today, which is why the posted date drives the
+ranking. Filter by newness (last 24 hours, 3 days, 7 days, 2 weeks, 30 days,
+or older than 30 days) and sort by fit + freshness, best fit ignoring age,
+newest posted, newest found, or company. The sort and newness choices are
+remembered per browser.
 
 ## Tracking what you do with each posting
 

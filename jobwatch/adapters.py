@@ -61,7 +61,7 @@ def greenhouse(c):
         "title": j.get("title", ""),
         "location": (j.get("location") or {}).get("name", "") or "",
         "url": j.get("absolute_url", ""),
-        "posted": j.get("updated_at", "") or "",
+        "posted": j.get("first_published") or j.get("updated_at", "") or "",
         "body": clean(j.get("content", "")),
     } for j in d.get("jobs", [])]
 
@@ -140,22 +140,30 @@ def workable(c):
 
 def pinpoint(c):
     """Pinpoint: https://<slug>.pinpointhq.com/postings.json, all postings, no paging.
-    Body is split across several HTML fields; there is no posted date."""
+    Body is split across several HTML fields. The feed has no date; the job page's
+    JSON-LD has datePosted, so student titles get one page fetch each."""
     d = _req(f"https://{c['slug']}.pinpointhq.com/postings.json")
-    out = []
-    for j in d.get("data", []):
+
+    def one(j):
         loc = j.get("location") or {}
         body = " ".join(j.get(k) or "" for k in ("description", "key_responsibilities",
                                                   "skills_knowledge_expertise", "benefits"))
-        out.append({
+        posted = ""
+        if WD_TITLE.search(j.get("title", "")) and j.get("url"):
+            try:
+                m = re.search(r'"datePosted"\s*:\s*"([^"]+)"', _text(j["url"]))
+                posted = m.group(1) if m else ""
+            except RuntimeError:
+                pass
+        return {
             "id": f"pp:{c['slug']}:{j.get('id')}",
             "title": j.get("title", ""),
             "location": ", ".join(x.strip() for x in [loc.get("city"), loc.get("province")] if x),
             "url": j.get("url", ""),
-            "posted": "",
+            "posted": posted,
             "body": clean(body),
-        })
-    return out
+        }
+    return _pool(one, d.get("data", []))
 
 
 # Workday CXS. Verified live against nvidia, micron, globalhr (RTX), ngc and others.

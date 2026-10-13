@@ -52,6 +52,10 @@ h1{font-size:19px;margin:0}
 .why{margin-top:8px;display:flex;flex-wrap:wrap;gap:5px}
 .w{font-size:11px;color:var(--mut);border:1px solid var(--line);border-radius:6px;padding:2px 6px}
 .new{font-size:10.5px;background:var(--a);color:#fff;border-radius:5px;padding:2px 6px;font-weight:700}
+.dates{color:var(--mut);font-size:12.5px;margin-top:3px}
+.dates b{font-weight:600;color:var(--ink)}
+.fr{font-size:11px;border-radius:6px;padding:1px 6px;border:1px solid var(--line);color:var(--mut)}
+.fr.up{color:var(--a);border-color:var(--a)} .fr.down{color:var(--warn);border-color:var(--warn)}
 .act{margin-top:10px;display:flex;gap:7px;flex-wrap:wrap;align-items:center}
 .act button{font:inherit;font-size:12.5px;padding:5px 10px;border-radius:7px;
   border:1px solid var(--line);background:transparent;color:var(--mut);cursor:pointer}
@@ -83,10 +87,21 @@ details{margin-top:22px;color:var(--mut);font-size:12.5px}
 
   <div class="bar">
     <input id="q" placeholder="filter by title, company, location…">
-    <select id="sort">
-      <option value="score">sort: score</option>
-      <option value="new">sort: newest</option>
+    <select id="sort" aria-label="sort">
+      <option value="score">sort: fit + freshness</option>
+      <option value="fit">sort: best fit (ignore age)</option>
+      <option value="posted">sort: newest posted</option>
+      <option value="found">sort: newest found</option>
       <option value="company">sort: company</option>
+    </select>
+    <select id="age" aria-label="newness">
+      <option value="">age: any</option>
+      <option value="1">new: last 24 hours</option>
+      <option value="3">new: last 3 days</option>
+      <option value="7">new: last 7 days</option>
+      <option value="14">new: last 2 weeks</option>
+      <option value="30">new: last 30 days</option>
+      <option value="-30">older than 30 days</option>
     </select>
     <button class="chip" id="fA" aria-pressed="true">A</button>
     <button class="chip" id="fB" aria-pressed="true">B</button>
@@ -113,6 +128,12 @@ const $=s=>document.querySelector(s);
 const esc=s=>(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const days=iso=>{ if(!iso) return null; const d=(Date.now()-new Date(iso).getTime())/864e5; return isFinite(d)?d:null; };
 const st=id=>(S[id]||{}).s||null;
+// age from when the posting went live; boards with no date fall back to when jobwatch first saw it
+const ageOf=j=>{ const p=days(j.posted); return p!==null?p:days(j.first_seen); };
+const fmtDay=iso=>{ const d=new Date(iso.length===10?iso+"T12:00:00Z":iso);
+  return isNaN(d)?"":d.toLocaleDateString(undefined,{month:"short",day:"numeric",year:d.getFullYear()!==new Date().getFullYear()?"numeric":undefined}); };
+const ago=d=>d===null?"":d<1?"today":d<2?"1 day ago":`${Math.floor(d)} days ago`;
+const PREF="jobwatch.view.v1";
 
 function setStatus(id,v){
   const cur=st(id);
@@ -134,7 +155,8 @@ function counts(){
 }
 
 function cardFor(j){
-  const s=j.score, status=st(j.id), age=days(j.first_seen), isNew=age!==null&&age<2;
+  const s=j.score, status=st(j.id), found=days(j.first_seen), posted=days(j.posted), isNew=found!==null&&found<2;
+  const fr=s.fresh||0;
   const note=(S[j.id]||{}).n||"";
   const btn=(v,label)=>`<button class="${status===v?'on':''}" onclick="setStatus('${j.id}','${v}')">${label}</button>`;
   return `<div class="card ${status||''}">
@@ -146,7 +168,9 @@ function cardFor(j){
     </div>
     <div class="sub">${esc(j.location||"location n/a")} ·
       fit ${s.fit} / loc ${s.loc} / trajectory ${s.traj}
-      ${age!==null?` · first seen ${Math.floor(age)}d ago`:''}</div>
+      <span class="fr ${fr>0?'up':fr<0?'down':''}" title="freshness points in the ranking">freshness ${fr>0?'+':''}${fr}</span></div>
+    <div class="dates">${posted!==null?`Posted <b>${fmtDay(j.posted)}</b> (${ago(posted)})`:'Posting date not given by the board'}
+      ${found!==null?` · first picked up by jobwatch <b>${fmtDay(j.first_seen)}</b> (${ago(found)})`:''}</div>
     <div class="why">${s.why.map(w=>`<span class="w">${esc(w[0])} ${w[1]>0?'+':''}${w[1]}</span>`).join("")}</div>
     <div class="act">
       ${btn('applied','Applied')}${btn('saved','Save for later')}${btn('dismissed','Not relevant')}
@@ -162,7 +186,8 @@ function render(){
   const q=$("#q").value.toLowerCase().trim();
   const showA=$("#fA").getAttribute("aria-pressed")==="true";
   const showB=$("#fB").getAttribute("aria-pressed")==="true";
-  const sort=$("#sort").value;
+  const sort=$("#sort").value, maxAge=Number($("#age").value||0);
+  try{ localStorage.setItem(PREF,JSON.stringify({sort, age:$("#age").value})); }catch(e){}
 
   if(VIEW==="review"){
     const r=(DATA.review||[]).filter(x=>!q||(x.title+" "+x.company+" "+x.location).toLowerCase().includes(q));
@@ -184,11 +209,16 @@ function render(){
     if(VIEW!=="open"  && s!==VIEW) return false;
     if(j.score.tier==="A" && !showA) return false;
     if(j.score.tier==="B" && !showB) return false;
+    if(maxAge){ const a=ageOf(j); if(a===null) return false;
+      if(maxAge>0 ? a>maxAge : a<=-maxAge) return false; }
     if(!q) return true;
     return (j.title+" "+j.company+" "+j.location).toLowerCase().includes(q);
   });
 
-  if(sort==="new") jobs.sort((a,b)=>(b.first_seen||"").localeCompare(a.first_seen||""));
+  const base=j=>j.score.base??j.score.total, newest=k=>(a,b)=>(b[k]||"").localeCompare(a[k]||"");
+  if(sort==="posted") jobs.sort((a,b)=>(ageOf(a)??1e9)-(ageOf(b)??1e9));
+  else if(sort==="found") jobs.sort(newest("first_seen"));
+  else if(sort==="fit") jobs.sort((a,b)=>base(b)-base(a));
   else if(sort==="company") jobs.sort((a,b)=>a.company.localeCompare(b.company));
   else jobs.sort((a,b)=>b.score.total-a.score.total);
 
@@ -201,7 +231,9 @@ $("#tabs").addEventListener("click",e=>{
   [...document.querySelectorAll(".tab")].forEach(x=>x.setAttribute("aria-selected",String(x===t)));
   VIEW=t.dataset.view; render();
 });
-["q","sort"].forEach(id=>$("#"+id).addEventListener("input",render));
+try{ const p=JSON.parse(localStorage.getItem(PREF)||"{}");
+  if(p.sort) $("#sort").value=p.sort; if(p.age!==undefined) $("#age").value=p.age; }catch(e){}
+["q","sort","age"].forEach(id=>$("#"+id).addEventListener("input",render));
 ["fA","fB"].forEach(id=>$("#"+id).addEventListener("click",e=>{
   const el=e.currentTarget, v=el.getAttribute("aria-pressed")==="true";
   el.setAttribute("aria-pressed",String(!v)); render();

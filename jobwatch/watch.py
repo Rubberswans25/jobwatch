@@ -5,7 +5,7 @@ student roles, rank by fit + location + trajectory, publish docs/data.json.
 """
 import argparse, json, os, re, sys, time
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from adapters import ADAPTERS
@@ -37,7 +37,60 @@ def gate(j, r):
     return None
 
 
-def score(j, traj, r):
+WD_AGO = re.compile(r"posted\s+(today|yesterday|(\d+)\+?\s+days?\s+ago)", re.I)
+
+
+def posted_date(v, now):
+    """Normalise whatever a board calls its posting date to YYYY-MM-DD, or "".
+    Handles ISO strings with any offset, epoch seconds/ms (Lever) and Workday's
+    "Posted 3 Days Ago" / "Posted 30+ Days Ago"."""
+    if v in (None, ""):
+        return ""
+    try:
+        if isinstance(v, (int, float)) or str(v).isdigit():
+            n = float(v)
+            dt = datetime.fromtimestamp(n / 1000 if n > 1e11 else n, timezone.utc)
+        else:
+            m = WD_AGO.search(str(v))
+            if m:
+                ago = 0 if m.group(1).lower() == "today" else 1 if m.group(1).lower() == "yesterday" \
+                    else int(m.group(2))
+                dt = now - timedelta(days=ago)
+            else:
+                dt = datetime.fromisoformat(str(v).strip().replace(" UTC", "+00:00"))
+                if dt.tzinfo is None:
+                    dt = dt.replace(tzinfo=timezone.utc)
+    except (ValueError, OverflowError, OSError):
+        return ""
+    return min(dt, now).astimezone(timezone.utc).strftime("%Y-%m-%d")
+
+
+def freshness(posted, first_seen, now, r, board_first=""):
+    """(points, age in days, basis) — basis is "posted" or "found".
+    An undated posting picked up on its board's first scan has an unknown age (it
+    may have been up for months), so it scores "unknown" rather than brand new."""
+    f = r.get("freshness") or {}
+    when, basis = (posted, "posted") if posted else (first_seen, "found")
+    if not posted and board_first and first_seen <= board_first:
+        return f.get("unknown", 0), None, "unknown"
+    try:
+        dt = datetime.fromisoformat(when)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        # the posted date wins when the board gives one: a newly added board
+        # reports weeks-old postings as found today
+        age = max(0.0, (now - dt).total_seconds() / 86400)
+    except (TypeError, ValueError):
+        return f.get("unknown", 0), None, basis
+    pts = f.get("older", 0)
+    for limit, p in f.get("steps", []):
+        if age <= limit:
+            pts = p
+            break
+    return min(pts, r["caps"].get("freshness", pts)), round(age, 1), basis
+
+
+def score(j, traj, r, fresh=(0, None, "")):
     tl, bl, ll = j["title"].lower(), j["body"].lower(), j["location"].lower()
     fit, why = 0, []
     for kw, p in r["title_weights"].items():
@@ -52,10 +105,14 @@ def score(j, traj, r):
         if kw in ll: loc = max(loc, p) if p > 0 else min(loc, p)
     loc = max(-10, min(loc, r["caps"]["location"]))
     traj = min(traj, r["caps"]["trajectory"])
-    tot = fit + loc + traj
+    base = fit + loc + traj
+    pts, age, basis = fresh
     why.sort(key=lambda x: -x[1])
-    return {"total": tot, "fit": fit, "loc": loc, "traj": traj,
-            "tier": "A" if tot >= r["tier_a"] else "B" if tot >= r["tier_b"] else "C",
+    # tier comes from base so an aging strong fit stays visible; the ranking
+    # total adds freshness so a new good fit sorts above an older, saturated one
+    return {"total": base + pts, "base": base, "fit": fit, "loc": loc, "traj": traj,
+            "fresh": pts, "age": age, "age_basis": basis,
+            "tier": "A" if base >= r["tier_a"] else "B" if base >= r["tier_b"] else "C",
             "why": why[:8]}
 
 
@@ -66,7 +123,9 @@ def run(dry=False, explain=False, only=None, skip=None, quiet=False):
     resolved = json.load(open(RESOLVED))
     rules    = json.load(open(SCORING))
     seen     = json.load(open(STATE)) if os.path.exists(STATE) else {}
-    now      = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    board_first = seen.setdefault("_boards", {})     # company -> first scan time
+    now_dt   = datetime.now(timezone.utc)
+    now      = now_dt.isoformat(timespec="seconds")
 
     boards = [(n, v) for n, v in sorted(resolved.items()) if v.get("board")]
     live, errors, review, scanned, dropped = [], [], [], 0, {}
@@ -104,6 +163,7 @@ def run(dry=False, explain=False, only=None, skip=None, quiet=False):
         if err:
             errors.append({"company": name, "board": v["board"], "error": err})
             continue
+        bfirst = board_first.setdefault(name, now)
         scanned += len(jobs)
         for j in jobs:
             why_drop = gate(j, rules)
@@ -115,13 +175,14 @@ def run(dry=False, explain=False, only=None, skip=None, quiet=False):
                     review.append({"company": name, "title": j["title"],
                                    "location": j["location"], "url": j["url"], "reason": why_drop})
                 continue
-            s = score(j, v.get("trajectory", 10), rules)
+            first = seen.get(j["id"], {}).get("first_seen", now)
+            j["posted"] = posted_date(j.get("posted"), now_dt)
+            s = score(j, v.get("trajectory", 10), rules, freshness(j["posted"], first, now_dt, rules, bfirst))
             if s["tier"] == "C" and not rules.get("keep_tier_c"):
                 dropped["below threshold"] = dropped.get("below threshold", 0) + 1
                 review.append({"company": name, "title": j["title"], "location": j["location"],
-                               "url": j["url"], "reason": f"scored {s['total']}, below tier B"})
+                               "url": j["url"], "reason": f"scored {s['base']}, below tier B"})
                 continue
-            first = seen.get(j["id"], {}).get("first_seen", now)
             seen[j["id"]] = {"first_seen": first, "last_seen": now}
             live.append({**j, "company": name, "score": s, "first_seen": first})
 
@@ -142,7 +203,8 @@ def run(dry=False, explain=False, only=None, skip=None, quiet=False):
         print("filtered: " + ", ".join(f"{k} x{v}" for k, v in sorted(dropped.items())))
     for j in live[:15]:
         s = j["score"]
-        print(f"  [{s['tier']}·{s['total']}] {j['company']} — {j['title']} ({j['location'][:40]})")
+        age = f"{s['age']:.0f}d {s['age_basis']}" if s["age"] is not None else "age ?"
+        print(f"  [{s['tier']}·{s['total']}] {j['company']} — {j['title']} ({j['location'][:40]}) [{age}]")
     return payload
 
 
