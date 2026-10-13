@@ -122,7 +122,7 @@ flags as SUSPECT, so every Workday entry here was checked by hand and carries
 4. **Actions → jobwatch → Run workflow.** First run seeds state silently.
 5. Dashboard lives at `https://<user>.github.io/<repo>/`.
 
-After that it scans at :07, :27 and :47 past each hour, 12:00-23:59 UTC on
+After that it scans at :08, :28 and :48 past each hour, 12:00-23:59 UTC on
 weekdays, and once a day on weekends, when it also resolves up to 40 new names.
 The minutes are off the hour on purpose: GitHub drops a lot of `:00` and `*/20`
 schedule events under load. Schedules only run from the default branch, and only
