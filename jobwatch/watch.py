@@ -76,9 +76,7 @@ def run(dry=False, explain=False, only=None, skip=None, quiet=False):
 
     def fetch(item):
         name, v = item
-        c = {"name": name, "board": v["board"], "slug": v.get("slug"),
-             "tenant": v.get("tenant"), "site": v.get("site"),
-             "host": v.get("host", "wd1"), "q": v.get("q")}
+        c = {"name": name, **v}      # adapters read the keys their platform needs
         t0 = time.time()
         try:
             return name, v, ADAPTERS[v["board"]](c), None, time.time() - t0

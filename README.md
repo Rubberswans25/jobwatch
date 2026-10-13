@@ -17,40 +17,113 @@ python3 jobwatch/watch.py --dry  # same, without writing anything
 Every ATS keys its public feed to a company-specific token, and there is no
 directory of them. Rather than hand-maintain 340 tokens, `resolve.py` generates
 candidates from each company name and probes Greenhouse, Lever, Ashby,
-SmartRecruiters and Workable until one responds with postings. It caches the
-answer in `resolved.json`, so each company is probed once and never again.
+SmartRecruiters, Workable, Pinpoint and Workday until one responds with postings.
+It caches the answer in `resolved.json`, so each company is probed once.
 
-Expect roughly half to resolve. The rest are on Workday, iCIMS, Taleo, Pinpoint,
-or a custom careers site, and they are recorded as `"board": null` so the
-resolver skips them next time.
+Every hit is checked against the board's real owner before it is saved (see
+**Verification** below), so a short slug that belongs to someone else
+(`greenhouse/archer` is a vet clinic) is recorded under `"rejected"` instead.
+Companies with no findable board are stored as `"board": null`; `--retry`
+re-probes them.
 
-**Adding a Workday company by hand.** Workday needs a tenant and site, which a
-name cannot produce. Open the careers page, read the URL, and add the entry
-directly to `resolved.json`:
+**Workday discovery.** Every tenant serves
+`https://<tenant>.<host>.myworkdayjobs.com/robots.txt`, listing its career sites,
+and a wrong tenant/host answers 422. The resolver tries tenant guesses across the
+known `wd*` hosts and reads the sites from robots.txt. Tenants that do not follow
+from the name (RTX is `globalhr`, Northrop is `ngc`) go in `WD_ALIAS` in
+`resolve.py`. Some tenants list no sites in robots.txt (Thermo Fisher, Xylem) and
+a wrong site name returns 200 with 0 jobs, not an error, so those are added by hand.
+
+## Supported platforms
+
+| board | entry keys | feed |
+|---|---|---|
+| greenhouse | `slug` | `boards-api.greenhouse.io/v1/boards/<slug>/jobs` |
+| lever | `slug` | `api.lever.co/v0/postings/<slug>` |
+| ashby | `slug` | `api.ashbyhq.com/posting-api/job-board/<slug>` |
+| smartrecruiters | `slug` | `api.smartrecruiters.com/v1/companies/<slug>/postings` |
+| workable | `slug` | `apply.workable.com/api/v1/widget/accounts/<slug>` |
+| pinpoint | `slug` | `<slug>.pinpointhq.com/postings.json` |
+| workday | `tenant`, `host`, `site` (string or list) | CXS: `POST /wday/cxs/<tenant>/<site>/jobs` |
+| eightfold | `host`, `domain` | `GET <host>/api/pcsx/search?domain=<domain>` |
+| oracle | `host`, `site`, `careers` | Oracle Cloud HCM `recruitingCEJobRequisitions` |
+| successfactors | `base` | SAP Career Site Builder HTML search, `<base>/search/?q=` |
+| jibe | `host` | `<host>/api/jobs?keywords=` |
+
+Workday notes, all checked against live tenants: `limit` is capped at 20,
+`total` is only filled on the first page (0 afterwards), and `searchText` is
+fuzzy ("intern" matches nearly every req at Micron). So the adapter selects
+student reqs with the tenant's own facets (worker type "Intern", job family
+"Interns", and so on), falls back to `searchText` only when no such facet exists,
+then fetches each matching job for its description, location and start date.
+
+Eightfold, Oracle, SuccessFactors and Jibe cannot filter to student reqs server
+side either; each lists broadly, keeps intern/co-op titles, then reads detail only
+for those. Eightfold pages are fixed at 10 and Microsoft's tenant returns 429 when
+pushed, so its pages are fetched one at a time with backoff.
+
+**Adding a company by hand.** Open the careers page, find the feed behind it, and
+add the entry to `resolved.json` with `"verified": true`. The resolver never
+overwrites an entry that already has a board, so hand edits are safe.
 
 ```
-https://qualcomm.wd5.myworkdayjobs.com/en-US/External
-         ^tenant  ^host           ^site
+https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite
+        ^tenant ^host                     ^site
 ```
 ```json
-"Qualcomm": {"board":"workday","tenant":"qualcomm","site":"External",
-             "host":"wd5","q":"mechanical intern","trajectory":17}
+"NVIDIA":        {"board":"workday","tenant":"nvidia","host":"wd5",
+                  "site":"NVIDIAExternalCareerSite","trajectory":19,"verified":true},
+"Lam Research":  {"board":"eightfold","host":"careers.lamresearch.com",
+                  "domain":"lamresearch.com","trajectory":16,"verified":true},
+"Texas Instruments": {"board":"oracle","host":"edbz.fa.us2.oraclecloud.com","site":"CX",
+                  "careers":"careers.ti.com","trajectory":15,"verified":true},
+"Teradyne":      {"board":"successfactors","base":"https://jobs.teradyne.com",
+                  "trajectory":14,"verified":true},
+"AMD":           {"board":"jibe","host":"careers.amd.com","trajectory":15,"verified":true}
 ```
 
-The resolver never overwrites an entry that already has a board, so hand edits
-are safe.
+## Verification
+
+```bash
+python3 jobwatch/verify.py          # report
+python3 jobwatch/verify.py --fix    # null out SUSPECT, STALE and DUP entries
+```
+
+Each platform is asked who owns the board from a field that does not echo the
+slug back. For Lever that is the hosted page's `<title>` and company-website link;
+for Ashby it is the organisation name and `publicWebsite` from the hosted board's
+GraphQL, falling back to a posting description when the board is embedded on the
+company's own site. Greenhouse, SmartRecruiters and Workable report a company name,
+Workday reports `hiringOrganization` on postings. Verdicts are OK, WEAK (one-word
+name, look once and set `"verified": true`), SPARSE (1-2 postings, usually a stub),
+STALE (newest posting over a year old), SUSPECT and DUP. Entries with
+`"verified": true` are skipped.
+
+Workday hiring organisations are legal entities ("1000 KLA Corporation",
+"The Charles Stark Draper Laboratory, Inc."), which the strict one-word rule
+flags as SUSPECT, so every Workday entry here was checked by hand and carries
+`"verified": true`.
 
 ## Setup
 
 1. Push this repo. Private is fine.
 2. **Settings → Pages → Source: GitHub Actions.**
-3. Run `resolve.py` locally once and commit `resolved.json` — it takes a while and
-   is easier to watch locally than in CI.
+3. **Settings → Actions → General → Workflow permissions: Read and write.** The
+   scan commits `docs/data.json` back to the repo and fails without it.
 4. **Actions → jobwatch → Run workflow.** First run seeds state silently.
 5. Dashboard lives at `https://<user>.github.io/<repo>/`.
 
-After that: scans every 20 minutes on weekday daytimes, and re-resolves new names
-once each weekend.
+After that it scans at :07, :27 and :47 past each hour, 12:00-23:59 UTC on
+weekdays, and once a day on weekends, when it also resolves up to 40 new names.
+The minutes are off the hour on purpose: GitHub drops a lot of `:00` and `*/20`
+schedule events under load. Schedules only run from the default branch, and only
+after the workflow file has been pushed there.
+
+**When something breaks you hear about it.** `watch.py --ci` writes every board
+error to the job summary and as an Actions warning, and exits non-zero when more
+than a quarter of boards fail or nothing was scanned, which turns the run red and
+triggers GitHub's failure email. The dashboard shows board errors and a stale-data
+warning (last scan over 26 hours old) in a banner at the top of the page.
 
 ## Adding companies
 
@@ -194,8 +267,10 @@ say it out loud.
 
 ## Honest limits
 
-- Half the list will not resolve. Workday alone covers most large employers and
-  needs manual entry.
+- No public feed: Apple, Google, Meta, Tesla (403), and anything else in
+  `resolved.json` whose `rejected` note says so. Check those by hand.
+- Microsoft's Eightfold tenant rate-limits. A scan that hits it too hard gets 429s,
+  which are retried with backoff but can still surface as a board error.
 - GitHub Actions cron drifts. Twenty minutes is a request, not a promise.
 - Season filtering depends on the posting naming the season. A req that says
   "Summer '27" is dropped. Run `--explain` against a quiet board before assuming

@@ -3,7 +3,24 @@ import html, json, re, time, urllib.error, urllib.parse, urllib.request
 
 UA = "Mozilla/5.0 (compatible; jobwatch/3.0)"
 TIMEOUT = 12
-RETRIES = 2
+RETRIES = 3
+
+
+def _text(url):
+    last = None
+    for i in range(RETRIES):
+        try:
+            r = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html"})
+            with urllib.request.urlopen(r, timeout=TIMEOUT * 2) as resp:
+                return resp.read().decode("utf-8", "replace")
+        except urllib.error.HTTPError as e:
+            if e.code in (400, 401, 403, 404):
+                raise RuntimeError(f"HTTP {e.code} — check base url") from None
+            last = f"HTTP {e.code}"
+        except Exception as e:
+            last = str(e)
+        time.sleep(0.8)
+    raise RuntimeError(f"failed after {RETRIES} tries: {last}")
 
 
 def _req(url, data=None, headers=None):
@@ -21,6 +38,9 @@ def _req(url, data=None, headers=None):
             if e.code in (400, 401, 403, 404, 422):
                 raise RuntimeError(f"HTTP {e.code} — check slug/tenant/site") from None
             last = f"HTTP {e.code}"
+            if e.code == 429:                      # Eightfold rate-limits; back off properly
+                time.sleep(min(float(e.headers.get("Retry-After") or 0) or 6 * (i + 1), 30))
+                continue
         except Exception as e:
             last = str(e)
         time.sleep(0.8)
@@ -222,6 +242,176 @@ def workday(c):
     return out
 
 
+# --- career-site platforms used by big employers that are not on Workday ----------
+# None of these can be filtered to student reqs server side (keyword search is fuzzy),
+# so each lists broadly, keeps titles matching WD_TITLE, then fetches detail only for
+# those. Verified live 2026-10: eightfold (Lam, Qualcomm, Boston Scientific, Microsoft),
+# oracle (TI, Honeywell), successfactors (Teradyne), jibe (AMD).
+
+def _pool(fn, items, n=6):
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(n) as ex:
+        return list(ex.map(fn, items))
+
+
+def eightfold(c):
+    """Eightfold PCSX: c needs host (careers.qualcomm.com) and domain (qualcomm.com).
+    Search pages are fixed at 10 results; Microsoft returns 429 when pushed, so pages
+    are fetched one at a time."""
+    host, dom = c["host"], c["domain"]
+    api = f"https://{host}/api/pcsx"
+    found = {}
+    for q in (c.get("q") or "intern,co-op").split(","):
+        start = 0
+        while start < 1000:
+            d = _req(f"{api}/search?domain={dom}&start={start}&num=10"
+                     f"&query={urllib.parse.quote(q.strip())}").get("data") or {}
+            page = d.get("positions") or []
+            for p in page:
+                if WD_TITLE.search(p.get("name", "")):
+                    found.setdefault(p["id"], p)
+            start += 10
+            if not page or start >= (d.get("count") or 0):
+                break
+            time.sleep(0.25)
+
+    def detail(p):
+        info = {}
+        try:
+            info = _req(f"{api}/position_details?position_id={p['id']}&domain={dom}&hl=en").get("data") or {}
+        except RuntimeError:
+            pass
+        ts = p.get("postedTs") or p.get("creationTs")
+        return {
+            "id": f"ef:{dom}:{p.get('displayJobId') or p['id']}",
+            "title": p.get("name", ""),
+            "location": "; ".join(p.get("standardizedLocations") or p.get("locations") or []),
+            "url": f"https://{host}{p.get('positionUrl') or '/careers/job/' + str(p['id'])}",
+            "posted": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(ts)) if ts else "",
+            "body": clean(info.get("jobDescription", "")),
+        }
+    return _pool(detail, list(found.values()), 3)
+
+
+def oracle(c):
+    """Oracle Cloud HCM candidate experience: c needs host (edbz.fa.us2.oraclecloud.com)
+    and site (CX). Lists every requisition 200 at a time."""
+    host, site = c["host"], c["site"]
+    api = f"https://{host}/hcmRestApi/resources/latest"
+    reqs, offset = [], 0
+    while offset < 20000:
+        d = (_req(f"{api}/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList"
+                  f"&finder=findReqs;siteNumber={site},limit=200,offset={offset},"
+                  f"sortBy=POSTING_DATES_DESC").get("items") or [{}])[0]
+        page = d.get("requisitionList") or []
+        reqs += [r for r in page if WD_TITLE.search(r.get("Title", ""))]
+        offset += 200
+        if not page or offset >= (d.get("TotalJobsCount") or 0):
+            break
+
+    def detail(r):
+        info = {}
+        try:
+            info = (_req(f"{api}/recruitingCEJobRequisitionDetails?expand=all&onlyData=true"
+                         f"&finder=ById;Id=%22{r['Id']}%22,siteNumber={site}").get("items") or [{}])[0]
+        except RuntimeError:
+            pass
+        locs = [r.get("PrimaryLocation")] + [x.get("Name") for x in info.get("secondaryLocations") or []]
+        body = " ".join(info.get(k) or r.get(k) or "" for k in
+                        ("ExternalDescriptionStr", "ExternalResponsibilitiesStr", "ExternalQualificationsStr"))
+        return {
+            "id": f"or:{host.split('.')[0]}:{r['Id']}",
+            "title": r.get("Title", ""),
+            "location": "; ".join(x for x in locs if x),
+            "url": f"https://{host}/hcmUI/CandidateExperience/en/sites/{site}/job/{r['Id']}",
+            "posted": r.get("PostedDate", "") or "",
+            "body": clean(body),
+        }
+    return _pool(detail, reqs)
+
+
+def successfactors(c):
+    """SAP SuccessFactors Career Site Builder: c needs base (https://jobs.teradyne.com).
+    No JSON API and the RSS feed stops at 20 items, so the HTML search is paged
+    (25 rows) and each matching job page is read for its description."""
+    base = c["base"].rstrip("/")
+    found = {}
+    for q in (c.get("q") or "intern,co-op").split(","):
+        row = 0
+        while row < 1000:
+            t = _text(f"{base}/search/?q={urllib.parse.quote(q.strip())}&startrow={row}")
+            rows = re.findall(r'<tr class="data-row">(.*?)</tr>', t, re.S)
+            for r in rows:
+                a = re.search(r'href="([^"]+)" class="jobTitle-link">([^<]+)', r) or \
+                    re.search(r'class="jobTitle-link" href="([^"]+)">([^<]+)', r)
+                loc = re.search(r'class="jobLocation">\s*([^<]+?)\s*<', r)
+                if a and WD_TITLE.search(a.group(2)):
+                    found.setdefault(a.group(1), (html.unescape(a.group(2)).strip(),
+                                                  loc.group(1) if loc else ""))
+            total = re.search(r"Results <b>[^<]*</b> of <b>(\d+)", t)
+            row += 25
+            if not rows or not total or row >= int(total.group(1)):
+                break
+
+    def detail(item):
+        path, (title, loc) = item
+        body, posted = "", ""
+        try:
+            t = _text(base + path)
+            i = t.find('class="jobdescription"')
+            if i >= 0:
+                end = min([k for k in (t.find('class="jobmarkets"', i), t.find("social-apply", i))
+                           if k > 0] or [i + 30000])
+                body = t[i + 22:end]
+            m = re.search(r'itemprop="datePosted" content="([^"]+)"', t)
+            if m:                                  # "Fri Sep 25 07:00:00 UTC 2026"
+                try:
+                    posted = time.strftime("%Y-%m-%d", time.strptime(m.group(1), "%a %b %d %H:%M:%S %Z %Y"))
+                except ValueError:
+                    posted = m.group(1)
+        except RuntimeError:
+            pass
+        jid = re.search(r"/(\d+)/?$", path)
+        return {
+            "id": f"sf:{base.split('//')[-1]}:{jid.group(1) if jid else path}",
+            "title": title, "location": html.unescape(loc),
+            "url": base + path, "posted": posted, "body": clean(body),
+        }
+    return _pool(detail, list(found.items()))
+
+
+def jibe(c):
+    """Jibe (Google-hosted career sites, e.g. careers.amd.com): c needs host.
+    /api/jobs returns full descriptions inline, 100 per page."""
+    host = c["host"]
+    out, ids = [], set()
+    for q in (c.get("q") or "intern,co-op").split(","):
+        page = 1
+        while page <= 20:
+            d = _req(f"https://{host}/api/jobs?keywords={urllib.parse.quote(q.strip())}"
+                     f"&page={page}&limit=100")
+            jobs = d.get("jobs") or []
+            for j in jobs:
+                j = j.get("data") or {}
+                rid = j.get("req_id") or j.get("slug")
+                if rid in ids or not WD_TITLE.search(j.get("title", "")):
+                    continue
+                ids.add(rid)
+                out.append({
+                    "id": f"jb:{host}:{rid}",
+                    "title": j.get("title", ""),
+                    "location": j.get("full_location") or j.get("location_name", "") or "",
+                    "url": f"https://{host}/careers-home/jobs/{j.get('slug') or rid}",
+                    "posted": j.get("posted_date", "") or "",
+                    "body": clean(" ".join(j.get(k) or "" for k in
+                                           ("description", "responsibilities", "qualifications"))),
+                })
+            page += 1
+            if len(jobs) < 100 or (page - 1) * 100 >= (d.get("totalCount") or 0):
+                break
+    return out
+
+
 ADAPTERS = {
     "greenhouse": greenhouse,
     "lever": lever,
@@ -230,4 +420,8 @@ ADAPTERS = {
     "workable": workable,
     "workday": workday,
     "pinpoint": pinpoint,
+    "eightfold": eightfold,
+    "oracle": oracle,
+    "successfactors": successfactors,
+    "jibe": jibe,
 }

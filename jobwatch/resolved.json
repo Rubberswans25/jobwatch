@@ -16,8 +16,10 @@
   "verified": true
  },
  "AMD": {
-  "board": null,
-  "trajectory": 15
+  "board": "jibe",
+  "host": "careers.amd.com",
+  "trajectory": 15,
+  "verified": true
  },
  "ASML": {
   "board": null,
@@ -322,8 +324,11 @@
   "trajectory": 11
  },
  "Boston Scientific": {
-  "board": null,
-  "trajectory": 14
+  "board": "eightfold",
+  "domain": "bostonscientific.com",
+  "host": "bostonscientific.eightfold.ai",
+  "trajectory": 14,
+  "verified": true
  },
  "Brooks Automation": {
   "board": null,
@@ -747,8 +752,12 @@
   "trajectory": 12
  },
  "Honeywell": {
-  "board": null,
-  "trajectory": 12
+  "board": "oracle",
+  "careers": "careers.honeywell.com",
+  "host": "ibqbjb.fa.ocs.oraclecloud.com",
+  "site": "CX_1",
+  "trajectory": 12,
+  "verified": true
  },
  "Howmet Aerospace": {
   "board": null,
@@ -885,8 +894,11 @@
   "trajectory": 11
  },
  "Lam Research": {
-  "board": null,
-  "trajectory": 16
+  "board": "eightfold",
+  "domain": "lamresearch.com",
+  "host": "careers.lamresearch.com",
+  "trajectory": 16,
+  "verified": true
  },
  "Lockheed Martin": {
   "board": null,
@@ -967,8 +979,11 @@
   "verified": true
  },
  "Microsoft": {
-  "board": null,
-  "trajectory": 19
+  "board": "eightfold",
+  "domain": "microsoft.com",
+  "host": "apply.careers.microsoft.com",
+  "trajectory": 19,
+  "verified": true
  },
  "Moog": {
   "board": "workday",
@@ -1118,11 +1133,14 @@
   "verified": true
  },
  "Qualcomm": {
-  "board": null,
+  "board": "eightfold",
+  "domain": "qualcomm.com",
+  "host": "careers.qualcomm.com",
   "rejected": [
    "qualcomm.wd12/External is empty; Qualcomm uses its own site"
   ],
-  "trajectory": 17
+  "trajectory": 17,
+  "verified": true
  },
  "Quanterix": {
   "board": null,
@@ -1421,8 +1439,10 @@
   "verified": true
  },
  "Teradyne": {
-  "board": null,
-  "trajectory": 14
+  "base": "https://jobs.teradyne.com",
+  "board": "successfactors",
+  "trajectory": 14,
+  "verified": true
  },
  "TerraPower": {
   "board": null,
@@ -1433,16 +1453,24 @@
   "trajectory": 16
  },
  "Texas Instruments": {
-  "board": null,
-  "trajectory": 15
+  "board": "oracle",
+  "careers": "careers.ti.com",
+  "host": "edbz.fa.us2.oraclecloud.com",
+  "site": "CX",
+  "trajectory": 15,
+  "verified": true
  },
  "Textron Systems": {
   "board": null,
   "trajectory": 10
  },
  "Thermo Fisher Scientific": {
-  "board": null,
-  "trajectory": 13
+  "board": "workday",
+  "host": "wd5",
+  "site": "ThermoFisherCareers",
+  "tenant": "thermofisher",
+  "trajectory": 13,
+  "verified": true
  },
  "Trane Technologies": {
   "board": "workday",
@@ -1579,8 +1607,12 @@
   "verified": true
  },
  "Xylem": {
-  "board": null,
-  "trajectory": 10
+  "board": "workday",
+  "host": "wd5",
+  "site": "xylem-careers",
+  "tenant": "xylem",
+  "trajectory": 10,
+  "verified": true
  },
  "Zap Energy": {
   "board": null,

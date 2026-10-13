@@ -10,11 +10,14 @@ slug back:
 
   greenhouse       board "name" from /v1/boards/<slug>
   lever            <title> and the company-website link on jobs.lever.co/<slug>
-  ashby            <title> and "publicWebsite" on jobs.ashbyhq.com/<slug>
+  ashby            organization name + publicWebsite from the hosted board's GraphQL
+                   (falls back to a posting description when there is no hosted page)
   smartrecruiters  company.name on the first posting
   workable         account "name" from the widget API
   workday          hiringOrganization.name on the first few postings
   pinpoint         <title> of <slug>.pinpointhq.com
+  eightfold, jibe, successfactors, oracle
+                   the company's own careers host the entry was copied from
 
 Verdicts:
   OK       every significant word of the company name is in the owner string
@@ -72,10 +75,20 @@ def owner(v):
         own = _html_owner(h, r"$^") + (" " + site[0] if site else "")
         return own, len(_get(f"https://api.lever.co/v0/postings/{s}?mode=json"))
     if b == "ashby":
-        h = _get(f"https://jobs.ashbyhq.com/{s}", js=False)
-        own = _html_owner(h, r'"publicWebsite":"([^"]*)"')
-        n = len(_get(f"https://api.ashbyhq.com/posting-api/job-board/{s}").get("jobs", []))
-        return own, n
+        q = ("query O($organizationHostedJobsPageName: String!) { organization: "
+             "organizationFromHostedJobsPageName(organizationHostedJobsPageName: "
+             "$organizationHostedJobsPageName, searchContext: JobBoard) { name publicWebsite } }")
+        org = (_get("https://jobs.ashbyhq.com/api/non-user-graphql?op=O", data=json.dumps(
+            {"operationName": "O", "variables": {"organizationHostedJobsPageName": s},
+             "query": q}).encode()).get("data") or {}).get("organization") or {}
+        own = " ".join(x for x in [org.get("name"), org.get("publicWebsite")] if x)
+        jobs = _get(f"https://api.ashbyhq.com/posting-api/job-board/{s}").get("jobs", [])
+        if not own:
+            # boards embedded on the company's own site have no hosted org record
+            # (Form Energy); fall back to the opening of a posting description
+            own = "body: " + next((j.get("descriptionPlain", "")[:160] for j in jobs
+                                   if len(j.get("descriptionPlain") or "") > 200), "")
+        return own, len(jobs)
     if b == "smartrecruiters":
         d = _get(f"https://api.smartrecruiters.com/v1/companies/{s}/postings?limit=100")
         c = d.get("content") or [{}]
@@ -89,6 +102,12 @@ def owner(v):
     if b == "pinpoint":
         h = _get(f"https://{s}.pinpointhq.com/", js=False)
         return _html_owner(h, r"$^"), len(_get(f"https://{s}.pinpointhq.com/postings.json").get("data", []))
+    if b in ("eightfold", "jibe", "successfactors", "oracle"):
+        # entries are added by hand from the company's own careers site, so the host
+        # they were found on is the identity; oracle tenants are opaque, use "careers"
+        host = v.get("careers") or v.get("domain") or v.get("host") or v.get("base", "")
+        n = len(__import__("adapters").ADAPTERS[b]({"name": "", **v}))
+        return host, n
     if b == "workday":
         t, h = v["tenant"], v.get("host", "wd1")
         site = v["site"][0] if isinstance(v["site"], list) else v["site"]
@@ -147,6 +166,8 @@ def judge(name, own, n):
 def board_key(v):
     if v.get("board") == "workday":
         return ("workday", v.get("tenant"), str(v.get("site")))
+    if v.get("board") in ("eightfold", "jibe", "successfactors", "oracle"):
+        return (v["board"], v.get("domain") or v.get("host") or v.get("base"), str(v.get("site") or ""))
     return (v.get("board"), (v.get("slug") or "").lower())
 
 
