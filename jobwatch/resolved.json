@@ -172,9 +172,7 @@
   "trajectory": 12
  },
  "Blue Canyon Technologies": {
-  "board": "lever",
-  "postings": 10,
-  "slug": "blue",
+  "board": null,
   "trajectory": 10
  },
  "Blue Origin": {
@@ -250,7 +248,8 @@
   "trajectory": 12
  },
  "Commonwealth Fusion": {
-  "board": null,
+  "board": "lever",
+  "slug": "cfsenergy",
   "trajectory": 14
  },
  "Crane Aerospace and Electronics": {
@@ -388,9 +387,7 @@
   "trajectory": 12
  },
  "General Atomics": {
-  "board": "greenhouse",
-  "postings": 1,
-  "slug": "general",
+  "board": null,
   "trajectory": 11
  },
  "General Dynamics Mission Systems": {
@@ -466,9 +463,7 @@
   "trajectory": 14
  },
  "Intuitive Machines": {
-  "board": "smartrecruiters",
-  "postings": 1,
-  "slug": "intuitive",
+  "board": null,
   "trajectory": 11
  },
  "Intuitive Surgical": {
@@ -759,9 +754,7 @@
   "trajectory": 15
  },
  "Sierra Nevada Corporation": {
-  "board": "ashby",
-  "postings": 190,
-  "slug": "sierra",
+  "board": null,
   "trajectory": 10
  },
  "Sierra Space": {
