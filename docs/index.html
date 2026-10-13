@@ -20,6 +20,11 @@ body{margin:0;background:var(--bg);color:var(--ink);
 .wrap{max-width:1100px;margin:0 auto;padding:22px 16px 80px}
 h1{font-size:19px;margin:0}
 .meta{color:var(--mut);font-size:12.5px;margin-top:4px}
+.alert{margin-top:12px;border:1px solid var(--warn);border-left:4px solid var(--warn);border-radius:8px;
+  padding:9px 12px;font-size:13px;background:var(--panel)}
+.alert:empty{display:none}
+.alert b{color:var(--warn)}
+.alert a{color:inherit}
 .bar{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px;align-items:center}
 .bar input,.bar select{background:var(--panel);color:var(--ink);border:1px solid var(--line);
   border-radius:8px;padding:7px 10px;font:inherit;font-size:13.5px}
@@ -66,6 +71,7 @@ details{margin-top:22px;color:var(--mut);font-size:12.5px}
 <body><div class="wrap">
   <h1>jobwatch</h1>
   <div class="meta" id="meta">loading…</div>
+  <div class="alert" id="alert" role="status"></div>
 
   <div class="tabs" id="tabs">
     <button class="tab" data-view="open"      aria-selected="true">Open <span id="c-open"></span></button>
@@ -221,10 +227,18 @@ fetch("data.json?t="+Date.now()).then(r=>r.json()).then(d=>{
   const when=d.generated?new Date(d.generated):null;
   $("#meta").textContent=`${(d.jobs||[]).length} live matches · ${d.scanned} postings scanned across `+
     `${d.boards} boards${when?` · updated ${when.toLocaleString()}`:""}`;
+  // problems go in a banner at the top, not a collapsed footer
+  const warn=[], hrs=when?(Date.now()-when.getTime())/36e5:null;
+  if(hrs!==null && hrs>26)
+    warn.push(`<b>Stale:</b> last scan was ${Math.round(hrs)} hours ago. Scheduled runs are not firing or are failing — check the Actions tab.`);
   if(d.errors&&d.errors.length){
+    warn.push(`<b>${d.errors.length} of ${d.boards} boards failed</b> on the last scan, so their postings are missing: `+
+      d.errors.map(e=>`${esc(e.company)} <span class="w">${esc(e.board)}</span> ${esc(e.error)}`).join(" · "));
     $("#errbox").innerHTML=`<summary>${d.errors.length} board error(s)</summary>`+
       d.errors.map(e=>`<div class="err">${esc(e.company)} (${esc(e.board)}): ${esc(e.error)}</div>`).join("");
   }
+  if(warn.length && d.run_url) warn.push(`<a href="${esc(d.run_url)}" target="_blank" rel="noopener">Open the run log</a>`);
+  $("#alert").innerHTML=warn.join("<br>");
   render();
 }).catch(()=>{ $("#meta").textContent="could not load data.json — run jobwatch/watch.py first"; });
 </script>

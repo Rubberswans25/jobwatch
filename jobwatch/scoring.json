@@ -258,7 +258,13 @@
     "austin": 1,
     "denver": 1,
     "remote": -6,
-    "multiple locations": 1
+    "multiple locations": 1,
+    "us-ma-": 8,
+    ", ma,": 8,
+    "us, ma": 8,
+    "us-nh-": 6,
+    ", nh,": 6,
+    "us, nh": 6
   },
   "caps": {
     "fit": 60,

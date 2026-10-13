@@ -7,6 +7,14 @@
   "board": null,
   "trajectory": 10
  },
+ "3M": {
+  "board": "workday",
+  "host": "wd1",
+  "site": "Search",
+  "tenant": "3m",
+  "trajectory": 12,
+  "verified": true
+ },
  "AMD": {
   "board": null,
   "trajectory": 15
@@ -16,8 +24,12 @@
   "trajectory": 17
  },
  "Abbott": {
-  "board": null,
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd5",
+  "site": "abbottcareers",
+  "tenant": "abbott",
+  "trajectory": 12,
+  "verified": true
  },
  "Abiomed": {
   "board": null,
@@ -32,19 +44,44 @@
   "trajectory": 12
  },
  "Agilent Technologies": {
-  "board": null,
-  "trajectory": 14
+  "board": "workday",
+  "host": "wd5",
+  "site": [
+   "Agilent_Careers",
+   "Agilent_Student_Careers"
+  ],
+  "tenant": "agilent",
+  "trajectory": 14,
+  "verified": true
  },
  "Agility Robotics": {
   "board": "greenhouse",
   "postings": 73,
   "slug": "agilityrobotics",
-  "trajectory": 14
+  "trajectory": 14,
+  "verified": true
+ },
+ "Air Products": {
+  "board": "workday",
+  "host": "wd5",
+  "site": "AP0001",
+  "tenant": "airproducts",
+  "trajectory": 11,
+  "verified": true
+ },
+ "Alfa Laval": {
+  "board": "workday",
+  "host": "wd3",
+  "site": "Alfa_Laval_jobs",
+  "tenant": "alfalaval",
+  "trajectory": 10,
+  "verified": true
  },
  "Align Technology": {
-  "board": "greenhouse",
-  "postings": 12,
-  "slug": "align",
+  "board": null,
+  "rejected": [
+   "greenhouse/align is A-LIGN"
+  ],
   "trajectory": 12
  },
  "Amazon Lab126": {
@@ -56,80 +93,112 @@
   "trajectory": 16
  },
  "Analog Devices": {
-  "board": "ashby",
-  "postings": 22,
-  "slug": "analog",
-  "trajectory": 15
+  "board": "workday",
+  "host": "wd1",
+  "site": "External",
+  "tenant": "analogdevices",
+  "trajectory": 15,
+  "verified": true
  },
  "Anduril": {
   "board": "greenhouse",
   "slug": "andurilindustries",
-  "trajectory": 18
+  "trajectory": 18,
+  "verified": true
  },
  "Antora Energy": {
   "board": "greenhouse",
   "postings": 41,
   "slug": "antora",
-  "trajectory": 11
+  "trajectory": 11,
+  "verified": true
  },
  "Apple": {
-  "board": "workday",
-  "host": "wd5",
-  "q": "mechanical intern",
-  "site": "External",
-  "tenant": "apple",
+  "board": null,
+  "rejected": [
+   "not on Workday (jobs.apple.com; 422 from every wd host)"
+  ],
   "trajectory": 20
  },
  "Applied Materials": {
-  "board": "ashby",
-  "postings": 322,
-  "slug": "applied",
-  "trajectory": 17
+  "board": "workday",
+  "host": "wd1",
+  "site": "External",
+  "tenant": "amat",
+  "trajectory": 17,
+  "verified": true
  },
  "Apptronik": {
   "board": "greenhouse",
   "postings": 78,
   "slug": "apptronik",
-  "trajectory": 13
+  "trajectory": 13,
+  "verified": true
+ },
+ "Aptiv": {
+  "board": "workday",
+  "host": "wd5",
+  "site": "APTIV_CAREERS",
+  "tenant": "aptiv",
+  "trajectory": 11,
+  "verified": true
  },
  "Archer Aviation": {
-  "board": "greenhouse",
-  "postings": 1,
-  "slug": "archer",
+  "board": null,
+  "rejected": [
+   "greenhouse/archer is Archer Veterinary Clinic"
+  ],
   "trajectory": 13
  },
  "Arthrex": {
-  "board": "smartrecruiters",
-  "postings": 1,
-  "slug": "arthrex",
+  "board": null,
+  "rejected": [
+   "smartrecruiters/arthrex lists 1 stray posting"
+  ],
   "trajectory": 11
  },
  "Astranis": {
   "board": "greenhouse",
   "slug": "astranis",
-  "trajectory": 12
+  "trajectory": 12,
+  "verified": true
  },
  "Astrobotic": {
   "board": null,
   "trajectory": 10
  },
+ "Atlas Copco": {
+  "board": null,
+  "trajectory": 11
+ },
  "Aurora Flight Sciences": {
   "board": null,
+  "covered_by": "Boeing",
   "trajectory": 11
  },
  "Axcelis": {
-  "board": null,
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd1",
+  "site": "Axcelis",
+  "tenant": "axcelis",
+  "trajectory": 12,
+  "verified": true
  },
  "Axiom Space": {
-  "board": "greenhouse",
-  "postings": 18,
-  "slug": "axiom",
-  "trajectory": 11
+  "board": "workday",
+  "host": "wd5",
+  "site": "External_Career_Site",
+  "tenant": "axiomspace",
+  "trajectory": 11,
+  "verified": true
  },
  "Azenta": {
-  "board": null,
-  "trajectory": 11
+  "board": "workday",
+  "host": "wd1",
+  "site": "AzentaJobs",
+  "tenant": "azenta",
+  "trajectory": 11,
+  "verified": true
  },
  "BAE Systems": {
   "board": null,
@@ -143,59 +212,110 @@
   "board": null,
   "trajectory": 11
  },
+ "Badger Meter": {
+  "board": "workday",
+  "host": "wd5",
+  "site": "US_CareerSite",
+  "tenant": "badgermeter",
+  "trajectory": 10,
+  "verified": true
+ },
+ "Baker Hughes": {
+  "board": "workday",
+  "host": "wd5",
+  "site": "BakerHughes",
+  "tenant": "bakerhughes",
+  "trajectory": 12,
+  "verified": true
+ },
  "Ballard Power": {
   "board": null,
   "trajectory": 10
  },
  "Beckman Coulter": {
   "board": null,
+  "covered_by": "Danaher",
   "trajectory": 12
  },
  "Becton Dickinson": {
-  "board": null,
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd1",
+  "site": [
+   "EXTERNAL_CAREER_SITE_USA",
+   "US_EARLY_TALENT_SITE"
+  ],
+  "tenant": "bdx",
+  "trajectory": 12,
+  "verified": true
  },
  "Bell Textron": {
   "board": null,
   "trajectory": 10
  },
  "Bio-Rad": {
-  "board": "ashby",
-  "postings": 11,
-  "slug": "bio",
+  "board": null,
+  "rejected": [
+   "ashby/bio is bio.xyz"
+  ],
   "trajectory": 12
  },
  "Bloom Energy": {
-  "board": "lever",
-  "postings": 11,
-  "slug": "bloom",
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd1",
+  "site": "BloomEnergyCareers",
+  "tenant": "bloomenergy",
+  "trajectory": 12,
+  "verified": true
  },
  "Blue Canyon Technologies": {
   "board": null,
   "trajectory": 10
  },
  "Blue Origin": {
-  "board": null,
-  "trajectory": 15
+  "board": "workday",
+  "host": "wd5",
+  "site": "BlueOrigin",
+  "tenant": "blueorigin",
+  "trajectory": 15,
+  "verified": true
  },
  "BlueHalo": {
   "board": null,
   "trajectory": 11
  },
  "Boeing": {
-  "board": null,
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd1",
+  "site": [
+   "EXTERNAL_CAREERS",
+   "INTERN"
+  ],
+  "tenant": "boeing",
+  "trajectory": 12,
+  "verified": true
  },
  "Boom Supersonic": {
-  "board": "ashby",
-  "postings": 13,
-  "slug": "boom",
+  "board": null,
+  "rejected": [
+   "ashby/boom is boompay.app"
+  ],
   "trajectory": 12
  },
+ "BorgWarner": {
+  "board": "workday",
+  "host": "wd5",
+  "site": "BorgWarner_Careers",
+  "tenant": "borgwarner",
+  "trajectory": 11,
+  "verified": true
+ },
  "Boston Dynamics": {
-  "board": null,
-  "trajectory": 16
+  "board": "workday",
+  "host": "wd1",
+  "site": "Boston_Dynamics",
+  "tenant": "bostondynamics",
+  "trajectory": 16,
+  "verified": true
  },
  "Boston Metal": {
   "board": null,
@@ -213,11 +333,20 @@
   "board": null,
   "trajectory": 12
  },
+ "Burkert": {
+  "board": "workday",
+  "host": "wd502",
+  "site": "burkert-career",
+  "tenant": "burkert",
+  "trajectory": 10,
+  "verified": true
+ },
  "CHAOS Industries": {
   "board": "greenhouse",
   "postings": 149,
   "slug": "chaosindustries",
-  "trajectory": 13
+  "trajectory": 13,
+  "verified": true
  },
  "Capella Space": {
   "board": null,
@@ -227,7 +356,16 @@
   "board": "greenhouse",
   "postings": 12,
   "slug": "carbon",
-  "trajectory": 11
+  "trajectory": 11,
+  "verified": true
+ },
+ "Carrier": {
+  "board": "workday",
+  "host": "wd5",
+  "site": "jobs",
+  "tenant": "carrier",
+  "trajectory": 11,
+  "verified": true
  },
  "Castelion": {
   "board": null,
@@ -237,53 +375,102 @@
   "board": "lever",
   "postings": 339,
   "slug": "CesiumAstro",
+  "trajectory": 11,
+  "verified": true
+ },
+ "Chart Industries": {
+  "board": null,
   "trajectory": 11
  },
  "Cognex": {
-  "board": null,
-  "trajectory": 13
+  "board": "workday",
+  "host": "wd1",
+  "site": "External_Career_Site",
+  "tenant": "cognex",
+  "trajectory": 13,
+  "verified": true
  },
  "Collins Aerospace": {
   "board": null,
+  "covered_by": "RTX",
   "trajectory": 12
  },
  "Commonwealth Fusion": {
   "board": "lever",
   "slug": "cfsenergy",
-  "trajectory": 14
+  "trajectory": 14,
+  "verified": true
  },
  "Crane Aerospace and Electronics": {
   "board": null,
   "trajectory": 11
  },
  "Curtiss-Wright": {
-  "board": null,
-  "trajectory": 11
+  "board": "workday",
+  "host": "wd1",
+  "site": "CW_External_Career_Site",
+  "tenant": "curtisswright",
+  "trajectory": 11,
+  "verified": true
  },
  "Cytiva": {
   "board": null,
+  "covered_by": "Danaher",
   "trajectory": 13
  },
  "Danaher": {
-  "board": null,
-  "trajectory": 14
+  "board": "workday",
+  "host": "wd1",
+  "site": "DanaherJobs",
+  "tenant": "danaher",
+  "trajectory": 14,
+  "verified": true
  },
  "Desktop Metal": {
   "board": null,
   "trajectory": 10
  },
  "Dexcom": {
+  "board": "workday",
+  "host": "wd1",
+  "site": "Dexcom",
+  "tenant": "dexcom",
+  "trajectory": 13,
+  "verified": true
+ },
+ "Donaldson": {
   "board": null,
-  "trajectory": 13
+  "trajectory": 10
  },
  "Draper": {
-  "board": null,
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd5",
+  "site": "Draper_Careers",
+  "tenant": "draper",
+  "trajectory": 12,
+  "verified": true
+ },
+ "DuPont": {
+  "board": "workday",
+  "host": "wd5",
+  "site": "Jobs",
+  "tenant": "dupont",
+  "trajectory": 11,
+  "verified": true
+ },
+ "Dyson": {
+  "board": "workday",
+  "host": "wd3",
+  "site": "dyson_careers",
+  "tenant": "dyson",
+  "trajectory": 12,
+  "verified": true
  },
  "ESS Inc": {
-  "board": "greenhouse",
-  "postings": 3,
-  "slug": "ess",
+  "board": null,
+  "rejected": [
+   "greenhouse/ess is cBEYONData + SMX"
+  ],
   "trajectory": 10
  },
  "Eaton": {
@@ -291,8 +478,16 @@
   "trajectory": 12
  },
  "Edwards Lifesciences": {
+  "board": "workday",
+  "host": "wd5",
+  "site": "EdwardsCareers",
+  "tenant": "edwards",
+  "trajectory": 13,
+  "verified": true
+ },
+ "Edwards Vacuum": {
   "board": null,
-  "trajectory": 13
+  "trajectory": 11
  },
  "Electra": {
   "board": null,
@@ -302,9 +497,24 @@
   "board": null,
   "trajectory": 12
  },
- "Entegris": {
+ "Emerson": {
   "board": null,
-  "trajectory": 13
+  "rejected": [
+   "workday/emerson/Emerson_College_Staff: suspect, one-word name, owner adds other words: 'Emerson College | Emerson College | Emerson College'"
+  ],
+  "trajectory": 11
+ },
+ "Endress Hauser": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Entegris": {
+  "board": "workday",
+  "host": "wd1",
+  "site": "EntegrisCareers",
+  "tenant": "entegris",
+  "trajectory": 13,
+  "verified": true
  },
  "Eos Energy": {
   "board": null,
@@ -314,29 +524,45 @@
   "board": "greenhouse",
   "postings": 44,
   "slug": "epirus",
-  "trajectory": 13
+  "trajectory": 13,
+  "verified": true
  },
  "Factorial Energy": {
   "board": "greenhouse",
   "postings": 11,
   "slug": "factorialenergy",
-  "trajectory": 10
+  "trajectory": 10,
+  "verified": true
  },
  "Fervo Energy": {
   "board": "greenhouse",
   "postings": 5,
   "slug": "fervoenergy",
-  "trajectory": 12
+  "trajectory": 12,
+  "verified": true
+ },
+ "Festo": {
+  "board": null,
+  "trajectory": 10
  },
  "Figure AI": {
   "board": "greenhouse",
   "postings": 96,
   "slug": "figureai",
-  "trajectory": 16
+  "trajectory": 16,
+  "verified": true
  },
  "Firefly Aerospace": {
   "board": null,
   "trajectory": 11
+ },
+ "Flowserve": {
+  "board": "workday",
+  "host": "wd1",
+  "site": "applied",
+  "tenant": "flowserve",
+  "trajectory": 10,
+  "verified": true
  },
  "Fluence": {
   "board": null,
@@ -349,18 +575,21 @@
  "Forge Atomics": {
   "board": "ashby",
   "slug": "forgeatomics",
-  "trajectory": 10
+  "trajectory": 10,
+  "verified": true
  },
  "Form Energy": {
   "board": "ashby",
   "postings": 204,
   "slug": "formenergy",
-  "trajectory": 12
+  "trajectory": 12,
+  "verified": true
  },
  "Formlabs": {
   "board": "greenhouse",
   "slug": "formlabs",
-  "trajectory": 16
+  "trajectory": 16,
+  "verified": true
  },
  "Formulatrix": {
   "board": null,
@@ -375,16 +604,36 @@
   "trajectory": 13
  },
  "GE Aerospace": {
-  "board": null,
-  "trajectory": 14
+  "board": "workday",
+  "host": "wd5",
+  "site": "GE_ExternalSite",
+  "tenant": "geaerospace",
+  "trajectory": 14,
+  "verified": true
  },
  "GE HealthCare": {
-  "board": null,
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd5",
+  "site": "GEHC_ExternalSite",
+  "tenant": "gehc",
+  "trajectory": 12,
+  "verified": true
  },
  "GE Vernova": {
-  "board": null,
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd5",
+  "site": "Vernova_ExternalSite",
+  "tenant": "gevernova",
+  "trajectory": 12,
+  "verified": true
+ },
+ "Generac": {
+  "board": "workday",
+  "host": "wd5",
+  "site": "External",
+  "tenant": "generac",
+  "trajectory": 10,
+  "verified": true
  },
  "General Atomics": {
   "board": null,
@@ -398,41 +647,100 @@
   "board": null,
   "trajectory": 10
  },
+ "General Motors": {
+  "board": "workday",
+  "host": "wd5",
+  "site": "Careers_GM",
+  "tenant": "generalmotors",
+  "trajectory": 11,
+  "verified": true
+ },
  "Globus Medical": {
-  "board": null,
-  "trajectory": 11
+  "board": "workday",
+  "host": "wd5",
+  "site": "GMED_Careers",
+  "tenant": "globusmedical",
+  "trajectory": 11,
+  "verified": true
  },
  "Google": {
   "board": null,
+  "rejected": [
+   "google.wd501/GOCJobs is GOC Services India only; Google has no public ATS feed"
+  ],
   "trajectory": 20
+ },
+ "Graco": {
+  "board": "workday",
+  "host": "wd501",
+  "site": "Graco_Careers",
+  "tenant": "graco",
+  "trajectory": 11,
+  "verified": true
+ },
+ "Grundfos": {
+  "board": null,
+  "trajectory": 10
  },
  "Hadrian": {
   "board": null,
   "trajectory": 14
  },
  "Hamilton Company": {
-  "board": null,
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd3",
+  "site": [
+   "hamilton_jobs",
+   "hamilton_careers_medical"
+  ],
+  "tenant": "hamilton",
+  "trajectory": 12,
+  "verified": true
  },
  "Helion": {
   "board": "ashby",
   "postings": 69,
   "slug": "helion",
-  "trajectory": 14
+  "trajectory": 14,
+  "verified": true
  },
  "Hermeus": {
   "board": "lever",
   "postings": 81,
   "slug": "hermeus",
-  "trajectory": 12
+  "trajectory": 12,
+  "verified": true
+ },
+ "Hewlett Packard Enterprise": {
+  "board": "workday",
+  "host": "wd5",
+  "site": "Jobsathpe",
+  "tenant": "hpe",
+  "trajectory": 12,
+  "verified": true
  },
  "Hexcel": {
-  "board": null,
-  "trajectory": 10
+  "board": "workday",
+  "host": "wd5",
+  "site": [
+   "HexcelCareers",
+   "EarlyHexcelCareers"
+  ],
+  "tenant": "hexcel",
+  "trajectory": 10,
+  "verified": true
  },
  "HighRes Biosolutions": {
   "board": null,
   "trajectory": 11
+ },
+ "Hitachi Energy": {
+  "board": "workday",
+  "host": "wd1",
+  "site": "hitachi",
+  "tenant": "hitachi",
+  "trajectory": 11,
+  "verified": true
  },
  "Hologic": {
   "board": null,
@@ -446,21 +754,68 @@
   "board": null,
   "trajectory": 11
  },
- "Illumina": {
+ "IDEX": {
   "board": null,
-  "trajectory": 14
+  "rejected": [
+   "workday/idexcorp/IDEX_Careers: suspect, owner 'Fluid Management Operations Inc | CVI Laser, LLC | CVI Laser, LLC'"
+  ],
+  "trajectory": 11
+ },
+ "IMI": {
+  "board": null,
+  "rejected": [
+   "greenhouse/imi: sparse, 2 posting(s), owner 'IMI'"
+  ],
+  "trajectory": 10
+ },
+ "INFICON": {
+  "board": null,
+  "trajectory": 11
+ },
+ "ITT": {
+  "board": null,
+  "rejected": [
+   "smartrecruiters/ittinc: stale, newest posting over a year old, owner 'ITT Inc.'"
+  ],
+  "trajectory": 10
+ },
+ "Illumina": {
+  "board": "workday",
+  "host": "wd1",
+  "site": [
+   "illumina-careers",
+   "illumina-universityrecruiting"
+  ],
+  "tenant": "illumina",
+  "trajectory": 14,
+  "verified": true
+ },
+ "Impulse Space": {
+  "board": "pinpoint",
+  "postings": 212,
+  "slug": "impulsespace",
+  "trajectory": 12,
+  "verified": true
  },
  "Instron": {
   "board": null,
   "trajectory": 13
  },
  "Insulet": {
-  "board": null,
-  "trajectory": 14
+  "board": "workday",
+  "host": "wd5",
+  "site": "insuletcareers",
+  "tenant": "insulet",
+  "trajectory": 14,
+  "verified": true
  },
  "Intel": {
-  "board": null,
-  "trajectory": 14
+  "board": "workday",
+  "host": "wd1",
+  "site": "External",
+  "tenant": "intel",
+  "trajectory": 14,
+  "verified": true
  },
  "Intuitive Machines": {
   "board": null,
@@ -470,27 +825,52 @@
   "board": null,
   "trajectory": 16
  },
+ "Jabil": {
+  "board": "workday",
+  "host": "wd5",
+  "site": "Jabil_Careers",
+  "tenant": "jabil",
+  "trajectory": 11,
+  "verified": true
+ },
  "Joby Aviation": {
   "board": null,
   "trajectory": 13
  },
+ "Johnson Controls": {
+  "board": "workday",
+  "host": "wd5",
+  "site": "JCI",
+  "tenant": "jci",
+  "trajectory": 11,
+  "verified": true
+ },
  "Johnson and Johnson": {
-  "board": null,
-  "trajectory": 13
+  "board": "workday",
+  "host": "wd5",
+  "site": "JJ",
+  "tenant": "jj",
+  "trajectory": 13,
+  "verified": true
  },
  "K2 Space": {
   "board": null,
   "trajectory": 12
  },
  "KLA": {
-  "board": null,
-  "trajectory": 16
+  "board": "workday",
+  "host": "wd1",
+  "site": "Search",
+  "tenant": "kla",
+  "trajectory": 16,
+  "verified": true
  },
  "Kairos Power": {
   "board": "greenhouse",
   "postings": 35,
   "slug": "kairospower",
-  "trajectory": 12
+  "trajectory": 12,
+  "verified": true
  },
  "Keysight Technologies": {
   "board": null,
@@ -516,38 +896,59 @@
   "board": "lever",
   "postings": 65,
   "slug": "loftorbital",
-  "trajectory": 11
+  "trajectory": 11,
+  "verified": true
  },
  "MITRE": {
   "board": null,
   "trajectory": 11
  },
  "MKS Instruments": {
-  "board": null,
-  "trajectory": 13
+  "board": "workday",
+  "host": "wd1",
+  "site": [
+   "MKSCareersAmericas",
+   "MKSCareersUniversity"
+  ],
+  "tenant": "mksinst",
+  "trajectory": 13,
+  "verified": true
  },
  "Machina Labs": {
   "board": "lever",
   "postings": 30,
   "slug": "MachinaLabs",
-  "trajectory": 12
+  "trajectory": 12,
+  "verified": true
+ },
+ "Magna International": {
+  "board": "workday",
+  "host": "wd3",
+  "site": "Magna",
+  "tenant": "magna",
+  "trajectory": 10,
+  "verified": true
  },
  "Markforged": {
   "board": "greenhouse",
   "slug": "markforged",
-  "trajectory": 11
+  "trajectory": 11,
+  "verified": true
  },
  "Masimo": {
-  "board": "smartrecruiters",
-  "postings": 1,
-  "slug": "masimo",
+  "board": null,
+  "rejected": [
+   "smartrecruiters/masimo lists 1 stray posting"
+  ],
   "trajectory": 11
  },
  "Medtronic": {
-  "board": "smartrecruiters",
-  "postings": 1,
-  "slug": "medtronicinc",
-  "trajectory": 13
+  "board": "workday",
+  "host": "wd1",
+  "site": "MedtronicCareers",
+  "tenant": "medtronic",
+  "trajectory": 13,
+  "verified": true
  },
  "Meta": {
   "board": null,
@@ -558,29 +959,50 @@
   "trajectory": 12
  },
  "Micron": {
-  "board": null,
-  "trajectory": 14
+  "board": "workday",
+  "host": "wd1",
+  "site": "External",
+  "tenant": "micron",
+  "trajectory": 14,
+  "verified": true
  },
  "Microsoft": {
   "board": null,
   "trajectory": 19
  },
  "Moog": {
-  "board": null,
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd5",
+  "site": "MOOG_External_Career_Site",
+  "tenant": "moog",
+  "trajectory": 12,
+  "verified": true
  },
  "Motiv Space Systems": {
   "board": null,
   "trajectory": 10
  },
+ "Munters": {
+  "board": "workday",
+  "host": "wd3",
+  "site": "External_Careers",
+  "tenant": "munters",
+  "trajectory": 10,
+  "verified": true
+ },
  "Muon Space": {
   "board": "greenhouse",
   "slug": "muonspace",
-  "trajectory": 11
+  "trajectory": 11,
+  "verified": true
  },
  "NVIDIA": {
-  "board": null,
-  "trajectory": 19
+  "board": "workday",
+  "host": "wd5",
+  "site": "NVIDIAExternalCareerSite",
+  "tenant": "nvidia",
+  "trajectory": 19,
+  "verified": true
  },
  "Nel Hydrogen": {
   "board": null,
@@ -590,41 +1012,86 @@
   "board": "greenhouse",
   "postings": 81,
   "slug": "neuralink",
-  "trajectory": 17
+  "trajectory": 17,
+  "verified": true
+ },
+ "Nordson": {
+  "board": null,
+  "trajectory": 11
  },
  "Northrop Grumman": {
-  "board": null,
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd1",
+  "site": "Northrop_Grumman_External_Site",
+  "tenant": "ngc",
+  "trajectory": 12,
+  "verified": true
  },
  "Oklo": {
   "board": "greenhouse",
   "postings": 77,
   "slug": "oklo",
-  "trajectory": 13
+  "trajectory": 13,
+  "verified": true
  },
  "Onto Innovation": {
-  "board": null,
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd1",
+  "site": "ONTO_Careers",
+  "tenant": "onto",
+  "trajectory": 12,
+  "verified": true
  },
  "Pacific Fusion": {
   "board": "greenhouse",
   "postings": 25,
   "slug": "pacificfusion",
-  "trajectory": 12
+  "trajectory": 12,
+  "verified": true
  },
  "Pall Corporation": {
   "board": null,
+  "covered_by": "Danaher",
   "trajectory": 12
+ },
+ "Parker Hannifin": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Pentair": {
+  "board": "workday",
+  "host": "wd5",
+  "site": "Pentair_Careers",
+  "tenant": "pentair",
+  "trajectory": 10,
+  "verified": true
+ },
+ "Pfeiffer Vacuum": {
+  "board": null,
+  "trajectory": 11
  },
  "Planet Labs": {
   "board": "greenhouse",
   "postings": 116,
   "slug": "planetlabs",
-  "trajectory": 11
+  "trajectory": 11,
+  "verified": true
  },
  "Plug Power": {
-  "board": null,
-  "trajectory": 10
+  "board": "workday",
+  "host": "wd5",
+  "site": "Plug_Power_Inc",
+  "tenant": "plugpower",
+  "trajectory": 10,
+  "verified": true
+ },
+ "Polaris": {
+  "board": "workday",
+  "host": "wd5",
+  "site": "PolarisJobs",
+  "tenant": "polaris",
+  "trajectory": 10,
+  "verified": true
  },
  "Powin": {
   "board": null,
@@ -632,20 +1099,29 @@
  },
  "Pratt and Whitney": {
   "board": null,
+  "covered_by": "RTX",
   "trajectory": 13
+ },
+ "Procter and Gamble": {
+  "board": "workday",
+  "host": "wd5",
+  "site": "1000",
+  "tenant": "pg",
+  "trajectory": 12,
+  "verified": true
  },
  "Quaise Energy": {
   "board": "greenhouse",
   "postings": 8,
   "slug": "quaise",
-  "trajectory": 11
+  "trajectory": 11,
+  "verified": true
  },
  "Qualcomm": {
-  "board": "workday",
-  "host": "wd5",
-  "q": "mechanical intern",
-  "site": "External",
-  "tenant": "qualcomm",
+  "board": null,
+  "rejected": [
+   "qualcomm.wd12/External is empty; Qualcomm uses its own site"
+  ],
   "trajectory": 17
  },
  "Quanterix": {
@@ -657,19 +1133,25 @@
   "trajectory": 11
  },
  "REGENT": {
-  "board": "greenhouse",
-  "postings": 10,
-  "slug": "regent",
+  "board": null,
+  "rejected": [
+   "greenhouse/regent is Regent LP (Beverly Hills holding co)"
+  ],
   "trajectory": 11
  },
  "RTX": {
-  "board": null,
-  "trajectory": 13
+  "board": "workday",
+  "host": "wd5",
+  "site": "REC_RTX_Ext_Gateway",
+  "tenant": "globalhr",
+  "trajectory": 13,
+  "verified": true
  },
  "Radiant": {
-  "board": "ashby",
-  "postings": 28,
-  "slug": "radiant",
+  "board": null,
+  "rejected": [
+   "ashby/radiant is radiant.co"
+  ],
   "trajectory": 12
  },
  "Redwire": {
@@ -680,47 +1162,93 @@
   "board": "greenhouse",
   "postings": 137,
   "slug": "redwoodmaterials",
-  "trajectory": 13
+  "trajectory": 13,
+  "verified": true
  },
  "Relativity Space": {
   "board": "greenhouse",
   "slug": "relativity",
-  "trajectory": 12
+  "trajectory": 12,
+  "verified": true
+ },
+ "Renishaw": {
+  "board": "workday",
+  "host": "wd3",
+  "site": "Renishaw",
+  "tenant": "renishaw",
+  "trajectory": 11,
+  "verified": true
  },
  "Repligen": {
-  "board": null,
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd108",
+  "site": "Repligen_Careers",
+  "tenant": "repligen",
+  "trajectory": 12,
+  "verified": true
  },
  "ResMed": {
-  "board": "smartrecruiters",
-  "postings": 1,
-  "slug": "resmed",
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd3",
+  "site": "ResMed_External_Careers",
+  "tenant": "resmed",
+  "trajectory": 12,
+  "verified": true
  },
  "Revvity": {
-  "board": null,
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd103",
+  "site": "External",
+  "tenant": "revvity",
+  "trajectory": 12,
+  "verified": true
  },
  "Rocket Lab": {
   "board": "greenhouse",
   "postings": 581,
   "slug": "rocketlab",
-  "trajectory": 13
+  "trajectory": 13,
+  "verified": true
+ },
+ "Rockwell Automation": {
+  "board": "workday",
+  "host": "wd1",
+  "site": [
+   "External_Rockwell_Automation",
+   "External-Rockwell-Automation-Early-Careers"
+  ],
+  "tenant": "rockwellautomation",
+  "trajectory": 11,
+  "verified": true
  },
  "Rolls-Royce": {
-  "board": null,
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd3",
+  "site": "Intern_Graduate",
+  "tenant": "rollsroyce",
+  "trajectory": 12,
+  "verified": true
  },
  "Rondo Energy": {
   "board": "greenhouse",
   "postings": 17,
   "slug": "rondoenergy",
-  "trajectory": 11
+  "trajectory": 11,
+  "verified": true
  },
  "SES AI": {
   "board": "greenhouse",
   "postings": 43,
   "slug": "sesai",
+  "trajectory": 10,
+  "verified": true
+ },
+ "SMC Corporation": {
+  "board": null,
+  "trajectory": 10
+ },
+ "SPX FLOW": {
+  "board": null,
   "trajectory": 10
  },
  "Safran": {
@@ -731,11 +1259,16 @@
   "board": "ashby",
   "postings": 210,
   "slug": "saronic",
-  "trajectory": 14
+  "trajectory": 14,
+  "verified": true
  },
  "Sartorius": {
-  "board": null,
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd3",
+  "site": "sartoriuscareers",
+  "tenant": "sartorius",
+  "trajectory": 12,
+  "verified": true
  },
  "Scaled Composites": {
   "board": null,
@@ -745,43 +1278,84 @@
   "board": "greenhouse",
   "postings": 5,
   "slug": "seurat",
-  "trajectory": 11
+  "trajectory": 11,
+  "verified": true
  },
  "Shield AI": {
   "board": "lever",
   "postings": 612,
   "slug": "shieldai",
-  "trajectory": 15
+  "trajectory": 15,
+  "verified": true
  },
  "Sierra Nevada Corporation": {
-  "board": null,
-  "trajectory": 10
+  "board": "workday",
+  "host": "wd1",
+  "site": "SNC_External_Career_Site",
+  "tenant": "snc",
+  "trajectory": 10,
+  "verified": true
  },
  "Sierra Space": {
-  "board": null,
-  "trajectory": 11
+  "board": "workday",
+  "host": "wd1",
+  "site": "Sierra_Space_External_Career_Site",
+  "tenant": "sierraspace",
+  "trajectory": 11,
+  "verified": true
  },
  "Sila": {
-  "board": "lever",
-  "postings": 223,
-  "slug": "sila",
+  "board": null,
+  "rejected": [
+   "lever/sila is Sila Services (HVAC/plumbing)"
+  ],
   "trajectory": 11
  },
  "Skydio": {
   "board": "ashby",
   "postings": 157,
   "slug": "skydio",
-  "trajectory": 13
+  "trajectory": 13,
+  "verified": true
+ },
+ "Sonos": {
+  "board": "workday",
+  "host": "wd1",
+  "site": [
+   "Sonos",
+   "Student_Opportunities"
+  ],
+  "tenant": "sonos",
+  "trajectory": 12,
+  "verified": true
  },
  "SpaceX": {
   "board": "greenhouse",
   "slug": "spacex",
-  "trajectory": 18
+  "trajectory": 18,
+  "verified": true
+ },
+ "Spirax Sarco": {
+  "board": null,
+  "trajectory": 10
+ },
+ "Spirit AeroSystems": {
+  "board": null,
+  "trajectory": 10
+ },
+ "Stanley Black and Decker": {
+  "board": "workday",
+  "host": "wd1",
+  "site": "Stanley_Black_Decker_Career_Site",
+  "tenant": "sbdinc",
+  "trajectory": 11,
+  "verified": true
  },
  "Stoke Space": {
   "board": "greenhouse",
   "slug": "stokespacetechnologies",
-  "trajectory": 12
+  "trajectory": 12,
+  "verified": true
  },
  "Stratasys": {
   "board": null,
@@ -791,13 +1365,30 @@
   "board": "greenhouse",
   "postings": 62,
   "slug": "stratolaunch",
-  "trajectory": 11
+  "trajectory": 11,
+  "verified": true
  },
  "Stryker": {
-  "board": null,
-  "trajectory": 14
+  "board": "workday",
+  "host": "wd1",
+  "site": "StrykerCareers",
+  "tenant": "stryker",
+  "trajectory": 14,
+  "verified": true
  },
  "Sublime Systems": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Sulzer": {
+  "board": "workday",
+  "host": "wd502",
+  "site": "SulzerJobs",
+  "tenant": "sulzer",
+  "trajectory": 10,
+  "verified": true
+ },
+ "Swagelok": {
   "board": null,
   "trajectory": 11
  },
@@ -820,6 +1411,14 @@
  "Tektronix": {
   "board": null,
   "trajectory": 12
+ },
+ "Teledyne FLIR": {
+  "board": "workday",
+  "host": "wd1",
+  "site": "flircareers",
+  "tenant": "flir",
+  "trajectory": 12,
+  "verified": true
  },
  "Teradyne": {
   "board": null,
@@ -845,15 +1444,32 @@
   "board": null,
   "trajectory": 13
  },
+ "Trane Technologies": {
+  "board": "workday",
+  "host": "wd12",
+  "site": "Trane_Technologies_Careers",
+  "tenant": "tranetechnologies",
+  "trajectory": 11,
+  "verified": true
+ },
  "TransDigm": {
   "board": null,
   "trajectory": 11
+ },
+ "Trimble": {
+  "board": "workday",
+  "host": "wd1",
+  "site": "TrimbleCareers",
+  "tenant": "trimble",
+  "trajectory": 11,
+  "verified": true
  },
  "True Anomaly": {
   "board": "greenhouse",
   "postings": 208,
   "slug": "trueanomalyinc",
-  "trajectory": 12
+  "trajectory": 12,
+  "verified": true
  },
  "Type One Energy": {
   "board": null,
@@ -866,23 +1482,31 @@
  "Ursa Major": {
   "board": "greenhouse",
   "slug": "ursamajor",
+  "trajectory": 11,
+  "verified": true
+ },
+ "VAT Group": {
+  "board": null,
   "trajectory": 11
  },
  "Valar Atomics": {
   "board": "greenhouse",
   "postings": 107,
   "slug": "valaratomics",
-  "trajectory": 10
+  "trajectory": 10,
+  "verified": true
  },
  "Varda": {
   "board": "greenhouse",
   "slug": "vardaspace",
-  "trajectory": 13
+  "trajectory": 13,
+  "verified": true
  },
  "Vast": {
   "board": "greenhouse",
   "slug": "vast",
-  "trajectory": 11
+  "trajectory": 11,
+  "verified": true
  },
  "Veeco": {
   "board": null,
@@ -892,31 +1516,71 @@
   "board": null,
   "trajectory": 10
  },
+ "Victaulic": {
+  "board": "workday",
+  "host": "wd1",
+  "site": "victaulic_careers",
+  "tenant": "victaulic",
+  "trajectory": 10,
+  "verified": true
+ },
  "VulcanForms": {
   "board": "smartrecruiters",
   "postings": 1,
   "slug": "vulcanformsinc",
-  "trajectory": 12
+  "trajectory": 12,
+  "verified": true
  },
  "Waters Corporation": {
   "board": null,
   "trajectory": 13
+ },
+ "Watson-Marlow": {
+  "board": null,
+  "trajectory": 10
+ },
+ "Watts Water Technologies": {
+  "board": "workday",
+  "host": "wd5",
+  "site": [
+   "External",
+   "Intern-External"
+  ],
+  "tenant": "wattswater",
+  "trajectory": 10,
+  "verified": true
  },
  "Westinghouse": {
   "board": null,
   "trajectory": 11
  },
  "Wisk Aero": {
-  "board": null,
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd108",
+  "site": "Wisk_Careers",
+  "tenant": "wisk",
+  "trajectory": 12,
+  "verified": true
  },
  "Woodward": {
-  "board": null,
-  "trajectory": 12
+  "board": "workday",
+  "host": "wd5",
+  "site": "woodward",
+  "tenant": "woodward",
+  "trajectory": 12,
+  "verified": true
  },
  "X-energy": {
+  "board": "workday",
+  "host": "wd5",
+  "site": "X-energyUS",
+  "tenant": "xenergy",
+  "trajectory": 11,
+  "verified": true
+ },
+ "Xylem": {
   "board": null,
-  "trajectory": 11
+  "trajectory": 10
  },
  "Zap Energy": {
   "board": null,
@@ -929,5 +1593,21 @@
  "Zipline": {
   "board": null,
   "trajectory": 14
+ },
+ "iRobot": {
+  "board": "workday",
+  "host": "wd503",
+  "site": "iRobot",
+  "tenant": "irobot",
+  "trajectory": 10,
+  "verified": true
+ },
+ "nVent": {
+  "board": "workday",
+  "host": "wd5",
+  "site": "nVent",
+  "tenant": "nvent",
+  "trajectory": 11,
+  "verified": true
  }
 }
