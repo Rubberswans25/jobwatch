@@ -1,0 +1,55 @@
+name: jobwatch
+
+on:
+  schedule:
+    - cron: "*/20 12-23 * * 1-5"
+    - cron: "0 15 * * 0,6"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: jobwatch
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+
+      - name: Scan boards
+        run: python jobwatch/watch.py
+
+      - name: Draft letters for new high scorers
+        if: env.ANTHROPIC_API_KEY != ''
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python jobwatch/tailor.py --llm --new-only --min-score 55 --hours 2
+
+      - name: Commit results
+        run: |
+          git config user.name  "jobwatch"
+          git config user.email "jobwatch@users.noreply.github.com"
+          git add docs/data.json jobwatch/seen.json
+          git diff --staged --quiet || git commit -m "jobwatch: $(date -u +%F\ %H:%M) scan"
+          git push
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: docs }
+
+  deploy:
+    needs: scan
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.dep.outputs.page_url }}
+    steps:
+      - id: dep
+        uses: actions/deploy-pages@v4

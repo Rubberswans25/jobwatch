@@ -1,0 +1,342 @@
+# name | trajectory(1-20)
+# trajectory = comp + scale + career path. Fit is scored separately from the role text.
+Apple|20
+Google|20
+NVIDIA|19
+Meta|19
+Microsoft|19
+Amazon Robotics|16
+Amazon Lab126|16
+Qualcomm|17
+Applied Materials|17
+Lam Research|16
+KLA|16
+ASML|17
+Intel|14
+AMD|15
+Micron|14
+Texas Instruments|15
+Analog Devices|15
+Teradyne|14
+MKS Instruments|13
+Entegris|13
+Axcelis|12
+Onto Innovation|12
+Veeco|12
+Cognex|13
+Brooks Automation|12
+Tesla|16
+Anduril|18
+Shield AI|15
+SpaceX|18
+Neuralink|17
+Figure AI|16
+Boston Dynamics|16
+Agility Robotics|14
+Apptronik|13
+Symbotic|14
+Zipline|14
+Skydio|13
+Saronic|14
+Castelion|13
+Epirus|13
+CHAOS Industries|13
+Hermeus|12
+Boom Supersonic|12
+Joby Aviation|13
+Archer Aviation|13
+Wisk Aero|12
+BETA Technologies|13
+REGENT|11
+Electra|11
+Varda|13
+Astranis|12
+Rocket Lab|13
+Blue Origin|15
+Stoke Space|12
+Relativity Space|12
+Firefly Aerospace|11
+Vast|11
+Axiom Space|11
+Sierra Space|11
+Intuitive Machines|11
+Astrobotic|10
+Redwire|10
+Muon Space|11
+Umbra|11
+Capella Space|11
+Planet Labs|11
+K2 Space|12
+Blue Canyon Technologies|10
+CesiumAstro|11
+Loft Orbital|11
+True Anomaly|12
+Ursa Major|11
+Motiv Space Systems|10
+Helion|14
+Commonwealth Fusion|14
+Pacific Fusion|12
+Zap Energy|11
+Type One Energy|11
+TAE Technologies|11
+General Fusion|10
+Kairos Power|12
+Oklo|13
+TerraPower|13
+X-energy|11
+Radiant|12
+Valar Atomics|10
+BWX Technologies|11
+Westinghouse|11
+Form Energy|12
+Antora Energy|11
+Electric Hydrogen|12
+Redwood Materials|13
+Sila|11
+QuantumScape|11
+24M Technologies|10
+Factorial Energy|10
+SES AI|10
+Fluence|11
+Powin|10
+ESS Inc|10
+Eos Energy|10
+Bloom Energy|12
+Plug Power|10
+Ballard Power|10
+Nel Hydrogen|10
+Fervo Energy|12
+Quaise Energy|11
+Boston Metal|11
+Sublime Systems|11
+Rondo Energy|11
+Hadrian|14
+Freeform|13
+Machina Labs|12
+VulcanForms|12
+Seurat Technologies|11
+Formlabs|16
+Markforged|11
+Desktop Metal|10
+Carbon|11
+Stratasys|10
+Instron|13
+Waters Corporation|13
+TA Instruments|12
+Agilent Technologies|14
+Bruker|12
+Revvity|12
+Bio-Rad|12
+Illumina|14
+10x Genomics|13
+Quanterix|11
+Repligen|12
+Cytiva|13
+Pall Corporation|12
+Sartorius|12
+Hamilton Company|12
+Tecan|11
+HighRes Biosolutions|11
+Azenta|11
+Formulatrix|11
+Thermo Fisher Scientific|13
+Danaher|14
+Beckman Coulter|12
+Mettler Toledo|12
+Keysight Technologies|14
+Tektronix|12
+Fluke|12
+Fortive|13
+Intuitive Surgical|16
+Stryker|14
+Medtronic|13
+Boston Scientific|14
+Johnson and Johnson|13
+Abiomed|13
+Insulet|14
+Edwards Lifesciences|13
+Dexcom|13
+Abbott|12
+Becton Dickinson|12
+Zimmer Biomet|11
+Globus Medical|11
+Arthrex|11
+Hologic|12
+ResMed|12
+Masimo|11
+GE HealthCare|12
+Align Technology|12
+Draper|12
+MITRE|11
+Aerospace Corporation|12
+RTX|13
+Collins Aerospace|12
+Pratt and Whitney|13
+Lockheed Martin|12
+Northrop Grumman|12
+Boeing|12
+BAE Systems|11
+General Dynamics Mission Systems|11
+L3Harris|11
+Kratos Defense|10
+AeroVironment|11
+General Atomics|11
+Textron Systems|10
+Bell Textron|10
+Sierra Nevada Corporation|10
+BlueHalo|11
+Aurora Flight Sciences|11
+Scaled Composites|11
+Stratolaunch|11
+Venus Aerospace|10
+GE Aerospace|14
+GE Vernova|12
+Rolls-Royce|12
+Safran|11
+Honeywell|12
+Woodward|12
+Moog|12
+Crane Aerospace and Electronics|11
+Eaton|12
+Curtiss-Wright|11
+TransDigm|11
+Howmet Aerospace|11
+Hexcel|10
+Spirit AeroSystems|10
+Parker Hannifin|11
+Emerson|11
+Swagelok|11
+ITT|10
+Flowserve|10
+IDEX|11
+Watts Water Technologies|10
+Pentair|10
+Xylem|10
+Grundfos|10
+Alfa Laval|10
+Chart Industries|11
+Atlas Copco|11
+Edwards Vacuum|11
+Pfeiffer Vacuum|11
+VAT Group|11
+INFICON|11
+Nordson|11
+Graco|11
+Watson-Marlow|10
+SPX FLOW|10
+Donaldson|10
+Victaulic|10
+Spirax Sarco|10
+IMI|10
+Festo|10
+SMC Corporation|10
+Burkert|10
+Sulzer|10
+Endress Hauser|11
+Alicat Scientific|10
+Badger Meter|10
+Yokogawa|10
+Ingersoll Rand|10
+Bose|13
+Sonos|12
+SharkNinja|12
+Lutron Electronics|12
+Milwaukee Tool|11
+Stanley Black and Decker|11
+Dyson|12
+GoPro|10
+iRobot|10
+Garmin|13
+Keurig Dr Pepper|11
+Whirlpool|10
+Procter and Gamble|12
+Strive Robotics|11
+Pickle Robot|11
+Locus Robotics|11
+Vecna Robotics|11
+Realtime Robotics|10
+RightHand Robotics|11
+Dexterity|12
+Gecko Robotics|13
+GrayMatter Robotics|11
+Bright Machines|11
+Nuro|12
+Zoox|15
+Waymo|17
+Aurora Innovation|13
+Serve Robotics|11
+Toyota Research Institute|13
+Rivian|13
+Lucid Motors|12
+Ford|11
+General Motors|11
+Cummins|12
+BorgWarner|11
+Aptiv|11
+ZF|10
+Magna International|10
+John Deere|12
+Caterpillar|12
+Oshkosh|10
+Pratt Miller|11
+Polaris|10
+Bosch|12
+Siemens|12
+ABB|11
+Rockwell Automation|11
+Schneider Electric|12
+Vertiv|13
+Johnson Controls|11
+Trane Technologies|11
+Carrier|11
+Modine|11
+nVent|11
+CoolIT Systems|12
+Boyd|11
+Munters|10
+Supermicro|13
+Dell Technologies|13
+Hewlett Packard Enterprise|12
+Celestica|11
+Flex|11
+Jabil|11
+Sanmina|10
+Coherent|12
+Corning|12
+3M|12
+DuPont|11
+Saint-Gobain|11
+Cabot Corporation|10
+Teledyne|12
+Teledyne FLIR|12
+AMETEK|11
+Trimble|11
+Hexagon|11
+Renishaw|11
+Mitutoyo|10
+CoreWeave|14
+Crusoe|13
+Equinix|12
+Digital Realty|11
+Vantage Data Centers|11
+Aligned Data Centers|11
+Lambda|13
+SLB|13
+Baker Hughes|12
+Halliburton|11
+NOV|10
+TechnipFMC|11
+Oceaneering|11
+Saildrone|11
+Blue Robotics|10
+Ocean Infinity|11
+Generac|10
+Siemens Energy|12
+Mitsubishi Power|11
+Solar Turbines|11
+Hitachi Energy|11
+Wabtec|10
+Alstom|10
+Air Liquide|11
+Linde|11
+Air Products|11

@@ -1,0 +1,951 @@
+{
+ "10x Genomics": {
+  "board": null,
+  "trajectory": 13
+ },
+ "24M Technologies": {
+  "board": null,
+  "trajectory": 10
+ },
+ "AMD": {
+  "board": null,
+  "trajectory": 15
+ },
+ "ASML": {
+  "board": null,
+  "trajectory": 17
+ },
+ "Abbott": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Abiomed": {
+  "board": null,
+  "trajectory": 13
+ },
+ "AeroVironment": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Aerospace Corporation": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Agilent Technologies": {
+  "board": null,
+  "trajectory": 14
+ },
+ "Agility Robotics": {
+  "board": "greenhouse",
+  "postings": 73,
+  "slug": "agilityrobotics",
+  "trajectory": 14
+ },
+ "Align Technology": {
+  "board": "greenhouse",
+  "postings": 12,
+  "slug": "align",
+  "trajectory": 12
+ },
+ "Amazon Lab126": {
+  "board": null,
+  "trajectory": 16
+ },
+ "Amazon Robotics": {
+  "board": null,
+  "trajectory": 16
+ },
+ "Analog Devices": {
+  "board": "ashby",
+  "postings": 22,
+  "slug": "analog",
+  "trajectory": 15
+ },
+ "Anduril": {
+  "board": "greenhouse",
+  "slug": "andurilindustries",
+  "trajectory": 18
+ },
+ "Antora Energy": {
+  "board": "greenhouse",
+  "postings": 41,
+  "slug": "antora",
+  "trajectory": 11
+ },
+ "Apple": {
+  "board": "workday",
+  "host": "wd5",
+  "q": "mechanical intern",
+  "site": "External",
+  "tenant": "apple",
+  "trajectory": 20
+ },
+ "Applied Materials": {
+  "board": "ashby",
+  "postings": 322,
+  "slug": "applied",
+  "trajectory": 17
+ },
+ "Apptronik": {
+  "board": "greenhouse",
+  "postings": 78,
+  "slug": "apptronik",
+  "trajectory": 13
+ },
+ "Archer Aviation": {
+  "board": "greenhouse",
+  "postings": 1,
+  "slug": "archer",
+  "trajectory": 13
+ },
+ "Arthrex": {
+  "board": "smartrecruiters",
+  "postings": 1,
+  "slug": "arthrex",
+  "trajectory": 11
+ },
+ "Astranis": {
+  "board": "greenhouse",
+  "slug": "astranis",
+  "trajectory": 12
+ },
+ "Astrobotic": {
+  "board": null,
+  "trajectory": 10
+ },
+ "Aurora Flight Sciences": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Axcelis": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Axiom Space": {
+  "board": "greenhouse",
+  "postings": 18,
+  "slug": "axiom",
+  "trajectory": 11
+ },
+ "Azenta": {
+  "board": null,
+  "trajectory": 11
+ },
+ "BAE Systems": {
+  "board": null,
+  "trajectory": 11
+ },
+ "BETA Technologies": {
+  "board": null,
+  "trajectory": 13
+ },
+ "BWX Technologies": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Ballard Power": {
+  "board": null,
+  "trajectory": 10
+ },
+ "Beckman Coulter": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Becton Dickinson": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Bell Textron": {
+  "board": null,
+  "trajectory": 10
+ },
+ "Bio-Rad": {
+  "board": "ashby",
+  "postings": 11,
+  "slug": "bio",
+  "trajectory": 12
+ },
+ "Bloom Energy": {
+  "board": "lever",
+  "postings": 11,
+  "slug": "bloom",
+  "trajectory": 12
+ },
+ "Blue Canyon Technologies": {
+  "board": "lever",
+  "postings": 10,
+  "slug": "blue",
+  "trajectory": 10
+ },
+ "Blue Origin": {
+  "board": "lever",
+  "postings": 10,
+  "slug": "blue",
+  "trajectory": 15
+ },
+ "BlueHalo": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Boeing": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Boom Supersonic": {
+  "board": "ashby",
+  "postings": 13,
+  "slug": "boom",
+  "trajectory": 12
+ },
+ "Boston Dynamics": {
+  "board": null,
+  "trajectory": 16
+ },
+ "Boston Metal": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Boston Scientific": {
+  "board": null,
+  "trajectory": 14
+ },
+ "Brooks Automation": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Bruker": {
+  "board": null,
+  "trajectory": 12
+ },
+ "CHAOS Industries": {
+  "board": "greenhouse",
+  "postings": 149,
+  "slug": "chaosindustries",
+  "trajectory": 13
+ },
+ "Capella Space": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Carbon": {
+  "board": "greenhouse",
+  "postings": 12,
+  "slug": "carbon",
+  "trajectory": 11
+ },
+ "Castelion": {
+  "board": null,
+  "trajectory": 13
+ },
+ "CesiumAstro": {
+  "board": "lever",
+  "postings": 339,
+  "slug": "CesiumAstro",
+  "trajectory": 11
+ },
+ "Cognex": {
+  "board": null,
+  "trajectory": 13
+ },
+ "Collins Aerospace": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Commonwealth Fusion": {
+  "board": "lever",
+  "slug": "cfsenergy",
+  "trajectory": 14
+ },
+ "Crane Aerospace and Electronics": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Curtiss-Wright": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Cytiva": {
+  "board": null,
+  "trajectory": 13
+ },
+ "Danaher": {
+  "board": null,
+  "trajectory": 14
+ },
+ "Desktop Metal": {
+  "board": null,
+  "trajectory": 10
+ },
+ "Dexcom": {
+  "board": null,
+  "trajectory": 13
+ },
+ "Draper": {
+  "board": null,
+  "trajectory": 12
+ },
+ "ESS Inc": {
+  "board": "greenhouse",
+  "postings": 3,
+  "slug": "ess",
+  "trajectory": 10
+ },
+ "Eaton": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Edwards Lifesciences": {
+  "board": null,
+  "trajectory": 13
+ },
+ "Electra": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Electric Hydrogen": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Entegris": {
+  "board": null,
+  "trajectory": 13
+ },
+ "Eos Energy": {
+  "board": null,
+  "trajectory": 10
+ },
+ "Epirus": {
+  "board": "greenhouse",
+  "postings": 44,
+  "slug": "epirus",
+  "trajectory": 13
+ },
+ "Factorial Energy": {
+  "board": "greenhouse",
+  "postings": 11,
+  "slug": "factorialenergy",
+  "trajectory": 10
+ },
+ "Fervo Energy": {
+  "board": "greenhouse",
+  "postings": 5,
+  "slug": "fervoenergy",
+  "trajectory": 12
+ },
+ "Figure AI": {
+  "board": "greenhouse",
+  "postings": 96,
+  "slug": "figureai",
+  "trajectory": 16
+ },
+ "Firefly Aerospace": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Fluence": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Fluke": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Forge Atomics": {
+  "board": "ashby",
+  "slug": "forgeatomics",
+  "trajectory": 10
+ },
+ "Form Energy": {
+  "board": "ashby",
+  "postings": 204,
+  "slug": "formenergy",
+  "trajectory": 12
+ },
+ "Formlabs": {
+  "board": "greenhouse",
+  "slug": "formlabs",
+  "trajectory": 16
+ },
+ "Formulatrix": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Fortive": {
+  "board": null,
+  "trajectory": 13
+ },
+ "Freeform": {
+  "board": null,
+  "trajectory": 13
+ },
+ "GE Aerospace": {
+  "board": null,
+  "trajectory": 14
+ },
+ "GE HealthCare": {
+  "board": null,
+  "trajectory": 12
+ },
+ "GE Vernova": {
+  "board": null,
+  "trajectory": 12
+ },
+ "General Atomics": {
+  "board": "greenhouse",
+  "postings": 1,
+  "slug": "general",
+  "trajectory": 11
+ },
+ "General Dynamics Mission Systems": {
+  "board": "greenhouse",
+  "postings": 1,
+  "slug": "general",
+  "trajectory": 11
+ },
+ "General Fusion": {
+  "board": "greenhouse",
+  "postings": 1,
+  "slug": "general",
+  "trajectory": 10
+ },
+ "Globus Medical": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Google": {
+  "board": null,
+  "trajectory": 20
+ },
+ "Hadrian": {
+  "board": null,
+  "trajectory": 14
+ },
+ "Hamilton Company": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Helion": {
+  "board": "ashby",
+  "postings": 69,
+  "slug": "helion",
+  "trajectory": 14
+ },
+ "Hermeus": {
+  "board": "lever",
+  "postings": 81,
+  "slug": "hermeus",
+  "trajectory": 12
+ },
+ "Hexcel": {
+  "board": null,
+  "trajectory": 10
+ },
+ "HighRes Biosolutions": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Hologic": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Honeywell": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Howmet Aerospace": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Illumina": {
+  "board": null,
+  "trajectory": 14
+ },
+ "Instron": {
+  "board": null,
+  "trajectory": 13
+ },
+ "Insulet": {
+  "board": null,
+  "trajectory": 14
+ },
+ "Intel": {
+  "board": null,
+  "trajectory": 14
+ },
+ "Intuitive Machines": {
+  "board": "smartrecruiters",
+  "postings": 1,
+  "slug": "intuitive",
+  "trajectory": 11
+ },
+ "Intuitive Surgical": {
+  "board": "smartrecruiters",
+  "postings": 1,
+  "slug": "intuitive",
+  "trajectory": 16
+ },
+ "Joby Aviation": {
+  "board": null,
+  "trajectory": 13
+ },
+ "Johnson and Johnson": {
+  "board": null,
+  "trajectory": 13
+ },
+ "K2 Space": {
+  "board": null,
+  "trajectory": 12
+ },
+ "KLA": {
+  "board": null,
+  "trajectory": 16
+ },
+ "Kairos Power": {
+  "board": "greenhouse",
+  "postings": 35,
+  "slug": "kairospower",
+  "trajectory": 12
+ },
+ "Keysight Technologies": {
+  "board": null,
+  "trajectory": 14
+ },
+ "Kratos Defense": {
+  "board": null,
+  "trajectory": 10
+ },
+ "L3Harris": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Lam Research": {
+  "board": null,
+  "trajectory": 16
+ },
+ "Lockheed Martin": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Loft Orbital": {
+  "board": "lever",
+  "postings": 65,
+  "slug": "loftorbital",
+  "trajectory": 11
+ },
+ "MITRE": {
+  "board": null,
+  "trajectory": 11
+ },
+ "MKS Instruments": {
+  "board": null,
+  "trajectory": 13
+ },
+ "Machina Labs": {
+  "board": "lever",
+  "postings": 30,
+  "slug": "MachinaLabs",
+  "trajectory": 12
+ },
+ "Markforged": {
+  "board": "greenhouse",
+  "slug": "markforged",
+  "trajectory": 11
+ },
+ "Masimo": {
+  "board": "smartrecruiters",
+  "postings": 1,
+  "slug": "masimo",
+  "trajectory": 11
+ },
+ "Medtronic": {
+  "board": "smartrecruiters",
+  "postings": 1,
+  "slug": "medtronicinc",
+  "trajectory": 13
+ },
+ "Meta": {
+  "board": null,
+  "trajectory": 19
+ },
+ "Mettler Toledo": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Micron": {
+  "board": null,
+  "trajectory": 14
+ },
+ "Microsoft": {
+  "board": null,
+  "trajectory": 19
+ },
+ "Moog": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Motiv Space Systems": {
+  "board": null,
+  "trajectory": 10
+ },
+ "Muon Space": {
+  "board": "greenhouse",
+  "slug": "muonspace",
+  "trajectory": 11
+ },
+ "NVIDIA": {
+  "board": null,
+  "trajectory": 19
+ },
+ "Nel Hydrogen": {
+  "board": null,
+  "trajectory": 10
+ },
+ "Neuralink": {
+  "board": "greenhouse",
+  "postings": 81,
+  "slug": "neuralink",
+  "trajectory": 17
+ },
+ "Northrop Grumman": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Oklo": {
+  "board": "greenhouse",
+  "postings": 77,
+  "slug": "oklo",
+  "trajectory": 13
+ },
+ "Onto Innovation": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Pacific Fusion": {
+  "board": "greenhouse",
+  "postings": 25,
+  "slug": "pacificfusion",
+  "trajectory": 12
+ },
+ "Pall Corporation": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Planet Labs": {
+  "board": "greenhouse",
+  "postings": 116,
+  "slug": "planetlabs",
+  "trajectory": 11
+ },
+ "Plug Power": {
+  "board": null,
+  "trajectory": 10
+ },
+ "Powin": {
+  "board": null,
+  "trajectory": 10
+ },
+ "Pratt and Whitney": {
+  "board": null,
+  "trajectory": 13
+ },
+ "Quaise Energy": {
+  "board": "greenhouse",
+  "postings": 8,
+  "slug": "quaise",
+  "trajectory": 11
+ },
+ "Qualcomm": {
+  "board": "workday",
+  "host": "wd5",
+  "q": "mechanical intern",
+  "site": "External",
+  "tenant": "qualcomm",
+  "trajectory": 17
+ },
+ "Quanterix": {
+  "board": null,
+  "trajectory": 11
+ },
+ "QuantumScape": {
+  "board": null,
+  "trajectory": 11
+ },
+ "REGENT": {
+  "board": "greenhouse",
+  "postings": 10,
+  "slug": "regent",
+  "trajectory": 11
+ },
+ "RTX": {
+  "board": null,
+  "trajectory": 13
+ },
+ "Radiant": {
+  "board": "ashby",
+  "postings": 28,
+  "slug": "radiant",
+  "trajectory": 12
+ },
+ "Redwire": {
+  "board": null,
+  "trajectory": 10
+ },
+ "Redwood Materials": {
+  "board": "greenhouse",
+  "postings": 137,
+  "slug": "redwoodmaterials",
+  "trajectory": 13
+ },
+ "Relativity Space": {
+  "board": "greenhouse",
+  "slug": "relativity",
+  "trajectory": 12
+ },
+ "Repligen": {
+  "board": null,
+  "trajectory": 12
+ },
+ "ResMed": {
+  "board": "smartrecruiters",
+  "postings": 1,
+  "slug": "resmed",
+  "trajectory": 12
+ },
+ "Revvity": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Rocket Lab": {
+  "board": "greenhouse",
+  "postings": 581,
+  "slug": "rocketlab",
+  "trajectory": 13
+ },
+ "Rolls-Royce": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Rondo Energy": {
+  "board": "greenhouse",
+  "postings": 17,
+  "slug": "rondoenergy",
+  "trajectory": 11
+ },
+ "SES AI": {
+  "board": "greenhouse",
+  "postings": 43,
+  "slug": "sesai",
+  "trajectory": 10
+ },
+ "Safran": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Saronic": {
+  "board": "ashby",
+  "postings": 210,
+  "slug": "saronic",
+  "trajectory": 14
+ },
+ "Sartorius": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Scaled Composites": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Seurat Technologies": {
+  "board": "greenhouse",
+  "postings": 5,
+  "slug": "seurat",
+  "trajectory": 11
+ },
+ "Shield AI": {
+  "board": "lever",
+  "postings": 612,
+  "slug": "shieldai",
+  "trajectory": 15
+ },
+ "Sierra Nevada Corporation": {
+  "board": "ashby",
+  "postings": 190,
+  "slug": "sierra",
+  "trajectory": 10
+ },
+ "Sierra Space": {
+  "board": "ashby",
+  "postings": 190,
+  "slug": "sierra",
+  "trajectory": 11
+ },
+ "Sila": {
+  "board": "lever",
+  "postings": 223,
+  "slug": "sila",
+  "trajectory": 11
+ },
+ "Skydio": {
+  "board": "ashby",
+  "postings": 157,
+  "slug": "skydio",
+  "trajectory": 13
+ },
+ "SpaceX": {
+  "board": "greenhouse",
+  "slug": "spacex",
+  "trajectory": 18
+ },
+ "Stoke Space": {
+  "board": "greenhouse",
+  "slug": "stokespacetechnologies",
+  "trajectory": 12
+ },
+ "Stratasys": {
+  "board": null,
+  "trajectory": 10
+ },
+ "Stratolaunch": {
+  "board": "greenhouse",
+  "postings": 62,
+  "slug": "stratolaunch",
+  "trajectory": 11
+ },
+ "Stryker": {
+  "board": null,
+  "trajectory": 14
+ },
+ "Sublime Systems": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Symbotic": {
+  "board": null,
+  "trajectory": 14
+ },
+ "TA Instruments": {
+  "board": null,
+  "trajectory": 12
+ },
+ "TAE Technologies": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Tecan": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Tektronix": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Teradyne": {
+  "board": null,
+  "trajectory": 14
+ },
+ "TerraPower": {
+  "board": null,
+  "trajectory": 13
+ },
+ "Tesla": {
+  "board": null,
+  "trajectory": 16
+ },
+ "Texas Instruments": {
+  "board": null,
+  "trajectory": 15
+ },
+ "Textron Systems": {
+  "board": null,
+  "trajectory": 10
+ },
+ "Thermo Fisher Scientific": {
+  "board": null,
+  "trajectory": 13
+ },
+ "TransDigm": {
+  "board": null,
+  "trajectory": 11
+ },
+ "True Anomaly": {
+  "board": "greenhouse",
+  "postings": 208,
+  "slug": "trueanomalyinc",
+  "trajectory": 12
+ },
+ "Type One Energy": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Umbra": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Ursa Major": {
+  "board": "greenhouse",
+  "slug": "ursamajor",
+  "trajectory": 11
+ },
+ "Valar Atomics": {
+  "board": "greenhouse",
+  "postings": 107,
+  "slug": "valaratomics",
+  "trajectory": 10
+ },
+ "Varda": {
+  "board": "greenhouse",
+  "slug": "vardaspace",
+  "trajectory": 13
+ },
+ "Vast": {
+  "board": "greenhouse",
+  "slug": "vast",
+  "trajectory": 11
+ },
+ "Veeco": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Venus Aerospace": {
+  "board": null,
+  "trajectory": 10
+ },
+ "VulcanForms": {
+  "board": "smartrecruiters",
+  "postings": 1,
+  "slug": "vulcanformsinc",
+  "trajectory": 12
+ },
+ "Waters Corporation": {
+  "board": null,
+  "trajectory": 13
+ },
+ "Westinghouse": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Wisk Aero": {
+  "board": null,
+  "trajectory": 12
+ },
+ "Woodward": {
+  "board": null,
+  "trajectory": 12
+ },
+ "X-energy": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Zap Energy": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Zimmer Biomet": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Zipline": {
+  "board": null,
+  "trajectory": 14
+ }
+}

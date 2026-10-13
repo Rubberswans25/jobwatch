@@ -1,0 +1,60 @@
+{
+  "opener": {
+    "text": "I'm applying for the {ROLE} at {COMPANY}. I'm a mechanical engineering student at Northeastern, currently on co-op at Parker Hannifin in precision fluidics.",
+    "always": true
+  },
+  "system_level": {
+    "triggers": ["test stand","integration","debug","troubleshoot","root cause","failure","commission"],
+    "weight": 6,
+    "text": "Most of my work sits at the system level, where things break."
+  },
+  "tester_build": {
+    "triggers": ["test stand","fluid","hydraulic","pneumatic","p&id","plumbing","loop","pump","valve","pressure","gse","ground support","test equipment","commission"],
+    "weight": 20,
+    "text": "At Parker I built a closed-loop valve endurance tester end to end. Three teams wanted three different things from it, so I got that down to one scope, worked out the hydraulic architecture, released the drawings and P&IDs, sized the pump and instrumentation, and then built it. Suction and return runs, filtration, isolation valves, pump commissioning, leak checks."
+  },
+  "check_valve": {
+    "triggers": ["root cause","failure","debug","troubleshoot","valve","pressure","diagnos","reliability","test"],
+    "weight": 18,
+    "text": "On the first runs a check valve would not reach cracking pressure. I went after the valve for longer than I should have. The problem was air in the line, which is compressible and was absorbing the pressure rise instead of passing it to the valve. A bleed valve fixed it, and bleed points at the high spots are now standard on our P&IDs."
+  },
+  "bleach": {
+    "triggers": ["corrosion","material compatibility","chemical","cleaning","pump","fluid","dosing","wetted"],
+    "weight": 10,
+    "text": "I am extending the same loop into a corrosion test on wetted internals, cycling hypochlorite against air purge and DI flush. I sized the dosing pump off the flow needed to fill the valve string and its tubing in 2 seconds and went peristaltic, so the fluid contacts nothing but tubing and there is no wetted impeller or seal to qualify."
+  },
+  "leak_fixture": {
+    "triggers": ["leak","seal","inspection","quality","metrology","tolerance","gd&t","measurement","instrumentation"],
+    "weight": 14,
+    "text": "I also designed a pressure-decay leak-test fixture for incoming inspection of a molded component. Flow instrumentation fine enough to resolve the leak rate was not available at a cost the application could justify, so I traded dwell time for resolution and went with decay. Locating and sealing are separate functions in that fixture, so the probe seals against the orifice without over-constraining a part that carries real dimensional variation, and I sized the probe against worst-case tolerance with MMC and LMC instead of nominal."
+  },
+  "fixtures": {
+    "triggers": ["fixture","tooling","manufacturing","production","assembly","repeatab","operator","dfm","process"],
+    "weight": 12,
+    "text": "Ground support and production fixturing is the other half of it. I designed a load-frame nest that puts a molded part under the probe the same way every run, and a 10-station purge manifold that dries a full batch from one inlet instead of someone blowing parts off one at a time. Both exist for the same reason. If a step depends on who is doing it, the measurement after it is not worth much."
+  },
+  "braille": {
+    "triggers": ["mechanism","actuat","gear","linkage","motor","robot","precision","packaging","tolerance","design","cad","prototype"],
+    "weight": 16,
+    "text": "At Northeastern's Forge lab I led mechanism design on a refreshable Braille cell. A six-dot cell is 6.25 mm wide and every usable motor is wider than that, so you cannot give each dot its own actuator and still tile the cells. I encoded each half-cell's eight pin states as positions on a stepped rack and put the motors outboard, driving through a bevel geartrain. That gets all 64 characters from 2 actuators. I drew the release package, printed the prototypes, and ran the cycle tests."
+  },
+  "braille_failure": {
+    "triggers": ["reliability","cycle","wear","failure","durability","test","creep","material"],
+    "weight": 12,
+    "text": "I iterate from failure modes. If it jams, I fix the geometry or the tolerance and run it again. Early builds jammed under side load, which is the only way it ever runs: guide clearance too tight at 0.1 mm once print tolerance and deflection piled on, plus PLA creeping under sustained load. Clearance to 0.15 mm, lead-in chamfers, PETG. Jam rate went from about 15% to under 2% over 2,000 cycles."
+  },
+  "vision": {
+    "triggers": ["python","software","automation","sensor","vision","control","data","embedded","mechatronic","i2c","camera"],
+    "weight": 11,
+    "text": "I also built a vision-guided pan/tilt tracker on a Raspberry Pi with ArUco detection and servo control under a Python control loop. Getting the parts working alone was easy. Holding lock was not. I chased I2C faults, frame acquisition failures, and timing conflicts between the vision pipeline and the control loop until it ran."
+  },
+  "melagen": {
+    "triggers": ["experiment","statistic","data analysis","research","material","characteriz","doe","anova","validation"],
+    "weight": 10,
+    "text": "Before that I co-founded an aerospace materials startup and ran the shielding test campaign, building the fixture and protocol for Cs-137 attenuation testing and checking the composite against an aluminum baseline with ANOVA and regression in Python. The fixture mattered more than the analysis: hand-positioning produced scatter that swamped the effect I was trying to measure."
+  },
+  "close_generic": {
+    "always_last": true,
+    "text": "What I want out of this role is the loop: design it, build it, test it, find out whether you were right. That is how I have been working at Parker and it is how I want to keep working."
+  }
+}

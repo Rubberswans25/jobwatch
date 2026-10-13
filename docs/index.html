@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>jobwatch</title>
+<style>
+:root{
+  --bg:#fbfbfa; --panel:#fff; --ink:#1b1d1f; --mut:#6b7280; --line:#e6e7e9;
+  --a:#0f7b4f; --b:#2563a8; --c:#8a8f98; --accent:#16232F; --warn:#b4553e;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141517; --panel:#1c1e21; --ink:#e8e9ea; --mut:#9aa0a6; --line:#2c2f33;
+  --a:#49c08a; --b:#6aa9e9; --c:#7d848d; --accent:#dfe3e8; --warn:#d2795f;
+}}
+*{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:15px/1.5 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:22px 16px 80px}
+h1{font-size:19px;margin:0}
+.meta{color:var(--mut);font-size:12.5px;margin-top:4px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px;align-items:center}
+.bar input,.bar select{background:var(--panel);color:var(--ink);border:1px solid var(--line);
+  border-radius:8px;padding:7px 10px;font:inherit;font-size:13.5px}
+.bar input{flex:1;min-width:170px}
+.chip{border:1px solid var(--line);background:var(--panel);border-radius:999px;
+  padding:6px 11px;font-size:12.5px;cursor:pointer;color:var(--mut)}
+.chip[aria-pressed="true"]{border-color:var(--accent);color:var(--ink);font-weight:600}
+.tabs{display:flex;gap:6px;margin:14px 0 12px;flex-wrap:wrap}
+.tab{border:1px solid var(--line);background:var(--panel);border-radius:8px;padding:6px 12px;
+  font-size:13px;cursor:pointer;color:var(--mut)}
+.tab[aria-selected="true"]{border-color:var(--accent);color:var(--ink);font-weight:650}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  padding:14px 15px;margin-bottom:10px}
+.card.applied{border-left:3px solid var(--a)}
+.card.dismissed{opacity:.5;border-left:3px solid var(--c)}
+.card.saved{border-left:3px solid var(--b)}
+.row1{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.tier{font-weight:700;font-size:12px;padding:2px 7px;border-radius:6px;border:1px solid}
+.tA{color:var(--a);border-color:var(--a)} .tB{color:var(--b);border-color:var(--b)}
+.tC{color:var(--c);border-color:var(--c)}
+.title{font-weight:650;font-size:15.5px}
+.title a{color:inherit;text-decoration:none}.title a:hover{text-decoration:underline}
+.co{color:var(--mut);font-size:13px}
+.sub{color:var(--mut);font-size:12.5px;margin-top:5px}
+.why{margin-top:8px;display:flex;flex-wrap:wrap;gap:5px}
+.w{font-size:11px;color:var(--mut);border:1px solid var(--line);border-radius:6px;padding:2px 6px}
+.new{font-size:10.5px;background:var(--a);color:#fff;border-radius:5px;padding:2px 6px;font-weight:700}
+.act{margin-top:10px;display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.act button{font:inherit;font-size:12.5px;padding:5px 10px;border-radius:7px;
+  border:1px solid var(--line);background:transparent;color:var(--mut);cursor:pointer}
+.act button:hover{color:var(--ink);border-color:var(--accent)}
+.act button.on{border-color:var(--accent);color:var(--ink);font-weight:650}
+.note{font-size:12.5px;color:var(--mut);border:none;background:transparent;flex:1;min-width:140px;
+  border-bottom:1px dashed var(--line);padding:3px 2px;font-family:inherit}
+.note:focus{outline:none;border-bottom-color:var(--accent);color:var(--ink)}
+.stamp{font-size:11.5px;color:var(--mut)}
+.empty{color:var(--mut);padding:40px 0;text-align:center}
+details{margin-top:22px;color:var(--mut);font-size:12.5px}
+.err{color:var(--warn);font-size:12.5px}
+.tools{margin-top:26px;display:flex;gap:8px;flex-wrap:wrap}
+.tools button{font:inherit;font-size:12.5px;padding:6px 11px;border-radius:8px;
+  border:1px solid var(--line);background:var(--panel);color:var(--mut);cursor:pointer}
+</style></head>
+<body><div class="wrap">
+  <h1>jobwatch</h1>
+  <div class="meta" id="meta">loading…</div>
+
+  <div class="tabs" id="tabs">
+    <button class="tab" data-view="open"      aria-selected="true">Open <span id="c-open"></span></button>
+    <button class="tab" data-view="applied"   aria-selected="false">Applied <span id="c-applied"></span></button>
+    <button class="tab" data-view="saved"     aria-selected="false">Saved <span id="c-saved"></span></button>
+    <button class="tab" data-view="dismissed" aria-selected="false">Not relevant <span id="c-dismissed"></span></button>
+    <button class="tab" data-view="review"    aria-selected="false">Review queue <span id="c-review"></span></button>
+  </div>
+
+  <div class="bar">
+    <input id="q" placeholder="filter by title, company, location…">
+    <select id="sort">
+      <option value="score">sort: score</option>
+      <option value="new">sort: newest</option>
+      <option value="company">sort: company</option>
+    </select>
+    <button class="chip" id="fA" aria-pressed="true">A</button>
+    <button class="chip" id="fB" aria-pressed="true">B</button>
+  </div>
+
+  <div id="list"></div>
+
+  <div class="tools">
+    <button id="exp">Export status</button>
+    <button id="imp">Import status</button>
+    <button id="clr">Clear all status</button>
+  </div>
+  <details id="errbox"></details>
+</div>
+
+<script>
+const KEY="jobwatch.status.v2";
+let S={};               // id -> {s:"applied"|"saved"|"dismissed", t:epoch, n:note}
+try{ S=JSON.parse(localStorage.getItem(KEY)||"{}"); }catch(e){ S={}; }
+const save=()=>{ try{ localStorage.setItem(KEY,JSON.stringify(S)); }catch(e){} };
+
+let DATA={jobs:[],review:[],errors:[]}, VIEW="open";
+const $=s=>document.querySelector(s);
+const esc=s=>(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const days=iso=>{ if(!iso) return null; const d=(Date.now()-new Date(iso).getTime())/864e5; return isFinite(d)?d:null; };
+const st=id=>(S[id]||{}).s||null;
+
+function setStatus(id,v){
+  const cur=st(id);
+  if(cur===v){ const n=(S[id]||{}).n; delete S[id]; if(n) S[id]={n}; }
+  else S[id]={...(S[id]||{}), s:v, t:Date.now()};
+  save(); render();
+}
+function setNote(id,v){
+  S[id]={...(S[id]||{}), n:v};
+  if(!v && !st(id)) delete S[id];
+  save();
+}
+window.setStatus=setStatus; window.setNote=setNote;
+
+function counts(){
+  const c={open:0,applied:0,saved:0,dismissed:0,review:(DATA.review||[]).length};
+  (DATA.jobs||[]).forEach(j=>{ const s=st(j.id); c[s||"open"]=(c[s||"open"]||0)+1; });
+  for(const k in c) $("#c-"+k).textContent = c[k] ? `(${c[k]})` : "";
+}
+
+function cardFor(j){
+  const s=j.score, status=st(j.id), age=days(j.first_seen), isNew=age!==null&&age<2;
+  const note=(S[j.id]||{}).n||"";
+  const btn=(v,label)=>`<button class="${status===v?'on':''}" onclick="setStatus('${j.id}','${v}')">${label}</button>`;
+  return `<div class="card ${status||''}">
+    <div class="row1">
+      <span class="tier t${s.tier}">${s.tier} · ${s.total}</span>
+      <span class="title"><a href="${j.url}" target="_blank" rel="noopener">${esc(j.title)}</a></span>
+      <span class="co">${esc(j.company)}</span>
+      ${isNew&&!status?'<span class="new">NEW</span>':''}
+    </div>
+    <div class="sub">${esc(j.location||"location n/a")} ·
+      fit ${s.fit} / loc ${s.loc} / trajectory ${s.traj}
+      ${age!==null?` · first seen ${Math.floor(age)}d ago`:''}</div>
+    <div class="why">${s.why.map(w=>`<span class="w">${esc(w[0])} ${w[1]>0?'+':''}${w[1]}</span>`).join("")}</div>
+    <div class="act">
+      ${btn('applied','Applied')}${btn('saved','Save for later')}${btn('dismissed','Not relevant')}
+      <input class="note" placeholder="note…" value="${esc(note)}"
+             oninput="setNote('${j.id}', this.value)">
+      ${status?`<span class="stamp">${status}${(S[j.id]||{}).t?` · ${new Date(S[j.id].t).toLocaleDateString()}`:''}</span>`:''}
+    </div>
+  </div>`;
+}
+
+function render(){
+  counts();
+  const q=$("#q").value.toLowerCase().trim();
+  const showA=$("#fA").getAttribute("aria-pressed")==="true";
+  const showB=$("#fB").getAttribute("aria-pressed")==="true";
+  const sort=$("#sort").value;
+
+  if(VIEW==="review"){
+    const r=(DATA.review||[]).filter(x=>!q||(x.title+" "+x.company+" "+x.location).toLowerCase().includes(q));
+    $("#list").innerHTML = r.length ? r.map(x=>`
+      <div class="card">
+        <div class="row1">
+          <span class="tier tC">review</span>
+          <span class="title"><a href="${x.url}" target="_blank" rel="noopener">${esc(x.title)}</a></span>
+          <span class="co">${esc(x.company)}</span>
+        </div>
+        <div class="sub">${esc(x.location||"location n/a")} · dropped: ${esc(x.reason)}</div>
+      </div>`).join("") : '<div class="empty">review queue empty</div>';
+    return;
+  }
+
+  let jobs=(DATA.jobs||[]).filter(j=>{
+    const s=st(j.id);
+    if(VIEW==="open"  && s) return false;
+    if(VIEW!=="open"  && s!==VIEW) return false;
+    if(j.score.tier==="A" && !showA) return false;
+    if(j.score.tier==="B" && !showB) return false;
+    if(!q) return true;
+    return (j.title+" "+j.company+" "+j.location).toLowerCase().includes(q);
+  });
+
+  if(sort==="new") jobs.sort((a,b)=>(b.first_seen||"").localeCompare(a.first_seen||""));
+  else if(sort==="company") jobs.sort((a,b)=>a.company.localeCompare(b.company));
+  else jobs.sort((a,b)=>b.score.total-a.score.total);
+
+  $("#list").innerHTML = jobs.length ? jobs.map(cardFor).join("")
+    : `<div class="empty">nothing in ${VIEW}</div>`;
+}
+
+$("#tabs").addEventListener("click",e=>{
+  const t=e.target.closest(".tab"); if(!t) return;
+  [...document.querySelectorAll(".tab")].forEach(x=>x.setAttribute("aria-selected",String(x===t)));
+  VIEW=t.dataset.view; render();
+});
+["q","sort"].forEach(id=>$("#"+id).addEventListener("input",render));
+["fA","fB"].forEach(id=>$("#"+id).addEventListener("click",e=>{
+  const el=e.currentTarget, v=el.getAttribute("aria-pressed")==="true";
+  el.setAttribute("aria-pressed",String(!v)); render();
+}));
+
+$("#exp").addEventListener("click",()=>{
+  const blob=new Blob([JSON.stringify(S,null,1)],{type:"application/json"});
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(blob); a.download="jobwatch-status.json"; a.click();
+});
+$("#imp").addEventListener("click",()=>{
+  const txt=prompt("Paste exported status JSON:");
+  if(!txt) return;
+  try{ S={...S,...JSON.parse(txt)}; save(); render(); }
+  catch(e){ alert("Could not parse that JSON."); }
+});
+$("#clr").addEventListener("click",()=>{
+  if(confirm("Clear every applied / saved / dismissed mark?")){ S={}; save(); render(); }
+});
+
+fetch("data.json?t="+Date.now()).then(r=>r.json()).then(d=>{
+  DATA=d;
+  const when=d.generated?new Date(d.generated):null;
+  $("#meta").textContent=`${(d.jobs||[]).length} live matches · ${d.scanned} postings scanned across `+
+    `${d.boards} boards${when?` · updated ${when.toLocaleString()}`:""}`;
+  if(d.errors&&d.errors.length){
+    $("#errbox").innerHTML=`<summary>${d.errors.length} board error(s)</summary>`+
+      d.errors.map(e=>`<div class="err">${esc(e.company)} (${esc(e.board)}): ${esc(e.error)}</div>`).join("");
+  }
+  render();
+}).catch(()=>{ $("#meta").textContent="could not load data.json — run jobwatch/watch.py first"; });
+</script>
+</body></html>
