@@ -178,9 +178,7 @@
   "trajectory": 10
  },
  "Blue Origin": {
-  "board": "lever",
-  "postings": 10,
-  "slug": "blue",
+  "board": null,
   "trajectory": 15
  },
  "BlueHalo": {
@@ -252,8 +250,7 @@
   "trajectory": 12
  },
  "Commonwealth Fusion": {
-  "board": "lever",
-  "slug": "cfsenergy",
+  "board": null,
   "trajectory": 14
  },
  "Crane Aerospace and Electronics": {
@@ -397,15 +394,11 @@
   "trajectory": 11
  },
  "General Dynamics Mission Systems": {
-  "board": "greenhouse",
-  "postings": 1,
-  "slug": "general",
+  "board": null,
   "trajectory": 11
  },
  "General Fusion": {
-  "board": "greenhouse",
-  "postings": 1,
-  "slug": "general",
+  "board": null,
   "trajectory": 10
  },
  "Globus Medical": {
@@ -479,9 +472,7 @@
   "trajectory": 11
  },
  "Intuitive Surgical": {
-  "board": "smartrecruiters",
-  "postings": 1,
-  "slug": "intuitive",
+  "board": null,
   "trajectory": 16
  },
  "Joby Aviation": {
@@ -774,9 +765,7 @@
   "trajectory": 10
  },
  "Sierra Space": {
-  "board": "ashby",
-  "postings": 190,
-  "slug": "sierra",
+  "board": null,
   "trajectory": 11
  },
  "Sila": {

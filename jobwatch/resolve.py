@@ -38,12 +38,13 @@ def variants(name):
     words = [w for w in low.split() if w]
     core  = [w for w in words if w not in STOP] or words
     joined, corejoin = "".join(words), "".join(core)
-    out = [corejoin, joined, "-".join(core), core[0]]
+    out = [corejoin, joined, "-".join(core)]
+    if len(core) == 1:
+        out.append(core[0])
     out += [corejoin + s for s in ("inc", "corp", "technologies", "space", "energy",
                                    "robotics", "aerospace", "careers", "us", "usa")]
     if len(core) > 1:
         out.append(core[0] + core[-1])
-        out.append("".join(w[0] for w in core))
     out += [name.replace(" ", ""), name.title().replace(" ", "").replace("-", "")]
     seen, uniq = set(), []
     for v in out:
