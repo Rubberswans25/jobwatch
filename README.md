@@ -125,10 +125,29 @@ flags as SUSPECT, so every Workday entry here was checked by hand and carries
 5. Dashboard lives at `https://<user>.github.io/<repo>/`.
 
 After that it scans every 20 minutes (:08, :28, :48), around the clock, every day,
-because postings go up at midnight and on weekends too. Once a day (09:38 UTC) it
-also runs discovery and probes up to 20 new company names before scanning. The
-minutes are off the hour on purpose: GitHub drops a lot of `:00` and `*/20`
-schedule events under load. Schedules only run from the default branch.
+because postings go up at midnight and on weekends too. The first run of each day
+(any run more than 20 hours after the last discovery) also runs discovery and
+probes up to 20 new company names before scanning. The minutes are off the hour
+on purpose: GitHub drops a lot of `:00` and `*/20` schedule events under load,
+and in practice it still drops most of them, so for a reliable 20-minute cadence
+trigger the workflow from outside (below). Schedules only run from the default
+branch.
+
+**Reliable cadence with an external trigger.** Create a fine-grained token with
+access to only this repository and **Actions: Read and write**, then have a free
+cron service (cron-job.org) send, every 20 minutes:
+
+```
+POST https://api.github.com/repos/<user>/<repo>/actions/workflows/jobwatch.yml/dispatches
+Authorization: Bearer <token>
+Accept: application/vnd.github+json
+X-GitHub-Api-Version: 2022-11-28
+Content-Type: application/json
+
+{"ref":"main"}
+```
+
+A 204 response means the run started. Overlapping runs queue rather than collide.
 
 **Keep the workflow file's last edit under your own account.** GitHub ties a
 schedule to whoever last changed it; when that commit's email is not linked to a

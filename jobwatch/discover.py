@@ -4,6 +4,8 @@ discover — grow the company list from public internship feeds instead of a fix
 
     python3 jobwatch/discover.py          # add new boards to resolved.json + companies.txt
     python3 jobwatch/discover.py --dry    # report only
+    python3 jobwatch/discover.py --if-due # only if the last discovery is 20+ hours old;
+                                          # exits 3 when not due (CI runs it every scan)
 
 Reads the community-maintained SimplifyJobs Summer 2027 listings (hardware category,
 Summer/Fall 2027, active) and works out each posting's board from its apply URL:
@@ -128,7 +130,35 @@ def main(dry):
     print(f"wrote {OUT} and {len(new_lines)} names to {NAMES}")
 
 
+STAMP = os.path.join(ROOT, "discover_state.json")
+
+
+def due(hours=20):
+    """True when discovery has not run for `hours`. GitHub drops most scheduled runs,
+    so CI asks on every scan instead of relying on one daily slot firing."""
+    import time
+    try:
+        last = json.load(open(STAMP)).get("last_run", 0)
+    except (OSError, ValueError):
+        last = 0
+    return time.time() - last >= hours * 3600
+
+
+def stamp():
+    import time
+    json.dump({"last_run": int(time.time()),
+               "last_run_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())},
+              open(STAMP, "w"), indent=1)
+
+
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--dry", action="store_true")
-    main(p.parse_args().dry)
+    p.add_argument("--if-due", action="store_true")
+    a = p.parse_args()
+    if a.if_due and not due():
+        print("discovery ran in the last 20 hours; skipping")
+        sys.exit(3)
+    main(a.dry)
+    if not a.dry:
+        stamp()
