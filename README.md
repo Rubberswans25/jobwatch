@@ -4,9 +4,10 @@ Scans ~340 hardware companies for Summer/Fall 2027 mechanical engineering studen
 roles, ranks them by fit + location + career trajectory, and publishes a live
 dashboard on GitHub Pages. Stdlib only, no installs, no server.
 
-## The three commands
+## The commands
 
 ```bash
+python3 jobwatch/discover.py     # add companies found in internship feeds (CI: daily)
 python3 jobwatch/resolve.py      # find board tokens for every company name (once)
 python3 jobwatch/watch.py        # scan the resolved boards, write docs/data.json
 python3 jobwatch/watch.py --dry  # same, without writing anything
@@ -51,6 +52,7 @@ a wrong site name returns 200 with 0 jobs, not an error, so those are added by h
 | jibe | `host` | `<host>/api/jobs?keywords=` |
 | rippling | `slug` | `api.rippling.com/platform/api/ats/v1/board/<slug>/jobs` |
 | phenom | `base` (locale root, e.g. `https://careers.mitre.org/us/en`) | `POST <origin>/widgets` refineSearch |
+| listings | none | SimplifyJobs feed, for companies with no scanned board |
 
 Any entry can also carry `"match": "<regex>"`. The scan then keeps only postings
 whose title, location or body match it. This covers companies listed on a
@@ -122,11 +124,17 @@ flags as SUSPECT, so every Workday entry here was checked by hand and carries
 4. **Actions → jobwatch → Run workflow.** First run seeds state silently.
 5. Dashboard lives at `https://<user>.github.io/<repo>/`.
 
-After that it scans at :08, :28 and :48 past each hour, 12:00-23:59 UTC on
-weekdays, and once a day on weekends, when it also resolves up to 40 new names.
-The minutes are off the hour on purpose: GitHub drops a lot of `:00` and `*/20`
-schedule events under load. Schedules only run from the default branch, and only
-after the workflow file has been pushed there.
+After that it scans every 20 minutes (:08, :28, :48), around the clock, every day,
+because postings go up at midnight and on weekends too. Once a day (09:38 UTC) it
+also runs discovery and probes up to 20 new company names before scanning. The
+minutes are off the hour on purpose: GitHub drops a lot of `:00` and `*/20`
+schedule events under load. Schedules only run from the default branch.
+
+**Keep the workflow file's last edit under your own account.** GitHub ties a
+schedule to whoever last changed it; when that commit's email is not linked to a
+GitHub account the runs show actor `ghost` and the schedule never fires. Edit
+`.github/workflows/jobwatch.yml` in the GitHub web editor, or from a machine
+whose git email is on your account.
 
 **When something breaks you hear about it.** `watch.py --ci` writes every board
 error to the job summary and as an Actions warning, and exits non-zero when more
@@ -134,9 +142,27 @@ than a quarter of boards fail or nothing was scanned, which turns the run red an
 triggers GitHub's failure email. The dashboard shows board errors and a stale-data
 warning (last scan over 26 hours old) in a banner at the top of the page.
 
-## Adding companies
+## Growing the company list
 
-Append to `companies.txt`:
+`discover.py` reads the community-maintained
+[SimplifyJobs Summer 2027 internships](https://github.com/SimplifyJobs/Summer2027-Internships)
+feed (active, hardware category, Summer or Fall 2027) and works out each
+posting's board from its apply URL: Greenhouse, Lever, Ashby, SmartRecruiters,
+Workable, Pinpoint, Workday, Eightfold, Oracle and SuccessFactors URLs carry
+everything an adapter needs. A board that is already scanned under any name is
+skipped; a new one is probed once and saved to `resolved.json` with
+`"source": "simplify"`, and the company is appended to `companies.txt` at
+trajectory 11. Companies on sites with no adapter (iCIMS, Taleo, their own
+domain) are appended to `companies.txt` too, so `resolve.py` tries to find a
+board for them by name.
+
+Until a company has a scanned board, its feed postings still reach the
+dashboard through the **Internship feed (unscanned companies)** pseudo-board:
+title, term, location and link, no description, so they rank on title,
+location and company trajectory. Apple, Google and Amazon postings arrive this
+way.
+
+To add a company by hand, append to `companies.txt`:
 
 ```
 Company Name|14

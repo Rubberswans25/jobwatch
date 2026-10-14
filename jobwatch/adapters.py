@@ -516,6 +516,105 @@ def phenom(c):
     return _pool(detail, list(found.values()))
 
 
+# --- internship feeds: discovery source, and a fallback for unsupported sites -----
+LISTING_FEEDS = ["https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/dev/"
+                 ".github/scripts/listings.json"]
+
+
+def listing_ok(x):
+    """Active, hardware, and for Summer or Fall 2027."""
+    return bool(x.get("active") and x.get("is_visible", True)
+                and "hardware" in (x.get("category") or "").lower()
+                and any(t in ("Summer 2027", "Fall 2027") for t in x.get("terms") or []))
+
+
+def board_from_url(u):
+    """Resolved-entry dict for an apply URL, or None if the site is not one we scan."""
+    p = urllib.parse.urlparse(u)
+    host, path = p.netloc.lower(), [x for x in p.path.split("/") if x]
+    first = path[0] if path else ""
+    if "greenhouse.io" in host:
+        slug = (urllib.parse.parse_qs(p.query).get("for") or [first])[0]
+        return {"board": "greenhouse", "slug": slug} if slug and slug != "embed" else None
+    if host == "jobs.lever.co" and first:
+        return {"board": "lever", "slug": first}
+    if host == "jobs.ashbyhq.com" and first:
+        return {"board": "ashby", "slug": first}
+    if host.endswith("smartrecruiters.com") and first:
+        return {"board": "smartrecruiters", "slug": first}
+    if host == "apply.workable.com" and first:
+        return {"board": "workable", "slug": first}
+    if host.endswith(".pinpointhq.com"):
+        return {"board": "pinpoint", "slug": host.split(".")[0]}
+    m = re.match(r"([\w-]+)\.(wd\d+)\.myworkdayjobs\.com$", host)
+    if m and path:
+        site = path[1] if re.match(r"[a-z]{2}-[A-Z]{2}$", first) and len(path) > 1 else first
+        return {"board": "workday", "tenant": m.group(1), "host": m.group(2), "site": site}
+    if host.endswith(".eightfold.ai"):
+        return {"board": "eightfold", "host": host, "domain": host.split(".")[0] + ".com"}
+    if "oraclecloud.com" in host and "sites" in path and path.index("sites") + 1 < len(path):
+        return {"board": "oracle", "host": host, "site": path[path.index("sites") + 1],
+                "careers": host}
+    if "ats=successfactors" in p.query or re.search(r"/job/[^/]+/\d+/?$", p.path):
+        return {"board": "successfactors", "base": f"{p.scheme}://{p.netloc}"}
+    return None
+
+
+def board_dedupe_key(v):
+    """Case-insensitive board identity; Oracle and Eightfold by host or domain alone,
+    since one company can expose several site names."""
+    b = v.get("board")
+    if b == "workday":
+        return ("workday", (v.get("tenant") or "").lower(), str(v.get("site")).lower())
+    if b == "oracle":
+        return ("oracle", (v.get("host") or "").lower())
+    if b == "eightfold":
+        return ("eightfold", (v.get("domain") or "").lower())
+    if b == "successfactors":
+        return ("successfactors", (v.get("base") or "").lower().split("//")[-1].split("/")[0])
+    return (b, (v.get("slug") or "").lower())
+
+
+def board_dedupe_keys(v):
+    """Every key an entry answers to (one per Workday site when site is a list)."""
+    if v.get("board") == "workday" and isinstance(v.get("site"), list):
+        return {board_dedupe_key({**v, "site": x}) for x in v["site"]}
+    return {board_dedupe_key(v)}
+
+
+def listings(c):
+    """Feed postings from companies that are not otherwise scanned (custom sites,
+    iCIMS, Taleo, boards not resolved yet). The feed has title, terms and locations
+    but no description, so these rank on title, location and pay-free trajectory."""
+    import os
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "resolved.json")
+    res = json.load(open(path))
+    scanned_names = {n.lower() for n, v in res.items() if v.get("board") and v["board"] != "listings"}
+    scanned_keys = {k for v in res.values() if v.get("board") and v["board"] != "listings"
+                    for k in board_dedupe_keys(v)}
+    out = []
+    for feed in c.get("feeds") or LISTING_FEEDS:
+        for x in _req(feed):
+            if not listing_ok(x):
+                continue
+            name = re.sub(r"\s*&\s*", " and ", x.get("company_name") or "").strip()
+            b = board_from_url(x.get("url") or "")
+            if name.lower() in scanned_names or (b and board_dedupe_key(b) in scanned_keys):
+                continue
+            terms = ", ".join(x.get("terms") or [])
+            out.append({
+                "id": f"ls:{x.get('id')}",
+                "company": name,
+                "title": x.get("title", ""),
+                "location": "; ".join(x.get("locations") or []),
+                "url": x.get("url", ""),
+                "posted": x.get("date_posted") or "",
+                "body": f"{x.get('title', '')}. Term: {terms}. Listed on {x.get('source', 'Simplify')}; "
+                        f"full description on the company site.",
+            })
+    return out
+
+
 ADAPTERS = {
     "greenhouse": greenhouse,
     "lever": lever,
@@ -530,4 +629,5 @@ ADAPTERS = {
     "jibe": jibe,
     "rippling": rippling,
     "phenom": phenom,
+    "listings": listings,
 }

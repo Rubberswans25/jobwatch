@@ -253,20 +253,21 @@ def run(dry=False, explain=False, only=None, skip=None, quiet=False):
                 if explain: print(f"    drop [{why_drop}] {j['title']}")
                 sig = any(x in j["body"].lower() for x in rules["me_body_any"])
                 if why_drop == "no mechanical signal" or (why_drop == "non-ME discipline" and sig):
-                    review.append({"company": name, "title": j["title"],
+                    review.append({"company": j.get("company") or name, "title": j["title"],
                                    "location": j["location"], "url": j["url"], "reason": why_drop})
                 continue
             first = seen.get(j["id"], {}).get("first_seen", now)
             j["posted"] = posted_date(j.get("posted"), now_dt)
-            s = score(j, traj_of.get(name, v.get("trajectory", 10)), rules,
+            co = j.get("company") or name           # the listings board carries many companies
+            s = score(j, traj_of.get(co, v.get("trajectory", 10) if co == name else 10), rules,
                       freshness(j["posted"], first, now_dt, rules, bfirst))
             if s["tier"] == "C" and not rules.get("keep_tier_c"):
                 dropped["below threshold"] = dropped.get("below threshold", 0) + 1
-                review.append({"company": name, "title": j["title"], "location": j["location"],
+                review.append({"company": co, "title": j["title"], "location": j["location"],
                                "url": j["url"], "reason": f"scored {s['base']}, below tier B"})
                 continue
             seen[j["id"]] = {"first_seen": first, "last_seen": now}
-            live.append({**j, "company": name, "score": s, "first_seen": first})
+            live.append({**j, "company": co, "score": s, "first_seen": first})
 
     live.sort(key=lambda x: -x["score"]["total"])
     run_url = (f"{os.environ['GITHUB_SERVER_URL']}/{os.environ['GITHUB_REPOSITORY']}"

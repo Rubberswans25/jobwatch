@@ -341,3 +341,68 @@ Air Liquide|11
 Linde|11
 Air Products|11
 Impulse Space|13
+
+# discovered from internship feeds; trajectory defaults to 11, edit to re-rank
+IMC Trading|11
+Western Digital|11
+Virtu Financial|11
+HPR (Hyannis Port Research)|11
+Avery Dennison|11
+Verkada|11
+Northwood Space|11
+Vermeer|11
+HP IQ|11
+General Matter|11
+GlobalFoundries|11
+GE Appliances|11
+Persona AI|11
+Booz Allen|11
+Motorola|11
+Nokia|11
+Marvell|15
+Apex|11
+Solidigm|11
+Bedrock Robotics|11
+Revel|11
+The Toro Company|11
+Ciena|11
+TTP|11
+onsemi|11
+Antares Nuclear|11
+Ensign-Bickford Aerospace and Defense Company|11
+Ensign-Bickford Industries|11
+Belden|11
+Semtech|11
+Mill|11
+Zurn Elkay Water Solutions|11
+AMCA|11
+Arc|11
+Thales|11
+Airbus|11
+Etched|15
+Atoms|11
+Atoms (greenhouse)|11
+Legrand|11
+Renesas Electronics|11
+S and C Electric Company|11
+L3Harris Technologies|11
+Rugged Robotics|11
+Alliance Laundry Systems|11
+Amazon|18
+ByteDance|16
+Cirrus Logic|11
+EquipmentShare|11
+Hexagon AB|11
+Johns Hopkins Applied Physics Laboratory|12
+Lunar Outpost|11
+MSA Safety|11
+North Atlantic Industries|11
+Optiver|17
+Quantum Signal AI|11
+REV Robotics|11
+Shure|11
+Space Dynamics Laboratory|11
+Stryten|11
+Textron|11
+Two Sigma|17
+V2X|11
