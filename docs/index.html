@@ -115,15 +115,94 @@ details{margin-top:22px;color:var(--mut);font-size:12.5px}
     <button id="exp">Export status</button>
     <button id="imp">Import status</button>
     <button id="clr">Clear all status</button>
+    <button id="sync">Sync across devices</button>
+    <span class="stamp" id="syncst"></span>
   </div>
   <details id="errbox"></details>
 </div>
 
 <script>
 const KEY="jobwatch.status.v2";
-let S={};               // id -> {s:"applied"|"saved"|"dismissed", t:epoch, n:note}
+// id -> {s:"applied"|"saved"|"dismissed", t:when marked, n:note, u:last change}.
+// A cleared mark stays as {u} (a tombstone) so the clear syncs instead of the
+// other device's copy bringing it back.
+let S={};
 try{ S=JSON.parse(localStorage.getItem(KEY)||"{}"); }catch(e){ S={}; }
-const save=()=>{ try{ localStorage.setItem(KEY,JSON.stringify(S)); }catch(e){} };
+const save=()=>{ try{ localStorage.setItem(KEY,JSON.stringify(S)); }catch(e){} Sync.queue(); };
+const upd=e=>e?(e.u||e.t||0):-1;
+function merge(a,b){            // per posting, the most recent change wins
+  const out={...a};
+  for(const id in b) if(upd(b[id])>upd(out[id])) out[id]=b[id];
+  return out;
+}
+
+// --- sync: a secret GitHub gist holds the marks, so every device sees the same ones.
+// Needs a fine-grained token with only the account permission "Gists: read and write".
+// The repo is public, which is why the marks are not stored in it.
+const Sync=(()=>{
+  const K="jobwatch.sync.v1", DESC="jobwatch status (private)", FILE="jobwatch-status.json";
+  let cfg={}; try{ cfg=JSON.parse(localStorage.getItem(K)||"{}"); }catch(e){}
+  const keep=()=>{ try{ localStorage.setItem(K,JSON.stringify(cfg)); }catch(e){} };
+  let timer=null, busy=false, again=false;
+  const show=t=>{ const el=document.querySelector("#syncst"); if(el) el.textContent=t;
+    const b=document.querySelector("#sync"); if(b) b.textContent=cfg.token?"Stop syncing":"Sync across devices"; };
+  const api=async(path,opt={})=>{
+    const r=await fetch("https://api.github.com"+path,{...opt,headers:{
+      "Authorization":"Bearer "+cfg.token,"Accept":"application/vnd.github+json",
+      "X-GitHub-Api-Version":"2022-11-28",...(opt.body?{"Content-Type":"application/json"}:{})}});
+    if(!r.ok) throw new Error(r.status===401?"token rejected":r.status===403||r.status===404?
+      "token lacks Gists: read and write":"GitHub "+r.status);
+    return r.json();
+  };
+  async function gist(){
+    if(cfg.gist) return cfg.gist;
+    for(let page=1; page<=5; page++){
+      const list=await api(`/gists?per_page=100&page=${page}`);
+      const g=list.find(x=>x.description===DESC);
+      if(g){ cfg.gist=g.id; keep(); return g.id; }
+      if(list.length<100) break;
+    }
+    const g=await api("/gists",{method:"POST",body:JSON.stringify({description:DESC,public:false,
+      files:{[FILE]:{content:"{}"}}})});
+    cfg.gist=g.id; keep(); return g.id;
+  }
+  async function remote(){
+    const g=await api("/gists/"+await gist()), f=(g.files||{})[FILE];
+    if(!f) return {};
+    const txt=f.truncated?await (await fetch(f.raw_url)).text():f.content;
+    try{ return JSON.parse(txt||"{}"); }catch(e){ return {}; }
+  }
+  // pull, merge, and write back only if this device had something newer
+  async function run(){
+    if(!cfg.token) return;
+    if(busy){ again=true; return; }
+    busy=true; show("syncing…");
+    try{
+      const r=await remote(), m=merge(S,r);
+      const changed=JSON.stringify(m)!==JSON.stringify(S), behind=JSON.stringify(m)!==JSON.stringify(r);
+      if(changed){ S=m; try{ localStorage.setItem(KEY,JSON.stringify(S)); }catch(e){} if(window.render) render(); }
+      if(behind) await api("/gists/"+cfg.gist,{method:"PATCH",body:JSON.stringify({files:{[FILE]:{content:JSON.stringify(m)}}})});
+      show("synced "+new Date().toLocaleTimeString([], {hour:"numeric",minute:"2-digit"}));
+    }catch(e){ show("sync failed: "+e.message); }
+    busy=false;
+    if(again){ again=false; run(); }
+  }
+  return {
+    on:()=>!!cfg.token,
+    queue(){ if(!cfg.token) return; clearTimeout(timer); timer=setTimeout(run,1500); },
+    run,
+    toggle(){
+      if(cfg.token){
+        if(confirm("Stop syncing on this device? Marks stay here and in the gist.")){ cfg={}; keep(); show("sync off"); }
+        return;
+      }
+      const t=prompt("Paste a GitHub fine-grained token with the account permission \"Gists: read and write\" (nothing else). It is stored only in this browser.");
+      if(!t) return;
+      cfg={token:t.trim()}; keep(); run();
+    },
+    init(){ show(cfg.token?"":"sync off"); }
+  };
+})();
 
 let DATA={jobs:[],review:[],errors:[]}, VIEW="open";
 const $=s=>document.querySelector(s);
@@ -140,14 +219,14 @@ const fmtPay=v=>v>=100?Math.round(v):(Math.round(v*2)/2).toString().replace(/\.0
 const midPay=j=>j.score.rate?(j.score.rate[0]+j.score.rate[1])/2:-1;
 
 function setStatus(id,v){
-  const cur=st(id);
-  if(cur===v){ const n=(S[id]||{}).n; delete S[id]; if(n) S[id]={n}; }
-  else S[id]={...(S[id]||{}), s:v, t:Date.now()};
+  const cur=st(id), now=Date.now(), n=(S[id]||{}).n;
+  if(cur===v) S[id]=n?{n,u:now}:{u:now};
+  else S[id]={...(S[id]||{}), s:v, t:now, u:now};
   save(); render();
 }
 function setNote(id,v){
-  S[id]={...(S[id]||{}), n:v};
-  if(!v && !st(id)) delete S[id];
+  S[id]={...(S[id]||{}), n:v, u:Date.now()};
+  if(!v) delete S[id].n;
   save();
 }
 window.setStatus=setStatus; window.setNote=setNote;
@@ -253,12 +332,17 @@ $("#exp").addEventListener("click",()=>{
 $("#imp").addEventListener("click",()=>{
   const txt=prompt("Paste exported status JSON:");
   if(!txt) return;
-  try{ S={...S,...JSON.parse(txt)}; save(); render(); }
+  try{ S=merge(S,JSON.parse(txt)); save(); render(); }
   catch(e){ alert("Could not parse that JSON."); }
 });
 $("#clr").addEventListener("click",()=>{
-  if(confirm("Clear every applied / saved / dismissed mark?")){ S={}; save(); render(); }
+  if(confirm("Clear every applied / saved / dismissed mark"+(Sync.on()?" on every synced device":"")+"?")){
+    const now=Date.now(); for(const id in S) S[id]={u:now}; save(); render(); }
 });
+$("#sync").addEventListener("click",()=>Sync.toggle());
+Sync.init();
+// pick up marks made on other devices when this tab comes back into view
+document.addEventListener("visibilitychange",()=>{ if(document.visibilityState==="visible") Sync.run(); });
 
 fetch("data.json?t="+Date.now()).then(r=>r.json()).then(d=>{
   DATA=d;
@@ -277,7 +361,7 @@ fetch("data.json?t="+Date.now()).then(r=>r.json()).then(d=>{
   }
   if(warn.length && d.run_url) warn.push(`<a href="${esc(d.run_url)}" target="_blank" rel="noopener">Open the run log</a>`);
   $("#alert").innerHTML=warn.join("<br>");
-  render();
+  render(); Sync.run();
 }).catch(()=>{ $("#meta").textContent="could not load data.json — run jobwatch/watch.py first"; });
 </script>
 </body></html>

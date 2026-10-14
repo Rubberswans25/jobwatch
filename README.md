@@ -198,10 +198,24 @@ Tab headers carry live counts.
 The note field saves as you type — use it for "waiting on Taylor", "needs
 cover letter", "asked about relocation".
 
-State lives in your browser's localStorage, keyed per device. **Export status**
-downloads it as JSON and **Import status** merges it back, which is how you move
-between laptop and phone, or recover after clearing site data. Worth exporting
-occasionally.
+**Syncing marks across devices.** Marks and notes are saved in the browser, and
+with sync turned on they are also kept in a secret GitHub gist that every device
+reads and writes. The repo is public, so they are deliberately not stored in it.
+Set it up once per device:
+
+1. GitHub → Settings → Developer settings → Fine-grained tokens → Generate new
+   token. Under **Account permissions** set **Gists** to **Read and write**.
+   Leave everything else, including repository access, at none.
+2. On the dashboard, press **Sync across devices** and paste the token. The first
+   device creates a secret gist named "jobwatch status (private)"; the others
+   find it and merge into it.
+
+Each posting keeps whichever change is most recent, a cleared mark included, so
+un-marking on the laptop also clears it on the phone. The dashboard syncs on
+load, a moment after each change, and whenever the tab comes back into view; the
+time of the last sync, or the error, shows next to the button. The token is
+stored only in that browser. **Export status** / **Import status** still work as
+a manual backup.
 
 ## Nothing is silently lost
 
