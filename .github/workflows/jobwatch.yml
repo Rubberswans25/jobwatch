@@ -5,8 +5,6 @@ on:
     # every 20 minutes, all day, every day: postings drop at midnight and on weekends too.
     # Off the hour on purpose: GitHub drops a lot of :00 / */20 cron events under load.
     - cron: "8,28,48 * * * *"
-    # once a day: find new companies in the internship feeds, then probe new names
-    - cron: "38 9 * * *"
   workflow_dispatch:
 
 permissions:
@@ -30,13 +28,19 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
 
-      - name: Discover new companies from internship feeds (daily)
-        if: github.event.schedule == '38 9 * * *'
-        run: python jobwatch/discover.py
-
-      - name: Resolve new company names (daily)
-        if: github.event.schedule == '38 9 * * *'
-        run: python jobwatch/resolve.py --limit 20
+      - name: Discover new companies and probe new names (first run of each day)
+        # GitHub drops most scheduled runs, so instead of a daily slot that may never
+        # fire, every run asks discover.py whether 20 hours have passed (exit 3 = not due).
+        # A failure here never blocks the scan.
+        continue-on-error: true
+        run: |
+          set +e
+          python jobwatch/discover.py --if-due
+          rc=$?
+          set -e
+          [ "$rc" -eq 3 ] && exit 0
+          [ "$rc" -eq 0 ] || exit "$rc"
+          python jobwatch/resolve.py --limit 20
 
       - name: Scan boards
         # writes board errors to the job summary and as warnings; exits non-zero if
@@ -52,6 +56,7 @@ jobs:
           git config user.name  "jobwatch"
           git config user.email "jobwatch@users.noreply.github.com"
           git add docs/data.json jobwatch/seen.json jobwatch/resolved.json jobwatch/companies.txt
+          [ -f jobwatch/discover_state.json ] && git add jobwatch/discover_state.json
           [ -d drafts ] && git add drafts
           git diff --staged --quiet && exit 0
           git commit -m "jobwatch: $(date -u +%F\ %H:%M) scan"
