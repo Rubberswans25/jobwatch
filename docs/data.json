@@ -1,16 +1,42 @@
 {
- "generated": "2026-10-15T09:17:02+00:00",
- "run_url": "https://github.com/irogers5890/jobwatch/actions/runs/38711785480",
- "scanned": 23172,
- "boards": 262,
- "errors": [],
+ "generated": "2026-10-15T14:16:27+00:00",
+ "run_url": "https://github.com/irogers5890/jobwatch/actions/runs/38749677216",
+ "scanned": 24489,
+ "boards": 270,
+ "errors": [
+  {
+   "company": "Azenta",
+   "board": "workday",
+   "error": "failed after 3 tries: The read operation timed out"
+  },
+  {
+   "company": "Boston Metal",
+   "board": "workable",
+   "error": "failed after 3 tries: HTTP 429"
+  },
+  {
+   "company": "Medtronic",
+   "board": "workday",
+   "error": "failed after 3 tries: HTTP 502"
+  },
+  {
+   "company": "Microsoft",
+   "board": "eightfold",
+   "error": "failed after 3 tries: HTTP 429"
+  },
+  {
+   "company": "Vermeer",
+   "board": "workday",
+   "error": "failed after 3 tries: HTTP 429"
+  }
+ ],
  "dropped": {
-  "non-ME discipline": 758,
-  "no Summer/Fall 2027": 4327,
-  "degree-level blocker": 9,
-  "below threshold": 454,
-  "no mechanical signal": 204,
-  "not a student req": 16642,
+  "non-ME discipline": 764,
+  "no Summer/Fall 2027": 4299,
+  "degree-level blocker": 8,
+  "below threshold": 462,
+  "no mechanical signal": 205,
+  "not a student req": 17980,
   "off-target season in title": 416
  },
  "jobs": [
@@ -34,7 +60,7 @@
      40.0
     ],
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -94,7 +120,7 @@
      44.0
     ],
     "fresh": 0,
-    "age": 22.4,
+    "age": 22.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -154,7 +180,7 @@
      40.0
     ],
     "fresh": 6,
-    "age": 9.4,
+    "age": 9.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -214,7 +240,7 @@
      45.0
     ],
     "fresh": -8,
-    "age": 126.4,
+    "age": 126.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -274,7 +300,7 @@
      32.0
     ],
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -331,7 +357,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -391,7 +417,7 @@
      41.0
     ],
     "fresh": -4,
-    "age": 41.4,
+    "age": 41.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -448,7 +474,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 43.4,
+    "age": 43.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -505,7 +531,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 43.4,
+    "age": 43.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -565,7 +591,7 @@
      48.0
     ],
     "fresh": -4,
-    "age": 36.4,
+    "age": 36.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -622,7 +648,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -682,7 +708,7 @@
      32.0
     ],
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -742,7 +768,7 @@
      32.0
     ],
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -799,7 +825,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.4,
+    "age": 58.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -856,7 +882,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.4,
+    "age": 58.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -916,7 +942,7 @@
      50.0
     ],
     "fresh": -4,
-    "age": 41.4,
+    "age": 41.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -973,7 +999,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 41.4,
+    "age": 41.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1030,7 +1056,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1090,7 +1116,7 @@
      45.0
     ],
     "fresh": 0,
-    "age": 21.4,
+    "age": 21.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1150,7 +1176,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 14.4,
+    "age": 14.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1210,7 +1236,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 14.4,
+    "age": 14.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1270,7 +1296,7 @@
      30.0
     ],
     "fresh": 0,
-    "age": 28.4,
+    "age": 28.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1327,7 +1353,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 7.4,
+    "age": 7.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1387,7 +1413,7 @@
      50.0
     ],
     "fresh": 3,
-    "age": 10.4,
+    "age": 10.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1447,7 +1473,7 @@
      50.0
     ],
     "fresh": 3,
-    "age": 10.4,
+    "age": 10.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1504,7 +1530,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 73.4,
+    "age": 73.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1564,7 +1590,7 @@
      42.0
     ],
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1620,7 +1646,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 49.4,
+    "age": 49.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1680,7 +1706,7 @@
      32.0
     ],
     "fresh": -4,
-    "age": 43.4,
+    "age": 43.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1737,7 +1763,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1793,7 +1819,7 @@
      41.0
     ],
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1850,7 +1876,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 44.4,
+    "age": 44.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1910,7 +1936,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 10.4,
+    "age": 10.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1970,7 +1996,7 @@
      38.0
     ],
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2027,7 +2053,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 15.4,
+    "age": 15.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2087,7 +2113,7 @@
      34.0
     ],
     "fresh": 0,
-    "age": 27.4,
+    "age": 27.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2147,7 +2173,7 @@
      58.75
     ],
     "fresh": 3,
-    "age": 15.4,
+    "age": 15.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2207,7 +2233,7 @@
      38.0
     ],
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2264,7 +2290,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 27.4,
+    "age": 27.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2324,7 +2350,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 36.4,
+    "age": 36.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2384,7 +2410,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 14.4,
+    "age": 14.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2441,7 +2467,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 37.4,
+    "age": 37.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2498,7 +2524,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 37.4,
+    "age": 37.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2555,7 +2581,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.4,
+    "age": 58.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2612,7 +2638,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.4,
+    "age": 58.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2669,7 +2695,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 27.4,
+    "age": 27.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2729,7 +2755,7 @@
      38.0
     ],
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2786,7 +2812,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2843,7 +2869,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 27.4,
+    "age": 27.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2903,7 +2929,7 @@
      58.75
     ],
     "fresh": 3,
-    "age": 15.4,
+    "age": 15.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2956,7 +2982,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 64.4,
+    "age": 64.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3013,7 +3039,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 64.4,
+    "age": 64.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3070,7 +3096,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 44.4,
+    "age": 44.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3130,7 +3156,7 @@
      32.0
     ],
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3187,7 +3213,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 34.4,
+    "age": 34.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3247,7 +3273,7 @@
      31.0
     ],
     "fresh": -8,
-    "age": 84.4,
+    "age": 84.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3304,7 +3330,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 27.4,
+    "age": 27.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3361,7 +3387,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3418,7 +3444,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 76.4,
+    "age": 76.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3478,7 +3504,7 @@
      30.0
     ],
     "fresh": 0,
-    "age": 31.4,
+    "age": 31.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3535,7 +3561,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 24.4,
+    "age": 24.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3588,7 +3614,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 9.4,
+    "age": 9.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3636,7 +3662,7 @@
      48.0
     ],
     "fresh": 6,
-    "age": 9.4,
+    "age": 9.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3688,7 +3714,7 @@
      34.0
     ],
     "fresh": 0,
-    "age": 31.4,
+    "age": 31.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3748,7 +3774,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 52.4,
+    "age": 52.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3808,7 +3834,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 14.4,
+    "age": 14.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3868,7 +3894,7 @@
      34.0
     ],
     "fresh": 0,
-    "age": 31.4,
+    "age": 31.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3925,7 +3951,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -3966,7 +3992,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 12.4,
+    "age": 12.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4019,7 +4045,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.4,
+    "age": 3.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4079,7 +4105,7 @@
      32.0
     ],
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4135,7 +4161,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 58.4,
+    "age": 58.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4176,46 +4202,6 @@
    "first_seen": "2026-10-13T23:28:52+00:00"
   },
   {
-   "id": "ef:microsoft.com:200060962",
-   "title": "Researcher Intern, CoreAI",
-   "location": "Redmond, WA, US; Mountain View, CA, US",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557027387",
-   "posted": "2026-10-15",
-   "body": "Overview The Code|AI team leads applied research and data science for GitHub Copilot and VS Code, working on the future of AI for developers. We are a diverse, entrepreneurial, and multi-disciplinary group of scientists, researchers, and engineers with a passion for using AI to improve the productivity of millions of developers around the world. We have released AI for code advancements in Github Copilot, VS Code, Visual Studio and Copilot extensions in other IDEs. Our team focuses on post-training code specific models like code completion, code embedding models and agentic research for Copilot Coding Agent, Copilot CLI and Copilot Code Review. We embrace open source and continue to share our research and work with the developer and research communities to advance AI in Developer tools. We are seeking entrepreneurial and creative Applied Researcher Interns to lead groundbreaking research projects, taking these from research into product. You will collaborate with scientists, engineers, and designers across Microsoft Research, Microsoft product teams, and Github. You will have an opportunity to build and train state-of-the-art models, and opportunities to both apply and advance existing approaches of using LLMs for software engineering, from using RAG to evaluation. Most importantly, you will have an opportunity to work closely with several developer product teams to run experiments, evaluate, iterate, and improve your AI projects on a large scale. Microsoft\u2019s mission is to empower every person and every organization on the planet to achieve more. As employees, we come together with a growth mindset, innovate to empower others and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond. This is for a Summer 2027 Internship. #Code|AI #CoreAI #EiP Responsibilities Contributes to projects on the future of AI for developers. Collaborates across disciplines with product teams across Microsoft and Github. Stays up to date with the research literature and product advances in AI for software engineering. Creates new datasets from both the world's public code and Microsoft's internal data. Builds and manages large-scale ML experiments and models. Embodies our Culture and Values Qualifications Required qualifications Currently enrolled in a Doctorate Degree program in a relevant field. Must be enrolled in a Doctorate Degree program in a relevant field for the role during the academic term immediately before the internship. Must have at least one additional quarter/semester of a Doctorate Degree program program in area relevant for the role remaining following the completion of the internship. Additional Qualifications: 1+ year(s) experience in Calculus, Probability and Statistics and/or Machine Learning. 1+ year(s) experience in one or more general purpose programming languages including: C/C++, Java, R or Python, and domain relevant libraries and frameworks (e.g., PyTorch). 1+ year(s) experience (classroom or work related) in one or more areas of computer science, such as Natural Language Understanding, Neural Networks, Computer Vision, Machine Learning, Deep Learning, Algorithmic Foundations of Optimization, Data Science, Privacy, etc. The base pay range for this internship is USD $5,690.00 - $11,210.00 per month. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $7,410.00 - $12,250.00 per month. Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-intern-pay Microsoft accepts applications and processes offers for these roles on an ongoing basis throughout the academic calendar (September - April) This position will be open for a minimum of 5 days, with applications accepted on an ongoing basis until the position is filled. Microsoft is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance with religious accommodations and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",
-   "company": "Microsoft",
-   "score": {
-    "total": 59,
-    "base": 47,
-    "fit": 8,
-    "loc": 8,
-    "traj": 19,
-    "pay": 12,
-    "rate": [
-     32.89,
-     70.81
-    ],
-    "fresh": 12,
-    "age": 0.4,
-    "age_basis": "posted",
-    "tier": "B",
-    "why": [
-     [
-      "pay $52/hr",
-      12
-     ],
-     [
-      "body: python",
-      4
-     ],
-     [
-      "body: computer vision",
-      4
-     ]
-    ]
-   },
-   "first_seen": "2026-10-15T09:17:02+00:00"
-  },
-  {
    "id": "gh:rocketlab:7986794003",
    "title": "Fluid Systems Intern Summer 2027",
    "location": "Long Beach, CA",
@@ -4235,7 +4221,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 36.4,
+    "age": 36.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4295,7 +4281,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 45.4,
+    "age": 45.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4352,7 +4338,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 14.4,
+    "age": 14.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4409,7 +4395,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.4,
+    "age": 3.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4457,7 +4443,7 @@
      37.25
     ],
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4514,7 +4500,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4570,7 +4556,7 @@
      28.0
     ],
     "fresh": 0,
-    "age": 29.4,
+    "age": 29.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4627,7 +4613,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4683,7 +4669,7 @@
      48.0
     ],
     "fresh": 3,
-    "age": 15.4,
+    "age": 15.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4732,7 +4718,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 43.4,
+    "age": 43.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4781,7 +4767,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4826,7 +4812,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.4,
+    "age": 58.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4882,7 +4868,7 @@
      20.0
     ],
     "fresh": 0,
-    "age": 24.4,
+    "age": 24.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4942,7 +4928,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 24.4,
+    "age": 24.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4994,7 +4980,7 @@
      32.0
     ],
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5027,62 +5013,6 @@
    "first_seen": "2026-10-13T20:39:35+00:00"
   },
   {
-   "id": "sf:jobs.l3harris.com:1437650000",
-   "title": "Project & Component Engineering Intern",
-   "location": "Canoga Park, CA, US, 91311",
-   "url": "https://jobs.l3harris.com/job/Canoga-Park-Project-&amp;-Component-Engineering-Intern-CA-91311/1437650000/",
-   "posted": "2026-10-07",
-   "body": "> Job Title: Project & Component Engineer Intern Job Code: 44371 Job Location: Canoga Park, CA Job Schedule: 9/80: Employees work 9 out of every 14 days \u2013 totaling 80 hours worked, and have every other Friday off We are seeking to fill an Intern - Project & Component Engineering role for Summer 2027 in its Los Angeles, CA location. Enjoy work/life balance at our Canoga Park, CA (Los Angeles area) site. At this facility, we design & manufacture rocket engines and unique power systems that support space exploration & the defense of our nation such as NASA\u2019s SLS and Lockheed Martin\u2019s THAAD. After orientation and training, interns will perform entry-level engineering tasks on rocket propulsion projects. Interns will support senior engineering staff and gain experience and familiarization with company projects. Interns must be able to operate effectively in a team environment. Projects may focus on aspects of project and component engineering including assisting in the design and development of rocket propulsion hardware and providing technical support to engineers within such areas as combustion devices, turbopumps, small thrusters, valves & actuators, and systems hardware. Qualifications To be eligible, candidates must be pursuing a bachelor's, master's or PhD degree in Mechanical Engineering, Aerospace Engineering, or related field at an accredited university. In compliance with pay transparency requirements, the salary range for this role is $25/hr- $47.50/hr. This is not a guarantee of compensation or salary, as final offer amount may vary based on factors including but not limited to experience and geographic location. L3Harris also offers a variety of benefits, including relocation stipend, 401(k), EAP, and company-paid holidays. The specific programs and options available to an employee may vary depending on date of hire, schedule type, and the applicability of collective bargaining agreements. Qualified applications with arrest or conviction records will be considered for employment in accordance with Los Angeles County Fair Chance Ordinance for Employers and the California Fair Chance Act. <span",
-   "company": "L3Harris Technologies",
-   "score": {
-    "total": 54,
-    "base": 48,
-    "fit": 34,
-    "loc": 0,
-    "traj": 11,
-    "pay": 3,
-    "rate": [
-     25.0,
-     47.5
-    ],
-    "fresh": 6,
-    "age": 8.4,
-    "age_basis": "posted",
-    "tier": "B",
-    "why": [
-     [
-      "title: component",
-      8
-     ],
-     [
-      "body: valve",
-      7
-     ],
-     [
-      "body: actuator",
-      6
-     ],
-     [
-      "body: pump",
-      5
-     ],
-     [
-      "title: engineering intern",
-      4
-     ],
-     [
-      "body: relocation",
-      4
-     ],
-     [
-      "pay $36/hr",
-      3
-     ]
-    ]
-   },
-   "first_seen": "2026-10-14T01:17:06+00:00"
-  },
-  {
    "id": "wd:globalhr:01868876",
    "title": "Intern: Quality Metrology Lab (Summer 2027)",
    "location": "US-TX-AUSTIN-1909 ~ 1909 Kramer Ln Braker E ~ BLDG E-300",
@@ -5099,7 +5029,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5144,7 +5074,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.4,
+    "age": 3.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5193,7 +5123,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 15.4,
+    "age": 15.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5242,7 +5172,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 57.4,
+    "age": 57.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5287,7 +5217,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 16.4,
+    "age": 16.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5336,7 +5266,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 24.4,
+    "age": 24.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5396,7 +5326,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 55.4,
+    "age": 55.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5456,7 +5386,7 @@
      50.82
     ],
     "fresh": -4,
-    "age": 43.4,
+    "age": 43.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5497,66 +5427,6 @@
    "first_seen": "2026-10-13T20:39:35+00:00"
   },
   {
-   "id": "ef:lockheedmartin.com:19381",
-   "title": "Project Engineering Intern",
-   "location": "Grand Prairie, TX, US",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477338234",
-   "posted": "2026-10-13",
-   "body": "Standard Job Description The Lockheed Martin Missiles and Fire Control site in Grand Prairie, TX is seeking a full-time Summer 2027 Intern Project Engineer. In this role, you will be integrated into the Guided Multiple Launch Rocket System (GMLRS) Program Management team to collaborate with all disciplines of engineering, global supply chain, quality assurance, and production operations to ensure successful program operations. The successful candidate will have a technical background, an agile mindset, and knowledge of data analytics. Must be a US citizen; however, this job will not require a government security clearance. In this role, the candidate will perform assignments in technical/engineering organizations (e.g., Electronics Engineering, Software Engineering, Facilities Engineering, Manufacturing Engineering) during vacations and short-term breaks from college attendance while enrolled in an accredited degree program. We are seeking candidates with strong technical skills in engineering data analysis and hands-on experience with CAD tools. Ideally, this candidate also has practical familiarity with failure analysis methodologies like FRACAS or FMECA. At Lockheed Martin we keep people safe and solve the world's most complex challenges. Our people are some of the greatest minds in the industry and truly make Lockheed Martin a great place to work. With our employees as our priority, we provide career opportunities designed to propel development and boost agility. Our flexible schedules, competitive pay, and comprehensive benefits enable our employees to live a healthy, fulfilling life at and outside of work. This is a place for engineers, scientists, and problem-solvers who are ready to engage deeply, think critically, and build with purpose. You will not just launch a career. You will be part of something bigger. This is where the best are built. Proficient in AI prompting as it applies to this position and practice. Basic Qualifications Currently enrolled in bachelors degree program in an engineering or scientific discipline. Preferred majors include Mechanical, Electrical, or Aerospace Engineering disciplines. Experience using CAD 3D tools. This may include CREO, Catia, Siemens NX, SolidWorks, or similar skills. Must be US citizen. Desired Skills Familiarity with FRACAS (Failure reporting analysis & corrective action system) or FMECA (Failure mode effects criticality analysis). Experience diagnosing hardware issues, engaging in hardware failure testing, and root-cause analysis. Experience with technical documentation and engineering drawings. This may include GD&T, engineering drawings, schematics, etc. Experience using Windchill. Strong background in performing data research and data analytical tasks. Ability to present data to senior leadership in a cohesive, concise, and articulate manner. Proficiency in Microsoft Office applications with solid presentation skills and capability to brief audiences of large or small varying technical knowledge. Ability to work with cross-functional teams during the testing of hardware. Excellent written and verbal communication skills, strong social skills, and ability to build consensus among peers while building solid relationships with team members, customers, and senior leadership. Pay Information Full-Time Salary Range: $20.14 - $28.15 At Lockheed Martin, we know mission success starts with taking care of our people. Our Total Rewards program is designed to attract top talent, support your well-being, and help you grow\u2014both professionally and personally. The salary range for this position is as listed on the requisition. Please note that the salary information listed is a general guideline only. Lockheed Martin considers factors such as (but not limited to) scope and responsibilities of the position, candidate's work experience, education/ training, key skills as well as market(work location) and business considerations when extending an offer. Benefits offered: Medical, Dental, Vision, Flexible work arrangements and schedules (e.g., 4x10), 401(k) match, Paid time off, Holidays, Parental Leave, EAP, Flexible Spending Accounts, Education Assistance, Life Insurance, Short-Term Disability, and Long-Term Disability. Annual short-term and/or long-term incentive compensation programs may be offered depending on the position. Payments under these annual programs are not guaranteed and can vary from year to year and are tied to a range of performance metrics. For (Washington state applicants only) Non-represented full-time employees: accrue at least 10 hours per month of Paid Time Off (PTO) to be used for incidental absences and other reasons; receive at least 90 hours for holidays. Represented full time employees accrue 6.67 hours of Vacation per month; accrue up to 52 hours of sick leave annually; receive at least 96 hours for holidays. PTO, Vacation, sick leave, and holiday hours are prorated based on start date during the calendar year.",
-   "company": "Lockheed Martin",
-   "score": {
-    "total": 53,
-    "base": 44,
-    "fit": 37,
-    "loc": 0,
-    "traj": 13,
-    "pay": -6,
-    "rate": [
-     20.14,
-     28.15
-    ],
-    "fresh": 9,
-    "age": 2.4,
-    "age_basis": "posted",
-    "tier": "B",
-    "why": [
-     [
-      "body: gd&t",
-      8
-     ],
-     [
-      "body: failure analysis",
-      7
-     ],
-     [
-      "body: engineering drawings",
-      6
-     ],
-     [
-      "title: engineering intern",
-      4
-     ],
-     [
-      "body: solidworks",
-      4
-     ],
-     [
-      "body: drawings",
-      3
-     ],
-     [
-      "body: creo",
-      3
-     ],
-     [
-      "body: nx",
-      2
-     ]
-    ]
-   },
-   "first_seen": "2026-10-13T20:39:35+00:00"
-  },
-  {
    "id": "ef:qualcomm.com:3095747",
    "title": "Automotive Engineering Internship \u2013 Summer 2027",
    "location": "San Diego, CA, US",
@@ -5573,7 +5443,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 27.4,
+    "age": 27.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5629,7 +5499,7 @@
      35.0
     ],
     "fresh": 3,
-    "age": 17.4,
+    "age": 17.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5685,7 +5555,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 14.4,
+    "age": 14.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5742,7 +5612,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 55.4,
+    "age": 55.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5798,7 +5668,7 @@
      50.0
     ],
     "fresh": 3,
-    "age": 15.4,
+    "age": 15.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5850,7 +5720,7 @@
      45.0
     ],
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5898,7 +5768,7 @@
      32.0
     ],
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5943,7 +5813,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5992,7 +5862,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -6044,7 +5914,7 @@
      37.0
     ],
     "fresh": -4,
-    "age": 56.4,
+    "age": 56.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6104,7 +5974,7 @@
      24.23
     ],
     "fresh": 0,
-    "age": 29.4,
+    "age": 29.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6160,7 +6030,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 22.4,
+    "age": 22.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6208,7 +6078,7 @@
      38.0
     ],
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -6265,7 +6135,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 27.4,
+    "age": 27.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6318,7 +6188,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -6374,7 +6244,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 41.4,
+    "age": 41.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6434,7 +6304,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 45.4,
+    "age": 45.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6494,7 +6364,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 45.4,
+    "age": 45.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6554,7 +6424,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 45.4,
+    "age": 45.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6614,7 +6484,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 45.4,
+    "age": 45.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6655,59 +6525,6 @@
    "first_seen": "2026-10-13T20:39:35+00:00"
   },
   {
-   "id": "wd:vermeer:REQ-22139",
-   "title": "Design Engineer Intern - Summer 2027",
-   "location": "Pella, Iowa, USA - The Center",
-   "url": "https://vermeer.wd5.myworkdayjobs.com/externalcareersite/job/Pella-Iowa-USA---The-Center/Design-Engineer-Intern---Summer-2027_REQ-22139",
-   "posted": "2026-09-15",
-   "body": "Who We Are Vermeer equips customers doing important work around the world. We are global, driven by innovation and growing. The equipment we make manages natural resources, connects people and feeds and fuels communities. We live out a caring culture, we demonstrate agility, we keep a focus on customers and are stewards of our resources. These beliefs drive our culture, determine how we treat others and steer our business. Job Summary The Design Engineer Intern helps design, document, build and test new solutions for assigned industry using design tools. This role supports design in production, sales, service, troubleshooting and updating. This position also helps analyze and provide realistic recommendations on structural components to ensure that design meets the design goals and customer needs. Essential Duties and Responsibilities include the following. Other duties may be assigned. 1. Exhibit the Vermeer characteristics of caring culture, demonstrating agility, customer focused and stewardship while modeling the associated behaviors. 2. Help design and detail purchased items, machining, weld and assembly prints using SolidWorks software for manufacturability, cost effectiveness and safety. 3. Assist Engineering Technicians with all aspects of building and testing prototypes. 4. Analyze production issues and assist with solutions. 5. Calculate unknown loading and directions where required from data and assumptions. 6. Develop bill of materials (BOM). 7. Test design changes made by technicians. Education and/or Experience - High School diploma required. - Current student pursing a Bachelor's degree in Mechanical, Industrial, Agriculture or Electrical Engineering. - Previous internship is a plus. Other Skills and Abilities - Ability to identify the root cause of defective parts of product design solutions, including manufactured and purchased component sizing. - Knowledge in the FEA, hydraulics, electronics, statistics and strength of materials, durability and serviceability of products. - Ability to understand material strengths, fatigue strength, and manufacturability to ensure that the right configuration and materials are developed. - Ability to produce accurate, professional and error-free documents in a timely manner. - Demonstration of good oral and written communication skills. Work Location ONSITE: A team member\u2019s day-to-day work is best done on a Vermeer campus. If work content can be occasionally completed at an offsite location, discuss potential arrangements with your manager. Equal Opportunity Employer At Vermeer Corporation, we believe in the value of your unique identity, background, and experiences. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, marital status, genetic information, disability, sexual orientation, gender identity, veteran status or any other status protected by the law. Applicants requiring a reasonable accommodation due to a disability at any stage of the employment application process should contact Team Member Solutions at (641) 621-8767 or at hr@vermeer.com . Interested? We\u2019d love to get to know you.",
-   "company": "Vermeer",
-   "score": {
-    "total": 51,
-    "base": 51,
-    "fit": 40,
-    "loc": 0,
-    "traj": 11,
-    "pay": 0,
-    "rate": null,
-    "fresh": 0,
-    "age": 30.4,
-    "age_basis": "posted",
-    "tier": "A",
-    "why": [
-     [
-      "title: design engineer",
-      12
-     ],
-     [
-      "body: root cause",
-      7
-     ],
-     [
-      "body: product design",
-      6
-     ],
-     [
-      "body: machining",
-      4
-     ],
-     [
-      "body: prototype",
-      4
-     ],
-     [
-      "body: solidworks",
-      4
-     ],
-     [
-      "body: fea",
-      3
-     ]
-    ]
-   },
-   "first_seen": "2026-10-14T01:17:06+00:00"
-  },
-  {
    "id": "gh:andurilindustries:5255593007",
    "title": "2027 Industrial Engineer Intern",
    "location": "Ashville, Ohio, United States; Costa Mesa, California, United States",
@@ -6727,7 +6544,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 13.4,
+    "age": 13.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -6779,7 +6596,7 @@
      30.0
     ],
     "fresh": 3,
-    "age": 16.4,
+    "age": 16.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -6836,7 +6653,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 10.4,
+    "age": 10.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -6873,7 +6690,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 27.4,
+    "age": 27.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6926,7 +6743,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -6971,7 +6788,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 44.4,
+    "age": 44.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -7031,7 +6848,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 17.4,
+    "age": 17.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7087,7 +6904,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 17.4,
+    "age": 17.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7132,7 +6949,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7177,7 +6994,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 9.4,
+    "age": 9.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7225,7 +7042,7 @@
      25.0
     ],
     "fresh": 0,
-    "age": 29.4,
+    "age": 29.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7285,7 +7102,7 @@
      28.0
     ],
     "fresh": 0,
-    "age": 29.4,
+    "age": 29.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7345,7 +7162,7 @@
      22.0
     ],
     "fresh": 6,
-    "age": 8.4,
+    "age": 8.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7405,7 +7222,7 @@
      35.45
     ],
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7458,7 +7275,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 6.4,
+    "age": 6.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7510,7 +7327,7 @@
      24.0
     ],
     "fresh": 3,
-    "age": 15.4,
+    "age": 15.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7570,7 +7387,7 @@
      34.0
     ],
     "fresh": 3,
-    "age": 13.4,
+    "age": 13.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7627,7 +7444,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 30.4,
+    "age": 30.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7675,7 +7492,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 55.4,
+    "age": 55.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -7732,7 +7549,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.4,
+    "age": 3.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7785,7 +7602,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7833,7 +7650,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 15.4,
+    "age": 15.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7878,7 +7695,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 7.4,
+    "age": 7.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7930,7 +7747,7 @@
      28.0
     ],
     "fresh": 0,
-    "age": 28.4,
+    "age": 28.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7990,7 +7807,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 36.4,
+    "age": 36.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -8047,7 +7864,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 63.4,
+    "age": 63.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -8107,7 +7924,7 @@
      38.0
     ],
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8163,7 +7980,7 @@
      21.6
     ],
     "fresh": 3,
-    "age": 13.4,
+    "age": 13.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8216,7 +8033,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 28.4,
+    "age": 28.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8260,7 +8077,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 41.4,
+    "age": 41.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -8313,7 +8130,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.4,
+    "age": 58.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -8338,6 +8155,54 @@
    "first_seen": "2026-10-13T20:39:35+00:00"
   },
   {
+   "id": "wd:globalfoundries:JR-2604628",
+   "title": "Advanced Manufacturing Engineering Intern, Process & Equipment (Summer 2027)",
+   "location": "USA - New York - Malta",
+   "url": "https://globalfoundries.wd1.myworkdayjobs.com/External/job/USA---New-York---Malta/Advanced-Manufacturing-Engineering-Intern--Process---Equipment--Summer-2027-_JR-2604628",
+   "posted": "2026-10-15",
+   "body": "About GlobalFoundries: GlobalFoundries (GF) is a leading manufacturer of essential semiconductors, enabling AI at scale from the cloud to the physical world. Through deep partnerships with customers, GF delivers differentiated, power \u2011 efficient and high \u2011 performance solutions for high \u2011 growth markets. GF is a trusted and holistic technology partner for customers around the world. GF\u2019s talented, global team remains focused every day on security, longevity and sustainability. For more information, visit www.gf.com . Internship Program Overview: Our Interns & Co-ops are our entry-level talent pipeline for GF across the globe. Our goal is to provide students with a meaningful work experience that will equip them with the skills to embark on a career in the fast-paced and growing semiconductor industry after graduation. As an intern at GF, you\u2019ll experience one-on-one mentorship, work assignments that prioritize your growth and potential, professional development opportunities, and the chance to network with executives. Summary of Role: GlobalFoundries Fab 8 is seeking highly skilled and motivated Process & Equipment Engineering interns to become part of our state of the art 300mm factory. Essential Responsibilities Include: In your role as Engineering Intern you will be working with an assigned Engineer to: Reduce variability in the process recovery procedures Increase the ability to detect problems earlier, enhancement in LOD Reduce cost of chemicals and or qualification wafers Standardize processes across like equipment Enhance process performance measurement techniques Lead improvement projects and present results Collaborate with equipment and maintenance teams including engineers, technicians, managers and production employees in a dynamic environment. Other Responsibilities: Perform all activities in a safe and responsible manner and support all Environmental, Health, Safety & Security requirements and programs Required Qualifications: Education \u2013 At least a sophomore at time of application and actively pursuing a Bachelor\u2019s in Chemical engineering , Electrical Engineering, Mechanical Engineering, Materials Science or related field through an accredited degree program during the time of internship. Must have at least an overall 3.0 GPA and be in good academic standing. Language Fluency - English (Written & Verbal) Ability to work at least 40 hours per week during the internship. Preferred Qualifications: Prior related internship or co-op experience Strong interest in leveraging AI tools and emerging technologies to enhance productivity, streamline workflows, and support effective decision-making. Demonstrated prior leadership experience in the workplace, school projects, competitions, etc. Project management skills, i.e., the ability to innovate and execute on solutions that matter; the ability to navigate ambiguity. Strong written and verbal communication skills Strong planning & organizational skills Demonstrated ability to meet deadlines and commitments Individuals will be and must be able to understand complex automated systems and human interactions. SPC Controls experience . #InternshipProgramUS Expected Salary Range $20.00 - $40.00 Expected Salary Range $0.00 - $0.00 The exact Salary will be determined based on qualifications, experience and location. If you need a reasonable accommodation for any part of the employment process, please contact us by email at usaccommodations@gf.com and let us know the nature of your request and your contact information. Requests for accommodation will be considered on a case-by-case basis. Please note that only inquiries concerning a request for reasonable accommodation will be responded to from this email address. An offer with GlobalFoundries is conditioned upon the successful completion of pre-employment conditions, as applicable, and subject to applicable laws and regulations. GlobalFoundries is fully committed to equal opportunity in the workplace and believes that cultural diversity within the company enhances its business potential. GlobalFoundries goal of excellence in business necessitates the attraction and retention of highly qualified people. Artificial barriers and stereotypic biases detract from this objective and may be illegally discriminatory. All policies and processes which pertain to employees including recruitment, selection, training, utilization, promotion, compensation, benefits, extracurricular programs, and termination are created and implemented without regard to age, ethnicity, ancestry, color, marital status, medical condition, mental or physical disability, national origin, race, religion, political and/or third-party affiliation, sex, sexual orientation, gender identity or expression, veteran status, or any other characteristic or category specified by local, state or federal law",
+   "company": "GlobalFoundries",
+   "score": {
+    "total": 46,
+    "base": 34,
+    "fit": 17,
+    "loc": 6,
+    "traj": 11,
+    "pay": 0,
+    "rate": [
+     20.0,
+     40.0
+    ],
+    "fresh": 12,
+    "age": 0.6,
+    "age_basis": "posted",
+    "tier": "B",
+    "why": [
+     [
+      "title: equipment",
+      7
+     ],
+     [
+      "title: engineering intern",
+      4
+     ],
+     [
+      "title: manufacturing",
+      3
+     ],
+     [
+      "title: process",
+      3
+     ],
+     [
+      "pay $30/hr",
+      0
+     ]
+    ]
+   },
+   "first_seen": "2026-10-15T14:16:27+00:00"
+  },
+  {
    "id": "wd:globalfoundries:JR-2604578",
    "title": "Advanced Manufacturing Engineering Intern, Process & Equipment (Summer 2027)",
    "location": "USA - New York - Malta",
@@ -8357,7 +8222,7 @@
      40.0
     ],
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8405,7 +8270,7 @@
      40.0
     ],
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8453,7 +8318,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 17.4,
+    "age": 17.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8502,7 +8367,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8513,58 +8378,6 @@
     ]
    },
    "first_seen": "2026-10-14T06:18:29+00:00"
-  },
-  {
-   "id": "wd:medtronic:R76021",
-   "title": "Engineering Intern Summer 2027- Candidates Attending 2026 SWE National Conference\u202f",
-   "location": "Mounds View, Minnesota, United States of America; Tempe, Arizona, United States of America; Eatontown, New Jersey, United States of America; Santa Rosa, California, United States of America; Lafayette, Colorado, United States of America; Boulder, Colorado, United States of America; Plymouth, Minnesota, United States of America; Irvine, California, United States of America; North Haven, Connecticut, United States of America; Memphis, Tennessee, United States of America; Newton, Massachusetts, United States of America; Dexter, Michigan, United States of America; Santa Ana, California, United States of America; Mansfield, Massachusetts, United States of America; Fort Worth, Texas, United States of America; Minneapolis, Minnesota, United States of America; Brooklyn Center, Minnesota, United States of America; Jacksonville, Florida, United States of America; Boston, Massachusetts, United States of America; Brooklyn Park, Minnesota, United States of America",
-   "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Mounds-View-Minnesota-United-States-of-America/Engineering-Intern-Summer-2027--Candidates-Attending-2026-SWE-National-Conference-_R76021-1",
-   "posted": "2026-08-27",
-   "body": "We anticipate the application window for this opening will close on - 11 Nov 2026 Careers that change lives start here. Medtronic is a global leader in healthcare technology with a Mission to alleviate pain, restore health, and extend life. Our 95,000 employees work across more than 150 countries to put patients first \u2014 developing innovative medical technologies that improve the lives of 72+ million patients each year. Your unique talents will help shape the future of healthcare while building a career grounded in purpose, growth, and impact. A Day in the Life CAREERS THAT CHANGE LIVES This posting is intended f o r candidates attending the 2026 National SWE Convention in Boston, MA . Careers that change lives start here. Medtronic is a global leader in healthcare technology with a Mission to alleviate pain, restore health, and extend life. Our 95,000 employees work across more than 150 countries to put patients first \u2014 developing innovative medical technologies that improve the lives of 72+ million patients each year. Your unique talents will help shape the future of healthcare while building a career grounded in purpose, growth, and impact. Our summer internships are full-time ( 40 hours /week), paid positions lasting 10- 11 weeks . We offer competitive compensation, educational and social programming throughout the summer, as well as housing assistance and relocation support for eligible interns. Location and Work Model Most internship positions are based at primary hubs in Minnesota, California, Colorado, Connecticut, and Massachusetts, with additional opportunities available in Arizona, Florida, Michigan, Tennessee, and Texas. Candidate location preferences are strongly considered during the interview and offer process; however, flexibility increases the number of potential opportunities available. All interns must reside in the U.S. for the duration of the internship. Interns are expected to work onsite a minimum of 4 days per week and participate in full tim e, 40 ho urs per week, as part of the intern cohort from June 1 through August 13 for semester system programs or June 14 through August 20 for quarter system programs. Required Qualifications Working toward a bachelor's or master's degree in Biomedical Engineering , Mechanical Engineering, Electrical Engineering, Industrial Engineering, Materials Science & Engineering, Computer Engineering, Software Engineering, Computer Science or a related engineering discipline with an anticipated graduation date of Winter 2027, Spring 2028, Winter 2028, or Spring 2029 . Applicants for Medtronic\u2019s Summer Internship Program must be currently authorized to work in the United States. Medtronic does not sponsor work authorization for internship positions. Individuals on temporary visa classifications, including E, F \u2011 1 (CPT or OPT), H \u2011 1, H \u2011 2, L, B, J, or TN, as well as anyone who requires employment sponsorship now or in the future, are not eligible for the Program. Preferred Qualifications Prior experience in manufacturing, operations, process improvement, industrial engineering, or product support through internships, academic projects, research, laboratory work, or relevant work experience. Experience with Lean Manufacturing, continuous improvement, Six Sigma methodologies, process mapping, root cause analysis, or process optimization. Experience analyzing operational, manufacturing, quality, or engineering data. Experience creating technical documentation, engineering reports, project summaries, standard work instructions, or presentations. Physical Job Requirements: The physical demands described within the Responsibilities section of this job description are representative of those that must be met by an employee to successfully perform the essential functions of the role. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. While performing the duties of the role, the employee is regularly required to be independently mobile. The employee is also required to interact with a computer and communicate with peers and coworkers. For Baccalaureate degrees earned outside of the United States, a degree that satisfies the requirements of 8 C.F.R. \u00a7 214.2(h)(4)(iii)(A) is required. Physical Job Requirements The above statements are intended to describe the general nature and level of work being performed by employees assigned to this position, but they are not an exhaustive list of all the required responsibilities and skills of this position. The physical demands described within the Responsibilities section of this job description are representative of those that must be met by an employee to successfully perform the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. For Office Roles: While performing the duties of this job, the employee is regularly required to be independently mobile. The employee is also required to interact with a computer, and communicate with peers and co-workers. Contact your manager or local HR to understand the Work Conditions and Physical requirements that may be specific to each role. U.S. Work Authorization & Sponsorship At Medtronic, we are committed to fostering an environment where employees can thrive and make a meaningful impact. In alignment with our enterprise-wide workforce planning approach, U.S. work authorization sponsorship (H-1B, TN, J, etc.) is offered exclusively for Principal-level roles and above, where specialized expertise aligns with long-term business needs. Roles below the Principal level require candidates to possess unrestricted U.S. work authorization at the time of hire and for the duration of employment. \u200c Recruitment Fraud Alert We are aware of phishing scams targeting job seekers. Please keep the following in mind: Apply only through official Medtronic channels. All legitimate Medtronic recruiting communications come from approved Medtronic platforms and official @medtronic.com email addresses. Medtronic will never ask for payment or sensitive personal information (such as bank account or Social Security details) during early stages of the hiring process. Any such requests are not legitimate. If you receive a suspicious message claiming to be from Medtronic, do not respond, click links, or open attachments. If you have any questions, concerns regarding the authenticity of a communication alleged to have been made by or on behalf of Medtronic, please contact us immediately at AskHR@medtronic.com . \u200c Benefits & Compensation Medtronic offers a competitive Salary and flexible Benefits Package A commitment to our employees lives at the core of our values. We recognize their contributions. They share in the success they help to create. We offer a wide range of benefits, resources, and competitive compensation plans designed to support you at every career and life stage. Salary ranges for U.S (excl. PR) locations (USD):$58,240.00-$99,840.00 The base salary range is used nationally in the United States, excluding Puerto Rico. The Medtronic Internship Program offers an hourly rate of pay that falls within the range of $28.00 to $48.00 per hour. The hourly rate offered will be determined by the position and is subject to variation based on the number of years of school completed. The following benefits and additional compensation are available to those regular employees who work 20+ hours per week: Health, Dental and vision insurance , Health Savings Account , Healthcare Flexible Spending Account , Life insurance, Long-term disability leave , Dependent daycare spending account , Tuition assistance/reimbursement , and Simple Steps (global well-being program). The following benefits and additional compensation are available to all regular employees: Incentive plans, 401(k) plan plus employer contribution and match , Short-term disability , Paid time off , Paid holidays , Employee Stock Purchase Plan , Employee Assistance Program , Non-qualified Retirement Plan Supplement (subject to IRS earning minimums) , and Capital Accumulation Plan (available to Vice Presidents and above, or subject to IRS earning minimums). Regular employees are those who are not temporary, such as interns. Temporary employees are eligible for paid sick time, as required under applicable state law, and the Employee Stock Purchase Plan. Please note some of the above benefits may not apply to workers in Puerto Rico. Further details are available at the link below: Medtronic benefits and compensation plans It is the policy of Medtronic to provide equal employment opportunity (EEO) to all persons regardless of age, color, national origin, citizenship status, physical or mental disability, race, religion, creed, gender, sex, sexual orientation, gender identity and/or expression, genetic information, marital status, status with regard to public assistance, veteran status, or any other characteristic protected by federal, state or local law. In addition, Medtronic will provide reasonable accommodations for qualified individuals with disabilities. If you are applying to perform work for Medtronic, Inc. (\u201cMedtronic\u201d) in any position which will involve performing at least two (2) hours of work on average each week within the unincorporated areas of Los Angeles County, you can find here a list of all material job duties of the specific job position which Medtronic reasonably believes that criminal history may have a direct, adverse and negative relationship potentially resulting in the withdrawal of a conditional offer of employment. Medtronic will consider for employment qualified job applicants with arrest or conviction records in accordance with the Los Angeles County Fair Chance Ordinance for Employers and the California Fair Chance Act.",
-   "company": "Medtronic",
-   "score": {
-    "total": 46,
-    "base": 50,
-    "fit": 23,
-    "loc": 8,
-    "traj": 13,
-    "pay": 6,
-    "rate": [
-     28.0,
-     48.0
-    ],
-    "fresh": -4,
-    "age": 49.4,
-    "age_basis": "posted",
-    "tier": "A",
-    "why": [
-     [
-      "body: root cause",
-      7
-     ],
-     [
-      "pay $38/hr",
-      6
-     ],
-     [
-      "body: housing assistance",
-      5
-     ],
-     [
-      "title: engineering intern",
-      4
-     ],
-     [
-      "body: relocation",
-      4
-     ],
-     [
-      "body: doe",
-      3
-     ]
-    ]
-   },
-   "first_seen": "2026-10-13T20:39:35+00:00"
   },
   {
    "id": "gh:muonspace:5253432007",
@@ -8586,7 +8399,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 15.4,
+    "age": 15.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8615,55 +8428,6 @@
    "first_seen": "2026-10-13T02:04:57+00:00"
   },
   {
-   "id": "ef:qualcomm.com:3097141",
-   "title": "Modular Engineering Internship \u2013 Summer 2027",
-   "location": "Los Altos, CA, US",
-   "url": "https://careers.qualcomm.com/careers/job/446721246663",
-   "posted": "2026-10-02",
-   "body": "Company: Qualcomm Technologies, Inc. Job Area: Interns Group, Interns Group > Interim Engineering Intern - SW General Summary: About Qualcomm Qualcomm relentlessly innovates transforming businesses, enriching lives and fortifying societies. Our solutions are pivotal in crafting a smarter, interconnected world. Building on our nearly 40-year history of era-defining technology breakthroughs, we deliver leading-edge AI, high performance, lower-power computing, and unrivaled connectivity. We\u2019re proud to be the partner of choice to many of the world\u2019s largest enterprises. Together with our ecosystem partners, we enable next-generation digital transformation. At Qualcomm, we are engineering human progress. Join Us in Shaping the Future At Qualcomm, we're committed to engineering human progress by delivering intelligent computing everywhere. We're passionate about harnessing the power of technology to transform industries and improve lives. Our early career programs offer limitless opportunities for growth, mentorship, and meaningful work. By joining our team, you'll be part of a community that's pushing the boundaries of what's possible in AI, computing, and connectivity. With a global footprint spanning over 30 countries, you'll have the chance to collaborate with diverse talent and contribute to projects that are shaping the future of technology. Our early career programs are designed to attract inventive minds, offering a platform to contribute to our long-term innovation pipeline. You'll be part of a community that values collaboration, creativity, and continuous learning. Our programs provide real-world experience, technical skills, and professional development opportunities, empowering you to make a meaningful impact and achieve your career goals. Join us for our U.S. 2027 summer intern class ! About Modular At Modular, a Qualcomm company, we\u2019re on a mission to revolutionize AI infrastructure by systematically rebuilding the AI software stack from the ground up. Our team, made up of industry leaders and experts, is building cutting-edge, modular infrastructure that simplifies AI development and deployment. By rethinking the complexities of AI systems, we\u2019re empowering everyone to unlock AI\u2019s full potential and tackle some of the world\u2019s most pressing challenges. If you\u2019re passionate about shaping the future of AI and creating tools that make a real difference in people\u2019s lives, we want you on our team. Maximize Your Opportunities: Our internship hiring model routes candidates from this application into multiple project-specific roles. Your \"Profile Visibility\" choice will guide how we manage your data across our systems. To be considered for the full breadth of internship opportunities, select the option to use your profile data for \"Any Roles Globally\". If you choose to limit your data to \"Only The Role I'm Applying For\", it will restrict the opportunity for you to be considered across matching internship opportunities. You can update your profile visibility preferences at any time through the Candidate Home Portal. Steps: Log Into Your Eightfold Candidate Home Account Hover Over The \"Profile\" Dropdown Open Settings Edit \"Profile Visibility\" Role Overview As a Modular Engineering Intern , you will contribute to next-generation AI infrastructure and software technologies spanning the AI Inference stack. Depending on your background, interests, and project needs, you may work on AI/ML model bring up, AI Inference performance and optimization, compiler development, the Mojo programming language, GPU kernels and accelerator optimization, cloud and distributed systems, security, quality engineering, or software development tooling. You may help optimize AI models for inference workloads, develop high-performance software for GPUs and emerging accelerators, improve compiler and runtime technologies for MAX or Mojo, scale distributed AI systems, develop AI infrastructure and model-serving platforms, build automated performance and quality frameworks, or improve developer tooling and CI/CD systems. This internship supports the Modular Engineering track . Based on your resume, skills, and experience, you will be aligned to projects within this track. Projects may include: AI Inference & Model Serving AI Systems & Infrastructure GPU & Kernel Engineering Compilers, Runtimes & Programming Languages Distributed & Cloud Systems AI Performance & Optimization AI Quality, Evaluation & Reliability Platform & Developer Engineering Security Engineering Software Development & Full-Stack Engineering Developer Tools & Open-Source Technologies Minimum Qualifications Currently enrolled in a bachelor\u2019s, master\u2019s, or Ph.D. degree program in computer science, computer engineering, electrical engineering, software engineering, mathematics, artificial intelligence, or a related technical field. Must be available for 11\u201314 weeks during Summer 2027 (May\u2013September) . Expected graduation date of November 2027 or later . 1+ years of academic or project experience with programming languages such as Python, C, C++, Rust, Go, or related languages. Preferred Qualifications Candidates actively pursuing a degree with an anticipated graduation between November 2027 and June 2028 . Experience with machine learning, deep learning, generative AI, LLMs, transformer architectures, AI inference, or ML frameworks and ecosystems such as PyTorch, TensorFlow, or Hugging Face. Knowledge or experience with compiler design, compiler/runtime implementation, programming languages, library development, APIs, or frameworks such as MLIR, LLVM, GCC, TVM, or XLA. Experience with parallel computing, GPU programming, high-performance computing, CUDA, ROCm, or other accelerator programming models, including kernel optimization, computer architecture, memory systems, memory layouts, or data movement. Experience developing or optimizing AI/ML models and workloads, including model acceleration, quantization, profiling, benchmarking, inference optimization, performance analysis, or translating AI research and existing model implementations into production-ready code. Knowledge or experience with distributed systems, cloud infrastructure, large-scale AI infrastructure, model serving, Kubernetes, cloud-native technologies, multi-node or multi-cluster deployments, or scalable inference systems. Experience with systems programming or software development using Python, C/C++, Rust, Go, object-oriented languages, Python multiprocessing/asyncio, or related technologies. Experience with software engineering, application development, operating systems, APIs, software libraries, developer tooling, build systems, release automation, testing, CI/CD, or developer productivity tools. Familiarity with AI/ML evaluation, software quality, unit/integration testing, regression detection, performance testing, benchmarking, observability, reliability engineering, reproducibility, or failure analysis. Experience with profiling and performance-analysis tools such as NVIDIA Nsight Systems, Nsight Compute, PyTorch Profiler, Linux perf, Intel VTune, or similar technologies. Knowledge or interest in software security, AI security, secure development, data protection, access controls, developer security tooling, AI-assisted coding tools, or secure AI systems and workflows. Experience building web, full-stack, AI/ML, or systems applications, developer integrations, technical examples, or other developer-facing solutions. Experience contributing to open-source projects, GitHub communities, technical documentation/blogs, developer education, or developer-focused technical content. Familiarity with AI developer and agentic coding tools or related developer workflows. Strong debugging, analytical, problem-solving, communication, and collaboration skills, with demonstrated curiosity and the ability to learn and operate effectively in a fast-paced engineering environment. Research experience or publications in relevant AI/ML, systems, compiler, or engineering areas is a plus. Qualcomm\u2019s Internship Program Our interns join world-class teams to help define and build what is next for mobility and the world. You\u2019ll be paired with a mentor with visibility to your project and team, receive support from your manager, and have access to the entire Qualcomm employee community to ensure your success. To round out your summer internship, we host professional development workshops, social events, cross-functional speaker sessions, and an executive speaker series. In addition to competitive hourly pay and accrued vacation time, you will receive relocation coverage and furnished housing accommodations for the duration of your internship. Internship opportunities may be available in the following locations, depending on team and project needs : Austin, Boulder, Boxborough, Bridgewater, Chandler, Irvine, New York City, Louisville, Raleigh, San Diego, Santa Clara, and Seattle. Application Process By applying here, you are expressing interest in one of our many 2027 Qualcomm Modular Engineering internships . It is important to note that this is not a job posting for a specific project. We will review resumes on an ongoing basis, and a recruiter may reach out to you. Export Control Notice This role may require an export license for candidates with citizenship in certain countries (see current country list below \u2013 subject to change). Qualcomm, like other companies, is experiencing significant delays in the export license process. Please be advised that if an export license is required, you may not be able to start work with Qualcomm until the license is granted, which may impact your ability to participate in the internship. Countries requiring export : Armenia, Azerbaijan, Belarus, Burma (Myanmar), Cambodia, China, Cuba, Georgia, Hong Kong, Iran, Iraq, Kazakhstan, Kyrgyzstan, Laos, Libya, Macau, Moldova, Mongolia, Nicaragua, North Korea, Russia, Sudan, Syria, Tajikistan, Turkmenistan, Ukraine, Uzbekistan, Venezuela, Vietnam, and Yemen. Applicants : Qualcomm is an equal opportunity employer. If you are an individual with a disability and need an accommodation during the application/hiring process, rest assured that Qualcomm is committed to providing an accessible process. You may e-mail disability-accomodations@qualcomm.com or call Qualcomm's toll-free number found here . Upon request, Qualcomm will provide reasonable accommodations to support individuals with disabilities to be able participate in the hiring process. Qualcomm is also committed to making our workplace accessible for individuals with disabilities. (Keep in mind that this email address is used to provide reasonable accommodations for individuals with disabilities. We will not respond here to requests for updates on applications or resume inquiries). To all Staffing and Recruiting Agencies : Our Careers Site is only for individuals seeking a job at Qualcomm. Staffing and recruiting agencies and individuals being represented by an agency are not authorized to use this site or to submit profiles, applications or resumes, and any such submissions will be considered unsolicited. Qualcomm does not accept unsolicited resumes or applications from agencies. Please do not forward resumes to our jobs alias, Qualcomm employees or any other company location. Qualcomm is not responsible for any fees related to unsolicited resumes/applications. EEO Employer: Qualcomm is an equal opportunity employer; all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, Veteran status, or any other protected classification. Qualcomm expects its employees to abide by all applicable policies and procedures, including but not limited to security and other requirements regarding protection of Company confidential information and other confidential and/or proprietary information, to the extent those requirements are permissible under applicable law. Pay range and Other Compensation & Benefits : $17.00 - $98.00 The above pay scale reflects the broad, minimum to maximum, pay scale for this job code for the location for which it has been posted. Even more importantly, please note that salary is only one component of total compensation at Qualcomm. We also offer a competitive annual discretionary bonus program and opportunity for annual RSU grants (employees on sales-incentive plans are not eligible for our annual bonus). In addition, our highly competitive benefits package is designed to support your success at work, at home, and at play. Your recruiter will be happy to discuss all that Qualcomm has to offer \u2013 and you can review more details about our US benefits at this link . If you would like more information about this role, please contact Qualcomm Careers .",
-   "company": "Qualcomm",
-   "score": {
-    "total": 46,
-    "base": 43,
-    "fit": 26,
-    "loc": 0,
-    "traj": 17,
-    "pay": 0,
-    "rate": null,
-    "fresh": 3,
-    "age": 13.4,
-    "age_basis": "posted",
-    "tier": "B",
-    "why": [
-     [
-      "body: failure analysis",
-      7
-     ],
-     [
-      "title: engineering intern",
-      4
-     ],
-     [
-      "title: engineering internship",
-      4
-     ],
-     [
-      "body: python",
-      4
-     ],
-     [
-      "body: relocation",
-      4
-     ],
-     [
-      "body: doe",
-      3
-     ]
-    ]
-   },
-   "first_seen": "2026-10-13T20:39:35+00:00"
-  },
-  {
    "id": "ef:qualcomm.com:3095754",
    "title": "RF/Analog Design/Mixed-Signal Engineering Internship \u2013 Summer 2027",
    "location": "San Diego, CA, US; Tempe, AZ, US; Irvine, CA, US; Santa Clara, CA, US",
@@ -8680,7 +8444,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 27.4,
+    "age": 27.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8713,6 +8477,55 @@
    "first_seen": "2026-10-13T20:39:35+00:00"
   },
   {
+   "id": "ef:qualcomm.com:3097141",
+   "title": "Modular Engineering Internship \u2013 Summer 2027",
+   "location": "Los Altos, CA, US",
+   "url": "https://careers.qualcomm.com/careers/job/446721246663",
+   "posted": "2026-10-02",
+   "body": "Company: Qualcomm Technologies, Inc. Job Area: Interns Group, Interns Group > Interim Engineering Intern - SW General Summary: About Qualcomm Qualcomm relentlessly innovates transforming businesses, enriching lives and fortifying societies. Our solutions are pivotal in crafting a smarter, interconnected world. Building on our nearly 40-year history of era-defining technology breakthroughs, we deliver leading-edge AI, high performance, lower-power computing, and unrivaled connectivity. We\u2019re proud to be the partner of choice to many of the world\u2019s largest enterprises. Together with our ecosystem partners, we enable next-generation digital transformation. At Qualcomm, we are engineering human progress. Join Us in Shaping the Future At Qualcomm, we're committed to engineering human progress by delivering intelligent computing everywhere. We're passionate about harnessing the power of technology to transform industries and improve lives. Our early career programs offer limitless opportunities for growth, mentorship, and meaningful work. By joining our team, you'll be part of a community that's pushing the boundaries of what's possible in AI, computing, and connectivity. With a global footprint spanning over 30 countries, you'll have the chance to collaborate with diverse talent and contribute to projects that are shaping the future of technology. Our early career programs are designed to attract inventive minds, offering a platform to contribute to our long-term innovation pipeline. You'll be part of a community that values collaboration, creativity, and continuous learning. Our programs provide real-world experience, technical skills, and professional development opportunities, empowering you to make a meaningful impact and achieve your career goals. Join us for our U.S. 2027 summer intern class ! About Modular At Modular, a Qualcomm company, we\u2019re on a mission to revolutionize AI infrastructure by systematically rebuilding the AI software stack from the ground up. Our team, made up of industry leaders and experts, is building cutting-edge, modular infrastructure that simplifies AI development and deployment. By rethinking the complexities of AI systems, we\u2019re empowering everyone to unlock AI\u2019s full potential and tackle some of the world\u2019s most pressing challenges. If you\u2019re passionate about shaping the future of AI and creating tools that make a real difference in people\u2019s lives, we want you on our team. Maximize Your Opportunities: Our internship hiring model routes candidates from this application into multiple project-specific roles. Your \"Profile Visibility\" choice will guide how we manage your data across our systems. To be considered for the full breadth of internship opportunities, select the option to use your profile data for \"Any Roles Globally\". If you choose to limit your data to \"Only The Role I'm Applying For\", it will restrict the opportunity for you to be considered across matching internship opportunities. You can update your profile visibility preferences at any time through the Candidate Home Portal. Steps: Log Into Your Eightfold Candidate Home Account Hover Over The \"Profile\" Dropdown Open Settings Edit \"Profile Visibility\" Role Overview As a Modular Engineering Intern , you will contribute to next-generation AI infrastructure and software technologies spanning the AI Inference stack. Depending on your background, interests, and project needs, you may work on AI/ML model bring up, AI Inference performance and optimization, compiler development, the Mojo programming language, GPU kernels and accelerator optimization, cloud and distributed systems, security, quality engineering, or software development tooling. You may help optimize AI models for inference workloads, develop high-performance software for GPUs and emerging accelerators, improve compiler and runtime technologies for MAX or Mojo, scale distributed AI systems, develop AI infrastructure and model-serving platforms, build automated performance and quality frameworks, or improve developer tooling and CI/CD systems. This internship supports the Modular Engineering track . Based on your resume, skills, and experience, you will be aligned to projects within this track. Projects may include: AI Inference & Model Serving AI Systems & Infrastructure GPU & Kernel Engineering Compilers, Runtimes & Programming Languages Distributed & Cloud Systems AI Performance & Optimization AI Quality, Evaluation & Reliability Platform & Developer Engineering Security Engineering Software Development & Full-Stack Engineering Developer Tools & Open-Source Technologies Minimum Qualifications Currently enrolled in a bachelor\u2019s, master\u2019s, or Ph.D. degree program in computer science, computer engineering, electrical engineering, software engineering, mathematics, artificial intelligence, or a related technical field. Must be available for 11\u201314 weeks during Summer 2027 (May\u2013September) . Expected graduation date of November 2027 or later . 1+ years of academic or project experience with programming languages such as Python, C, C++, Rust, Go, or related languages. Preferred Qualifications Candidates actively pursuing a degree with an anticipated graduation between November 2027 and June 2028 . Experience with machine learning, deep learning, generative AI, LLMs, transformer architectures, AI inference, or ML frameworks and ecosystems such as PyTorch, TensorFlow, or Hugging Face. Knowledge or experience with compiler design, compiler/runtime implementation, programming languages, library development, APIs, or frameworks such as MLIR, LLVM, GCC, TVM, or XLA. Experience with parallel computing, GPU programming, high-performance computing, CUDA, ROCm, or other accelerator programming models, including kernel optimization, computer architecture, memory systems, memory layouts, or data movement. Experience developing or optimizing AI/ML models and workloads, including model acceleration, quantization, profiling, benchmarking, inference optimization, performance analysis, or translating AI research and existing model implementations into production-ready code. Knowledge or experience with distributed systems, cloud infrastructure, large-scale AI infrastructure, model serving, Kubernetes, cloud-native technologies, multi-node or multi-cluster deployments, or scalable inference systems. Experience with systems programming or software development using Python, C/C++, Rust, Go, object-oriented languages, Python multiprocessing/asyncio, or related technologies. Experience with software engineering, application development, operating systems, APIs, software libraries, developer tooling, build systems, release automation, testing, CI/CD, or developer productivity tools. Familiarity with AI/ML evaluation, software quality, unit/integration testing, regression detection, performance testing, benchmarking, observability, reliability engineering, reproducibility, or failure analysis. Experience with profiling and performance-analysis tools such as NVIDIA Nsight Systems, Nsight Compute, PyTorch Profiler, Linux perf, Intel VTune, or similar technologies. Knowledge or interest in software security, AI security, secure development, data protection, access controls, developer security tooling, AI-assisted coding tools, or secure AI systems and workflows. Experience building web, full-stack, AI/ML, or systems applications, developer integrations, technical examples, or other developer-facing solutions. Experience contributing to open-source projects, GitHub communities, technical documentation/blogs, developer education, or developer-focused technical content. Familiarity with AI developer and agentic coding tools or related developer workflows. Strong debugging, analytical, problem-solving, communication, and collaboration skills, with demonstrated curiosity and the ability to learn and operate effectively in a fast-paced engineering environment. Research experience or publications in relevant AI/ML, systems, compiler, or engineering areas is a plus. Qualcomm\u2019s Internship Program Our interns join world-class teams to help define and build what is next for mobility and the world. You\u2019ll be paired with a mentor with visibility to your project and team, receive support from your manager, and have access to the entire Qualcomm employee community to ensure your success. To round out your summer internship, we host professional development workshops, social events, cross-functional speaker sessions, and an executive speaker series. In addition to competitive hourly pay and accrued vacation time, you will receive relocation coverage and furnished housing accommodations for the duration of your internship. Internship opportunities may be available in the following locations, depending on team and project needs : Austin, Boulder, Boxborough, Bridgewater, Chandler, Irvine, New York City, Louisville, Raleigh, San Diego, Santa Clara, and Seattle. Application Process By applying here, you are expressing interest in one of our many 2027 Qualcomm Modular Engineering internships . It is important to note that this is not a job posting for a specific project. We will review resumes on an ongoing basis, and a recruiter may reach out to you. Export Control Notice This role may require an export license for candidates with citizenship in certain countries (see current country list below \u2013 subject to change). Qualcomm, like other companies, is experiencing significant delays in the export license process. Please be advised that if an export license is required, you may not be able to start work with Qualcomm until the license is granted, which may impact your ability to participate in the internship. Countries requiring export : Armenia, Azerbaijan, Belarus, Burma (Myanmar), Cambodia, China, Cuba, Georgia, Hong Kong, Iran, Iraq, Kazakhstan, Kyrgyzstan, Laos, Libya, Macau, Moldova, Mongolia, Nicaragua, North Korea, Russia, Sudan, Syria, Tajikistan, Turkmenistan, Ukraine, Uzbekistan, Venezuela, Vietnam, and Yemen. Applicants : Qualcomm is an equal opportunity employer. If you are an individual with a disability and need an accommodation during the application/hiring process, rest assured that Qualcomm is committed to providing an accessible process. You may e-mail disability-accomodations@qualcomm.com or call Qualcomm's toll-free number found here . Upon request, Qualcomm will provide reasonable accommodations to support individuals with disabilities to be able participate in the hiring process. Qualcomm is also committed to making our workplace accessible for individuals with disabilities. (Keep in mind that this email address is used to provide reasonable accommodations for individuals with disabilities. We will not respond here to requests for updates on applications or resume inquiries). To all Staffing and Recruiting Agencies : Our Careers Site is only for individuals seeking a job at Qualcomm. Staffing and recruiting agencies and individuals being represented by an agency are not authorized to use this site or to submit profiles, applications or resumes, and any such submissions will be considered unsolicited. Qualcomm does not accept unsolicited resumes or applications from agencies. Please do not forward resumes to our jobs alias, Qualcomm employees or any other company location. Qualcomm is not responsible for any fees related to unsolicited resumes/applications. EEO Employer: Qualcomm is an equal opportunity employer; all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, Veteran status, or any other protected classification. Qualcomm expects its employees to abide by all applicable policies and procedures, including but not limited to security and other requirements regarding protection of Company confidential information and other confidential and/or proprietary information, to the extent those requirements are permissible under applicable law. Pay range and Other Compensation & Benefits : $17.00 - $98.00 The above pay scale reflects the broad, minimum to maximum, pay scale for this job code for the location for which it has been posted. Even more importantly, please note that salary is only one component of total compensation at Qualcomm. We also offer a competitive annual discretionary bonus program and opportunity for annual RSU grants (employees on sales-incentive plans are not eligible for our annual bonus). In addition, our highly competitive benefits package is designed to support your success at work, at home, and at play. Your recruiter will be happy to discuss all that Qualcomm has to offer \u2013 and you can review more details about our US benefits at this link . If you would like more information about this role, please contact Qualcomm Careers .",
+   "company": "Qualcomm",
+   "score": {
+    "total": 46,
+    "base": 43,
+    "fit": 26,
+    "loc": 0,
+    "traj": 17,
+    "pay": 0,
+    "rate": null,
+    "fresh": 3,
+    "age": 13.6,
+    "age_basis": "posted",
+    "tier": "B",
+    "why": [
+     [
+      "body: failure analysis",
+      7
+     ],
+     [
+      "title: engineering intern",
+      4
+     ],
+     [
+      "title: engineering internship",
+      4
+     ],
+     [
+      "body: python",
+      4
+     ],
+     [
+      "body: relocation",
+      4
+     ],
+     [
+      "body: doe",
+      3
+     ]
+    ]
+   },
+   "first_seen": "2026-10-13T20:39:35+00:00"
+  },
+  {
    "id": "wd:globalhr:01871431",
    "title": "Industrial Engineering Co-Op (Spring/Summer 2027)",
    "location": "US-IA-CEDAR RAPIDS-109 ~ 400 Collins Rd NE ~ BLDG 109",
@@ -8729,7 +8542,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.4,
+    "age": 3.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8774,7 +8587,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 10.4,
+    "age": 10.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8826,7 +8639,7 @@
      28.0
     ],
     "fresh": 0,
-    "age": 31.4,
+    "age": 31.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8886,7 +8699,7 @@
      28.85
     ],
     "fresh": 0,
-    "age": 34.4,
+    "age": 34.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8946,7 +8759,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 21.4,
+    "age": 21.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8994,7 +8807,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 27.4,
+    "age": 27.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9050,7 +8863,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 57.4,
+    "age": 57.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9107,7 +8920,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9144,7 +8957,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 37.4,
+    "age": 37.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9173,66 +8986,6 @@
    "first_seen": "2026-10-14T01:17:06+00:00"
   },
   {
-   "id": "wd:medtronic:R73623",
-   "title": "Engineering Intern \u2013 Summer 2027",
-   "location": "Fridley, Minnesota, United States of America; Tempe, Arizona, United States of America; Eatontown, New Jersey, United States of America; Santa Rosa, California, United States of America; Lafayette, Colorado, United States of America; Boulder, Colorado, United States of America; Plymouth, Minnesota, United States of America; Mounds View, Minnesota, United States of America; Irvine, California, United States of America; North Haven, Connecticut, United States of America; Memphis, Tennessee, United States of America; Newton, Massachusetts, United States of America; Dexter, Michigan, United States of America; Santa Ana, California, United States of America; Mansfield, Massachusetts, United States of America; Fort Worth, Texas, United States of America; Minneapolis, Minnesota, United States of America; Brooklyn Center, Minnesota, United States of America; Jacksonville, Florida, United States of America; Boston, Massachusetts, United States of America; Brooklyn Park, Minnesota, United States of America",
-   "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Fridley-Minnesota-United-States-of-America/Engineering-Intern---Summer-2027_R73623-1",
-   "posted": "2026-08-01",
-   "body": "We anticipate the application window for this opening will close on - 16 Oct 2026 Careers that change lives start here. Medtronic is a global leader in healthcare technology with a Mission to alleviate pain, restore health, and extend life. Our 95,000 employees work across more than 150 countries to put patients first \u2014 developing innovative medical technologies that improve the lives of 72+ million patients each year. Your unique talents will help shape the future of healthcare while building a career grounded in purpose, growth, and impact. A Day in the Life Our summer internships are full-time ( 40 hours /week), paid positions lasting 10- 11 weeks . We offer competitive compensation, educational and social programming throughout the summer, as well as housing assistance and relocation support for eligible interns. Engineering Intern Opportunities for Students Interns may support one or more engineering areas based on business need, candidate background, and location availability. Examples of work in each area are listed below. Research & Development Engineering Support design, development, analysis, and testing of engineering solutions during research and product development phases. Contribute to system integration, verification, validation, risk analysis, and data-driven evaluation efforts. Support safety testing, regulatory compliance, and transfer of products from development into manufacturing. Great for students who want to: Gain exposure to how new medical technologies move from early concepts through validation and manufacturing readiness. Apply engineering fundamentals to real design, testing, and system-level challenges. Understand how safety, quality, and regulatory requirements influence engineering decisions. Operations Engineering Design and support manufacturing processes, procedures, and production layouts for assemblies, equipment, machining, and material handling. Provide technical and sustaining engineering support within manufacturing environments, including equipment and process improvements. Contribute to continuous improvement efforts focused on quality, efficiency, and production yield. Great for students who want to: Learn how products are built, assembled, and scaled for full-scale manufacturing. See how engineering decisions directly impact production efficiency, cost, and output. Gain hands-on experience solving process and equipment challenges in a manufacturing setting. Quality Engineering Develop, apply, and maintain quality standards and protocols for materials, components, and finished products. Collaborate with engineering, manufacturing, and supplier teams to support quality requirements and compliance. Support reliability studies, data analysis, and evaluation of design or test methods to achieve product reliability targets. Great for students who want to: Understand how quality systems and standards help ensure medical products are safe and compliant. Work cross-functionally to support quality and reliability across the product lifecycle. Build experience using data, testing, and process evaluation to support engineering decisions. Location and Work Model Most internship positions are based at primary hubs in Minnesota, California, Colorado, Connecticut , and Massachusetts , with additional opportunities available in Arizona, Florida, Michigan, Tennessee, and Texas. Candidate location preferences are strongly considered during the interview and offer process; however, flexibility increases the number of potential opportunities available. All interns must reside in the U.S. for the duration of the internship. Interns are expected to work onsite a minimum of 4 days per week and participate full time, 40 hours per week, as part of the intern cohort from June 1 through August 13 for semester system programs or June 14 through August 20 for quarter system programs. Required Qualifications Working toward a bachelor's or master's degree in Biomedical Engineering , Mechanical Engineering , Electrical Engineering , Industrial Engineering , Materials Science & Engineering , Computer Engineering , or a related engineering discipline with an anticipated graduation date of Winter 2027, Spring 2028, Winter 2028, or Spring 2029. Applicants for Medtronic\u2019s Summer Internship Program must be currently authorized to work in the United States. Medtronic does not sponsor work authorization for internship positions. Individuals on temporary visa classifications, including E, F \u2011 1 (CPT or OPT), H \u2011 1, H \u2011 2, L, B, J, or TN, as well as anyone who requires employment sponsorship now or in the future, are not eligible for the Program . Preferred Qualifications Prior experience in engineering design, testing, manufacturing, quality, data analysis, or product development through internships, academic projects, research, laboratory work, or relevant work experience. Experience with engineering software, programming, CAD, data analysis, or laboratory equipment. Experience creating technical documentation, lab oratory reports, project summaries, test reports, or engineering presentations. Minimum 3.0 cumulative GPA on a 4.0 scale. Flexibility in geographic location. For Baccalaureate degrees earned outside of the United States, a degree that satisfies the requirements of 8 C.F.R. \u00a7 214.2(h)(4)(iii)(A) is required. Physical Job Requirements The above statements are intended to describe the general nature and level of work being performed by employees assigned to this position, but they are not an exhaustive list of all the required responsibilities and skills of this position. The physical demands described within the Responsibilities section of this job description are representative of those that must be met by an employee to successfully perform the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. For Office Roles: While performing the duties of this job, the employee is regularly required to be independently mobile. The employee is also required to interact with a computer, and communicate with peers and co-workers. Contact your manager or local HR to understand the Work Conditions and Physical requirements that may be specific to each role. U.S. Work Authorization & Sponsorship At Medtronic, we are committed to fostering an environment where employees can thrive and make a meaningful impact. In alignment with our enterprise-wide workforce planning approach, U.S. work authorization sponsorship (H-1B, TN, J, etc.) is offered exclusively for Principal-level roles and above, where specialized expertise aligns with long-term business needs. Roles below the Principal level require candidates to possess unrestricted U.S. work authorization at the time of hire and for the duration of employment. \u200c Recruitment Fraud Alert We are aware of phishing scams targeting job seekers. Please keep the following in mind: Apply only through official Medtronic channels. All legitimate Medtronic recruiting communications come from approved Medtronic platforms and official @medtronic.com email addresses. Medtronic will never ask for payment or sensitive personal information (such as bank account or Social Security details) during early stages of the hiring process. Any such requests are not legitimate. If you receive a suspicious message claiming to be from Medtronic, do not respond, click links, or open attachments. If you have any questions, concerns regarding the authenticity of a communication alleged to have been made by or on behalf of Medtronic, please contact us immediately at AskHR@medtronic.com . \u200c Benefits & Compensation Medtronic offers a competitive Salary and flexible Benefits Package A commitment to our employees lives at the core of our values. We recognize their contributions. They share in the success they help to create. We offer a wide range of benefits, resources, and competitive compensation plans designed to support you at every career and life stage. Salary ranges for U.S (excl. PR) locations (USD):$26.50-$45.25 The base salary range is used nationally in the United States, excluding Puerto Rico. The Medtronic Internship Program offers an hourly rate of pay that falls within the range of $26.50 to $45.25 per hour. The hourly rate offered will be determined by the position and is subject to variation based on the number of years of school completed. The following benefits and additional compensation are available to those regular employees who work 20+ hours per week: Health, Dental and vision insurance , Health Savings Account , Healthcare Flexible Spending Account , Life insurance, Long-term disability leave , Dependent daycare spending account , Tuition assistance/reimbursement , and Simple Steps (global well-being program). The following benefits and additional compensation are available to all regular employees: Incentive plans, 401(k) plan plus employer contribution and match , Short-term disability , Paid time off , Paid holidays , Employee Stock Purchase Plan , Employee Assistance Program , Non-qualified Retirement Plan Supplement (subject to IRS earning minimums) , and Capital Accumulation Plan (available to Vice Presidents and above, or subject to IRS earning minimums). Regular employees are those who are not temporary, such as interns. Temporary employees are eligible for paid sick time, as required under applicable state law, and the Employee Stock Purchase Plan. Please note some of the above benefits may not apply to workers in Puerto Rico. Further details are available at the link below: Medtronic benefits and compensation plans It is the policy of Medtronic to provide equal employment opportunity (EEO) to all persons regardless of age, color, national origin, citizenship status, physical or mental disability, race, religion, creed, gender, sex, sexual orientation, gender identity and/or expression, genetic information, marital status, status with regard to public assistance, veteran status, or any other characteristic protected by federal, state or local law. In addition, Medtronic will provide reasonable accommodations for qualified individuals with disabilities. If you are applying to perform work for Medtronic, Inc. (\u201cMedtronic\u201d) in any position which will involve performing at least two (2) hours of work on average each week within the unincorporated areas of Los Angeles County, you can find here a list of all material job duties of the specific job position which Medtronic reasonably believes that criminal history may have a direct, adverse and negative relationship potentially resulting in the withdrawal of a conditional offer of employment. Medtronic will consider for employment qualified job applicants with arrest or conviction records in accordance with the Los Angeles County Fair Chance Ordinance for Employers and the California Fair Chance Act.",
-   "company": "Medtronic",
-   "score": {
-    "total": 45,
-    "base": 53,
-    "fit": 29,
-    "loc": 8,
-    "traj": 13,
-    "pay": 3,
-    "rate": [
-     26.5,
-     45.25
-    ],
-    "fresh": -8,
-    "age": 75.4,
-    "age_basis": "posted",
-    "tier": "A",
-    "why": [
-     [
-      "body: regulator",
-      5
-     ],
-     [
-      "body: housing assistance",
-      5
-     ],
-     [
-      "title: engineering intern",
-      4
-     ],
-     [
-      "body: machining",
-      4
-     ],
-     [
-      "body: verification",
-      4
-     ],
-     [
-      "body: relocation",
-      4
-     ],
-     [
-      "body: doe",
-      3
-     ],
-     [
-      "pay $36/hr",
-      3
-     ]
-    ]
-   },
-   "first_seen": "2026-10-13T20:39:35+00:00"
-  },
-  {
    "id": "wd:nvidia:JR2027561",
    "title": "Differentiable Simulation Research Intern - Summer 2027",
    "location": "US, CA, Santa Clara",
@@ -9249,7 +9002,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.4,
+    "age": 3.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9285,7 +9038,7 @@
      37.25
     ],
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9334,7 +9087,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9382,7 +9135,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 14.4,
+    "age": 14.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9442,7 +9195,7 @@
      41.0
     ],
     "fresh": 6,
-    "age": 6.4,
+    "age": 6.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9490,7 +9243,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 26.4,
+    "age": 26.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9535,7 +9288,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.4,
+    "age": 3.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9575,7 +9328,7 @@
      38.0
     ],
     "fresh": 12,
-    "age": 1.4,
+    "age": 1.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9627,7 +9380,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 17.4,
+    "age": 17.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9672,7 +9425,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9705,7 +9458,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 24.4,
+    "age": 24.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9753,7 +9506,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 36.4,
+    "age": 36.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9809,7 +9562,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 14.4,
+    "age": 14.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9866,7 +9619,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.4,
+    "age": 58.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9919,7 +9672,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.4,
+    "age": 58.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9975,7 +9728,7 @@
      25.0
     ],
     "fresh": 0,
-    "age": 28.4,
+    "age": 28.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10035,7 +9788,7 @@
      44.0
     ],
     "fresh": -4,
-    "age": 56.4,
+    "age": 56.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10083,7 +9836,7 @@
      24.23
     ],
     "fresh": -4,
-    "age": 44.4,
+    "age": 44.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10143,7 +9896,7 @@
      29.0
     ],
     "fresh": 3,
-    "age": 15.4,
+    "age": 15.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10188,7 +9941,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 14.4,
+    "age": 14.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10225,7 +9978,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 15.4,
+    "age": 15.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10274,7 +10027,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 22.4,
+    "age": 22.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10326,7 +10079,7 @@
      48.0
     ],
     "fresh": 3,
-    "age": 16.4,
+    "age": 16.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10374,7 +10127,7 @@
      59.0
     ],
     "fresh": 3,
-    "age": 16.4,
+    "age": 16.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10418,7 +10171,7 @@
      30.0
     ],
     "fresh": 0,
-    "age": 31.4,
+    "age": 31.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10443,58 +10196,6 @@
    "first_seen": "2026-10-13T20:39:35+00:00"
   },
   {
-   "id": "wd:medtronic:R76309",
-   "title": "Engineering Intern Summer 2027 - Candidates Attending 2026 SHPE National Convention",
-   "location": "Minneapolis, Minnesota, United States of America; Tempe, Arizona, United States of America; Santa Rosa, California, United States of America; Lafayette, Colorado, United States of America; Boulder, Colorado, United States of America; Irvine, California, United States of America; North Haven, Connecticut, United States of America; Newton, Massachusetts, United States of America; Memphis, Tennessee, United States of America; Dexter, Michigan, United States of America; Santa Ana, California, United States of America; Fort Worth, Texas, United States of America; Santa Clara, California, United States of America; Jacksonville, Florida, United States of America; Boston, Massachusetts, United States of America",
-   "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Minneapolis-Minnesota-United-States-of-America/Engineering-Intern-Summer-2027---Candidates-Attending-2026-SHPE-National-Convention_R76309",
-   "posted": "2026-09-01",
-   "body": "We anticipate the application window for this opening will close on - 2 Nov 2026 Careers that change lives start here. Medtronic is a global leader in healthcare technology with a Mission to alleviate pain, restore health, and extend life. Our 95,000 employees work across more than 150 countries to put patients first \u2014 developing innovative medical technologies that improve the lives of 72+ million patients each year. Your unique talents will help shape the future of healthcare while building a career grounded in purpose, growth, and impact. A Day in the Life CAREERS THAT CHANGE LIVES This posting is intended for candidates attending the 2026 National S HPE Convention in Indianapolis , IN. Our summer internships are full-time ( 40 hours /week), paid positions lasting 10- 11 weeks . We offer competitive compensation, educational and social programming throughout the summer, as well as housing assistance and relocation support for eligible interns. Location and Work Model Most internship positions are based at primary hubs in Minnesota, California, Colorado, Connecticut, and Massachusetts, with additional opportunities available in Arizona, Florida, Michigan, Tennessee, and Texas. Candidate location preferences are strongly considered during the interview and offer process; however, flexibility increases the number of potential opportunities available. All interns must reside in the U.S. for the duration of the internship. Interns are expected to work onsite a minimum of 4 days per week and participate in full time, 40 hours per week, as part of the intern cohort from June 1 through August 13 for semester system programs or June 14 through August 20 for quarter system programs. Required Qualifications Working toward a bachelor's or master's degree in biomedical engineering , Mechanical Engineering, Electrical Engineering, Industrial Engineering, Materials Science & Engineering, Computer Engineering, Software Engineering, Computer Science, or a related engineering discipline with an anticipated graduation date of Winter 2027, Spring 2028, Winter 2028, or Spring 2029 . Applicants for Medtronic\u2019s Summer Internship Program must be currently authorized to work in the United States. Medtronic does not sponsor work authorization for internship positions. Individuals on temporary visa classifications, including E, F \u2011 1 (CPT or OPT), H \u2011 1, H \u2011 2, L, B, J, or TN, as well as anyone who requires employment sponsorship now or in the future, are not eligible for the Program. Preferred Qualifications Prior experience in manufacturing, operations, process improvement, industrial engineering, or product support through internships, academic projects, research, laboratory work, or relevant work experience. Experience with Lean Manufacturing, continuous improvement, Six Sigma methodologies, process mapping, root cause analysis, or process optimization. Experience analyzing operational, manufacturing, quality, or engineering data. Experience creating technical documentation, engineering reports, project summaries, standard work instructions, or presentations. For Baccalaureate degrees earned outside of the United States, a degree that satisfies the requirements of 8 C.F.R. \u00a7 214.2(h)(4)(iii)(A) is required. Physical Job Requirements The above statements are intended to describe the general nature and level of work being performed by employees assigned to this position, but they are not an exhaustive list of all the required responsibilities and skills of this position. The physical demands described within the Responsibilities section of this job description are representative of those that must be met by an employee to successfully perform the essential functions of this job. Reasonable accommodations may be made to enable individuals with disabilities to perform the essential functions. For Office Roles: While performing the duties of this job, the employee is regularly required to be independently mobile. The employee is also required to interact with a computer, and communicate with peers and co-workers. Contact your manager or local HR to understand the Work Conditions and Physical requirements that may be specific to each role. U.S. Work Authorization & Sponsorship At Medtronic, we are committed to fostering an environment where employees can thrive and make a meaningful impact. In alignment with our enterprise-wide workforce planning approach, U.S. work authorization sponsorship (H-1B, TN, J, etc.) is offered exclusively for Principal-level roles and above, where specialized expertise aligns with long-term business needs. Roles below the Principal level require candidates to possess unrestricted U.S. work authorization at the time of hire and for the duration of employment. \u200c Recruitment Fraud Alert We are aware of phishing scams targeting job seekers. Please keep the following in mind: Apply only through official Medtronic channels. All legitimate Medtronic recruiting communications come from approved Medtronic platforms and official @medtronic.com email addresses. Medtronic will never ask for payment or sensitive personal information (such as bank account or Social Security details) during early stages of the hiring process. Any such requests are not legitimate. If you receive a suspicious message claiming to be from Medtronic, do not respond, click links, or open attachments. If you have any questions, concerns regarding the authenticity of a communication alleged to have been made by or on behalf of Medtronic, please contact us immediately at AskHR@medtronic.com . \u200c Benefits & Compensation Medtronic offers a competitive Salary and flexible Benefits Package A commitment to our employees lives at the core of our values. We recognize their contributions. They share in the success they help to create. We offer a wide range of benefits, resources, and competitive compensation plans designed to support you at every career and life stage. Salary ranges for U.S (excl. PR) locations (USD):$55,120\u2013$94,120 The base salary range is used nationally in the United States, excluding Puerto Rico. The Medtronic Internship Program offers an hourly rate of pay that falls within the range of $26.50 - $45.25 per hour. The hourly rate offered will be determined by the position and is subject to variation based on the number of years of school completed. The following benefits and additional compensation are available to those regular employees who work 20+ hours per week: Health, Dental and vision insurance , Health Savings Account , Healthcare Flexible Spending Account , Life insurance, Long-term disability leave , Dependent daycare spending account , Tuition assistance/reimbursement , and Simple Steps (global well-being program). The following benefits and additional compensation are available to all regular employees: Incentive plans, 401(k) plan plus employer contribution and match , Short-term disability , Paid time off , Paid holidays , Employee Stock Purchase Plan , Employee Assistance Program , Non-qualified Retirement Plan Supplement (subject to IRS earning minimums) , and Capital Accumulation Plan (available to Vice Presidents and above, or subject to IRS earning minimums). Regular employees are those who are not temporary, such as interns. Temporary employees are eligible for paid sick time, as required under applicable state law, and the Employee Stock Purchase Plan. Please note some of the above benefits may not apply to workers in Puerto Rico. Further details are available at the link below: Medtronic benefits and compensation plans It is the policy of Medtronic to provide equal employment opportunity (EEO) to all persons regardless of age, color, national origin, citizenship status, physical or mental disability, race, religion, creed, gender, sex, sexual orientation, gender identity and/or expression, genetic information, marital status, status with regard to public assistance, veteran status, or any other characteristic protected by federal, state or local law. In addition, Medtronic will provide reasonable accommodations for qualified individuals with disabilities. If you are applying to perform work for Medtronic, Inc. (\u201cMedtronic\u201d) in any position which will involve performing at least two (2) hours of work on average each week within the unincorporated areas of Los Angeles County, you can find here a list of all material job duties of the specific job position which Medtronic reasonably believes that criminal history may have a direct, adverse and negative relationship potentially resulting in the withdrawal of a conditional offer of employment. Medtronic will consider for employment qualified job applicants with arrest or conviction records in accordance with the Los Angeles County Fair Chance Ordinance for Employers and the California Fair Chance Act.",
-   "company": "Medtronic",
-   "score": {
-    "total": 43,
-    "base": 47,
-    "fit": 23,
-    "loc": 8,
-    "traj": 13,
-    "pay": 3,
-    "rate": [
-     26.5,
-     45.25
-    ],
-    "fresh": -4,
-    "age": 44.4,
-    "age_basis": "posted",
-    "tier": "B",
-    "why": [
-     [
-      "body: root cause",
-      7
-     ],
-     [
-      "body: housing assistance",
-      5
-     ],
-     [
-      "title: engineering intern",
-      4
-     ],
-     [
-      "body: relocation",
-      4
-     ],
-     [
-      "body: doe",
-      3
-     ],
-     [
-      "pay $36/hr",
-      3
-     ]
-    ]
-   },
-   "first_seen": "2026-10-13T20:39:35+00:00"
-  },
-  {
    "id": "wd:micron:JR114722",
    "title": "Intern - Fab Equipment Maintenance Technician",
    "location": "Manassas, VA -  Fab 6",
@@ -10511,7 +10212,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 6.4,
+    "age": 6.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10564,7 +10265,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10609,7 +10310,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 9.4,
+    "age": 9.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10654,7 +10355,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 9.4,
+    "age": 9.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10699,7 +10400,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 9.4,
+    "age": 9.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10744,7 +10445,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 16.4,
+    "age": 16.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10797,7 +10498,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 16.4,
+    "age": 16.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10853,7 +10554,7 @@
      25.0
     ],
     "fresh": 0,
-    "age": 21.4,
+    "age": 21.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10913,7 +10614,7 @@
      28.0
     ],
     "fresh": 0,
-    "age": 24.4,
+    "age": 24.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10970,7 +10671,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 34.4,
+    "age": 34.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11019,7 +10720,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 35.4,
+    "age": 35.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11067,7 +10768,7 @@
      30.0
     ],
     "fresh": -8,
-    "age": 63.4,
+    "age": 63.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -11127,7 +10828,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 57.4,
+    "age": 57.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11187,7 +10888,7 @@
      24.0
     ],
     "fresh": 9,
-    "age": 3.4,
+    "age": 3.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11236,7 +10937,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 17.4,
+    "age": 17.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11280,7 +10981,7 @@
      96.15
     ],
     "fresh": -8,
-    "age": 106.4,
+    "age": 106.6,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -11321,7 +11022,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 41.4,
+    "age": 41.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11362,7 +11063,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 36.4,
+    "age": 36.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11414,7 +11115,7 @@
      40.0
     ],
     "fresh": -8,
-    "age": 126.4,
+    "age": 126.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11462,7 +11163,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 26.4,
+    "age": 26.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11511,7 +11212,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 28.4,
+    "age": 28.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11548,7 +11249,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 23.4,
+    "age": 23.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11585,7 +11286,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 30.4,
+    "age": 30.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11626,7 +11327,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.4,
+    "age": 2.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11667,7 +11368,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 27.4,
+    "age": 27.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11712,7 +11413,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 17.4,
+    "age": 17.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11764,7 +11465,7 @@
      25.0
     ],
     "fresh": 0,
-    "age": 28.4,
+    "age": 28.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11824,7 +11525,7 @@
      47.0
     ],
     "fresh": -4,
-    "age": 42.4,
+    "age": 42.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11869,7 +11570,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 13.4,
+    "age": 13.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11913,7 +11614,7 @@
      34.0
     ],
     "fresh": -4,
-    "age": 42.4,
+    "age": 42.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11961,7 +11662,7 @@
      27.69
     ],
     "fresh": -4,
-    "age": 45.4,
+    "age": 45.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12021,7 +11722,7 @@
      30.0
     ],
     "fresh": 0,
-    "age": 28.4,
+    "age": 28.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12070,7 +11771,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 14.4,
+    "age": 14.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12115,7 +11816,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 14.4,
+    "age": 14.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12160,7 +11861,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 14.4,
+    "age": 14.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12208,7 +11909,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 36.4,
+    "age": 36.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12268,7 +11969,7 @@
      22.0
     ],
     "fresh": 6,
-    "age": 8.4,
+    "age": 8.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12316,7 +12017,7 @@
      43.27
     ],
     "fresh": -8,
-    "age": 73.4,
+    "age": 73.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12357,6 +12058,58 @@
    "first_seen": "2026-10-13T20:39:35+00:00"
   },
   {
+   "id": "wd:caci:332898",
+   "title": "Manufacturing Engineering Intern - Summer 2027",
+   "location": "Melbourne, FL, US",
+   "url": "https://caci.wd1.myworkdayjobs.com/External/job/Melbourne-FL-US/Manufacturing-Engineering-Intern---Summer-2027_332898",
+   "posted": "2026-10-01",
+   "body": "Job Title: Manufacturing Engineering Intern - Summer 2027 Job Category: Intern/Co-op Time Type: Part time Minimum Clearance Required to Start: None Employee Type: Part-Time On-Call Percentage of Travel Required: None Type of Travel: None * * * The Opportunity: Join CACI as a Manufacturing Engineering Intern for Summer 2027! In this role, you\u2019ll gain hands-on experience working with electronic product assembly and modern manufacturing processes while building real-world engineering skills. You\u2019ll collaborate closely with experienced mentors in a supportive learning environment. The internship begins in May, runs for 12 weeks, and is fully on-site. As a Manufacturing Engineering Intern, you will: Work directly with manufacturing engineers on real production improvements from day one Learn diverse technologies such as surface\u2011mount assembly, automated testing systems, and quality control equipment Rotate through different manufacturing functions to understand how products move from concept to assembly Participate in cross-functional projects with engineering, production, and quality teams Build foundational knowledge in lean manufacturing and continuous improvement methodologies Have opportunities to grow professionally through training and potential certification pathways Responsibilities: Assisting in the design, improvement, and optimization of manufacturing processes for electronic assemblies Creating and updating work instructions, process documentation, and standard operating procedures Helping troubleshoot production issues and collecting data for root\u2011cause analysis and process improvements Participating in evaluating manufacturing equipment, fixtures, and tooling while learning setup and operation procedures Collaborating with engineering, quality, and production teams to identify opportunities to enhance product quality and efficiency Qualifications: Required: Pursuing a Bachelor\u2019s degree in Manufacturing Engineering, Mechanical Engineering, Electrical Engineering, Industrial Engineering, or a related technical field Must be legally authorized to work in the United States without the need for employer sponsorship, now or at any time in the future Coursework or project experience in manufacturing processes, electronics, or production systems Basic understanding of engineering principles and comfort reading technical drawings, schematics, or workflow diagrams Strong analytical and problem\u2011solving abilities with a commitment to high\u2011quality work Clear communication skills and enthusiasm for working in team\u2011oriented environments Desired: Prior internship or co\u2011op experience in manufacturing, electronics assembly, or related fields Familiarity with CAD or manufacturing tools (AutoCAD, SolidWorks, simulation software) Coursework or exposure to lean manufacturing concepts, Six Sigma, statistical analysis, or quality methodologies Knowledge of PCB assembly, soldering techniques, or IPC standards through labs or personal projects Participation in engineering competitions, design teams, or technical student organizations demonstrating hands\u2011on problem solving - What You Can Expect: A culture of integrity. At CACI, we place character and innovation at the center of everything we do. As a valued team member, you\u2019ll be part of a high-performing group dedicated to our customer\u2019s missions and driven by a higher purpose \u2013 to ensure the safety of our nation. An environment of trust. CACI values the unique contributions that every employee brings to our company and our customers - every day. You\u2019ll have the autonomy to take the time you need through a unique flexible time off benefit and have access to robust learning resources to make your ambitions a reality. A focus on continuous growth. Together, we will advance our nation's most critical missions, build on our lengthy track record of business success, and find opportunities to break new ground \u2014 in your career and in our legacy. Pay Range : There are a host of factors that can influence final salary including, but not limited to, geographic location, Federal Government contract labor categories and contract wage rates, relevant prior work experience, specific skills and competencies, education, and certifications. Our employees value the flexibility at CACI that allows them to balance quality work and their personal lives. We offer competitive compensation, benefits and learning and development opportunities. Our broad and competitive mix of benefits options is designed to support and protect employees and their families. At CACI, you will receive comprehensive benefits such as; healthcare, wellness, financial, retirement, family support, continuing education, and time off benefits. The proposed salary range for this position is: $45,900 - $91,700 CACI is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, pregnancy, sexual orientation, age, national origin, disability, status as a protected veteran, or any other protected characteristic.",
+   "company": "CACI",
+   "score": {
+    "total": 39,
+    "base": 36,
+    "fit": 22,
+    "loc": 0,
+    "traj": 11,
+    "pay": 3,
+    "rate": [
+     22.07,
+     44.09
+    ],
+    "fresh": 3,
+    "age": 14.6,
+    "age_basis": "posted",
+    "tier": "B",
+    "why": [
+     [
+      "body: fixture",
+      8
+     ],
+     [
+      "title: engineering intern",
+      4
+     ],
+     [
+      "body: solidworks",
+      4
+     ],
+     [
+      "title: manufacturing",
+      3
+     ],
+     [
+      "body: drawings",
+      3
+     ],
+     [
+      "pay $33/hr",
+      3
+     ]
+    ]
+   },
+   "first_seen": "2026-10-15T14:16:27+00:00"
+  },
+  {
    "id": "wd:gevernova:R5050450",
    "title": "GE Vernova Manufacturing Engineering Internship Summer 2027",
    "location": "Longmont",
@@ -12376,7 +12129,7 @@
      50.0
     ],
     "fresh": 6,
-    "age": 8.4,
+    "age": 8.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12421,7 +12174,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 13.4,
+    "age": 13.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12462,7 +12215,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 66.4,
+    "age": 66.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12506,7 +12259,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 56.4,
+    "age": 56.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12551,7 +12304,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 20.4,
+    "age": 20.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12603,7 +12356,7 @@
      24.23
     ],
     "fresh": -4,
-    "age": 44.4,
+    "age": 44.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12655,7 +12408,7 @@
      24.23
     ],
     "fresh": -4,
-    "age": 44.4,
+    "age": 44.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12707,7 +12460,7 @@
      57.6
     ],
     "fresh": -4,
-    "age": 43.4,
+    "age": 43.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12759,7 +12512,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 21.4,
+    "age": 21.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12800,7 +12553,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 16.4,
+    "age": 16.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12836,7 +12589,7 @@
      34.29
     ],
     "fresh": 0,
-    "age": 29.4,
+    "age": 29.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12880,7 +12633,7 @@
      48.0
     ],
     "fresh": -4,
-    "age": 36.4,
+    "age": 36.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12932,7 +12685,7 @@
      43.0
     ],
     "fresh": 6,
-    "age": 9.4,
+    "age": 9.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12973,7 +12726,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 16.4,
+    "age": 16.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13018,7 +12771,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 16.4,
+    "age": 16.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13063,7 +12816,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 24.4,
+    "age": 24.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13103,7 +12856,7 @@
      41.0
     ],
     "fresh": -4,
-    "age": 41.4,
+    "age": 41.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13140,7 +12893,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 37.4,
+    "age": 37.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13185,7 +12938,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 24.4,
+    "age": 24.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13237,7 +12990,7 @@
      34.0
     ],
     "fresh": 0,
-    "age": 29.4,
+    "age": 29.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13286,7 +13039,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 29.4,
+    "age": 29.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13330,7 +13083,7 @@
      27.69
     ],
     "fresh": 0,
-    "age": 23.4,
+    "age": 23.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13390,7 +13143,7 @@
      50.0
     ],
     "fresh": -4,
-    "age": 56.4,
+    "age": 56.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13439,7 +13192,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 14.4,
+    "age": 14.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13491,7 +13244,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 20.4,
+    "age": 20.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13539,7 +13292,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 20.4,
+    "age": 20.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13584,7 +13337,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 43.4,
+    "age": 43.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13625,7 +13378,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 31.4,
+    "age": 31.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13665,7 +13418,7 @@
      46.51
     ],
     "fresh": 3,
-    "age": 14.4,
+    "age": 14.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13709,7 +13462,7 @@
      50.0
     ],
     "fresh": 3,
-    "age": 16.4,
+    "age": 16.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13750,7 +13503,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 14.4,
+    "age": 14.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13795,7 +13548,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 14.4,
+    "age": 14.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13840,7 +13593,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 21.4,
+    "age": 21.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13888,7 +13641,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 36.4,
+    "age": 36.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13948,7 +13701,7 @@
      20.0
     ],
     "fresh": -4,
-    "age": 36.4,
+    "age": 36.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14008,7 +13761,7 @@
      25.0
     ],
     "fresh": 3,
-    "age": 17.4,
+    "age": 17.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14056,7 +13809,7 @@
      60.0
     ],
     "fresh": 0,
-    "age": 21.4,
+    "age": 21.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14104,7 +13857,7 @@
      24.23
     ],
     "fresh": -4,
-    "age": 43.4,
+    "age": 43.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14160,7 +13913,7 @@
      48.0
     ],
     "fresh": -4,
-    "age": 38.4,
+    "age": 38.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14220,7 +13973,7 @@
      45.0
     ],
     "fresh": 0,
-    "age": 22.4,
+    "age": 22.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14260,7 +14013,7 @@
      32.0
     ],
     "fresh": -4,
-    "age": 50.4,
+    "age": 50.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14312,7 +14065,7 @@
      31.0
     ],
     "fresh": -8,
-    "age": 84.4,
+    "age": 84.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14369,7 +14122,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 15.4,
+    "age": 15.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14414,7 +14167,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 15.4,
+    "age": 15.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14459,7 +14212,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 15.4,
+    "age": 15.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14504,7 +14257,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 10.4,
+    "age": 10.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14545,7 +14298,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 10.4,
+    "age": 10.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14589,7 +14342,7 @@
      45.0
     ],
     "fresh": -4,
-    "age": 41.4,
+    "age": 41.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14630,7 +14383,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 20.4,
+    "age": 20.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14671,7 +14424,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 17.4,
+    "age": 17.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14716,7 +14469,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 17.4,
+    "age": 17.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14761,7 +14514,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 17.4,
+    "age": 17.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14809,7 +14562,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 50.4,
+    "age": 50.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14854,7 +14607,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 43.4,
+    "age": 43.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14910,7 +14663,7 @@
      50.82
     ],
     "fresh": -4,
-    "age": 43.4,
+    "age": 43.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14959,7 +14712,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 41.4,
+    "age": 41.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14992,7 +14745,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 41.4,
+    "age": 41.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15025,7 +14778,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 12.4,
+    "age": 12.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15062,7 +14815,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 37.4,
+    "age": 37.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15111,7 +14864,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 35.4,
+    "age": 35.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15155,7 +14908,7 @@
      48.0
     ],
     "fresh": -4,
-    "age": 38.4,
+    "age": 38.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15203,7 +14956,7 @@
      28.0
     ],
     "fresh": 0,
-    "age": 29.4,
+    "age": 29.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15256,7 +15009,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 31.4,
+    "age": 31.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15293,7 +15046,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 41.4,
+    "age": 41.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15330,7 +15083,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 41.4,
+    "age": 41.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15370,7 +15123,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 36.4,
+    "age": 36.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15414,7 +15167,7 @@
      25.0
     ],
     "fresh": 0,
-    "age": 28.4,
+    "age": 28.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15470,7 +15223,7 @@
      25.0
     ],
     "fresh": 0,
-    "age": 28.4,
+    "age": 28.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15526,7 +15279,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 45.4,
+    "age": 45.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15571,7 +15324,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 37.4,
+    "age": 37.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15615,7 +15368,7 @@
      24.23
     ],
     "fresh": -4,
-    "age": 44.4,
+    "age": 44.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15667,7 +15420,7 @@
      34.0
     ],
     "fresh": -4,
-    "age": 35.4,
+    "age": 35.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15724,7 +15477,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 41.4,
+    "age": 41.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15764,7 +15517,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 22.4,
+    "age": 22.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15801,7 +15554,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 29.4,
+    "age": 29.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15842,7 +15595,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 49.4,
+    "age": 49.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15883,7 +15636,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 22.4,
+    "age": 22.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15928,7 +15681,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 24.4,
+    "age": 24.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15977,7 +15730,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 28.4,
+    "age": 28.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16022,7 +15775,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 42.4,
+    "age": 42.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16075,7 +15828,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 21.4,
+    "age": 21.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16119,7 +15872,7 @@
      60.0
     ],
     "fresh": -4,
-    "age": 56.4,
+    "age": 56.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16163,7 +15916,7 @@
      29.0
     ],
     "fresh": -8,
-    "age": 61.4,
+    "age": 61.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16204,7 +15957,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 34.4,
+    "age": 34.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16249,7 +16002,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 24.4,
+    "age": 24.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16294,7 +16047,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 23.4,
+    "age": 23.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16334,7 +16087,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 50.4,
+    "age": 50.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16382,7 +16135,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 50.4,
+    "age": 50.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16427,7 +16180,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 31.4,
+    "age": 31.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16456,7 +16209,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 28.4,
+    "age": 28.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16504,7 +16257,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 35.4,
+    "age": 35.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16556,7 +16309,7 @@
      36.0
     ],
     "fresh": -8,
-    "age": 73.4,
+    "age": 73.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16608,7 +16361,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 37.4,
+    "age": 37.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16664,7 +16417,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 37.4,
+    "age": 37.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16701,47 +16454,6 @@
    "first_seen": "2026-10-13T23:28:52+00:00"
   },
   {
-   "id": "wd:vermeer:REQ-22141",
-   "title": "Manufacturing Engineer Intern - Summer 2027",
-   "location": "Pella, Iowa, USA - The Center",
-   "url": "https://vermeer.wd5.myworkdayjobs.com/externalcareersite/job/Pella-Iowa-USA---The-Center/Manufacturing-Engineer-Intern---Summer-2027_REQ-22141",
-   "posted": "2026-09-15",
-   "body": "Who We Are Vermeer equips customers doing important work around the world. We are global, driven by innovation and growing. The equipment we make manages natural resources, connects people and feeds and fuels communities. We live out a caring culture, we demonstrate agility, we keep a focus on customers and are stewards of our resources. These beliefs drive our culture, determine how we treat others and steer our business. Work Shift 1 - First Shift Job Summary Are you energized by solving problems and improving how things are made? As a Manufacturing Engineer Intern at Vermeer, you\u2019ll support real-world projects that enhance production processes and drive operational excellence. This internship offers hands-on experience in lean manufacturing, process improvement, and cross-functional collaboration\u2014preparing you for a full-time engineering role upon graduation. What You\u2019ll Do 1. Assist in identifying and implementing process improvements that enhance quality, efficiency, and sustainability across production areas. 2. Support new product introductions and manufacturing improvement initiatives by collaborating with engineering, welding, assembly, and machining teams. 3. Apply lean manufacturing principles\u2014including Just-In-Time (JIT) production and Kaizen events\u2014to reduce waste and improve flow. 4. Document and analyze current and future state processes using tools such as value stream mapping and standard work documentation. 5. Help design and optimize tooling and fixtures, and gain exposure to digital work instruction platforms. 6. Contribute to documentation and change management using Product Lifecycle Management (PLM) and Engineering Change Notification (ECN) systems such as Teamcenter or Windchill. 7. Participate in data-driven decision-making using Enterprise Resource Planning (ERP) systems, Power BI dashboards, and Internet of Things (IoT)-enabled process monitoring tools. What We\u2019re Looking For - Currently pursuing a Bachelor's degree in Industrial Technology, Mechanical Engineering, Manufacturing Engineering, Agricultural Engineering, or a related field. - Foundational understanding of lean manufacturing concepts, tooling design, and process improvement techniques. - Ability to read and interpret mechanical, electrical, and hydraulic schematics. - Familiarity with JIT manufacturing, statistical process variation, and digital manufacturing tools is a plus. - Strong analytical, problem-solving, and communication skills with a growth mindset. - Willingness to work collaboratively in a fast-paced, team-oriented environment. Travel - Occasional travel is expected of this position. Work Location ONSITE: A team member\u2019s day-to-day work is best done on a Vermeer campus. If work content can be occasionally completed at an offsite location, discuss potential arrangements with your manager. Equal Opportunity Employer At Vermeer Corporation, we believe in the value of your unique identity, background, and experiences. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, marital status, genetic information, disability, sexual orientation, gender identity, veteran status or any other status protected by the law. Applicants requiring a reasonable accommodation due to a disability at any stage of the employment application process should contact Team Member Solutions at (641) 621-8767 or at hr@vermeer.com . Interested? We\u2019d love to get to know you.",
-   "company": "Vermeer",
-   "score": {
-    "total": 32,
-    "base": 32,
-    "fit": 21,
-    "loc": 0,
-    "traj": 11,
-    "pay": 0,
-    "rate": null,
-    "fresh": 0,
-    "age": 30.4,
-    "age_basis": "posted",
-    "tier": "B",
-    "why": [
-     [
-      "body: fixture",
-      8
-     ],
-     [
-      "body: new product introduction",
-      6
-     ],
-     [
-      "body: machining",
-      4
-     ],
-     [
-      "title: manufacturing",
-      3
-     ]
-    ]
-   },
-   "first_seen": "2026-10-14T01:17:06+00:00"
-  },
-  {
    "id": "gh:astranis:4704742006",
    "title": "CAD Engineer Intern (Summer 2027)",
    "location": "San Francisco",
@@ -16761,7 +16473,7 @@
      29.0
     ],
     "fresh": -8,
-    "age": 61.4,
+    "age": 61.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16809,7 +16521,7 @@
      40.0
     ],
     "fresh": -8,
-    "age": 80.4,
+    "age": 80.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16853,7 +16565,7 @@
      20.0
     ],
     "fresh": -4,
-    "age": 58.4,
+    "age": 58.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16902,7 +16614,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 44.4,
+    "age": 44.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16939,7 +16651,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 41.4,
+    "age": 41.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16972,7 +16684,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 36.4,
+    "age": 36.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17016,7 +16728,7 @@
      37.0
     ],
     "fresh": -4,
-    "age": 45.4,
+    "age": 45.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17061,7 +16773,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 36.4,
+    "age": 36.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17105,7 +16817,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 36.4,
+    "age": 36.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17157,7 +16869,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 44.4,
+    "age": 44.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17201,7 +16913,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 49.4,
+    "age": 49.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17253,7 +16965,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 49.4,
+    "age": 49.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17305,7 +17017,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 49.4,
+    "age": 49.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17357,7 +17069,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 49.4,
+    "age": 49.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17390,47 +17102,6 @@
    "first_seen": "2026-10-14T01:17:06+00:00"
   },
   {
-   "id": "wd:vermeer:REQ-22137",
-   "title": "Quality Engineer Intern - Summer 2027",
-   "location": "Pella, Iowa, USA - Plant 3",
-   "url": "https://vermeer.wd5.myworkdayjobs.com/externalcareersite/job/Pella-Iowa-USA---Plant-3/Quality-Engineer-Intern---Summer-2027_REQ-22137",
-   "posted": "2026-08-31",
-   "body": "Who We Are Vermeer equips customers doing important work around the world. We are global, driven by innovation and growing. The equipment we make manages natural resources, connects people and feeds and fuels communities. We live out a caring culture, we demonstrate agility, we keep a focus on customers and are stewards of our resources. These beliefs drive our culture, determine how we treat others and steer our business. Work Shift 1 - First Shift Job Summary Are you energized by solving problems and improving how things are made? As a Quality Engineer Intern at Vermeer, you\u2019ll support real-world projects that enhance production processes and drive operational excellence. This internship offers hands-on experience in monitoring, analyzing, problem solving, and improving product performance\u2014preparing you for a full-time engineering role upon graduation. What You\u2019ll Do 1. Review and analyze internal and external quality performance for whole goods, upstream production, plant quality, and/or supplier quality; communicate trends and findings to manufacturing leadership. 2. Support Root Cause and Corrective Action (RCCA) and problem-solving activities for assigned issues; help implement solutions to reduce quality issues and defects. 3. Assist in executing and auditing control plans and manufacturing processes for compliance and effectiveness; partner with manufacturing engineering to implement mistake-proofing and process improvements. 4. Collaborate with suppliers to problem-solve and verify quality improvements. 5. Participate in process capability studies and continuous improvement activities with process engineering, including Statistical Process Control (SPC) methods such as Process Capability Index (CPK) and control charts using statistical software such as Minitab (or similar). 6. Support critical Quality Management System (QMS) processes and participate in quality improvement projects and teams. What We\u2019re Looking For - High School diploma required. Current student pursuing a Bachelor\u2019s degree in Engineering. - Awareness of quality tools and techniques, such as Advanced Product Quality Planning (APQP), Core Tools, SPC methods, and CPK, with exposure to statistical software such as Minitab (or similar). - Awareness of lean manufacturing principles and using Lean Sigma/Six Sigma methodology to improve quality, including Define, Measure, Analyze, Improve, Control (DMAIC). - Experience with troubleshooting and root cause analysis; exposure to Failure Modes and Effects Analysis (FMEA) and Eight Disciplines (8D) problem solving preferred. - Ability to work in a team environment, operate assembly and measurement tools and devices, and read prints and Geometric Dimensioning and Tolerancing (GD&T). Travel - No travel is expected of this position. Work Location ONSITE: A team member\u2019s day-to-day work is best done on a Vermeer campus. If work content can be occasionally completed at an offsite location, discuss potential arrangements with your manager. Equal Opportunity Employer At Vermeer Corporation, we believe in the value of your unique identity, background, and experiences. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, marital status, genetic information, disability, sexual orientation, gender identity, veteran status or any other status protected by the law. Applicants requiring a reasonable accommodation due to a disability at any stage of the employment application process should contact Team Member Solutions at (641) 621-8767 or at hr@vermeer.com . Interested? We\u2019d love to get to know you.",
-   "company": "Vermeer",
-   "score": {
-    "total": 30,
-    "base": 34,
-    "fit": 23,
-    "loc": 0,
-    "traj": 11,
-    "pay": 0,
-    "rate": null,
-    "fresh": -4,
-    "age": 45.4,
-    "age_basis": "posted",
-    "tier": "B",
-    "why": [
-     [
-      "body: gd&t",
-      8
-     ],
-     [
-      "body: root cause",
-      7
-     ],
-     [
-      "body: fmea",
-      5
-     ],
-     [
-      "title: quality",
-      3
-     ]
-    ]
-   },
-   "first_seen": "2026-10-14T01:17:06+00:00"
-  },
-  {
    "id": "or:egup:20279133",
    "title": "Mechanical/Thermal Engineering Intern (Summer 2027)",
    "location": "Pelzer, SC, United States",
@@ -17447,7 +17118,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 57.4,
+    "age": 57.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17488,7 +17159,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 57.4,
+    "age": 57.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17529,7 +17200,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 57.4,
+    "age": 57.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17573,7 +17244,7 @@
      45.0
     ],
     "fresh": -4,
-    "age": 36.4,
+    "age": 36.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17609,7 +17280,7 @@
      20.0
     ],
     "fresh": -4,
-    "age": 59.4,
+    "age": 59.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17661,7 +17332,7 @@
      50.0
     ],
     "fresh": -4,
-    "age": 49.4,
+    "age": 49.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17698,7 +17369,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 44.4,
+    "age": 44.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17739,7 +17410,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 45.4,
+    "age": 45.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17780,7 +17451,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 57.4,
+    "age": 57.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17817,7 +17488,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 37.4,
+    "age": 37.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17850,7 +17521,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 44.4,
+    "age": 44.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17883,7 +17554,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 36.4,
+    "age": 36.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17923,7 +17594,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 37.4,
+    "age": 37.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17971,7 +17642,7 @@
      33.0
     ],
     "fresh": -4,
-    "age": 37.4,
+    "age": 37.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18015,7 +17686,7 @@
      30.0
     ],
     "fresh": -8,
-    "age": 63.4,
+    "age": 63.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18064,7 +17735,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 76.4,
+    "age": 76.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18101,7 +17772,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 70.4,
+    "age": 70.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18130,7 +17801,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 62.4,
+    "age": 62.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18159,7 +17830,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 66.4,
+    "age": 66.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18196,7 +17867,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 62.4,
+    "age": 62.6,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -19411,6 +19082,13 @@
   },
   {
    "company": "Boeing",
+   "title": "Boeing Summer 2027 Internship Program (Paid) \u2013 Environment, Health, and Safety (EHS)",
+   "location": "USA - Auburn, WA; USA - Seattle, WA; USA - Portland, OR; USA - Everett, WA; USA - San Antonio, TX; USA - Mesa, AZ; USA - Renton, WA; USA - North Charleston, SC; USA - Dallas, TX",
+   "url": "https://boeing.wd1.myworkdayjobs.com/INTERN/job/USA---Auburn-WA/Boeing-Summer-2027-Internship-Program--Paid----Environment--Health--and-Safety--EHS-_JR2026519561",
+   "reason": "non-ME discipline"
+  },
+  {
+   "company": "Boeing",
    "title": "Boeing Summer 2027 Internship Program (Paid) \u2013 Information Digital Technology & Security (IDT&S)",
    "location": "USA - Everett, WA; USA - Saint Charles, MO; USA - Mukilteo, WA; USA - Berkeley, MO; USA - Hazelwood, MO; USA - El Segundo, CA; USA - Renton, WA; USA - Seattle, WA; USA - Auburn, WA; USA - Bellevue, WA; USA - Kent, WA; USA - Plano, TX; USA - Arlington, VA; USA - Ridley Park, PA; USA - Tukwila, WA; USA - Mesa, AZ; USA - North Charleston, SC",
    "url": "https://boeing.wd1.myworkdayjobs.com/EXTERNAL_CAREERS/job/USA---Everett-WA/Boeing-Summer-2027-Internship-Program--Paid----Information-Digital-Technology---Security--IDT-S-_JR2026520791-1",
@@ -19532,8 +19210,134 @@
    "company": "Boston Scientific",
    "title": "Process Development Co-op - Spring or Summer 2027",
    "location": "US",
+   "url": "https://bostonscientific.eightfold.ai/careers/job/563602813560630",
+   "reason": "scored 27, below tier B"
+  },
+  {
+   "company": "Boston Scientific",
+   "title": "Process Development Co-op - Spring or Summer 2027",
+   "location": "US",
    "url": "https://bostonscientific.eightfold.ai/careers/job/563602813560602",
    "reason": "no mechanical signal"
+  },
+  {
+   "company": "CACI",
+   "title": "AI Prompt Engineer High School Intern - Summer 2027",
+   "location": "Ashburn, VA, US",
+   "url": "https://caci.wd1.myworkdayjobs.com/External/job/Ashburn-VA-US/AI-Prompt-Engineer-High-School-Intern---Summer-2027_332816-1",
+   "reason": "no mechanical signal"
+  },
+  {
+   "company": "CACI",
+   "title": "Cyber Analyst Intern - Summer 2027",
+   "location": "Ashburn, VA, US",
+   "url": "https://caci.wd1.myworkdayjobs.com/External/job/Ashburn-VA-US/Cyber-Analyst-Intern---Summer-2027_333161",
+   "reason": "scored 18, below tier B"
+  },
+  {
+   "company": "CACI",
+   "title": "Cyber Security Intern - Summer 2027",
+   "location": "Springfield, VA, US",
+   "url": "https://caci.wd1.myworkdayjobs.com/External/job/Springfield-VA-US/Cyber-Security-Intern---Summer-2027_333046",
+   "reason": "non-ME discipline"
+  },
+  {
+   "company": "CACI",
+   "title": "Electrical Engineering Intern \u2013 Summer 2027",
+   "location": "Florham Park, NJ, US",
+   "url": "https://caci.wd1.myworkdayjobs.com/External/job/Florham-Park-NJ-US/Electrical-Engineering-Intern---Summer-2027_332470",
+   "reason": "non-ME discipline"
+  },
+  {
+   "company": "CACI",
+   "title": "GMU Scholar Program - Summer 2027 Internship",
+   "location": "Sterling, VA, US",
+   "url": "https://caci.wd1.myworkdayjobs.com/External/job/Sterling-VA-US/GMU-Scholar-Program---Summer-2027-Internship_330557",
+   "reason": "scored 14, below tier B"
+  },
+  {
+   "company": "CACI",
+   "title": "Manufacturing Engineering Intern - Summer 2027",
+   "location": "Danbury, CT, US",
+   "url": "https://caci.wd1.myworkdayjobs.com/External/job/Danbury-CT-US/Manufacturing-Engineering-Intern---Summer-2027_333189-1",
+   "reason": "scored 21, below tier B"
+  },
+  {
+   "company": "CACI",
+   "title": "Network / Cybersecurity Intern - Summer 2027",
+   "location": "High Point, NC, US",
+   "url": "https://caci.wd1.myworkdayjobs.com/External/job/High-Point-NC-US/Network---Cybersecurity-Intern---Summer-2027_333001",
+   "reason": "non-ME discipline"
+  },
+  {
+   "company": "CACI",
+   "title": "Network Engineer Intern - Summer 2027",
+   "location": "High Point, NC, US",
+   "url": "https://caci.wd1.myworkdayjobs.com/External/job/High-Point-NC-US/Network-Engineer-Intern---Summer-2027_332843",
+   "reason": "non-ME discipline"
+  },
+  {
+   "company": "CACI",
+   "title": "Pricing Intern - Summer 2027",
+   "location": "Chantilly, VA, US; Reston, VA, US",
+   "url": "https://caci.wd1.myworkdayjobs.com/External/job/Chantilly-VA-US/Pricing-Intern---Summer-2027_332053",
+   "reason": "no mechanical signal"
+  },
+  {
+   "company": "CACI",
+   "title": "Software Engineer Intern - Summer 2027",
+   "location": "Austin, TX, US",
+   "url": "https://caci.wd1.myworkdayjobs.com/External/job/Austin-TX-US/Software-Engineer-Intern---Summer-2027_333037",
+   "reason": "non-ME discipline"
+  },
+  {
+   "company": "CACI",
+   "title": "Software Engineer Intern - Summer 2027",
+   "location": "Ypsilanti, MI, US",
+   "url": "https://caci.wd1.myworkdayjobs.com/External/job/Ypsilanti-MI-US/Software-Engineer-Intern---Summer-2027_331648",
+   "reason": "non-ME discipline"
+  },
+  {
+   "company": "CACI",
+   "title": "Software Engineering Intern - Summer 2027",
+   "location": "Florham Park, NJ, US",
+   "url": "https://caci.wd1.myworkdayjobs.com/External/job/Florham-Park-NJ-US/Software-Engineering-Intern---Summer-2027_332543",
+   "reason": "non-ME discipline"
+  },
+  {
+   "company": "CACI",
+   "title": "Supply Chain Intern - Summer 2027",
+   "location": "448 FLORHAM PARK NJ; Reston, VA, US; Rochester, NY, US",
+   "url": "https://caci.wd1.myworkdayjobs.com/External/job/448-FLORHAM-PARK-NJ/Supply-Chain-Intern---Summer-2027_331621",
+   "reason": "non-ME discipline"
+  },
+  {
+   "company": "CACI",
+   "title": "Systems Engineer Intern - Summer 2027",
+   "location": "Ashburn, VA, US",
+   "url": "https://caci.wd1.myworkdayjobs.com/External/job/Ashburn-VA-US/Systems-Engineer-Intern---Summer-2027_333048",
+   "reason": "scored 28, below tier B"
+  },
+  {
+   "company": "CACI",
+   "title": "Technical Project Manager Intern - Summer 2027",
+   "location": "High Point, NC, US",
+   "url": "https://caci.wd1.myworkdayjobs.com/External/job/High-Point-NC-US/Technical-Project-Manager-Intern---Summer-2027_333027",
+   "reason": "scored 8, below tier B"
+  },
+  {
+   "company": "CACI",
+   "title": "VT Scholar Program - Summer 2027 Internship",
+   "location": "Aberdeen Proving Ground, MD, US",
+   "url": "https://caci.wd1.myworkdayjobs.com/External/job/Aberdeen-Proving-Ground-MD-US/VT-Scholar-Program---Summer-2027-Internship_330555",
+   "reason": "scored 5, below tier B"
+  },
+  {
+   "company": "CACI",
+   "title": "VT Scholar Program - Summer 2027 Internship",
+   "location": "Sterling, VA, US",
+   "url": "https://caci.wd1.myworkdayjobs.com/External/job/Sterling-VA-US/VT-Scholar-Program---Summer-2027-Internship_330553",
+   "reason": "scored 14, below tier B"
   },
   {
    "company": "CesiumAstro",
@@ -19730,6 +19534,13 @@
    "location": "Round Rock, TX, United States",
    "url": "https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26010624",
    "reason": "non-ME discipline"
+  },
+  {
+   "company": "Emerson",
+   "title": "Material Planning and Inventory Intern Summer  2027",
+   "location": "Knoxville, TN, United States; St. Louis, MO, United States",
+   "url": "https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26010043",
+   "reason": "scored 13, below tier B"
   },
   {
    "company": "Emerson",
@@ -21720,41 +21531,6 @@
    "reason": "scored 23, below tier B"
   },
   {
-   "company": "Medtronic",
-   "title": "Associate Clinical Experience (ACE) Intern \u2013 Summer 2027",
-   "location": "State of Minnesota, United States of America; State of Washington, United States of America; State of South Dakota, United States of America; State of Oklahoma, United States of America; State of Utah, United States of America; State of Rhode Island, United States of America; State of Ohio, United States of America; State of Massachusetts, United States of America; State of Connecticut, United States of America; State of Pennsylvania, United States of America; State of Oregon, United States of America; State of North Carolina, United States of America; State of New Hampshire, United States of America; State of Montana, United States of America; State of Hawaii, United States of America; State of Georgia, United States of America; State of Colorado, United States of America; State of North Dakota, United States of America; State of New Mexico, United States of America; State of Nebraska, United States of America; State of Maryland, United States of America; State of Kentucky, United States of America; State of Kansas, United States of America; State of Iowa, United States of America; State of Indiana, United States of America; State of Florida, United States of America; State of California, United States of America; State of Wyoming, United States of America; State of Virginia, United States of America; State of Tennessee, United States of America; State of New York, United States of America; State of Mississippi, United States of America; State of Louisiana, United States of America; State of Arkansas, United States of America; State of South Carolina, United States of America; State of New Jersey, United States of America; State of Missouri, United States of America; State of Idaho, United States of America; State of Delaware, United States of America; State of Arizona, United States of America; State of Wisconsin, United States of America; State of West Virginia, United States of America; State of Vermont, United States of America; State of Texas, United States of America; State of Nevada, United States of America; State of Michigan, United States of America; State of Maine, United States of America; State of Illinois, United States of America; State of Alaska, United States of America; State of Alabama, United States of America",
-   "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/State-of-Minnesota-United-States-of-America/Associate-Clinical-Experience--ACE--Intern---Summer-2027_R78501-1",
-   "reason": "non-ME discipline"
-  },
-  {
-   "company": "Medtronic",
-   "title": "Finance Intern - Summer 2027",
-   "location": "Minneapolis, Minnesota, United States of America",
-   "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Minneapolis-Minnesota-United-States-of-America/Finance-Intern---Summer-2027_R73629-2",
-   "reason": "non-ME discipline"
-  },
-  {
-   "company": "Medtronic",
-   "title": "IT Intern - Summer 2027",
-   "location": "Minneapolis, Minnesota, United States of America",
-   "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Minneapolis-Minnesota-United-States-of-America/IT-Intern---Summer-2027_R73625-1",
-   "reason": "non-ME discipline"
-  },
-  {
-   "company": "Medtronic",
-   "title": "Software Engineering Intern \u2013 Summer 2027",
-   "location": "Fridley, Minnesota, United States of America; Tempe, Arizona, United States of America; Eatontown, New Jersey, United States of America; Santa Rosa, California, United States of America; Lafayette, Colorado, United States of America; Boulder, Colorado, United States of America; Plymouth, Minnesota, United States of America; Mounds View, Minnesota, United States of America; Irvine, California, United States of America; North Haven, Connecticut, United States of America; Memphis, Tennessee, United States of America; Newton, Massachusetts, United States of America; Dexter, Michigan, United States of America; Santa Ana, California, United States of America; Mansfield, Massachusetts, United States of America; Fort Worth, Texas, United States of America; Minneapolis, Minnesota, United States of America; Brooklyn Center, Minnesota, United States of America; Jacksonville, Florida, United States of America; Boston, Massachusetts, United States of America; Brooklyn Park, Minnesota, United States of America",
-   "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Fridley-Minnesota-United-States-of-America/Software-Engineering-Intern---Summer-2027_R73630-1",
-   "reason": "non-ME discipline"
-  },
-  {
-   "company": "Medtronic",
-   "title": "Summer 2027 Corporate Development Intern (MBA)",
-   "location": "Minneapolis, Minnesota, United States of America",
-   "url": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Minneapolis-Minnesota-United-States-of-America/Summer-2027-Corporate-Development-Intern--MBA-_R79679-1",
-   "reason": "scored 28, below tier B"
-  },
-  {
    "company": "Micron",
    "title": "Intern - EUV & Materials Lithography",
    "location": "Boise, ID - Main Site",
@@ -22019,6 +21795,13 @@
    "location": "United States-West Virginia-Rocket Center",
    "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-West-Virginia-Rocket-Center/XMLNAME-2027-International-Trade-Compliance-Intern---Rocket-Center-WV_R10254452",
    "reason": "no mechanical signal"
+  },
+  {
+   "company": "Northrop Grumman",
+   "title": "2027 Mechanical Analysis Intern - Dulles VA",
+   "location": "United States-Virginia-Dulles",
+   "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Virginia-Dulles/XMLNAME-2027-Mechanical-Analysis-Intern---Dulles-VA_R10256105",
+   "reason": "scored 27, below tier B"
   },
   {
    "company": "Northrop Grumman",
@@ -22673,6 +22456,13 @@
   },
   {
    "company": "RTX",
+   "title": "Contracts Co-op (Spring/Summer 2027)",
+   "location": "US-IL-REMOTE",
+   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-IL-REMOTE/Contracts-Co-op--Spring-Summer-2027-_01882555",
+   "reason": "no mechanical signal"
+  },
+  {
+   "company": "RTX",
    "title": "Contracts Coop ( Spring/Summer 2027)",
    "location": "US-GA-REMOTE",
    "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-GA-REMOTE/Contracts-Coop---Spring-Summer-2027-_01871146",
@@ -23094,6 +22884,13 @@
   {
    "company": "Rocket Lab",
    "title": "Electrical Engineering Intern Summer 2027",
+   "location": "Toronto, CAN",
+   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7990043003",
+   "reason": "non-ME discipline"
+  },
+  {
+   "company": "Rocket Lab",
+   "title": "Electrical Engineering Intern Summer 2027",
    "location": "Pasadena, CA",
    "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7998598003",
    "reason": "non-ME discipline"
@@ -23103,13 +22900,6 @@
    "title": "Electrical Engineering Intern Summer 2027",
    "location": "Long Beach, CA",
    "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7990683003",
-   "reason": "non-ME discipline"
-  },
-  {
-   "company": "Rocket Lab",
-   "title": "Electrical Engineering Intern Summer 2027",
-   "location": "Toronto, CAN",
-   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7990043003",
    "reason": "non-ME discipline"
   },
   {
@@ -23744,13 +23534,6 @@
   },
   {
    "company": "Spirit AeroSystems",
-   "title": "Boeing - Wichita Summer 2027 Internship Program (Paid) - Facilities, Equipment & Reliability Engineering",
-   "location": "Wichita, Kansas",
-   "url": "https://careers.spiritaero.com/careers-home/jobs/17498",
-   "reason": "non-ME discipline"
-  },
-  {
-   "company": "Spirit AeroSystems",
    "title": "Boeing - Wichita Summer 2027 Internship Program (Paid) - Liaison Engineering",
    "location": "Wichita, Kansas",
    "url": "https://careers.spiritaero.com/careers-home/jobs/17514",
@@ -24126,41 +23909,6 @@
    "location": "El Segundo, California, United States",
    "url": "https://job-boards.greenhouse.io/vardaspace/jobs/8010682003",
    "reason": "non-ME discipline"
-  },
-  {
-   "company": "Vermeer",
-   "title": "Advanced Manufacturing Intern - Summer 2027",
-   "location": "Pella, Iowa, USA - The Center",
-   "url": "https://vermeer.wd5.myworkdayjobs.com/externalcareersite/job/Pella-Iowa-USA---The-Center/Advanced-Manufacturing-Intern---Summer-2027_REQ-22140",
-   "reason": "scored 14, below tier B"
-  },
-  {
-   "company": "Vermeer",
-   "title": "Data Analytics Internship Summer 2027",
-   "location": "Pella, Iowa, USA - Corporate Office",
-   "url": "https://vermeer.wd5.myworkdayjobs.com/externalcareersite/job/Pella-Iowa-USA---Corporate-Office/Data-Analytics-Internship-Summer-2027_REQ-22164",
-   "reason": "no mechanical signal"
-  },
-  {
-   "company": "Vermeer",
-   "title": "Electrical Engineer Internship Summer 2027",
-   "location": "Pella, Iowa, USA - Corporate Office",
-   "url": "https://vermeer.wd5.myworkdayjobs.com/externalcareersite/job/Pella-Iowa-USA---Corporate-Office/Electrical-Engineer-Internship-Summer-2027_REQ-22166",
-   "reason": "non-ME discipline"
-  },
-  {
-   "company": "Vermeer",
-   "title": "Supply Chain Intern - Summer 2027",
-   "location": "Pella, Iowa, USA - Corporate Office",
-   "url": "https://vermeer.wd5.myworkdayjobs.com/externalcareersite/job/Pella-Iowa-USA---Corporate-Office/Supply-Chain-Intern---Summer-2027_REQ-22155",
-   "reason": "non-ME discipline"
-  },
-  {
-   "company": "Vermeer",
-   "title": "Training and Development Specialist Intern - Summer 2027",
-   "location": "Pella, Iowa, USA - Corporate Office",
-   "url": "https://vermeer.wd5.myworkdayjobs.com/externalcareersite/job/Pella-Iowa-USA---Corporate-Office/Training-and-Development-Specialist-Intern---Summer-2027_REQ-22156",
-   "reason": "no mechanical signal"
   },
   {
    "company": "Vertiv",

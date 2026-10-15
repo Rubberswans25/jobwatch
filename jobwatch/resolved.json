@@ -21,6 +21,10 @@
   "trajectory": 12,
   "verified": true
  },
+ "ABB": {
+  "board": null,
+  "trajectory": 11
+ },
  "AMCA": {
   "board": "greenhouse",
   "slug": "amca",
@@ -277,6 +281,10 @@
   "covered_by": "Boeing",
   "trajectory": 11
  },
+ "Aurora Innovation": {
+  "board": null,
+  "trajectory": 13
+ },
  "Avery Dennison": {
   "board": "smartrecruiters",
   "slug": "AveryDennison",
@@ -459,6 +467,13 @@
   "trajectory": 11,
   "verified": true
  },
+ "Bosch": {
+  "board": "pinpoint",
+  "postings": 4,
+  "slug": "bosch",
+  "trajectory": 12,
+  "weak": "one-word name, owner 'Jobs at Bosch | Bosch Careers'"
+ },
  "Bose": {
   "board": null,
   "trajectory": 12
@@ -513,6 +528,15 @@
   "trajectory": 10,
   "verified": true
  },
+ "CACI": {
+  "board": "workday",
+  "host": "wd1",
+  "site": "external",
+  "source": "simplify",
+  "tenant": "caci",
+  "trajectory": 11,
+  "verified": true
+ },
  "CHAOS Industries": {
   "board": "greenhouse",
   "postings": 149,
@@ -549,6 +573,13 @@
   "slug": "castelioncorporation",
   "trajectory": 13,
   "verified": true
+ },
+ "Caterpillar": {
+  "board": null,
+  "rejected": [
+   "smartrecruiters/caterpillarinc: stale, newest posting over a year old, owner 'Caterpillar Inc'"
+  ],
+  "trajectory": 12
  },
  "CesiumAstro": {
   "board": "lever",
@@ -591,6 +622,10 @@
   "trajectory": 14,
   "verified": true
  },
+ "CoolIT Systems": {
+  "board": null,
+  "trajectory": 12
+ },
  "Crane Aerospace and Electronics": {
   "board": "workday",
   "host": "wd5",
@@ -599,6 +634,10 @@
   "tenant": "cranecompany",
   "trajectory": 11,
   "verified": true
+ },
+ "Cummins": {
+  "board": null,
+  "trajectory": 12
  },
  "Curtiss-Wright": {
   "board": "workday",
@@ -849,6 +888,10 @@
   "note": "parent Fortive's board",
   "trajectory": 12,
   "verified": true
+ },
+ "Ford": {
+  "board": null,
+  "trajectory": 11
  },
  "Forge Atomics": {
   "board": "ashby",
@@ -1252,6 +1295,10 @@
   ],
   "trajectory": 13
  },
+ "John Deere": {
+  "board": null,
+  "trajectory": 12
+ },
  "Johnson Controls": {
   "board": "workday",
   "host": "wd5",
@@ -1355,6 +1402,12 @@
   "slug": "loftorbital",
   "trajectory": 11,
   "verified": true
+ },
+ "Lucid Motors": {
+  "board": "greenhouse",
+  "postings": 454,
+  "slug": "lucidmotors",
+  "trajectory": 12
  },
  "Lutron Electronics": {
   "board": null,
@@ -1469,6 +1522,10 @@
   "board": null,
   "trajectory": 11
  },
+ "Modine": {
+  "board": null,
+  "trajectory": 11
+ },
  "Moog": {
   "board": "workday",
   "host": "wd5",
@@ -1562,6 +1619,13 @@
   "trajectory": 11,
   "verified": true
  },
+ "Nuro": {
+  "board": "greenhouse",
+  "postings": 109,
+  "slug": "nuro",
+  "trajectory": 12,
+  "weak": "one-word name, owner 'Nuro'"
+ },
  "Oklo": {
   "board": "greenhouse",
   "postings": 77,
@@ -1583,6 +1647,13 @@
   "site": "Oshkosh",
   "source": "simplify",
   "tenant": "oshkoshcorporation",
+  "trajectory": 11,
+  "verified": true
+ },
+ "PA Consulting": {
+  "board": "smartrecruiters",
+  "slug": "PAConsulting",
+  "source": "simplify",
   "trajectory": 11,
   "verified": true
  },
@@ -1663,6 +1734,10 @@
    "assets bought by FlexGen; Rippling v2 board; no adapter"
   ],
   "trajectory": 10
+ },
+ "Pratt Miller": {
+  "board": null,
+  "trajectory": 11
  },
  "Pratt and Whitney": {
   "board": null,
@@ -1808,6 +1883,10 @@
   "board": null,
   "trajectory": 11
  },
+ "Rivian": {
+  "board": null,
+  "trajectory": 13
+ },
  "Rocket Lab": {
   "board": "greenhouse",
   "postings": 581,
@@ -1907,6 +1986,10 @@
   ],
   "trajectory": 11
  },
+ "Schneider Electric": {
+  "board": null,
+  "trajectory": 12
+ },
  "Semtech": {
   "board": "workday",
   "host": "wd1",
@@ -1915,6 +1998,12 @@
   "tenant": "semtech",
   "trajectory": 11,
   "verified": true
+ },
+ "Serve Robotics": {
+  "board": "ashby",
+  "postings": 33,
+  "slug": "serverobotics",
+  "trajectory": 11
  },
  "Seurat Technologies": {
   "board": "greenhouse",
@@ -1934,6 +2023,10 @@
   "slug": "shieldai",
   "trajectory": 15,
   "verified": true
+ },
+ "Siemens": {
+  "board": null,
+  "trajectory": 12
  },
  "Sierra Nevada Corporation": {
   "board": "workday",
@@ -2175,6 +2268,10 @@
   "trajectory": 13,
   "verified": true
  },
+ "Toyota Research Institute": {
+  "board": null,
+  "trajectory": 13
+ },
  "Trane Technologies": {
   "board": "workday",
   "host": "wd12",
@@ -2336,6 +2433,13 @@
   "trajectory": 10,
   "verified": true
  },
+ "Waymo": {
+  "board": "greenhouse",
+  "postings": 364,
+  "slug": "waymo",
+  "trajectory": 19,
+  "weak": "one-word name, owner 'Waymo'"
+ },
  "Western Digital": {
   "board": "smartrecruiters",
   "slug": "WesternDigital",
@@ -2389,6 +2493,10 @@
   "board": null,
   "trajectory": 9
  },
+ "ZF": {
+  "board": null,
+  "trajectory": 10
+ },
  "Zap Energy": {
   "board": "rippling",
   "slug": "zap-energy-careers",
@@ -2406,6 +2514,13 @@
   "slug": "flyzipline",
   "trajectory": 14,
   "verified": true
+ },
+ "Zoox": {
+  "board": "lever",
+  "postings": 239,
+  "slug": "zoox",
+  "trajectory": 17,
+  "weak": "one-word name, owner 'Zoox http://zoox.com'"
  },
  "Zurn Elkay Water Solutions": {
   "board": "workday",
