@@ -1,23 +1,28 @@
 {
- "generated": "2026-10-15T18:25:41+00:00",
- "run_url": "https://github.com/irogers5890/jobwatch/actions/runs/38785506271",
- "scanned": 24651,
+ "generated": "2026-10-15T21:35:29+00:00",
+ "run_url": "https://github.com/irogers5890/jobwatch/actions/runs/38811026641",
+ "scanned": 24616,
  "boards": 270,
  "errors": [
   {
-   "company": "Globus Medical",
+   "company": "Johnson Controls",
    "board": "workday",
+   "error": "failed after 3 tries: HTTP 429"
+  },
+  {
+   "company": "Microsoft",
+   "board": "eightfold",
    "error": "failed after 3 tries: HTTP 429"
   }
  ],
  "dropped": {
-  "non-ME discipline": 772,
-  "no Summer/Fall 2027": 4430,
+  "non-ME discipline": 766,
+  "no Summer/Fall 2027": 4361,
   "degree-level blocker": 9,
-  "below threshold": 466,
-  "no mechanical signal": 209,
-  "not a student req": 17989,
-  "off-target season in title": 412
+  "below threshold": 471,
+  "no mechanical signal": 210,
+  "not a student req": 18021,
+  "off-target season in title": 411
  },
  "jobs": [
   {
@@ -40,7 +45,7 @@
      40.0
     ],
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -100,7 +105,7 @@
      44.0
     ],
     "fresh": 0,
-    "age": 22.8,
+    "age": 22.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -160,7 +165,7 @@
      40.0
     ],
     "fresh": 6,
-    "age": 9.8,
+    "age": 9.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -201,6 +206,63 @@
    "first_seen": "2026-10-13T02:04:57+00:00"
   },
   {
+   "id": "wd:globalhr:01870956",
+   "title": "Mechanical Design Engineering Intern (Summer 2027)",
+   "location": "US-MN-BURNSVILLE-WEST ~ 14300 Judicial Rd ~ WEST BLDG",
+   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-MN-BURNSVILLE-WEST--14300-Judicial-Rd--WEST-BLDG/Mechanical-Design-Engineering-Intern--Summer-2027-_01870956",
+   "posted": "2026-10-15",
+   "body": "Date Posted: 2026-10-15 Country: United States of America Location: US-MN-BURNSVILLE-WEST ~ 14300 Judicial Rd ~ WEST BLDG Position Role Type: Onsite U.S. Citizen, U.S. Person, or Immigration Status Requirements: U.S. citizenship is required, as only U.S. citizens are authorized to access information under this program/contract. Security Clearance Type: None/Not Required Security Clearance Status: Not Required Are you ready to explore the world of aerospace and defense? Do you want to learn from and collaborate with some of the greatest minds in the industry? At RTX, our internships, co-ops and full-time careers provide an exceptional foundation to work on complex problems, advance your skills and create a safer, more connected world. Discover opportunities to make a difference at RTX. What You Will Do As a Mechanical Design Engineering Intern at Collins Aerospace, you will be part of the Sensors team based in Burnsville, Minnesota. The Mechanical Engineer Intern will work in the Air Data Sensors (ADS) design team and be responsible for working on integrated product teams to develop new, advanced air data sensors products while also supporting existing products in production. The mechanical intern will be part of an integrated research and development team focused on developing new sensor technology. The intern should have a broad interest in the field of engineering. You will be engaged in new and existing product design, including but not limited to the design of sensor packaging, prototype build/test activities, design for manufacturing, and documentation. Provide support to Design Engineers in areas such as: mechanical CAD design, thermal analysis, material science, system testing, data collection, and analyzing test data Participate in design decision making and lab prototype testing Work fluidly within multidisciplinary, cross-functional teams executing projects according to plan You will have access to a world class wind tunnel, environmental test lab, and forensics investigation lab to help our team continue delivering industry leading air data solutions. Qualifications You Must Have Must be pursuing Bachelor\u2019s or Advanced degree in Mechanical Engineering, Aerospace Engineering, or related Science, Technology, Engineering or Mathematics (STEM) major and actively enrolled through the completion of the internship/co-op session. Experience with MATLAB Experience may be obtained through on-the-job experience, research, coursework, or projects. Qualifications We Prefer Experience with Microsoft Office (Excel, Word, and/or PowerPoint) Experience with CAD tools such as NX, Solidworks, AutoCAD, Creo, Fusion 360, or equivalent Experience working on cross-functional teams Prior RTX internship, co-op, or work experience What We Offer Our values drive our actions, behaviors, and performance with a vision for a safer, more connected world. At RTX we value: Safety, Trust, Respect, Accountability, Collaboration, and Innovation. Relocation Eligibility Learn More & Apply Now! Please consider the following role type definition as you apply for this role. Onsite : Employees who are working in Onsite roles will work primarily onsite. This includes all production and maintenance employees, as they are essential to the development of our products. As part of our commitment to maintaining a secure hiring process, candidates may be asked to attend select steps of the interview process in-person at one of our office locations, regardless of whether the role is designated as on-site, hybrid or remote. The salary range for this role is 37,000 USD - 82,000 USD. The salary range provided is a good faith estimate representative of all experience levels. RTX considers several factors when extending an offer, including but not limited to, the role, function and associated responsibilities, a candidate\u2019s work experience, location, education/training, and key skills. Hired applicants may be eligible for benefits, including but not limited to, medical, dental, vision, life insurance, short-term disability, long-term disability, 401(k) match, flexible spending accounts, flexible work schedules, employee assistance program, Employee Scholar Program, parental leave, paid time off, and holidays. Specific benefits are dependent upon the specific business unit as well as whether or not the position is covered by a collective-bargaining agreement. Hired applicants may be eligible for annual short-term and/or long-term incentive compensation programs depending on the level of the position and whether or not it is covered by a collective-bargaining agreement. Payments under these annual programs are not guaranteed and are dependent upon a variety of factors including, but not limited to, individual performance, business unit performance, and/or the company\u2019s performance. This role is a U.S.-based role. If the successful candidate resides in a U.S. territory, the appropriate pay structure and benefits will apply. RTX anticipates the application window closing approximately 40 days from the date the notice was posted. However, factors such as candidate flow and business necessity may require RTX to shorten or extend the application window. RTX is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability or veteran status, or any other applicable state or federal protected class. RTX provides affirmative action in employment for qualified Individuals with a Disability and Protected Veterans in compliance with Section 503 of the Rehabilitation Act and the Vietnam Era Veterans\u2019 Readjustment Assistance Act. Privacy Policy and Terms: Click on this link to read the Policy and Terms",
+   "company": "RTX",
+   "score": {
+    "total": 85,
+    "base": 73,
+    "fit": 60,
+    "loc": 0,
+    "traj": 13,
+    "pay": 0,
+    "rate": null,
+    "fresh": 12,
+    "age": 0.9,
+    "age_basis": "posted",
+    "tier": "A",
+    "why": [
+     [
+      "title: mechanical design",
+      13
+     ],
+     [
+      "title: design engineer",
+      12
+     ],
+     [
+      "title: mechanical",
+      7
+     ],
+     [
+      "body: design for manufacturing",
+      7
+     ],
+     [
+      "body: product design",
+      6
+     ],
+     [
+      "title: engineering intern",
+      4
+     ],
+     [
+      "body: prototype",
+      4
+     ],
+     [
+      "body: solidworks",
+      4
+     ]
+    ]
+   },
+   "first_seen": "2026-10-15T21:35:29+00:00"
+  },
+  {
    "id": "gh:andurilindustries:5153187007",
    "title": "2027 Mechanical Engineer Intern",
    "location": "Atlanta, Georgia, United States; Boston, Massachusetts, United States; Broomfield, Colorado, United States; Colorado Springs, Colorado, United States; Costa Mesa, California, United States; Fort Collins, Colorado, United States; Irvine, California, United States; Reston, Virginia, United States; Seattle, Washington, United States",
@@ -220,7 +282,7 @@
      45.0
     ],
     "fresh": -8,
-    "age": 126.8,
+    "age": 126.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -280,7 +342,7 @@
      32.0
     ],
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -337,7 +399,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -397,7 +459,7 @@
      41.0
     ],
     "fresh": -4,
-    "age": 41.8,
+    "age": 41.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -454,7 +516,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 43.8,
+    "age": 43.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -511,7 +573,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 43.8,
+    "age": 43.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -571,7 +633,7 @@
      48.0
     ],
     "fresh": -4,
-    "age": 36.8,
+    "age": 36.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -628,7 +690,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -688,7 +750,7 @@
      32.0
     ],
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -748,7 +810,7 @@
      32.0
     ],
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -805,7 +867,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.8,
+    "age": 58.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -862,7 +924,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.8,
+    "age": 58.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -922,7 +984,7 @@
      50.0
     ],
     "fresh": -4,
-    "age": 41.8,
+    "age": 41.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -979,7 +1041,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 41.8,
+    "age": 41.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1036,7 +1098,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1096,7 +1158,7 @@
      45.0
     ],
     "fresh": 0,
-    "age": 21.8,
+    "age": 21.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1156,7 +1218,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 14.8,
+    "age": 14.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1216,7 +1278,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 14.8,
+    "age": 14.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1276,7 +1338,7 @@
      30.0
     ],
     "fresh": 0,
-    "age": 28.8,
+    "age": 28.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1333,7 +1395,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 7.8,
+    "age": 7.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1393,7 +1455,7 @@
      50.0
     ],
     "fresh": 3,
-    "age": 10.8,
+    "age": 10.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1453,7 +1515,7 @@
      50.0
     ],
     "fresh": 3,
-    "age": 10.8,
+    "age": 10.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1494,6 +1556,63 @@
    "first_seen": "2026-10-14T01:17:06+00:00"
   },
   {
+   "id": "wd:draper:JR003037",
+   "title": "Operations Engineering Intern (Summer 2027)",
+   "location": "Cambridge, MA",
+   "url": "https://draper.wd5.myworkdayjobs.com/Draper_Careers/job/Cambridge-MA/Operations-Engineering-Intern--Summer-2027-_JR003037",
+   "posted": "2026-10-15",
+   "body": "Overview: Draper is an independent, nonprofit research and development company headquartered in Cambridge, MA. The 2,000+ employees of Draper tackle important national challenges with a promise of delivering successful and usable solutions. From military defense and space exploration to biomedical engineering, lives often depend on the solutions we provide. Our multidisciplinary teams of engineers and scientists work in a collaborative environment that inspires the cross-fertilization of ideas necessary for true innovation. For more information about Draper, visit www.draper.com . Job Description Summary: This position is for students looking for engineering opportunities for Summer 2027! As a student in the Product Engineering Division, you will be exposed to a broad range of technical challenges where you can apply your knowledge as well as learn new skills while seeing how problems of national interest are solved. Your experience can range from applying engineering principles and best practices to part design for DFx, to working directly with engineers and technicians to fabricate and assemble systems. While working under the guidance of engineers, you will be exposed to a system-level perspective that will help mature advanced (often first-of-a-kind) prototype designs with an eye towards manufacturability, assembly, and reliability (i.e. DFx). While working on tasks, you will gain a better understanding of how to design with consideration for manufacturability while learning proper execution and documentation of product requirements, design changes, assembly instructions, and hardware tracking. When parts need to be fabricated, you will have the opportunity to work with highly skilled operators in Draper\u2019s extensive machine shop, rapid prototyping lab featuring multiple 3D printers or circuit card assembly facility. You will also have the opportunity to interact with other facilities such as materials characterization or metrology. Assignments are designed to develop a practical knowledge of processes, procedures, equipment, facilities, and systems as well as their interrelationships within engineering disciplines. Assignments will also provide an opportunity to develop valuable networking connections which will help prepare and develop your skills for future career opportunities. Actual project tasks will depend on immediate program priorities. Job Description: Duties/Responsibilities Design, develop, and enhancement engineering solutions for challenging problems. Implement, test, perform analysis, and provide documentation support. Generate and present test reports including plots, tables, evaluation criteria, and conclusions from data collected and analyzed throughout the test process. Complete assignments designed to develop a practical knowledge of processes, procedures, equipment, facilities, and systems as well as their interrelationships within engineering disciplines. Performs other duties as assigned. Program Requirements Enrolled in an accredited full-time undergraduate or graduate degree program required. There is flexibility regarding hours and program duration based on applicant\u2019s school schedule and availability. Skills/Abilities Excellent written and oral communication skills. Excellent work ethic with the ability to work independently or in a team environment. Ability to adapt to ever-changing environments, risks, and vulnerabilities. Strong computer skills including MS Word, PowerPoint and Excel. Additional Job Description: Duties/Responsibilities \u00b7 Complete assignments designed to develop a practical knowledge of processes, procedures, equipment, facilities, and systems as well as their interrelationships within engineering disciplines. \u00b7 Design and documentation of hardware \u00b7 Fabrication and assembly of prototypes \u00b7 Process development \u00b7 Continuous improvement \u00b7 Hardware tracking/yield and metrics \u00b7 Interaction with external suppliers. Skills/Abilities: \u00b7 Excellent written and oral communication skills. \u00b7 Excellent work ethic with the ability to work independently or in a team environment. \u00b7 Ability to adapt to ever-changing environments, risks, and vulnerabilities. \u00b7 Strong computer skills including MS Word, PowerPoint and Excel. Required Qualifications: \u00b7 College student in Mechanical Engineering, Industrial Engineering, Materials Science, Aerospace Engineering, or Manufacturing Engineering \u00b7 Must be a US citizen and enrolled in an accredited Engineering curriculum \u00b7 Experience with 3D CAD packages, PTC Creo and/or Solidworks \u00b7 Experience with Machined Parts and GD&T Relocation assistance is not available for internship positions. This position and/or the facilities in which its duties will be performed are subject to national security programs imposed and administered under U.S. statutes. Therefore, pursuant to 42 U.S.C. \u00a7 2000e-2(g), this position is restricted to U.S. Citizens, and applicants with dual citizenship may not be considered . Connect With Draper for Future Opportunities! If you don't find the right posting in our Career Opportunities, you may submit your resume for future consideration. Job Location - City: Cambridge Job Location - State: Massachusetts Job Location - Postal Code: 02139-3563 The US base salary range for this full-time position is $20.00 - $45.00 Our salary ranges are determined by role, level, and location. The range displayed on each job posting reflects the minimum and maximum target salaries for the position across all US locations. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training. Union ranges will be in compliance with the collective bargaining agreement's approved rates by location and role. Your recruiter can share more about the specific salary range for your preferred location during the hiring process. Please note that the compensation details listed in US role postings reflect the base salary only, and does not include bonuses or benefits. Our work is very important to us, but so is our life outside of work. Draper supports many programs to improve work-life balance including workplace flexibility, employee clubs ranging from photography to yoga, health and finance workshops, off site social events and discounts to local museums and cultural activities. If this specific job opportunity and the chance to work at a nationally renowned R&D innovation company appeals to you, apply now www.draper.com/careers . Draper is committed to creating an inclusive environment. We understand the value of inclusivity and its impact on a high-performance culture. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, disability, age, sexual orientation, national origin, veteran status, or genetic information. Draper is committed to providing access, equal opportunity, and reasonable accommodation for individuals with disabilities in employment, its services, programs, and activities. To request reasonable accommodation, please contact hr@draper.com .",
+   "company": "Draper",
+   "score": {
+    "total": 74,
+    "base": 62,
+    "fit": 42,
+    "loc": 8,
+    "traj": 12,
+    "pay": 0,
+    "rate": null,
+    "fresh": 12,
+    "age": 0.9,
+    "age_basis": "posted",
+    "tier": "A",
+    "why": [
+     [
+      "body: gd&t",
+      8
+     ],
+     [
+      "body: rapid prototyping",
+      5
+     ],
+     [
+      "title: engineering intern",
+      4
+     ],
+     [
+      "body: prototype",
+      4
+     ],
+     [
+      "body: solidworks",
+      4
+     ],
+     [
+      "body: metrology",
+      4
+     ],
+     [
+      "body: relocation",
+      4
+     ],
+     [
+      "body: doe",
+      3
+     ]
+    ]
+   },
+   "first_seen": "2026-10-15T21:35:29+00:00"
+  },
+  {
    "id": "gh:flyzipline:7824316003",
    "title": "Quality & Manufacturing Intern (Summer 2027)",
    "location": "South San Francisco, California, USA",
@@ -1510,7 +1629,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 73.8,
+    "age": 73.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1570,7 +1689,7 @@
      42.0
     ],
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1626,7 +1745,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 49.8,
+    "age": 49.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1686,7 +1805,7 @@
      32.0
     ],
     "fresh": -4,
-    "age": 43.8,
+    "age": 43.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1743,7 +1862,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1799,7 +1918,7 @@
      41.0
     ],
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1840,63 +1959,6 @@
    "first_seen": "2026-10-14T20:48:57+00:00"
   },
   {
-   "id": "wd:avav:8558",
-   "title": "Summer 2027 Mechanical Engineering Intern",
-   "location": "Simi Valley, CA; Dayton, OH; Huntsville, AL; Pottstown, PA; Sunrise, FL; Herndon, VA; Moorpark, CA; San Luis Obispo, CA; Annapolis Junction, MD; Germantown, MD; Albuquerque, NM; Minneapolis, MN; Arlington, VA; Petaluma, CA; Melbourne, FL; San Diego, CA",
-   "url": "https://avav.wd1.myworkdayjobs.com/AVAV/job/Simi-Valley-CA/Summer-2027-Mechanical-Engineering-Intern_8558",
-   "posted": "2026-09-01",
-   "body": "Worker Type Supplemental Job Description Our Summer Internship Program is meticulously designed to provide students with an immersive and dynamic experience within our industry, offering a taste of what it's like to be part of our professional team. W e strive to simulate a full-time job, enabling our interns to work hands-on with cutting-edge technology, contribute to meaningful projects, build strong relationships with coworkers, and develop strategic problem-solving skills. Our program is highly selective, hosting only a handful of interns each year, ensuring personalized attention and ample opportunities to work closely with AV team members. We are hiring for various roles and locations throughout the U.S. During the interview process, we will discuss specific details regarding the team and location. Position Responsibilities Assist in the design of mechanical components and systems, including airframes, payload enclosures, ground equipment, launch systems, and electro-mechanical assemblies Create and modify 3D CAD models and assemblies using SolidWorks Support simulation and analysis tasks using tools like SolidWorks Simulation or ANSYS Participate in prototype fabrication, assembly, and testing using in-house tools and rapid prototyping methods (e.g., 3D printing) Help generate technical drawings and bills of materials in accordance with industry drafting standards Collaborate with engineers to support design reviews, testing activities, and integration of mechanical systems Contribute to documentation and reporting of design progress and test results Learn and assist in configuration control and engineering change processes Perform other tasks as assigned to support ongoing development efforts Basic Qualifications (Required Skills & Experience) Currently pursuing a Bachelor\u2019s degree in Mechanical Engineering, Aerospace Engineering , or a related field Basic experience with 3D CAD software (preferably SolidWorks ) Familiarity with mechanical components such as machined parts, sheet metal, plastic parts, or composite materials Exposure to hands-on prototyping, lab testing, or mechanical assembly through academic or personal projects Strong communication and organizational skills Eagerness to learn and contribute in a fast-paced, collaborative environment Preferred Qualifications & Competencies Familiarity with SolidWorks EPDM or other Product Data Management ( PDM) systems Exposure to ASME Y14.5 GD&T standards and engineering drawing practices Interest or experience in designing test fixtures or tooling Basic understanding of structural dynamics or thermodynamics in mechanical design Demonstrated problem-solving ability and attention to detail Self-motivated, proactive, and eager to take initiative Team player who values collaboration and continuous improvement Physical Demands Ability to work in an office and light R&D lab environment (Constant) Required to sit or stand for extended periods; use hands and fingers to operate a computer or tools (Frequent) ITAR Requirement: This position requires access to information that is subject to compliance with the International Traffic Arms Regulations (\u201cITAR\u201d) and/or the Export Administration Regulations (\u201cEAR\u201d). In order to comply with the requirements of the ITAR and/or the EAR, applicants will be asked to provide specific documentation to verify U.S. person status under the ITAR and the EAR. A \u201cU.S. person\u201d according to their definition is a U.S. citizen, U.S. lawful permanent resident (green card holder), or protected individual such as a refugee, or asylee. See 22 CFR \u00a7 120.15. Some positions will require current U.S. Citizenship due to contract requirements. Benefits : AV offers an excellent benefits package including medical, dental vision, 401K with company matching, a 9/80 work schedule and a paid holiday shutdown. For more information about our company benefit offerings please visit: http://www.avinc.com/myavbenefits . We also encourage you to review our company website at http://www.avinc.com to learn more about us. Principals only need apply. NO agencies please. Who We Are Based in California, AeroVironment (AVAV) is a global leader in unmanned aircraft systems (UAS) and tactical missile systems. Founded in 1971 by celebrated physicist and engineer, Dr. Paul MacCready, we\u2019ve been at the leading edge of technical innovation for more than 45 years. Be a part of the team that developed the world\u2019s most widely used military drones and created the first submarine-launched reconnaissance drone, and has seven innovative vehicles that are part of the Smithsonian Institution\u2019s permanent collection in Washington, DC. Join us today in developing the next generation of small UAS and tactical missile systems that will deliver more actionable intelligence to our customers so they can proceed with certainty \u2013 and succeed. What We Do Building on a history of technological innovation, AeroVironment designs, develops, produces, and supports an advanced portfolio of unmanned aircraft systems (UAS) and tactical missile systems. Agencies of the U.S. Department of Defense and allied military services use the company\u2019s hand-launched UAS to provide situational awareness to tactical operating units through real-time, airborne reconnaissance, surveillance, and target acquisition. We are proud to be an EEO/AA Equal Opportunity Employer, including disability/veterans. AeroVironment, Inc. is an Equal Employment Opportunity (EEO) employer and welcomes all qualified applicants. Qualified applicants will receive fair and impartial consideration without regard to race, sex, color, religion, national origin, age, disability, protected veteran status, genetic data, sexual orientation, gender identity or other legally protected status. ITAR",
-   "company": "AeroVironment",
-   "score": {
-    "total": 72,
-    "base": 76,
-    "fit": 60,
-    "loc": 5,
-    "traj": 11,
-    "pay": 0,
-    "rate": null,
-    "fresh": -4,
-    "age": 44.8,
-    "age_basis": "posted",
-    "tier": "A",
-    "why": [
-     [
-      "body: test fixture",
-      10
-     ],
-     [
-      "body: fixture",
-      8
-     ],
-     [
-      "body: gd&t",
-      8
-     ],
-     [
-      "title: mechanical",
-      7
-     ],
-     [
-      "body: sheet metal",
-      5
-     ],
-     [
-      "body: rapid prototyping",
-      5
-     ],
-     [
-      "title: engineering intern",
-      4
-     ],
-     [
-      "body: 3d printing",
-      4
-     ]
-    ]
-   },
-   "first_seen": "2026-10-13T20:39:35+00:00"
-  },
-  {
    "id": "gh:andurilindustries:5257674007",
    "title": "2027 Quality & Test Engineer Intern",
    "location": "Ashville, Ohio, United States; Costa Mesa, California, United States; Irvine, California, United States; Quonset, Rhode Island, United States; Santa Ana, California, United States",
@@ -1916,7 +1978,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 10.8,
+    "age": 10.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1976,7 +2038,7 @@
      38.0
     ],
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2033,7 +2095,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 15.8,
+    "age": 15.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2093,7 +2155,7 @@
      34.0
     ],
     "fresh": 0,
-    "age": 27.8,
+    "age": 27.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2153,7 +2215,7 @@
      58.75
     ],
     "fresh": 3,
-    "age": 15.8,
+    "age": 15.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2213,7 +2275,7 @@
      38.0
     ],
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2270,7 +2332,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 27.8,
+    "age": 27.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2330,7 +2392,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 36.8,
+    "age": 36.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2390,7 +2452,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 14.8,
+    "age": 14.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2447,7 +2509,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 37.8,
+    "age": 37.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2504,7 +2566,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 37.8,
+    "age": 37.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2561,7 +2623,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.8,
+    "age": 58.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2618,7 +2680,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.8,
+    "age": 58.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2675,7 +2737,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 27.8,
+    "age": 27.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2735,7 +2797,7 @@
      38.0
     ],
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2792,7 +2854,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2849,7 +2911,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 27.8,
+    "age": 27.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2909,7 +2971,7 @@
      58.75
     ],
     "fresh": 3,
-    "age": 15.8,
+    "age": 15.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2962,7 +3024,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 64.8,
+    "age": 64.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3019,7 +3081,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 64.8,
+    "age": 64.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3076,7 +3138,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 44.8,
+    "age": 44.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3136,7 +3198,7 @@
      32.0
     ],
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3193,7 +3255,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 34.8,
+    "age": 34.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3253,7 +3315,7 @@
      31.0
     ],
     "fresh": -8,
-    "age": 84.8,
+    "age": 84.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3310,7 +3372,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 27.8,
+    "age": 27.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3367,7 +3429,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3424,7 +3486,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 76.8,
+    "age": 76.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3484,7 +3546,7 @@
      30.0
     ],
     "fresh": 0,
-    "age": 31.8,
+    "age": 31.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3541,7 +3603,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 24.8,
+    "age": 24.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3594,7 +3656,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 9.8,
+    "age": 9.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3642,7 +3704,7 @@
      48.0
     ],
     "fresh": 6,
-    "age": 9.8,
+    "age": 9.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3694,7 +3756,7 @@
      34.0
     ],
     "fresh": 0,
-    "age": 31.8,
+    "age": 31.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3754,7 +3816,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 52.8,
+    "age": 52.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3814,7 +3876,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 14.8,
+    "age": 14.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3874,7 +3936,7 @@
      34.0
     ],
     "fresh": 0,
-    "age": 31.8,
+    "age": 31.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3931,7 +3993,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -3956,6 +4018,62 @@
    "first_seen": "2026-10-14T17:25:02+00:00"
   },
   {
+   "id": "ef:lockheedmartin.com:18535",
+   "title": "Systems Engineer (Integration and Test) - Intern",
+   "location": "Moorestown, NJ, US",
+   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477267744",
+   "posted": "2026-10-15",
+   "body": "Standard Job Description By bringing together people that use their passion for purposeful innovation, at Lockheed Martin we keep people safe and solve the world's most complex challenges. Our people are some of the greatest minds in the industry and truly make Lockheed Martin a great place to work. With our employees as our priority, we provide diverse career opportunities designed to propel development and boost agility. Our flexible schedules, competitive pay, and comprehensive benefits enable our employees to live a healthy, fulfilling life at and outside of work. At Lockheed Martin, we place an emphasis on empowering our employees by fostering innovation, integrity, and exemplifying the epitome of corporate responsibility. This is a place for engineers, scientists, and problem-solvers who are ready to engage deeply, think critically, and build with purpose. You will not just launch a career. You will be part of something bigger. This is where the best are built. Lockheed Martin Rotary and Mission Systems is seeking a Summer 2027 Systems Engineer (Integration and Test) Intern. Here at Lockheed Martin's Rotary and Mission Systems (RMS) business in Moorestown, NJ we are responsible for integrating, testing, and demonstrating some of our customers most complex systems. As an engineering co-op in our System Integration and Test (SI&T) department, you will be a part of the team responsible for high level system test planning and test execution for our key customers, including US Navy, US Coast Guard, US Missile Defense Agency, US Air Force, and international. In this position, the successful candidate will experience responsibilities in one or more of the following domains:System-level integration of software and hardware components to verify system requirements in a lab and end-user environment.Model-Based Systems Engineering to plan, implement, and report on SI&T activities.Data analysis to evaluate, document, troubleshoot, and correct system/subsystem anomalies found during scenario testing.Test Procedures and Test Reports to verify requirementsProgram technical leadership and functional management to meet cost, schedule and technical performance objectives.Additionally, the successful candidate will have the potential to work with our Government customers and customer representatives in all of the above tasks. Must be a US Citizen. This position will require a government security clearance. This position is located at a facility that requires special access. Basic Qualifications \u2022 Pursuing Bachelor of Science in Systems Engineering, Aerospace Engineering, Computer Engineering, Mechanical Engineering, Electrical Engineering, Physics, Mathematics, Computer Science, or equivalent/related discipline. \u2022 Basic understanding of any of the following: engineering principles, testing methodologies, software development methodologies, system architecture, system integration and test, or system design. \u2022 Flexibility to work non-standard work shifts as required by the supported program including Fridays and occasional off hours. \u2022 Must be a US Citizen; this position will require a government security clearance. This position is located at a facility that requires special access. Desired Skills \u2022 Strong analytical, problem solving and leadership skills. \u2022 Proficient in the use/working knowledge of Unix, Linux, C++,Java, Python, and Matlab. \u2022 Experience in multiple languages and/or familiarity with software code review, software troubleshooting, software integration, and software test is desired. Pay Information Full-Time Salary Range: $22.66 - $31.67 At Lockheed Martin, we know mission success starts with taking care of our people. Our Total Rewards program is designed to attract top talent, support your well-being, and help you grow\u2014both professionally and personally. The salary range for this position is as listed on the requisition. Please note that the salary information listed is a general guideline only. Lockheed Martin considers factors such as (but not limited to) scope and responsibilities of the position, candidate's work experience, education/ training, key skills as well as market(work location) and business considerations when extending an offer. Benefits offered: Medical, Dental, Vision, Flexible work arrangements and schedules (e.g., 4x10), 401(k) match, Paid time off, Holidays, Parental Leave, EAP, Flexible Spending Accounts, Education Assistance, Life Insurance, Short-Term Disability, and Long-Term Disability. Annual short-term and/or long-term incentive compensation programs may be offered depending on the position. Payments under these annual programs are not guaranteed and can vary from year to year and are tied to a range of performance metrics. For (Washington state applicants only) Non-represented full-time employees: accrue at least 10 hours per month of Paid Time Off (PTO) to be used for incidental absences and other reasons; receive at least 90 hours for holidays. Represented full time employees accrue 6.67 hours of Vacation per month; accrue up to 52 hours of sick leave annually; receive at least 96 hours for holidays. PTO, Vacation, sick leave, and holiday hours are prorated based on start date during the calendar year.",
+   "company": "Lockheed Martin",
+   "score": {
+    "total": 60,
+    "base": 48,
+    "fit": 38,
+    "loc": 0,
+    "traj": 13,
+    "pay": -3,
+    "rate": [
+     22.66,
+     31.67
+    ],
+    "fresh": 12,
+    "age": 0.9,
+    "age_basis": "posted",
+    "tier": "B",
+    "why": [
+     [
+      "title: test",
+      12
+     ],
+     [
+      "title: integration",
+      9
+     ],
+     [
+      "body: test plan",
+      6
+     ],
+     [
+      "title: systems",
+      5
+     ],
+     [
+      "body: python",
+      4
+     ],
+     [
+      "body: matlab",
+      2
+     ],
+     [
+      "pay $27/hr",
+      -3
+     ]
+    ]
+   },
+   "first_seen": "2026-10-15T21:35:29+00:00"
+  },
+  {
    "id": "gh:muonspace:5256286007",
    "title": "Environmental Test Engineering Intern (Summer 2027)",
    "location": "San Jose, CA",
@@ -3972,7 +4090,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 12.8,
+    "age": 12.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4025,7 +4143,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.8,
+    "age": 3.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4085,7 +4203,7 @@
      32.0
     ],
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4141,7 +4259,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 58.8,
+    "age": 58.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4182,46 +4300,6 @@
    "first_seen": "2026-10-13T23:28:52+00:00"
   },
   {
-   "id": "ef:microsoft.com:200060962",
-   "title": "Researcher Intern, CoreAI",
-   "location": "Redmond, WA, US; Mountain View, CA, US",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557027387",
-   "posted": "2026-10-15",
-   "body": "Overview The Code|AI team leads applied research and data science for GitHub Copilot and VS Code, working on the future of AI for developers. We are a diverse, entrepreneurial, and multi-disciplinary group of scientists, researchers, and engineers with a passion for using AI to improve the productivity of millions of developers around the world. We have released AI for code advancements in Github Copilot, VS Code, Visual Studio and Copilot extensions in other IDEs. Our team focuses on post-training code specific models like code completion, code embedding models and agentic research for Copilot Coding Agent, Copilot CLI and Copilot Code Review. We embrace open source and continue to share our research and work with the developer and research communities to advance AI in Developer tools. We are seeking entrepreneurial and creative Applied Researcher Interns to lead groundbreaking research projects, taking these from research into product. You will collaborate with scientists, engineers, and designers across Microsoft Research, Microsoft product teams, and Github. You will have an opportunity to build and train state-of-the-art models, and opportunities to both apply and advance existing approaches of using LLMs for software engineering, from using RAG to evaluation. Most importantly, you will have an opportunity to work closely with several developer product teams to run experiments, evaluate, iterate, and improve your AI projects on a large scale. Microsoft\u2019s mission is to empower every person and every organization on the planet to achieve more. As employees, we come together with a growth mindset, innovate to empower others and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond. This is for a Summer 2027 Internship. #Code|AI #CoreAI #EiP Responsibilities Contributes to projects on the future of AI for developers. Collaborates across disciplines with product teams across Microsoft and Github. Stays up to date with the research literature and product advances in AI for software engineering. Creates new datasets from both the world's public code and Microsoft's internal data. Builds and manages large-scale ML experiments and models. Embodies our Culture and Values Qualifications Required qualifications Currently enrolled in a Doctorate Degree program in a relevant field. Must be enrolled in a Doctorate Degree program in a relevant field for the role during the academic term immediately before the internship. Must have at least one additional quarter/semester of a Doctorate Degree program program in area relevant for the role remaining following the completion of the internship. Additional Qualifications: 1+ year(s) experience in Calculus, Probability and Statistics and/or Machine Learning. 1+ year(s) experience in one or more general purpose programming languages including: C/C++, Java, R or Python, and domain relevant libraries and frameworks (e.g., PyTorch). 1+ year(s) experience (classroom or work related) in one or more areas of computer science, such as Natural Language Understanding, Neural Networks, Computer Vision, Machine Learning, Deep Learning, Algorithmic Foundations of Optimization, Data Science, Privacy, etc. The base pay range for this internship is USD $5,690.00 - $11,210.00 per month. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $7,410.00 - $12,250.00 per month. Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-intern-pay Microsoft accepts applications and processes offers for these roles on an ongoing basis throughout the academic calendar (September - April) This position will be open for a minimum of 5 days, with applications accepted on an ongoing basis until the position is filled. Microsoft is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance with religious accommodations and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",
-   "company": "Microsoft",
-   "score": {
-    "total": 59,
-    "base": 47,
-    "fit": 8,
-    "loc": 8,
-    "traj": 19,
-    "pay": 12,
-    "rate": [
-     32.89,
-     70.81
-    ],
-    "fresh": 12,
-    "age": 0.8,
-    "age_basis": "posted",
-    "tier": "B",
-    "why": [
-     [
-      "pay $52/hr",
-      12
-     ],
-     [
-      "body: python",
-      4
-     ],
-     [
-      "body: computer vision",
-      4
-     ]
-    ]
-   },
-   "first_seen": "2026-10-15T09:17:02+00:00"
-  },
-  {
    "id": "gh:rocketlab:7986794003",
    "title": "Fluid Systems Intern Summer 2027",
    "location": "Long Beach, CA",
@@ -4241,7 +4319,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 36.8,
+    "age": 36.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4301,7 +4379,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 45.8,
+    "age": 45.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4358,7 +4436,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 14.8,
+    "age": 14.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4415,7 +4493,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.8,
+    "age": 3.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4463,7 +4541,7 @@
      37.25
     ],
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4520,7 +4598,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4557,6 +4635,104 @@
    "first_seen": "2026-10-13T20:39:35+00:00"
   },
   {
+   "id": "wd:globalhr:01882706",
+   "title": "Quality Engineering Intern (Summer 2027)",
+   "location": "US-CA-FAIRFIELD-3530 ~ 3530 Branscombe Rd ~ BRANSCOMBE",
+   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CA-FAIRFIELD-3530--3530-Branscombe-Rd--BRANSCOMBE/Quality-Engineering-Intern--Summer-2027-_01882706",
+   "posted": "2026-10-15",
+   "body": "Date Posted: 2026-10-15 Country: United States of America Location: US-CA-FAIRFIELD-3530 ~ 3530 Branscombe Rd ~ BRANSCOMBE Position Role Type: Onsite U.S. Citizen, U.S. Person, or Immigration Status Requirements: U.S. citizenship is required, as only U.S. citizens are authorized to access information under this program/contract. Security Clearance Type: None/Not Required Security Clearance Status: Not Required Are you ready to explore the world of aerospace and defense? Do you want to learn from and collaborate with some of the greatest minds in the industry? At RTX, our internships, co-ops and full-time careers provide an exceptional foundation to work on complex problems, advance your skills and create a safer, more connected world. Discover opportunities to make a difference at RTX. What You Will Do Join our Ejection and Propulsion department in Fairfield, CA, as a Quality Engineering Intern. This role offers an exciting opportunity to contribute to the development and maintenance of high-quality engineering processes and products. You will gain hands-on experience and collaborate with professionals in a dynamic environment. Key responsibilities include: Supporting defect reduction initiatives through root cause analysis and implementation of corrective actions. Collaborating with Quality Engineers and Manufacturing Engineers on manufacturing and inspection activities. Implementing process improvements using continuous improvement tools and methodologies. Applying engineering principles to support quality assurance activities. Qualifications You Must Have Actively enrolled in a Mechanical, Industrial, Aerospace or Manufacturing Engineering degree or a related field through the duration of the internship. Experience with inspection tooling and quality assurance processes. Knowledge of root cause analysis techniques. Experience reading and interpret engineering drawings and specifications. Experience may be obtained through on-the-job experience, research, coursework, or projects. Qualifications We Prefer Experience with Power BI for data analysis and visualization. Knowledge of Geometric Dimensioning and Tolerancing (GD&T). What We Offer Our values drive our actions, behaviors, and performance with a vision for a safer, more connected world. At RTX we value: Safety, Trust, Respect, Accountability, Collaboration, and Innovation. Learn More & Apply Now! Please ensure the role type (defined below) is appropriate for your needs before applying to this role. Onsite: Employees who are working in Onsite roles will work primarily onsite. This includes all production and maintenance employees, as they are essential to the development of our products. As part of our commitment to maintaining a secure hiring process, candidates may be asked to attend select steps of the interview process in-person at one of our office locations, regardless of whether the role is designated as on-site, hybrid or remote. The salary range for this role is 42,000 USD - 88,000 USD. The salary range provided is a good faith estimate representative of all experience levels. RTX considers several factors when extending an offer, including but not limited to, the role, function and associated responsibilities, a candidate\u2019s work experience, location, education/training, and key skills. Hired applicants may be eligible for benefits, including but not limited to, medical, dental, vision, life insurance, short-term disability, long-term disability, 401(k) match, flexible spending accounts, flexible work schedules, employee assistance program, Employee Scholar Program, parental leave, paid time off, and holidays. Specific benefits are dependent upon the specific business unit as well as whether or not the position is covered by a collective-bargaining agreement. Hired applicants may be eligible for annual short-term and/or long-term incentive compensation programs depending on the level of the position and whether or not it is covered by a collective-bargaining agreement. Payments under these annual programs are not guaranteed and are dependent upon a variety of factors including, but not limited to, individual performance, business unit performance, and/or the company\u2019s performance. This role is a U.S.-based role. If the successful candidate resides in a U.S. territory, the appropriate pay structure and benefits will apply. RTX anticipates the application window closing approximately 40 days from the date the notice was posted. However, factors such as candidate flow and business necessity may require RTX to shorten or extend the application window. RTX is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability or veteran status, or any other applicable state or federal protected class. RTX provides affirmative action in employment for qualified Individuals with a Disability and Protected Veterans in compliance with Section 503 of the Rehabilitation Act and the Vietnam Era Veterans\u2019 Readjustment Assistance Act. Privacy Policy and Terms: Click on this link to read the Policy and Terms",
+   "company": "RTX",
+   "score": {
+    "total": 56,
+    "base": 44,
+    "fit": 31,
+    "loc": 0,
+    "traj": 13,
+    "pay": 0,
+    "rate": null,
+    "fresh": 12,
+    "age": 0.9,
+    "age_basis": "posted",
+    "tier": "B",
+    "why": [
+     [
+      "body: gd&t",
+      8
+     ],
+     [
+      "body: root cause",
+      7
+     ],
+     [
+      "body: engineering drawings",
+      6
+     ],
+     [
+      "title: engineering intern",
+      4
+     ],
+     [
+      "title: quality",
+      3
+     ],
+     [
+      "body: drawings",
+      3
+     ]
+    ]
+   },
+   "first_seen": "2026-10-15T21:35:29+00:00"
+  },
+  {
+   "id": "wd:globalhr:01882452",
+   "title": "Quality Engineering Intern (Summer 2027)",
+   "location": "US-CT-WINDSOR LOCKS-B1A ~ 1 Hamilton Rd ~ BLDG 1A",
+   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CT-WINDSOR-LOCKS-B1A--1-Hamilton-Rd--BLDG-1A/Quality-Engineering-Intern--Summer-2027-_01882452",
+   "posted": "2026-10-15",
+   "body": "Date Posted: 2026-10-15 Country: United States of America Location: US-CT-WINDSOR LOCKS-B1A ~ 1 Hamilton Rd ~ BLDG 1A Position Role Type: Onsite U.S. Citizen, U.S. Person, or Immigration Status Requirements: U.S. citizenship is required, as only U.S. citizens are authorized to access information under this program/contract. Security Clearance Type: None/Not Required Security Clearance Status: Not Required Are you ready to explore the world of aerospace and defense? Do you want to learn from and collaborate with some of the greatest minds in the industry? At RTX, our internships, co-ops and full-time careers provide an exceptional foundation to work on complex problems, advance your skills and create a safer, more connected world. Discover opportunities to make a difference at RTX. What You Will Do Join our Civil Space department in Windsor Locks, CT, as a Quality Engineering Intern. This role offers an exciting opportunity to contribute to the development and maintenance of high-quality engineering processes and products. You will gain hands-on experience and collaborate with professionals in a dynamic environment. Key responsibilities include: Supporting defect reduction initiatives through root cause analysis and implementation of corrective actions. Collaborating with Quality Engineers and Manufacturing Engineers on manufacturing and inspection activities. Implementing process improvements using continuous improvement tools and methodologies. Applying engineering principles to support quality assurance activities. Qualifications You Must Have Actively enrolled in a Mechanical, Industrial, Aerospace or Manufacturing Engineering degree or a related field through the duration of the internship. Experience with inspection tooling and quality assurance processes. Knowledge of root cause analysis techniques. Experience reading and interpret engineering drawings and specifications. Experience may be obtained through on-the-job experience, research, coursework, or projects. Qualifications We Prefer Experience with Power BI for data analysis and visualization. Knowledge of Geometric Dimensioning and Tolerancing (GD&T). What We Offer Our values drive our actions, behaviors, and performance with a vision for a safer, more connected world. At RTX we value: Safety, Trust, Respect, Accountability, Collaboration, and Innovation. Learn More & Apply Now! Please ensure the role type (defined below) is appropriate for your needs before applying to this role.: This position is considered safety sensitive in accordance with NASA Guidelines. Candidate will be subject to drug and alcohol testing per NASA's regulation Onsite: Employees who are working in Onsite roles will work primarily onsite. This includes all production and maintenance employees, as they are essential to the development of our products. As part of our commitment to maintaining a secure hiring process, candidates may be asked to attend select steps of the interview process in-person at one of our office locations, regardless of whether the role is designated as on-site, hybrid or remote. The salary range for this role is 37,000 USD - 82,000 USD. The salary range provided is a good faith estimate representative of all experience levels. RTX considers several factors when extending an offer, including but not limited to, the role, function and associated responsibilities, a candidate\u2019s work experience, location, education/training, and key skills. Hired applicants may be eligible for benefits, including but not limited to, medical, dental, vision, life insurance, short-term disability, long-term disability, 401(k) match, flexible spending accounts, flexible work schedules, employee assistance program, Employee Scholar Program, parental leave, paid time off, and holidays. Specific benefits are dependent upon the specific business unit as well as whether or not the position is covered by a collective-bargaining agreement. Hired applicants may be eligible for annual short-term and/or long-term incentive compensation programs depending on the level of the position and whether or not it is covered by a collective-bargaining agreement. Payments under these annual programs are not guaranteed and are dependent upon a variety of factors including, but not limited to, individual performance, business unit performance, and/or the company\u2019s performance. This role is a U.S.-based role. If the successful candidate resides in a U.S. territory, the appropriate pay structure and benefits will apply. RTX anticipates the application window closing approximately 40 days from the date the notice was posted. However, factors such as candidate flow and business necessity may require RTX to shorten or extend the application window. RTX is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability or veteran status, or any other applicable state or federal protected class. RTX provides affirmative action in employment for qualified Individuals with a Disability and Protected Veterans in compliance with Section 503 of the Rehabilitation Act and the Vietnam Era Veterans\u2019 Readjustment Assistance Act. Privacy Policy and Terms: Click on this link to read the Policy and Terms",
+   "company": "RTX",
+   "score": {
+    "total": 56,
+    "base": 44,
+    "fit": 31,
+    "loc": 0,
+    "traj": 13,
+    "pay": 0,
+    "rate": null,
+    "fresh": 12,
+    "age": 0.9,
+    "age_basis": "posted",
+    "tier": "B",
+    "why": [
+     [
+      "body: gd&t",
+      8
+     ],
+     [
+      "body: root cause",
+      7
+     ],
+     [
+      "body: engineering drawings",
+      6
+     ],
+     [
+      "title: engineering intern",
+      4
+     ],
+     [
+      "title: quality",
+      3
+     ],
+     [
+      "body: drawings",
+      3
+     ]
+    ]
+   },
+   "first_seen": "2026-10-15T21:35:29+00:00"
+  },
+  {
    "id": "gh:rocketlab:7984564003",
    "title": "Manufacturing Engineering Intern Summer 2027",
    "location": "Long Beach, CA",
@@ -4576,7 +4752,7 @@
      28.0
     ],
     "fresh": 0,
-    "age": 29.8,
+    "age": 29.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4633,7 +4809,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4686,7 +4862,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 0.8,
+    "age": 0.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4734,7 +4910,7 @@
      48.0
     ],
     "fresh": 3,
-    "age": 15.8,
+    "age": 15.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4783,7 +4959,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 43.8,
+    "age": 43.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4832,7 +5008,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4877,7 +5053,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.8,
+    "age": 58.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4933,7 +5109,7 @@
      20.0
     ],
     "fresh": 0,
-    "age": 24.8,
+    "age": 24.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4993,7 +5169,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 24.8,
+    "age": 24.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5045,7 +5221,7 @@
      32.0
     ],
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5094,7 +5270,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5139,7 +5315,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.8,
+    "age": 3.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5188,7 +5364,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 15.8,
+    "age": 15.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5237,7 +5413,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 57.8,
+    "age": 57.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5282,7 +5458,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 16.8,
+    "age": 16.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5315,63 +5491,6 @@
    "first_seen": "2026-10-13T20:39:35+00:00"
   },
   {
-   "id": "wd:draper:JR002943",
-   "title": "Mechanical Engineering & System Packaging Intern (Summer 2027)",
-   "location": "Cambridge, MA",
-   "url": "https://draper.wd5.myworkdayjobs.com/Draper_Careers/job/Cambridge-MA/Mechanical-Engineering---System-Packaging-Intern--Summer-2027-_JR002943",
-   "posted": "2026-09-21",
-   "body": "Overview: Draper is an independent, nonprofit research and development company headquartered in Cambridge, MA. The 2,000+ employees of Draper tackle important national challenges with a promise of delivering successful and usable solutions. From military defense and space exploration to biomedical engineering, lives often depend on the solutions we provide. Our multidisciplinary teams of engineers and scientists work in a collaborative environment that inspires the cross-fertilization of ideas necessary for true innovation. For more information about Draper, visit www.draper.com . Job Description Summary: As a summer intern in the Mechanical Engineering Division, you will be exposed to a broad range of technical challenges where you can apply your knowledge and learn new skills while seeing how problems of national interest are solved. Your experience can range from applying engineering principles while designing and analyzing components to working directly with engineers and technicians to fabricate and assemble hardware systems. Job Description: Duties/Responsibilities Design, develop, and enhancement engineering solutions for challenging problems. Implement, test, perform analysis, and provide documentation support. Generate and present test reports including plots, tables, evaluation criteria, and conclusions from data collected and analyzed throughout the test process. Complete assignments designed to develop a practical knowledge of processes, procedures, equipment, facilities, and systems as well as their interrelationships within engineering disciplines. Performs other duties as assigned. Program Requirements Enrolled in an accredited full-time undergraduate or graduate degree program required. There is flexibility regarding hours and program duration based on applicant\u2019s school schedule and availability. Skills/Abilities Excellent written and oral communication skills. Excellent work ethic with the ability to work independently or in a team environment. Ability to adapt to ever-changing environments, risks, and vulnerabilities. Strong computer skills including MS Word, PowerPoint and Excel. Additional Job Description: Job Description Duties/Responsibilities \u2022 Design, develop, and enhancement engineering solutions for challenging problems. \u2022 Implement, test, perform analysis, and provide documentation support. \u2022 Generate and present test reports including plots, tables, evaluation criteria, and conclusions from data collected and analyzed throughout the test process. \u2022 Complete assignments designed to develop a practical knowledge of processes, procedures, equipment, facilities, and systems as well as their interrelationships within engineering disciplines. \u2022 Performs other duties as assigned. Program Requirements \u2022 Enrolled in an accredited full-time undergraduate or graduate degree program required. \u2022 There is flexibility regarding hours and program duration based on applicant\u2019s school schedule and availability. Skills/Abilities \u2022 Excellent written and oral communication skills. \u2022 Excellent work ethic with the ability to work independently or in a team environment. \u2022 Ability to adapt to ever-changing environments, risks, and vulnerabilities. \u2022 Strong computer skills including MS Word, PowerPoint and Excel. Additional Job Description Additional Job Description Our interns create detailed designs using 3-D CAD software (specifically SolidWorks and/or PTC Creo) and may analyze the performance of systems by conducting simulations using finite element software (such as Ansys). While working on tasks, you will gain a better understanding of how to design with consideration for manufacturability, proper drawing creation and tolerancing, and/or analysis for structural and thermal performance. When parts need to be fabricated, you will have the opportunity to work with highly skilled operators in Draper\u2019s extensive machine shop, rapid prototyping lab featuring multiple 3D printers, or circuit card assembly facility. You will also have the opportunity to interact with other facilities such as materials characterization or metrology. Our interns work on 'live' programs, and will develop a practical knowledge of processes, procedures, equipment, facilities, and systems. Assignments will also provide an opportunity to develop valuable networking connections which will help prepare and develop your skills for future career opportunities. Actual project tasks will depend on immediate program priorities. Applicants selected for this position may be required to obtain and maintain a government security clearance. Connect With Draper for Future Opportunities! If you don't find the right posting in our Career Opportunities, you may submit your resume for future consideration. Job Location - City: Cambridge Job Location - State: Massachusetts Job Location - Postal Code: 02139-3563 The US base salary range for this full-time position is $20.00 - $45.00 Our salary ranges are determined by role, level, and location. The range displayed on each job posting reflects the minimum and maximum target salaries for the position across all US locations. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training. Union ranges will be in compliance with the collective bargaining agreement's approved rates by location and role. Your recruiter can share more about the specific salary range for your preferred location during the hiring process. Please note that the compensation details listed in US role postings reflect the base salary only, and does not include bonuses or benefits. Our work is very important to us, but so is our life outside of work. Draper supports many programs to improve work-life balance including workplace flexibility, employee clubs ranging from photography to yoga, health and finance workshops, off site social events and discounts to local museums and cultural activities. If this specific job opportunity and the chance to work at a nationally renowned R&D innovation company appeals to you, apply now www.draper.com/careers . Draper is committed to creating an inclusive environment. We understand the value of inclusivity and its impact on a high-performance culture. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, disability, age, sexual orientation, national origin, veteran status, or genetic information. Draper is committed to providing access, equal opportunity, and reasonable accommodation for individuals with disabilities in employment, its services, programs, and activities. To request reasonable accommodation, please contact hr@draper.com .",
-   "company": "Draper",
-   "score": {
-    "total": 53,
-    "base": 53,
-    "fit": 33,
-    "loc": 8,
-    "traj": 12,
-    "pay": 0,
-    "rate": null,
-    "fresh": 0,
-    "age": 24.8,
-    "age_basis": "posted",
-    "tier": "A",
-    "why": [
-     [
-      "title: mechanical",
-      7
-     ],
-     [
-      "body: rapid prototyping",
-      5
-     ],
-     [
-      "body: solidworks",
-      4
-     ],
-     [
-      "body: finite element",
-      4
-     ],
-     [
-      "body: metrology",
-      4
-     ],
-     [
-      "body: doe",
-      3
-     ],
-     [
-      "body: creo",
-      3
-     ],
-     [
-      "body: fea",
-      3
-     ]
-    ]
-   },
-   "first_seen": "2026-10-13T20:39:35+00:00"
-  },
-  {
    "id": "gh:generalmatter:5376060008",
    "title": "Summer 2027 Internship - Manufacturing Engineering",
    "location": "Los Angeles, CA",
@@ -5391,7 +5510,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 55.8,
+    "age": 55.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5451,7 +5570,7 @@
      50.82
     ],
     "fresh": -4,
-    "age": 43.8,
+    "age": 43.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5511,7 +5630,7 @@
      28.15
     ],
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5568,7 +5687,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 27.8,
+    "age": 27.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5624,7 +5743,7 @@
      35.0
     ],
     "fresh": 3,
-    "age": 17.8,
+    "age": 17.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5680,7 +5799,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 14.8,
+    "age": 14.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5737,7 +5856,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 55.8,
+    "age": 55.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5793,7 +5912,7 @@
      50.0
     ],
     "fresh": 3,
-    "age": 15.8,
+    "age": 15.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5845,7 +5964,7 @@
      45.0
     ],
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5893,7 +6012,7 @@
      32.0
     ],
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5938,7 +6057,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5987,7 +6106,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -6039,7 +6158,7 @@
      37.0
     ],
     "fresh": -4,
-    "age": 56.8,
+    "age": 56.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6099,7 +6218,7 @@
      24.23
     ],
     "fresh": 0,
-    "age": 29.8,
+    "age": 29.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6155,7 +6274,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 22.8,
+    "age": 22.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6203,7 +6322,7 @@
      38.0
     ],
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -6260,7 +6379,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 27.8,
+    "age": 27.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6313,7 +6432,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -6369,7 +6488,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 41.8,
+    "age": 41.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6429,7 +6548,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 45.8,
+    "age": 45.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6489,7 +6608,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 45.8,
+    "age": 45.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6549,7 +6668,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 45.8,
+    "age": 45.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6609,7 +6728,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 45.8,
+    "age": 45.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6666,7 +6785,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 30.8,
+    "age": 30.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6722,7 +6841,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 13.8,
+    "age": 13.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -6774,7 +6893,7 @@
      30.0
     ],
     "fresh": 3,
-    "age": 16.8,
+    "age": 16.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -6831,7 +6950,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 10.8,
+    "age": 10.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -6868,7 +6987,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 27.8,
+    "age": 27.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6921,7 +7040,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -6950,6 +7069,51 @@
    "first_seen": "2026-10-13T22:04:35+00:00"
   },
   {
+   "id": "ef:bostonscientific.com:635280",
+   "title": "Electrophysiology R&D Engineering Intern",
+   "location": "Arden Hills, MN, US",
+   "url": "https://bostonscientific.eightfold.ai/careers/job/563602813639456",
+   "posted": "2026-10-15",
+   "body": "Additional Location(s): US-MN-Arden Hills Diversity - Innovation - Caring - Global Collaboration - Winning Spirit - High Performance At Boston Scientific, we\u2019ll give you the opportunity to harness all that\u2019s within you by working in teams of diverse and high-performing employees, tackling some of the most important health industry challenges. With access to the latest tools, information and training, we\u2019ll help you in advancing your skills and career. Here, you\u2019ll be supported in progressing \u2013 whatever your ambitions. We will consider qualified applicants of all ages who are starting (or restarting) their careers At Boston Scientific, we value collaboration and synergy. This role follows an on-site work model, requiring employees to be in our local office at least four to five days per week. Relocation and housing assistance may be available to those who meet the eligibility criteria. Boston Scientific will not offer sponsorship or take over sponsorship of an employment VISA for this position at this time Our Purpose: Our R&D engineers are tasked with designing and developing innovative, breakthrough next-generation medical devices that improve and extend the lives of patients around the world. The Electrophysiology (EP) unit has a broad portfolio of technologies to diagnose and treat heart rhythm disorders. The division provides three treatment options for arrhythmias \u2013 pulsed field ablation, cryoablation, and radiofrequency. Solutions are designed to improve procedural efficiencies and facilitate safer, more predictable left atrial access. Your responsibilities will include: Use your problem-solving abilities to perform meaningful engineering work. Have opportunities to expand your professional network. Grow your skillset through a combination of training, hands-on experience, and mentorship. Collaborate with a cross-functional team. Get exposure to what it is like working in a Fortune 500 medical device company. Design, fabricate, and test prototype devices to address clinical feedback. Analyze large clinical databases to inform device design and procedural technique. View live and recorded clinical procedures and developing test methods to replicate use. Required Qualifications: Must graduate between Fall 2027 and Spring 2029 Currently pursuing a bachelors or graduate degree in Mechanical Engineering or Biomedical Engineering or pursing a bachelors or graduate degree in Engineering with an emphasis/minor in Biomedical or Mechanical engineering. Must be able to commit to one of the following full internship program periods: May 17th \u2013 August 6th OR May 24th \u2013 August 13th Must be eligible to work in the U.S. without company sponsorship, now or in the future, for employment-based work authorization Have reliable transportation to and from the Arden Hills, MN Boston Scientific Corporate location Preferred Qualifications: Ability to communicate effectively with diverse, cross-functional teams. Passion to learn new technologies and find new solutions. Knowledge of analytical techniques and statistical analysis. Requisition ID: 635280 Minimum Salary: $ [[cust_salaryMin]] Maximum Salary: $ [[cust_salaryMax]] The anticipated compensation listed above and the value of core and optional employee benefits offered by Boston Scientific (BSC) \u2013 see www.bscbenefitsconnect.com\u2014 will vary based on actual location of the position and other pertinent factors considered in determining actual compensation for the role. Compensation will be commensurate with demonstrable level of experience and training, pertinent education including licensure and certifications, among other relevant business or organizational needs. At BSC, it is not typical for an individual to be hired near the bottom or top of the anticipated salary range listed above. Compensation for non-exempt (hourly), non-sales roles may also include variable compensation from time to time (e.g., any overtime and shift differential) and annual bonus target (subject to plan eligibility and other requirements). Compensation for exempt, non-sales roles may also include variable compensation, i.e., annual bonus target and long-term incentives (subject to plan eligibility and other requirements). For MA positions : It is unlawful to require or administer a lie detector test for employment. Violators are subject to criminal penalties and civil liability. Boston Scientific transforms lives through innovative medical technologies that improve the health of patients around the world. As a global medical technology leader for more than 45 years, we advance science for life by providing a broad range of high-performance solutions that address unmet patient needs and reduce the cost of healthcare. Our portfolio of devices and therapies helps physicians diagnose and treat complex cardiovascular, respiratory, digestive, oncological, neurological and urological diseases and conditions. Learn more at www.bostonscientific.com and follow us on LinkedIn . Boston Scientific Corporation has been and will continue to be an equal opportunity employer. To ensure full implementation of its equal employment policy, the Company will continue to take steps to assure that recruitment, hiring, assignment, promotion, compensation, and all other personnel decisions are made and administered without regard to race, religion, color, national origin, citizenship, sex, sexual orientation, gender identity, gender expression, veteran status, age, mental or physical disability, genetic information or any other protected class. Please be advised that certain US based positions, including without limitation field sales and service positions that call on hospitals and/or health care centers, require acceptable proof of COVID-19 vaccination status. Candidates will be notified during the interview and selection process if the role(s) for which they have applied require proof of vaccination as a condition of employment. Boston Scientific continues to evaluate its policies and protocols regarding the COVID-19 vaccine and will comply with all applicable state and federal law and healthcare credentialing requirements. As employees of the Company, you will be expected to meet the ongoing requirements for your roles, including any new requirements, should the Company\u2019s policies or protocols change with regard to COVID-19 vaccination. Among other requirements, Boston Scientific maintains specific prohibited substance test requirements for safety-sensitive positions. This role is deemed safety-sensitive and, as such, candidates will be subject to a prohibited substance test as a requirement. The goal of the prohibited substance testing is to increase workplace safety in compliance with the applicable law.",
+   "company": "Boston Scientific",
+   "score": {
+    "total": 49,
+    "base": 37,
+    "fit": 23,
+    "loc": 0,
+    "traj": 14,
+    "pay": 0,
+    "rate": null,
+    "fresh": 12,
+    "age": 0.9,
+    "age_basis": "posted",
+    "tier": "B",
+    "why": [
+     [
+      "title: r&d",
+      6
+     ],
+     [
+      "body: housing assistance",
+      5
+     ],
+     [
+      "title: engineering intern",
+      4
+     ],
+     [
+      "body: prototype",
+      4
+     ],
+     [
+      "body: relocation",
+      4
+     ]
+    ]
+   },
+   "first_seen": "2026-10-15T21:35:29+00:00"
+  },
+  {
    "id": "wd:gehc:R4043923",
    "title": "Edison Engineering Development Program Internship - Hardware",
    "location": "Waukesha; Aurora",
@@ -6966,7 +7130,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 44.8,
+    "age": 44.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -7026,7 +7190,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 17.8,
+    "age": 17.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7082,7 +7246,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 17.8,
+    "age": 17.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7127,7 +7291,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7172,7 +7336,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 9.8,
+    "age": 9.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7220,7 +7384,7 @@
      25.0
     ],
     "fresh": 0,
-    "age": 29.8,
+    "age": 29.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7280,7 +7444,7 @@
      28.0
     ],
     "fresh": 0,
-    "age": 29.8,
+    "age": 29.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7340,7 +7504,7 @@
      22.0
     ],
     "fresh": 6,
-    "age": 8.8,
+    "age": 8.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7400,7 +7564,7 @@
      35.45
     ],
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7453,7 +7617,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 6.8,
+    "age": 6.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7505,7 +7669,7 @@
      24.0
     ],
     "fresh": 3,
-    "age": 15.8,
+    "age": 15.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7565,7 +7729,7 @@
      34.0
     ],
     "fresh": 3,
-    "age": 13.8,
+    "age": 13.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7622,7 +7786,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 30.8,
+    "age": 30.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7670,7 +7834,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 55.8,
+    "age": 55.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -7727,7 +7891,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.8,
+    "age": 3.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7780,7 +7944,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7828,7 +7992,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 15.8,
+    "age": 15.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7857,6 +8021,47 @@
    "first_seen": "2026-10-13T02:04:57+00:00"
   },
   {
+   "id": "wd:globalhr:01882570",
+   "title": "Quality Engineering Intern (Summer 2027)",
+   "location": "US-NH-DURHAM-121 ~ 121 Technology Dr ~ BLDG 125",
+   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-NH-DURHAM-121--121-Technology-Dr--BLDG-125/Quality-Engineering-Intern--Summer-2027-_01882570",
+   "posted": "2026-10-15",
+   "body": "Date Posted: 2026-10-15 Country: United States of America Location: US-NH-DURHAM-121 ~ 121 Technology Dr ~ BLDG 125 Position Role Type: Onsite U.S. Citizen, U.S. Person, or Immigration Status Requirements: U.S. citizenship is required, as only U.S. citizens are authorized to access information under this program/contract. Security Clearance Type: None/Not Required Security Clearance Status: Not Required Are you ready to explore the world of aerospace and defense? Do you want to learn from and collaborate with some of the greatest minds in the industry? At RTX, our internships, co-ops and full-time careers provide an exceptional foundation to work on complex problems, advance your skills and create a safer, more connected world. Discover opportunities to make a difference at RTX. What You Will Do Join our team as a Quality Engineering Intern and contribute to the development and maintenance of quality systems and protocols that ensure product reliability and compliance. This onsite role offers hands-on experience in quality evaluation and control within a manufacturing environment. You will collaborate with cross-functional teams to drive quality improvements and ensure compliance with project and product requirements. Key responsibilities include: Supporting the development, modification, and maintenance of quality evaluation and control systems. Assisting with testing plans, risk management, and root cause analysis to address product quality issues. Contributing to proactive quality strategies, process improvements, and engineering changes. Ensuring compliance with quality standards and developing inspection technologies and methodologies. Qualifications You Must Have Actively pursuing a degree in Mechanical, Industrial, Aerospace, Manufacturing Engineering or a related discipline and enrolled through the duration of the internship. Experience with Microsoft Excel for data analysis and visualization. Knowledge of root cause analysis techniques. Experience may be obtained through on-the-job experience, research, coursework, or projects. Qualifications We Prefer Experience with Production Part Approval Process (PPAP) elements, such as PFMEA, MSA, and Control Plans. Background in metals manufacturing and process improvement. Advanced coding skills for data analysis and visualization. Exposure to continuous improvement tools and methods. What We Offer Our values drive our actions, behaviors, and performance with a vision for a safer, more connected world. At RTX, we value Safety, Trust, Respect, Accountability, Collaboration, and Innovation. Learn More & Apply Now! Please ensure the role type (defined below) is appropriate for your needs before applying to this role. Onsite: Employees who are working in Onsite roles will work primarily onsite. This includes all production and maintenance employees, as they are essential to the development of our products. As part of our commitment to maintaining a secure hiring process, candidates may be asked to attend select steps of the interview process in-person at one of our office locations, regardless of whether the role is designated as on-site, hybrid or remote. The salary range for this role is 37,000 USD - 82,000 USD. The salary range provided is a good faith estimate representative of all experience levels. RTX considers several factors when extending an offer, including but not limited to, the role, function and associated responsibilities, a candidate\u2019s work experience, location, education/training, and key skills. Hired applicants may be eligible for benefits, including but not limited to, medical, dental, vision, life insurance, short-term disability, long-term disability, 401(k) match, flexible spending accounts, flexible work schedules, employee assistance program, Employee Scholar Program, parental leave, paid time off, and holidays. Specific benefits are dependent upon the specific business unit as well as whether or not the position is covered by a collective-bargaining agreement. Hired applicants may be eligible for annual short-term and/or long-term incentive compensation programs depending on the level of the position and whether or not it is covered by a collective-bargaining agreement. Payments under these annual programs are not guaranteed and are dependent upon a variety of factors including, but not limited to, individual performance, business unit performance, and/or the company\u2019s performance. This role is a U.S.-based role. If the successful candidate resides in a U.S. territory, the appropriate pay structure and benefits will apply. RTX anticipates the application window closing approximately 40 days from the date the notice was posted. However, factors such as candidate flow and business necessity may require RTX to shorten or extend the application window. RTX is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability or veteran status, or any other applicable state or federal protected class. RTX provides affirmative action in employment for qualified Individuals with a Disability and Protected Veterans in compliance with Section 503 of the Rehabilitation Act and the Vietnam Era Veterans\u2019 Readjustment Assistance Act. Privacy Policy and Terms: Click on this link to read the Policy and Terms",
+   "company": "RTX",
+   "score": {
+    "total": 48,
+    "base": 36,
+    "fit": 19,
+    "loc": 4,
+    "traj": 13,
+    "pay": 0,
+    "rate": null,
+    "fresh": 12,
+    "age": 0.9,
+    "age_basis": "posted",
+    "tier": "B",
+    "why": [
+     [
+      "body: root cause",
+      7
+     ],
+     [
+      "body: fmea",
+      5
+     ],
+     [
+      "title: engineering intern",
+      4
+     ],
+     [
+      "title: quality",
+      3
+     ]
+    ]
+   },
+   "first_seen": "2026-10-15T21:35:29+00:00"
+  },
+  {
    "id": "wd:globalhr:01881158",
    "title": "Systems Engineering Intern (Summer 2027)",
    "location": "US-MA-MARLBOROUGH-MA2 ~ 1001 Boston Post Rd ~ BLDG 2",
@@ -7873,7 +8078,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 7.8,
+    "age": 7.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7925,7 +8130,7 @@
      28.0
     ],
     "fresh": 0,
-    "age": 28.8,
+    "age": 28.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7985,7 +8190,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 36.8,
+    "age": 36.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -8042,7 +8247,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 63.8,
+    "age": 63.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -8102,7 +8307,7 @@
      38.0
     ],
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8158,7 +8363,7 @@
      21.6
     ],
     "fresh": 3,
-    "age": 13.8,
+    "age": 13.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8211,7 +8416,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 28.8,
+    "age": 28.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8252,7 +8457,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 0.8,
+    "age": 0.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8300,7 +8505,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 41.8,
+    "age": 41.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -8353,7 +8558,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.8,
+    "age": 58.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -8397,7 +8602,7 @@
      40.0
     ],
     "fresh": 12,
-    "age": 0.8,
+    "age": 0.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8445,7 +8650,7 @@
      40.0
     ],
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8493,7 +8698,7 @@
      40.0
     ],
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8541,7 +8746,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 17.8,
+    "age": 17.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8590,7 +8795,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8622,7 +8827,7 @@
      48.0
     ],
     "fresh": -4,
-    "age": 49.8,
+    "age": 49.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -8674,7 +8879,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 15.8,
+    "age": 15.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8722,7 +8927,7 @@
      50.0
     ],
     "fresh": 12,
-    "age": 0.8,
+    "age": 0.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8763,7 +8968,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 27.8,
+    "age": 27.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8812,7 +9017,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 13.8,
+    "age": 13.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8845,6 +9050,51 @@
    "first_seen": "2026-10-13T20:39:35+00:00"
   },
   {
+   "id": "wd:globalhr:01882574",
+   "title": "Product Quality Engineering Intern (Summer 2027)",
+   "location": "US-FL-LARGO-382SS ~ 7887 Bryan Dairy Rd. ~ BLDG 100",
+   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-FL-LARGO-382SS--7887-Bryan-Dairy-Rd--BLDG-100/Product-Quality-Engineering-Intern--Summer-2027-_01882574",
+   "posted": "2026-10-15",
+   "body": "Date Posted: 2026-10-15 Country: United States of America Location: US-FL-LARGO-382SS ~ 7887 Bryan Dairy Rd. ~ BLDG 100 Position Role Type: Onsite U.S. Citizen, U.S. Person, or Immigration Status Requirements: U.S. citizenship is required, as only U.S. citizens are authorized to access information under this program/contract. Security Clearance Type: None/Not Required Security Clearance Status: Not Required Are you ready to explore the world of aerospace and defense? Do you want to learn from and collaborate with some of the greatest minds in the industry? At RTX, our internships, co-ops and full-time careers provide an exceptional foundation to work on complex problems, advance your skills and create a safer, more connected world. Discover opportunities to make a difference at RTX. What You Will Do Join our Quality Engineering team as a Product Quality Intern, where you will support efforts to ensure compliance with contractual, company, and regulatory requirements. This role offers an opportunity to apply engineering skills and utilize tools to verify and improve processes and product quality. Your contributions will help drive efficiency and minimize manufacturing and inspection challenges. Key responsibilities include: Supporting compliance with contractual, company, and regulatory quality requirements. Applying engineering methods to develop and implement effective verification and acceptance processes for products. Utilizing quantitative and qualitative tools to assess and improve product quality. Assisting in identifying and minimizing manufacturing and inspection issues. Using analytical tools to support continuous improvement initiatives. Collaborating with team members to deploy efficient methods for process optimization. Qualifications You Must Have Actively pursuing a degree in Science, Technology, Engineering, or Mathematics (STEM) through the duration of the internship. Experience with analytical tools or methods related to quality improvement. Understanding of basic engineering principles and processes. Prior coursework or experience in process optimization or manufacturing systems. Experience may be obtained through on-the-job experience, research, coursework or projects. Qualifications We Prefer Experience working on projects involving quality assurance or process improvement. Knowledge of industry standards for quality management systems. Experience using tools such as PFMEA, control plans, or statistical analysis methods. What We Offer Our values drive our actions, behaviors, and performance with a vision for a safer, more connected world. At RTX we value: Safety, Trust, Respect, Accountability, Collaboration, and Innovation. Learn More & Apply Now Please ensure the role type defined below is appropriate for your needs before applying to this role. This position is classified as: Onsite: Employees who are working in Onsite roles will work primarily onsite. This includes all production and maintenance employees, as they are essential to the development of our products. As part of our commitment to maintaining a secure hiring process, candidates may be asked to attend select steps of the interview process in-person at one of our office locations, regardless of whether the role is designated as on-site, hybrid or remote. The salary range for this role is 37,000 USD - 82,000 USD. The salary range provided is a good faith estimate representative of all experience levels. RTX considers several factors when extending an offer, including but not limited to, the role, function and associated responsibilities, a candidate\u2019s work experience, location, education/training, and key skills. Hired applicants may be eligible for benefits, including but not limited to, medical, dental, vision, life insurance, short-term disability, long-term disability, 401(k) match, flexible spending accounts, flexible work schedules, employee assistance program, Employee Scholar Program, parental leave, paid time off, and holidays. Specific benefits are dependent upon the specific business unit as well as whether or not the position is covered by a collective-bargaining agreement. Hired applicants may be eligible for annual short-term and/or long-term incentive compensation programs depending on the level of the position and whether or not it is covered by a collective-bargaining agreement. Payments under these annual programs are not guaranteed and are dependent upon a variety of factors including, but not limited to, individual performance, business unit performance, and/or the company\u2019s performance. This role is a U.S.-based role. If the successful candidate resides in a U.S. territory, the appropriate pay structure and benefits will apply. RTX anticipates the application window closing approximately 40 days from the date the notice was posted. However, factors such as candidate flow and business necessity may require RTX to shorten or extend the application window. RTX is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability or veteran status, or any other applicable state or federal protected class. RTX provides affirmative action in employment for qualified Individuals with a Disability and Protected Veterans in compliance with Section 503 of the Rehabilitation Act and the Vietnam Era Veterans\u2019 Readjustment Assistance Act. Privacy Policy and Terms: Click on this link to read the Policy and Terms",
+   "company": "RTX",
+   "score": {
+    "total": 46,
+    "base": 34,
+    "fit": 21,
+    "loc": 0,
+    "traj": 13,
+    "pay": 0,
+    "rate": null,
+    "fresh": 12,
+    "age": 0.9,
+    "age_basis": "posted",
+    "tier": "B",
+    "why": [
+     [
+      "body: regulator",
+      5
+     ],
+     [
+      "body: fmea",
+      5
+     ],
+     [
+      "title: engineering intern",
+      4
+     ],
+     [
+      "body: verification",
+      4
+     ],
+     [
+      "title: quality",
+      3
+     ]
+    ]
+   },
+   "first_seen": "2026-10-15T21:35:29+00:00"
+  },
+  {
    "id": "wd:globalhr:01867372",
    "title": "TCMA Systems Engineering Intern - Summer 2027-Onsite",
    "location": "US-AL-HUNTSVILLE-382 ~ 420 Jan Davis Dr ~ DAVIS 382",
@@ -8861,7 +9111,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 0.8,
+    "age": 0.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8906,7 +9156,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.8,
+    "age": 3.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8951,7 +9201,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 10.8,
+    "age": 10.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8984,66 +9234,6 @@
    "first_seen": "2026-10-13T20:39:35+00:00"
   },
   {
-   "id": "gh:rocketlab:7991769003",
-   "title": "Mechanical Engineering Intern Summer 2027",
-   "location": "Toronto, CAN",
-   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7991769003",
-   "posted": "2026-09-11",
-   "body": "ABOUT ROCKET LAB Rocket Lab is the end-to-end space company building rockets, spacecraft, and critical subsystems that keep the world connected, protected, expand humanity\u2019s reach to the Moon, Mars, and beyond. We move fast, build real hardware for meaningful missions, and make the impossible routine. Come shape the future with us. As a Mechanical Engineering Intern based at Rocket Lab\u2019s site in Toronto, Canada, you will have the opportunity to support the team responsible for the development, test, and maintenance of all mechanical aspects of our reaction wheel and star tracker products. WHAT YOU\u2019LL GET TO DO As an intern you will work closely with your mentor and other employees within the department to apply your knowledge and grow your skills both technically and professionally Work with a fast-paced group of professionals to apply engineering and industry concepts to solve real challenges Attend frequent 1:1\u2019s with mentors and supervisors to facilitate success and learning while providing progress updates Enjoy tech talks and network with other interns and employees through social and professional events YOU\u2019LL BRING THESE QUALIFICATIONS Ideal candidates will be excited to work in small, high-performing teams that are focused on continued learning and growth. Success in this position will be measured by the knowledge and experience you bring to the role, your ability to lead development projects without supervision, and your ability to successfully collaborate across teams to deliver results. Must be enrolled in a bachelor\u2019s program in mechanical or aerospace engineering and have at least one semester of school remaining post internship Experience designing parts and assemblies, and preparing engineering drawings, using CAD software such as Solidedge/Solidworks Hands-on experience working with mechanical components and assemblies GPA of 3.0 or above 3+ months of applied engineering experience (internship, laboratory, and personal/team project experience is applicable) THESE QUALIFICATIONS WOULD BE NICE TO HAVE GPA of 3.5 or above 6+ months of applied engineering experience (internship, laboratory, and personal/team project experience is applicable) Experience building electro-mechanical assemblies Experience in structural and thermal finite element analysis Python experience ADDITIONAL REQUIREMENTS Able to work full-time, on-site for a minimum of 16 consecutive weeks beginning May 3, 2027 COMPENSATION AND OTHER BENEFITS Pay rate: CAD $60,008 You may be eligible for a stipend to subsidize relocation costs The expected salary range for the position is displayed in accordance with the Ontario Pay Transparency Act. Final agreed upon compensation is based upon individual qualifications and experience. Base salary is only one part of Rocket Lab\u2019s compensation package for this role. You may be eligible for company stock, or cash incentives, and can purchase discounted stock through Rocket Lab\u2019s Employee Stock Purchase Program. Employee benefits also include medical, dental, and vision insurance coverage; RRSP retirement plan options; paid vacation, holidays, and sick leave; paid parental leave; and other discounts and perks. Base Pay Range (Ontario Only) $60,008 \u2014 $60,008 USD WHAT TO EXPECT We\u2019re on a mission to unlock the potential of space to improve life on Earth, but that\u2019s not an easy task. It takes hard work, determination, relentless innovation, teamwork, grit, and an unwavering commitment to achieving what others often deem impossible. Our people out-think, out-work, and out-pace. We pride ourselves on having each other\u2019s backs, checking our egos at the door, and rolling up our sleeves on all tasks big and small. We thrive under pressure, work to tight deadlines, and our focus is always on how we can deliver, rather than dwelling on the challenges that stand in the way. Important information: FOR CANDIDATES SEEKING TO WORK IN US OFFICES ONLY: To conform to U.S. Government space technology export regulations, including the International Traffic in Arms Regulations (ITAR), Rocket Lab Employees must be a U.S. citizen, lawful U.S. permanent resident (i.e., current Green Card holder), or lawfully admitted into the U.S. as a refugee or granted asylum, or be eligible to obtain the required authorizations from the U.S. Department of State and/or the U.S. Department of Commerce, as applicable. Learn more about ITAR here . Rocket Lab provides equal employment opportunities to all employees and applicants for employment and prohibits discrimination and harassment of any type without regard to race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state, or local laws. This policy applies to all terms and conditions of employment at Rocket Lab, including recruiting, hiring, placement, promotion, termination, layoff, recall, transfer, leaves of absence, compensation, and training. Applicants requiring a reasonable accommodation for the application/interview process for a job in the United States should contact Giulia Johnson at g.biow@rocketlabusa.com. This dedicated resource is intended solely to assist job seekers with disabilities whose disability prevents them from being able to apply/interview. Only messages left for this purpose will be considered. A response to your request may take up to two business days. FOR CANDIDATES SEEKING TO WORK IN NEW ZEALAND OFFICES ONLY: For security reasons, background checks will be undertaken prior to any employment offers being made to an applicant. These checks will include nationality checks as it is a requirement of this position that you be eligible to access equipment and data regulated by the United States' International Traffic in Arms Regulations. Under these Regulations, you may be ineligible for this role if you do not hold citizenship of Australia, Japan, New Zealand, Switzerland, the European Union, or a country that is part of NATO, or if you hold ineligible dual citizenship or nationality. For more information on these Regulations, click here ITAR Regulations.",
-   "company": "Rocket Lab",
-   "score": {
-    "total": 46,
-    "base": 46,
-    "fit": 39,
-    "loc": 0,
-    "traj": 13,
-    "pay": -6,
-    "rate": [
-     20.77,
-     28.85
-    ],
-    "fresh": 0,
-    "age": 34.8,
-    "age_basis": "posted",
-    "tier": "B",
-    "why": [
-     [
-      "title: mechanical",
-      7
-     ],
-     [
-      "body: engineering drawings",
-      6
-     ],
-     [
-      "title: engineering intern",
-      4
-     ],
-     [
-      "body: solidworks",
-      4
-     ],
-     [
-      "body: python",
-      4
-     ],
-     [
-      "body: finite element",
-      4
-     ],
-     [
-      "body: relocation",
-      4
-     ],
-     [
-      "body: drawings",
-      3
-     ]
-    ]
-   },
-   "first_seen": "2026-10-13T02:04:57+00:00"
-  },
-  {
    "id": "gh:rocketlab:7991448003",
    "title": "Mechanical Engineering Intern Summer 2027",
    "location": "Long Beach, CA",
@@ -9063,7 +9253,7 @@
      28.0
     ],
     "fresh": 0,
-    "age": 31.8,
+    "age": 31.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9104,6 +9294,66 @@
    "first_seen": "2026-10-13T02:04:57+00:00"
   },
   {
+   "id": "gh:rocketlab:7991769003",
+   "title": "Mechanical Engineering Intern Summer 2027",
+   "location": "Toronto, CAN",
+   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7991769003",
+   "posted": "2026-09-11",
+   "body": "ABOUT ROCKET LAB Rocket Lab is the end-to-end space company building rockets, spacecraft, and critical subsystems that keep the world connected, protected, expand humanity\u2019s reach to the Moon, Mars, and beyond. We move fast, build real hardware for meaningful missions, and make the impossible routine. Come shape the future with us. As a Mechanical Engineering Intern based at Rocket Lab\u2019s site in Toronto, Canada, you will have the opportunity to support the team responsible for the development, test, and maintenance of all mechanical aspects of our reaction wheel and star tracker products. WHAT YOU\u2019LL GET TO DO As an intern you will work closely with your mentor and other employees within the department to apply your knowledge and grow your skills both technically and professionally Work with a fast-paced group of professionals to apply engineering and industry concepts to solve real challenges Attend frequent 1:1\u2019s with mentors and supervisors to facilitate success and learning while providing progress updates Enjoy tech talks and network with other interns and employees through social and professional events YOU\u2019LL BRING THESE QUALIFICATIONS Ideal candidates will be excited to work in small, high-performing teams that are focused on continued learning and growth. Success in this position will be measured by the knowledge and experience you bring to the role, your ability to lead development projects without supervision, and your ability to successfully collaborate across teams to deliver results. Must be enrolled in a bachelor\u2019s program in mechanical or aerospace engineering and have at least one semester of school remaining post internship Experience designing parts and assemblies, and preparing engineering drawings, using CAD software such as Solidedge/Solidworks Hands-on experience working with mechanical components and assemblies GPA of 3.0 or above 3+ months of applied engineering experience (internship, laboratory, and personal/team project experience is applicable) THESE QUALIFICATIONS WOULD BE NICE TO HAVE GPA of 3.5 or above 6+ months of applied engineering experience (internship, laboratory, and personal/team project experience is applicable) Experience building electro-mechanical assemblies Experience in structural and thermal finite element analysis Python experience ADDITIONAL REQUIREMENTS Able to work full-time, on-site for a minimum of 16 consecutive weeks beginning May 3, 2027 COMPENSATION AND OTHER BENEFITS Pay rate: CAD $60,008 You may be eligible for a stipend to subsidize relocation costs The expected salary range for the position is displayed in accordance with the Ontario Pay Transparency Act. Final agreed upon compensation is based upon individual qualifications and experience. Base salary is only one part of Rocket Lab\u2019s compensation package for this role. You may be eligible for company stock, or cash incentives, and can purchase discounted stock through Rocket Lab\u2019s Employee Stock Purchase Program. Employee benefits also include medical, dental, and vision insurance coverage; RRSP retirement plan options; paid vacation, holidays, and sick leave; paid parental leave; and other discounts and perks. Base Pay Range (Ontario Only) $60,008 \u2014 $60,008 USD WHAT TO EXPECT We\u2019re on a mission to unlock the potential of space to improve life on Earth, but that\u2019s not an easy task. It takes hard work, determination, relentless innovation, teamwork, grit, and an unwavering commitment to achieving what others often deem impossible. Our people out-think, out-work, and out-pace. We pride ourselves on having each other\u2019s backs, checking our egos at the door, and rolling up our sleeves on all tasks big and small. We thrive under pressure, work to tight deadlines, and our focus is always on how we can deliver, rather than dwelling on the challenges that stand in the way. Important information: FOR CANDIDATES SEEKING TO WORK IN US OFFICES ONLY: To conform to U.S. Government space technology export regulations, including the International Traffic in Arms Regulations (ITAR), Rocket Lab Employees must be a U.S. citizen, lawful U.S. permanent resident (i.e., current Green Card holder), or lawfully admitted into the U.S. as a refugee or granted asylum, or be eligible to obtain the required authorizations from the U.S. Department of State and/or the U.S. Department of Commerce, as applicable. Learn more about ITAR here . Rocket Lab provides equal employment opportunities to all employees and applicants for employment and prohibits discrimination and harassment of any type without regard to race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state, or local laws. This policy applies to all terms and conditions of employment at Rocket Lab, including recruiting, hiring, placement, promotion, termination, layoff, recall, transfer, leaves of absence, compensation, and training. Applicants requiring a reasonable accommodation for the application/interview process for a job in the United States should contact Giulia Johnson at g.biow@rocketlabusa.com. This dedicated resource is intended solely to assist job seekers with disabilities whose disability prevents them from being able to apply/interview. Only messages left for this purpose will be considered. A response to your request may take up to two business days. FOR CANDIDATES SEEKING TO WORK IN NEW ZEALAND OFFICES ONLY: For security reasons, background checks will be undertaken prior to any employment offers being made to an applicant. These checks will include nationality checks as it is a requirement of this position that you be eligible to access equipment and data regulated by the United States' International Traffic in Arms Regulations. Under these Regulations, you may be ineligible for this role if you do not hold citizenship of Australia, Japan, New Zealand, Switzerland, the European Union, or a country that is part of NATO, or if you hold ineligible dual citizenship or nationality. For more information on these Regulations, click here ITAR Regulations.",
+   "company": "Rocket Lab",
+   "score": {
+    "total": 46,
+    "base": 46,
+    "fit": 39,
+    "loc": 0,
+    "traj": 13,
+    "pay": -6,
+    "rate": [
+     20.77,
+     28.85
+    ],
+    "fresh": 0,
+    "age": 34.9,
+    "age_basis": "posted",
+    "tier": "B",
+    "why": [
+     [
+      "title: mechanical",
+      7
+     ],
+     [
+      "body: engineering drawings",
+      6
+     ],
+     [
+      "title: engineering intern",
+      4
+     ],
+     [
+      "body: solidworks",
+      4
+     ],
+     [
+      "body: python",
+      4
+     ],
+     [
+      "body: finite element",
+      4
+     ],
+     [
+      "body: relocation",
+      4
+     ],
+     [
+      "body: drawings",
+      3
+     ]
+    ]
+   },
+   "first_seen": "2026-10-13T02:04:57+00:00"
+  },
+  {
    "id": "gh:astranis:4704779006",
    "title": "Harness Design Engineer Intern (Summer 2027)",
    "location": "San Francisco",
@@ -9123,7 +9373,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 21.8,
+    "age": 21.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9171,7 +9421,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 27.8,
+    "age": 27.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9227,7 +9477,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 57.8,
+    "age": 57.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9284,7 +9534,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9321,7 +9571,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 37.8,
+    "age": 37.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9369,7 +9619,7 @@
      45.25
     ],
     "fresh": -8,
-    "age": 75.8,
+    "age": 75.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -9426,7 +9676,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.8,
+    "age": 3.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9462,7 +9712,7 @@
      37.25
     ],
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9511,7 +9761,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9559,7 +9809,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 14.8,
+    "age": 14.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9619,7 +9869,7 @@
      41.0
     ],
     "fresh": 6,
-    "age": 6.8,
+    "age": 6.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9667,7 +9917,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 26.8,
+    "age": 26.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9712,7 +9962,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.8,
+    "age": 3.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9752,7 +10002,7 @@
      38.0
     ],
     "fresh": 12,
-    "age": 1.8,
+    "age": 1.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9804,7 +10054,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 17.8,
+    "age": 17.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9849,7 +10099,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9882,7 +10132,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 24.8,
+    "age": 24.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9930,7 +10180,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 36.8,
+    "age": 36.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9986,7 +10236,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 14.8,
+    "age": 14.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10043,7 +10293,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.8,
+    "age": 58.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10096,7 +10346,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.8,
+    "age": 58.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10152,7 +10402,7 @@
      25.0
     ],
     "fresh": 0,
-    "age": 28.8,
+    "age": 28.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10212,7 +10462,7 @@
      44.0
     ],
     "fresh": -4,
-    "age": 56.8,
+    "age": 56.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10260,7 +10510,7 @@
      24.23
     ],
     "fresh": -4,
-    "age": 44.8,
+    "age": 44.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10320,7 +10570,7 @@
      29.0
     ],
     "fresh": 3,
-    "age": 15.8,
+    "age": 15.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10365,7 +10615,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 14.8,
+    "age": 14.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10386,55 +10636,6 @@
    "first_seen": "2026-10-13T23:28:52+00:00"
   },
   {
-   "id": "wd:draper:JR002963",
-   "title": "Cable And Harnessing Intern (Summer 2027)",
-   "location": "Cambridge, MA",
-   "url": "https://draper.wd5.myworkdayjobs.com/Draper_Careers/job/Cambridge-MA/Cable-And-Harnessing-Intern--Summer-2027-_JR002963",
-   "posted": "2026-09-30",
-   "body": "Overview: Draper is an independent, nonprofit research and development company headquartered in Cambridge, MA. The 2,000+ employees of Draper tackle important national challenges with a promise of delivering successful and usable solutions. From military defense and space exploration to biomedical engineering, lives often depend on the solutions we provide. Our multidisciplinary teams of engineers and scientists work in a collaborative environment that inspires the cross-fertilization of ideas necessary for true innovation. For more information about Draper, visit www.draper.com . Job Description Summary: Engineering Student internships support the research and development of new or existing computer systems (hardware, software, components, and materials) or may assist in sustaining and improving the quality processes across the full engineering and manufacturing life cycle. Student interns will contribute to projects in various engineering disciplines such as computer hardware or software design and development, electro-optical design, optical and thermal model development, bioengineering, materials testing, electrical system design, hardware assembly, testing, etc. Student interns will test and evaluate products, systems, or components and work with various applications such as LabVIEW, MATLAB, SolidWorks, COMSOL, ANSYS, Mentor Graphics, Python, and GitLab. Student interns collaborate with engineers or technicians to build and test systems, hardware, or components on various projects. They may also be involved in ensuring quality products are produced and quality procedures are upheld. Job Description: Duties/Responsibilities Design, develop, and enhancement engineering solutions for challenging problems. Implement, test, perform analysis, and provide documentation support. Generate and present test reports including plots, tables, evaluation criteria, and conclusions from data collected and analyzed throughout the test process. Complete assignments designed to develop a practical knowledge of processes, procedures, equipment, facilities, and systems as well as their interrelationships within engineering disciplines. Performs other duties as assigned. Program Requirements Enrolled in an accredited full-time undergraduate or graduate degree program required. There is flexibility regarding hours and program duration based on applicant\u2019s school schedule and availability. Skills/Abilities Excellent written and oral communication skills. Excellent work ethic with the ability to work independently or in a team environment. Ability to adapt to ever-changing environments, risks, and vulnerabilities. Strong computer skills including MS Word, PowerPoint and Excel. Additional Job Description: Summary: We are seeking a motivated intern with a strong interest in cable harness and interconnect design. In this role, you will have the opportunity to learn and contribute to the early stages of development programs by supporting the creation of rugged, high-reliability interconnect solutions that enable mission-critical systems to perform in the most demanding environments. You\u2019ll gain hands-on experience in the design and development of wiring harnesses, cabling, and connector systems that support RF and other sensitive signals, as well as board-to-board and system-level interconnects. Working alongside a highly collaborative mechanical design team, you\u2019ll participate in the full product lifecycle \u2014 from concept development and trade studies through prototyping, testing, and delivery. Your contributions will help advance systems used in defense, space, and autonomous platforms, where performance and reliability are essential. What You\u2019ll Bring: \u00b7 A strong interest in cable and harness design and development. \u00b7 A systems-level mindset that considers electrical, mechanical, and manufacturability trade-offs. \u00b7 Motivation to learn and take ownership of design tasks, growing from concept exploration to hardware delivery. \u00b7 Curiosity and creativity in solving complex interconnect challenges that have real-world national security impact. Key Responsibilities: \u00b7 Learn to design and develop high-reliability cable harnesses, interconnects, and connector assemblies for ruggedized systems and harsh environments (high-G, vibration, temperature extremes). \u00b7 Partner with electrical, mechanical, and systems engineers to define requirements and ensure design compatibility across disciplines. \u00b7 Apply and expand your knowledge of MIL-STD connectors, IPC Class 2 & 3 cable/connector standards, and other relevant industry specifications. \u00b7 Support trade studies, tolerance analyses, and material selection activities to improve reliability and performance. \u00b7 Create and refine 3D CAD models, 2D drawings, and documentation to support manufacturing and assembly. \u00b7 Collaborate with production teams and suppliers to support builds, resolve non-conformances, and validate designs. \u00b7 Contribute ideas to continuous improvement efforts that enhance interconnect design processes and tooling. Connect With Draper for Future Opportunities! If you don't find the right posting in our Career Opportunities, you may submit your resume for future consideration. Job Location - City: Cambridge Job Location - State: Massachusetts Job Location - Postal Code: 02139-3563 The US base salary range for this full-time position is $20.00 - $45.00 Our salary ranges are determined by role, level, and location. The range displayed on each job posting reflects the minimum and maximum target salaries for the position across all US locations. Within the range, individual pay is determined by work location and additional factors, including job-related skills, experience, and relevant education or training. Union ranges will be in compliance with the collective bargaining agreement's approved rates by location and role. Your recruiter can share more about the specific salary range for your preferred location during the hiring process. Please note that the compensation details listed in US role postings reflect the base salary only, and does not include bonuses or benefits. Our work is very important to us, but so is our life outside of work. Draper supports many programs to improve work-life balance including workplace flexibility, employee clubs ranging from photography to yoga, health and finance workshops, off site social events and discounts to local museums and cultural activities. If this specific job opportunity and the chance to work at a nationally renowned R&D innovation company appeals to you, apply now www.draper.com/careers . Draper is committed to creating an inclusive environment. We understand the value of inclusivity and its impact on a high-performance culture. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, disability, age, sexual orientation, national origin, veteran status, or genetic information. Draper is committed to providing access, equal opportunity, and reasonable accommodation for individuals with disabilities in employment, its services, programs, and activities. To request reasonable accommodation, please contact hr@draper.com .",
-   "company": "Draper",
-   "score": {
-    "total": 43,
-    "base": 40,
-    "fit": 20,
-    "loc": 8,
-    "traj": 12,
-    "pay": 0,
-    "rate": null,
-    "fresh": 3,
-    "age": 15.8,
-    "age_basis": "posted",
-    "tier": "B",
-    "why": [
-     [
-      "body: tolerance",
-      4
-     ],
-     [
-      "body: solidworks",
-      4
-     ],
-     [
-      "body: python",
-      4
-     ],
-     [
-      "body: doe",
-      3
-     ],
-     [
-      "body: drawings",
-      3
-     ],
-     [
-      "body: matlab",
-      2
-     ]
-    ]
-   },
-   "first_seen": "2026-10-13T20:39:35+00:00"
-  },
-  {
    "id": "wd:generac:JR17048",
    "title": "Mechanical Engineering Intern - Transfer Switch - Summer 2027",
    "location": "Waukesha, WI - USA",
@@ -10451,7 +10652,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 22.8,
+    "age": 22.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10503,7 +10704,7 @@
      48.0
     ],
     "fresh": 3,
-    "age": 16.8,
+    "age": 16.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10551,7 +10752,7 @@
      59.0
     ],
     "fresh": 3,
-    "age": 16.8,
+    "age": 16.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10595,7 +10796,7 @@
      30.0
     ],
     "fresh": 0,
-    "age": 31.8,
+    "age": 31.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10639,7 +10840,7 @@
      45.25
     ],
     "fresh": -4,
-    "age": 44.8,
+    "age": 44.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10688,7 +10889,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 6.8,
+    "age": 6.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10741,7 +10942,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10786,7 +10987,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 9.8,
+    "age": 9.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10831,7 +11032,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 9.8,
+    "age": 9.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10876,7 +11077,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 9.8,
+    "age": 9.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10921,7 +11122,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 16.8,
+    "age": 16.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10974,7 +11175,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 16.8,
+    "age": 16.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11030,7 +11231,7 @@
      25.0
     ],
     "fresh": 0,
-    "age": 21.8,
+    "age": 21.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11090,7 +11291,7 @@
      28.0
     ],
     "fresh": 0,
-    "age": 24.8,
+    "age": 24.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11147,7 +11348,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 34.8,
+    "age": 34.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11196,7 +11397,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 35.8,
+    "age": 35.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11244,7 +11445,7 @@
      30.0
     ],
     "fresh": -8,
-    "age": 63.8,
+    "age": 63.9,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -11304,7 +11505,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 57.8,
+    "age": 57.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11364,7 +11565,7 @@
      24.0
     ],
     "fresh": 9,
-    "age": 3.8,
+    "age": 3.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11397,50 +11598,6 @@
    "first_seen": "2026-10-13T20:39:35+00:00"
   },
   {
-   "id": "gh:imc:4823945101",
-   "title": "Hardware Engineer Intern - Summer 2027",
-   "location": "Chicago, United States",
-   "url": "https://job-boards.eu.greenhouse.io/imc/jobs/4823945101",
-   "posted": "2026-07-01",
-   "body": "Our 10-week internship is your chance to experience life as a Hardware Engineer at IMC. You\u2019ll have the support you need to succeed: educational training and a mentor who will oversee your work and professional development. We provide a highly competitive compensation package with accommodations included. The bar for talent at IMC is high and interns who meet our performance expectations will have the opportunity to secure a full time Graduate Hardware Engineer position at the end of the program. Where you go from here is up to you! Your Core Responsibilities: Enhance your knowledge of algorithm complexity, professional design, and coding Work on meaningful and challenging projects Patricipate in classroom-based training covering an overview of financial markets, IMC technology and hardware design Build valuable connections in an environment that recognizes and rewards problem solving, innovation and teamwork Engage in professional development sessions aimed at helping you envision your future at IMC Attend a full schedule of events and social activities throughout the summer Your Skills and Experience: Current university student graduating between September 2027 - July 2028 that is pursuing an Electrical Engineering, Computer Engineering, or a related degree Must have proficient experience in Verilog, SystemVerilog, VHDL or other RTL programming (additional software experience is a plus; C++, Python, or similar) Strong analytical skills and interest in solving complex problems programmatically Desire to collaborate with technical and non-technical teammates in a dynamic environment Interest in the Financial Markets; previous knowledge is NOT required Must be able to start internship on June 7, 2027 You may submit one application per role each year. We strongly encourage you to focus on applying to a single role that best matches your skills and interests. Though you may apply to multiple roles, please note that each application will be evaluated based on the specific criteria established for that particular role. If you have already applied for this position during the current recruitment season and were not selected, you may reapply when the next recruitment season begins in 2027. The Base Salary range for the role is included below. Base salary is only one component of total compensation; all full-time, permanent positions are eligible for a discretionary bonus and benefits, including paid leave and insurance. Please visit Benefits - US | IMC Trading for more comprehensive information. Base Salary: $200,000 About Us IMC is a research-driven trading firm where quantitative modeling, machine learning, and engineering shape how modern markets are traded. A stabilizing force in markets since 1989, we provide liquidity across trading venues, delivering the best outcome in value and risk management to investors. Using our own technology and capital, we build proprietary systems and algorithms that operate across global markets. Our researchers, traders, and engineers work as a collective, combining rapid experimentation, advanced infrastructure, and real-time feedback to turn insight into execution and execution into advantage.",
-   "company": "IMC Trading",
-   "score": {
-    "total": 42,
-    "base": 50,
-    "fit": 24,
-    "loc": 0,
-    "traj": 11,
-    "pay": 15,
-    "rate": [
-     96.15,
-     96.15
-    ],
-    "fresh": -8,
-    "age": 106.8,
-    "age_basis": "posted",
-    "tier": "A",
-    "why": [
-     [
-      "pay $96/hr",
-      15
-     ],
-     [
-      "title: hardware engineer",
-      12
-     ],
-     [
-      "title: hardware",
-      8
-     ],
-     [
-      "body: python",
-      4
-     ]
-    ]
-   },
-   "first_seen": "2026-10-14T01:17:06+00:00"
-  },
-  {
    "id": "wd:marvell:2604511",
    "title": "Design for Test Intern, BS - Summer 2027",
    "location": "Morrisville, NC; Westborough, MA; Boise, ID; Santa Clara, CA",
@@ -11457,7 +11614,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 41.8,
+    "age": 41.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11498,7 +11655,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 36.8,
+    "age": 36.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11550,7 +11707,7 @@
      40.0
     ],
     "fresh": -8,
-    "age": 126.8,
+    "age": 126.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11598,7 +11755,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 26.8,
+    "age": 26.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11647,7 +11804,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 28.8,
+    "age": 28.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11684,7 +11841,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 23.8,
+    "age": 23.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11721,7 +11878,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 30.8,
+    "age": 30.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11762,7 +11919,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.8,
+    "age": 2.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11803,7 +11960,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 27.8,
+    "age": 27.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11848,7 +12005,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 17.8,
+    "age": 17.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11900,7 +12057,7 @@
      25.0
     ],
     "fresh": 0,
-    "age": 28.8,
+    "age": 28.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11960,7 +12117,7 @@
      47.0
     ],
     "fresh": -4,
-    "age": 42.8,
+    "age": 42.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12005,7 +12162,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 13.8,
+    "age": 13.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12049,7 +12206,7 @@
      34.0
     ],
     "fresh": -4,
-    "age": 42.8,
+    "age": 42.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12097,7 +12254,7 @@
      30.0
     ],
     "fresh": 0,
-    "age": 28.8,
+    "age": 28.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12146,7 +12303,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 14.8,
+    "age": 14.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12191,7 +12348,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 14.8,
+    "age": 14.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12236,7 +12393,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 14.8,
+    "age": 14.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12284,7 +12441,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 36.8,
+    "age": 36.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12344,7 +12501,7 @@
      22.0
     ],
     "fresh": 6,
-    "age": 8.8,
+    "age": 8.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12392,7 +12549,7 @@
      43.27
     ],
     "fresh": -8,
-    "age": 73.8,
+    "age": 73.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12452,7 +12609,7 @@
      44.09
     ],
     "fresh": 3,
-    "age": 14.8,
+    "age": 14.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12504,7 +12661,7 @@
      50.0
     ],
     "fresh": 6,
-    "age": 8.8,
+    "age": 8.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12549,7 +12706,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 13.8,
+    "age": 13.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12590,7 +12747,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 66.8,
+    "age": 66.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12634,7 +12791,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 56.8,
+    "age": 56.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12679,7 +12836,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 20.8,
+    "age": 20.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12731,7 +12888,7 @@
      24.23
     ],
     "fresh": -4,
-    "age": 44.8,
+    "age": 44.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12783,7 +12940,7 @@
      24.23
     ],
     "fresh": -4,
-    "age": 44.8,
+    "age": 44.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12835,7 +12992,7 @@
      57.6
     ],
     "fresh": -4,
-    "age": 43.8,
+    "age": 43.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12887,7 +13044,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 21.8,
+    "age": 21.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12928,7 +13085,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 16.8,
+    "age": 16.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12964,7 +13121,7 @@
      34.29
     ],
     "fresh": 0,
-    "age": 29.8,
+    "age": 29.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13008,7 +13165,7 @@
      48.0
     ],
     "fresh": -4,
-    "age": 36.8,
+    "age": 36.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13060,7 +13217,7 @@
      43.0
     ],
     "fresh": 6,
-    "age": 9.8,
+    "age": 9.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13101,7 +13258,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 16.8,
+    "age": 16.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13146,7 +13303,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 16.8,
+    "age": 16.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13191,7 +13348,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 24.8,
+    "age": 24.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13231,7 +13388,7 @@
      41.0
     ],
     "fresh": -4,
-    "age": 41.8,
+    "age": 41.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13268,7 +13425,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 37.8,
+    "age": 37.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13313,7 +13470,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 24.8,
+    "age": 24.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13365,7 +13522,7 @@
      34.0
     ],
     "fresh": 0,
-    "age": 29.8,
+    "age": 29.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13414,7 +13571,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 29.8,
+    "age": 29.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13458,7 +13615,7 @@
      27.69
     ],
     "fresh": 0,
-    "age": 23.8,
+    "age": 23.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13518,7 +13675,7 @@
      50.0
     ],
     "fresh": -4,
-    "age": 56.8,
+    "age": 56.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13567,7 +13724,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 14.8,
+    "age": 14.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13619,7 +13776,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 20.8,
+    "age": 20.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13667,7 +13824,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 20.8,
+    "age": 20.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13712,7 +13869,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 43.8,
+    "age": 43.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13753,7 +13910,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 31.8,
+    "age": 31.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13793,7 +13950,7 @@
      46.51
     ],
     "fresh": 3,
-    "age": 14.8,
+    "age": 14.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13834,7 +13991,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 14.8,
+    "age": 14.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13879,7 +14036,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 14.8,
+    "age": 14.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13924,7 +14081,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 21.8,
+    "age": 21.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13972,7 +14129,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 36.8,
+    "age": 36.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14032,7 +14189,7 @@
      20.0
     ],
     "fresh": -4,
-    "age": 36.8,
+    "age": 36.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14092,7 +14249,7 @@
      25.0
     ],
     "fresh": 3,
-    "age": 17.8,
+    "age": 17.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14140,7 +14297,7 @@
      60.0
     ],
     "fresh": 0,
-    "age": 21.8,
+    "age": 21.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14188,7 +14345,7 @@
      24.23
     ],
     "fresh": -4,
-    "age": 43.8,
+    "age": 43.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14244,7 +14401,7 @@
      48.0
     ],
     "fresh": -4,
-    "age": 38.8,
+    "age": 38.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14304,7 +14461,7 @@
      45.0
     ],
     "fresh": 0,
-    "age": 22.8,
+    "age": 22.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14344,7 +14501,7 @@
      32.0
     ],
     "fresh": -4,
-    "age": 50.8,
+    "age": 50.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14396,7 +14553,7 @@
      31.0
     ],
     "fresh": -8,
-    "age": 84.8,
+    "age": 84.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14453,7 +14610,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 15.8,
+    "age": 15.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14498,7 +14655,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 15.8,
+    "age": 15.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14543,7 +14700,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 15.8,
+    "age": 15.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14588,7 +14745,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 10.8,
+    "age": 10.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14629,7 +14786,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 10.8,
+    "age": 10.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14673,7 +14830,7 @@
      45.0
     ],
     "fresh": -4,
-    "age": 41.8,
+    "age": 41.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14714,7 +14871,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 20.8,
+    "age": 20.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14755,7 +14912,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 17.8,
+    "age": 17.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14800,7 +14957,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 17.8,
+    "age": 17.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14845,7 +15002,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 17.8,
+    "age": 17.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14893,7 +15050,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 50.8,
+    "age": 50.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14938,7 +15095,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 43.8,
+    "age": 43.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14994,7 +15151,7 @@
      50.82
     ],
     "fresh": -4,
-    "age": 43.8,
+    "age": 43.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15043,7 +15200,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 41.8,
+    "age": 41.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15076,7 +15233,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 41.8,
+    "age": 41.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15109,7 +15266,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 12.8,
+    "age": 12.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15146,7 +15303,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 37.8,
+    "age": 37.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15195,7 +15352,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 35.8,
+    "age": 35.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15239,7 +15396,7 @@
      48.0
     ],
     "fresh": -4,
-    "age": 38.8,
+    "age": 38.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15287,7 +15444,7 @@
      28.0
     ],
     "fresh": 0,
-    "age": 29.8,
+    "age": 29.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15340,7 +15497,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 31.8,
+    "age": 31.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15377,7 +15534,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 41.8,
+    "age": 41.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15414,7 +15571,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 41.8,
+    "age": 41.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15454,7 +15611,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 36.8,
+    "age": 36.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15498,7 +15655,7 @@
      25.0
     ],
     "fresh": 0,
-    "age": 28.8,
+    "age": 28.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15554,7 +15711,7 @@
      25.0
     ],
     "fresh": 0,
-    "age": 28.8,
+    "age": 28.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15610,7 +15767,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 45.8,
+    "age": 45.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15655,7 +15812,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 37.8,
+    "age": 37.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15699,7 +15856,7 @@
      24.23
     ],
     "fresh": -4,
-    "age": 44.8,
+    "age": 44.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15751,7 +15908,7 @@
      34.0
     ],
     "fresh": -4,
-    "age": 35.8,
+    "age": 35.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15808,7 +15965,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 41.8,
+    "age": 41.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15848,7 +16005,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 22.8,
+    "age": 22.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15885,7 +16042,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 29.8,
+    "age": 29.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15926,7 +16083,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 49.8,
+    "age": 49.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15967,7 +16124,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 22.8,
+    "age": 22.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16012,7 +16169,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 24.8,
+    "age": 24.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16061,7 +16218,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 28.8,
+    "age": 28.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16106,7 +16263,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 42.8,
+    "age": 42.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16159,7 +16316,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 21.8,
+    "age": 21.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16203,7 +16360,7 @@
      60.0
     ],
     "fresh": -4,
-    "age": 56.8,
+    "age": 56.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16247,7 +16404,7 @@
      29.0
     ],
     "fresh": -8,
-    "age": 61.8,
+    "age": 61.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16288,7 +16445,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 34.8,
+    "age": 34.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16333,7 +16490,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 24.8,
+    "age": 24.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16378,7 +16535,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 23.8,
+    "age": 23.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16418,7 +16575,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 50.8,
+    "age": 50.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16466,7 +16623,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 50.8,
+    "age": 50.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16511,7 +16668,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 31.8,
+    "age": 31.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16540,7 +16697,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 28.8,
+    "age": 28.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16588,7 +16745,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 35.8,
+    "age": 35.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16640,7 +16797,7 @@
      36.0
     ],
     "fresh": -8,
-    "age": 73.8,
+    "age": 73.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16692,7 +16849,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 37.8,
+    "age": 37.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16748,7 +16905,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 37.8,
+    "age": 37.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16801,7 +16958,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 30.8,
+    "age": 30.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16845,7 +17002,7 @@
      29.0
     ],
     "fresh": -8,
-    "age": 61.8,
+    "age": 61.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16893,7 +17050,7 @@
      40.0
     ],
     "fresh": -8,
-    "age": 80.8,
+    "age": 80.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16937,7 +17094,7 @@
      20.0
     ],
     "fresh": -4,
-    "age": 58.8,
+    "age": 58.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16986,7 +17143,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 44.8,
+    "age": 44.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17023,7 +17180,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 41.8,
+    "age": 41.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17056,7 +17213,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 36.8,
+    "age": 36.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17100,7 +17257,7 @@
      37.0
     ],
     "fresh": -4,
-    "age": 45.8,
+    "age": 45.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17145,7 +17302,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 36.8,
+    "age": 36.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17189,7 +17346,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 36.8,
+    "age": 36.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17241,7 +17398,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 44.8,
+    "age": 44.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17285,7 +17442,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 49.8,
+    "age": 49.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17337,7 +17494,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 49.8,
+    "age": 49.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17389,7 +17546,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 49.8,
+    "age": 49.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17441,7 +17598,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 49.8,
+    "age": 49.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17490,7 +17647,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 45.8,
+    "age": 45.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17531,7 +17688,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 57.8,
+    "age": 57.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17572,7 +17729,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 57.8,
+    "age": 57.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17613,7 +17770,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 57.8,
+    "age": 57.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17657,7 +17814,7 @@
      45.0
     ],
     "fresh": -4,
-    "age": 36.8,
+    "age": 36.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17693,7 +17850,7 @@
      20.0
     ],
     "fresh": -4,
-    "age": 59.8,
+    "age": 59.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17745,7 +17902,7 @@
      50.0
     ],
     "fresh": -4,
-    "age": 49.8,
+    "age": 49.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17782,7 +17939,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 44.8,
+    "age": 44.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17823,7 +17980,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 45.8,
+    "age": 45.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17864,7 +18021,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 57.8,
+    "age": 57.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17901,7 +18058,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 37.8,
+    "age": 37.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17934,7 +18091,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 44.8,
+    "age": 44.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17967,7 +18124,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 36.8,
+    "age": 36.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18007,7 +18164,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 37.8,
+    "age": 37.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18055,7 +18212,7 @@
      33.0
     ],
     "fresh": -4,
-    "age": 37.8,
+    "age": 37.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18099,7 +18256,7 @@
      30.0
     ],
     "fresh": -8,
-    "age": 63.8,
+    "age": 63.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18148,7 +18305,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 76.8,
+    "age": 76.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18185,7 +18342,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 70.8,
+    "age": 70.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18214,7 +18371,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 62.8,
+    "age": 62.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18243,7 +18400,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 66.8,
+    "age": 66.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18280,7 +18437,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 62.8,
+    "age": 62.9,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18900,13 +19057,6 @@
   },
   {
    "company": "Avery Dennison",
-   "title": "Finance Intern - Summer 2027",
-   "location": "Mentor, OH, us",
-   "url": "https://jobs.smartrecruiters.com/AveryDennison/744000148865929",
-   "reason": "non-ME discipline"
-  },
-  {
-   "company": "Avery Dennison",
    "title": "Operations Co-Op (Spring 2027 and Fall 2027)",
    "location": "Mentor, OH, us",
    "url": "https://jobs.smartrecruiters.com/AveryDennison/744000153738779",
@@ -18973,6 +19123,13 @@
    "title": "Computer Science Intern, Summer 2027",
    "location": "Rockville, Maryland, United States",
    "url": "https://jobs.baesystems.com/us/en/job/130021BR",
+   "reason": "no mechanical signal"
+  },
+  {
+   "company": "BAE Systems",
+   "title": "Contracts Intern, Summer 2027 (Cedar Rapids, IA)",
+   "location": "Cedar Rapids, Iowa, United States",
+   "url": "https://jobs.baesystems.com/us/en/job/131487BR",
    "reason": "no mechanical signal"
   },
   {
@@ -19607,6 +19764,13 @@
   },
   {
    "company": "Booz Allen",
+   "title": "University, Digital Transformation Analyst Intern",
+   "location": "Arlington, VA",
+   "url": "https://bah.wd1.myworkdayjobs.com/BAH_Jobs/job/Arlington-VA/University--Digital-Transformation-Analyst-Intern_R0251716",
+   "reason": "no mechanical signal"
+  },
+  {
+   "company": "Booz Allen",
    "title": "University, Summer 2027 - Corporate Development Intern",
    "location": "McLean, VA",
    "url": "https://bah.wd1.myworkdayjobs.com/BAH_Jobs/job/McLean-VA/University--Summer-2027---Corporate-Development-Intern_R0250270",
@@ -19630,15 +19794,15 @@
    "company": "Boston Scientific",
    "title": "Process Development Co-op - Spring or Summer 2027",
    "location": "US",
-   "url": "https://bostonscientific.eightfold.ai/careers/job/563602813560630",
-   "reason": "scored 27, below tier B"
+   "url": "https://bostonscientific.eightfold.ai/careers/job/563602813560602",
+   "reason": "no mechanical signal"
   },
   {
    "company": "Boston Scientific",
    "title": "Process Development Co-op - Spring or Summer 2027",
    "location": "US",
-   "url": "https://bostonscientific.eightfold.ai/careers/job/563602813560602",
-   "reason": "no mechanical signal"
+   "url": "https://bostonscientific.eightfold.ai/careers/job/563602813560630",
+   "reason": "scored 27, below tier B"
   },
   {
    "company": "CACI",
@@ -19810,6 +19974,13 @@
   },
   {
    "company": "Commonwealth Fusion",
+   "title": "Intern - Controls Engineer - Summer 2027",
+   "location": "Milpitas, CA",
+   "url": "https://jobs.lever.co/cfsenergy/e3408817-347e-45bc-8627-305b75b6b978",
+   "reason": "scored 24, below tier B"
+  },
+  {
+   "company": "Commonwealth Fusion",
    "title": "Intern - Health Physics - Spring or Summer 2027",
    "location": "Devens, MA",
    "url": "https://jobs.lever.co/cfsenergy/777157b6-9969-438e-ba04-8ca0069f1e0b",
@@ -19828,6 +19999,20 @@
    "location": "Devens, MA",
    "url": "https://jobs.lever.co/cfsenergy/01ec2ee8-b8c9-4f32-9b66-3a2ce1ff704f",
    "reason": "scored 26, below tier B"
+  },
+  {
+   "company": "Commonwealth Fusion",
+   "title": "Intern - Mechanical Engineer - Summer 2027",
+   "location": "Milpitas, CA",
+   "url": "https://jobs.lever.co/cfsenergy/9690a768-362f-4df8-86a1-554b896cbc76",
+   "reason": "scored 31, below tier B"
+  },
+  {
+   "company": "Commonwealth Fusion",
+   "title": "Intern - Nuclear Engineer - Summer 2027",
+   "location": "Devens, MA",
+   "url": "https://jobs.lever.co/cfsenergy/1be023ee-0351-4d09-acca-f56180d06463",
+   "reason": "scored 23, below tier B"
   },
   {
    "company": "Commonwealth Fusion",
@@ -20562,6 +20747,13 @@
    "title": "Data Science Intern - Summer 2027",
    "location": "Waukesha, WI - USA; Pewaukee, WI - USA",
    "url": "https://generac.wd5.myworkdayjobs.com/External/job/Waukesha-WI---USA/Data-Science-Intern---Summer-2027_JR17001",
+   "reason": "non-ME discipline"
+  },
+  {
+   "company": "Generac",
+   "title": "Electrical Engineering Intern - Summer 2027",
+   "location": "Waukesha, WI - USA; Pewaukee, WI - USA",
+   "url": "https://generac.wd5.myworkdayjobs.com/External/job/Waukesha-WI---USA/Electrical-Engineering-Intern---Summer-2027_JR16952",
    "reason": "non-ME discipline"
   },
   {
@@ -21601,34 +21793,6 @@
    "reason": "scored 14, below tier B"
   },
   {
-   "company": "Johnson Controls",
-   "title": "Accounting & Finance Intern",
-   "location": "Milwaukee-Wisconsin-United States of America",
-   "url": "https://jci.wd5.myworkdayjobs.com/JCI/job/Milwaukee-Wisconsin-United-States-of-America/Accounting---Finance-Intern_WD30278457",
-   "reason": "non-ME discipline"
-  },
-  {
-   "company": "Johnson Controls",
-   "title": "Supply Chain & Operations Intern",
-   "location": "Lubbock-Texas-United States of America",
-   "url": "https://jci.wd5.myworkdayjobs.com/JCI/job/Lubbock-Texas-United-States-of-America/Supply-Chain-Intern_WD30278671",
-   "reason": "non-ME discipline"
-  },
-  {
-   "company": "Johnson Controls",
-   "title": "Supply Chain & Operations Intern",
-   "location": "Marinette-Wisconsin-United States of America",
-   "url": "https://jci.wd5.myworkdayjobs.com/JCI/job/Marinette-Wisconsin-United-States-of-America/Supply-Chain-Intern_WD30278674",
-   "reason": "non-ME discipline"
-  },
-  {
-   "company": "Johnson Controls",
-   "title": "Supply Chain Intern",
-   "location": "Airside Center of Excellence",
-   "url": "https://jci.wd5.myworkdayjobs.com/JCI/job/Airside-Center-of-Excellence/Supply-Chain-Intern_WD30278669",
-   "reason": "non-ME discipline"
-  },
-  {
    "company": "Johnson and Johnson",
    "title": "Clinical Pharmacology and Pharmacometrics Intern - Summer 2027",
    "location": "Spring House, Pennsylvania, United States of America; Cambridge, Massachusetts, United States of America; La Jolla, California, United States of America; Raritan, New Jersey, United States of America; Titusville, New Jersey, United States of America",
@@ -21819,37 +21983,9 @@
   },
   {
    "company": "Lockheed Martin",
-   "title": "Aeronautical Engineer (Vehicle Systems) - Intern",
-   "location": "Marietta, GA, US",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477243605",
-   "reason": "scored 17, below tier B"
-  },
-  {
-   "company": "Lockheed Martin",
    "title": "Engineering - Intern",
    "location": "Mt Laurel Township, NJ, US",
    "url": "https://lockheedmartin.eightfold.ai/careers/job/996477288560",
-   "reason": "no mechanical signal"
-  },
-  {
-   "company": "Lockheed Martin",
-   "title": "Engineering - Intern",
-   "location": "Mt Laurel Township, NJ, US",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477288622",
-   "reason": "no mechanical signal"
-  },
-  {
-   "company": "Lockheed Martin",
-   "title": "Engineering Intern",
-   "location": "Mt Laurel Township, NJ, US",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477363008",
-   "reason": "scored 14, below tier B"
-  },
-  {
-   "company": "Lockheed Martin",
-   "title": "Industrial Engineering - Intern",
-   "location": "Troy, AL, US",
-   "url": "https://lockheedmartin.eightfold.ai/careers/job/996477211510",
    "reason": "no mechanical signal"
   },
   {
@@ -22211,6 +22347,13 @@
   },
   {
    "company": "Northrop Grumman",
+   "title": "2027 Engineering Internship (Dulles VA / Baltimore MD)",
+   "location": "United States-Virginia-Dulles; United States-Maryland-Baltimore",
+   "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Virginia-Dulles/XMLNAME-2027-Engineering-Internship--Dulles-VA---Baltimore-MD-_R10256270",
+   "reason": "scored 25, below tier B"
+  },
+  {
+   "company": "Northrop Grumman",
    "title": "2027 Global Supply Chain Specialist internship - VIRTUAL/REMOTE",
    "location": "United States-Virginia-Unknown City",
    "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-Virginia-Unknown-City/XMLNAME-2027-Global-Supply-Chain-Specialist-internship---VIRTUAL-REMOTE_R10253960",
@@ -22516,6 +22659,13 @@
    "location": "Appleton, Wisconsin, United States",
    "url": "https://oshkoshcorporation.wd5.myworkdayjobs.com/Oshkosh/job/Appleton-Wisconsin-United-States/Human-Resources-Intern--Summer-2027-_R49896",
    "reason": "scored 12, below tier B"
+  },
+  {
+   "company": "Oshkosh",
+   "title": "Industrial Design Intern",
+   "location": "Oshkosh, Wisconsin, United States",
+   "url": "https://oshkoshcorporation.wd5.myworkdayjobs.com/Oshkosh/job/Oshkosh-Wisconsin-United-States/Industrial-Design-Intern_R49703",
+   "reason": "no mechanical signal"
   },
   {
    "company": "Oshkosh",
@@ -23212,6 +23362,20 @@
   },
   {
    "company": "RTX",
+   "title": "Quality Assurance Intern (Summer 2027)",
+   "location": "US-CT-CHESHIRE-250 ~ 250 Knotter Dr ~ GOODRICH CORP",
+   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-CT-CHESHIRE-250--250-Knotter-Dr--GOODRICH-CORP/Quality-Assurance-Intern--Summer-2027-_01882553",
+   "reason": "scored 16, below tier B"
+  },
+  {
+   "company": "RTX",
+   "title": "Quality Engineering Intern (Summer 2027)",
+   "location": "US-IA-CORALVILLE-155 ~ 2855 Heartland Dr ~ HEARTLAND BLDG 155",
+   "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-IA-CORALVILLE-155--2855-Heartland-Dr--HEARTLAND-BLDG-155/Quality-Engineering-Intern--Summer-2027-_01882628",
+   "reason": "scored 27, below tier B"
+  },
+  {
+   "company": "RTX",
    "title": "RF Design Engineer Intern (Summer 2027)(Onsite)",
    "location": "US-AZ-TUCSON-M02 ~ 1151 E Hermans Rd ~ BLDG M02",
    "url": "https://globalhr.wd5.myworkdayjobs.com/REC_RTX_Ext_Gateway/job/US-AZ-TUCSON-M02--1151-E-Hermans-Rd--BLDG-M02/RF-Design-Engineer-Intern--Summer-2027--Onsite-_01872014",
@@ -23325,13 +23489,6 @@
   {
    "company": "Rocket Lab",
    "title": "Electrical Engineering Intern Summer 2027",
-   "location": "Pasadena, CA",
-   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7998598003",
-   "reason": "non-ME discipline"
-  },
-  {
-   "company": "Rocket Lab",
-   "title": "Electrical Engineering Intern Summer 2027",
    "location": "Toronto, CAN",
    "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7990043003",
    "reason": "non-ME discipline"
@@ -23345,6 +23502,13 @@
   },
   {
    "company": "Rocket Lab",
+   "title": "Electrical Engineering Intern Summer 2027",
+   "location": "Pasadena, CA",
+   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7998598003",
+   "reason": "non-ME discipline"
+  },
+  {
+   "company": "Rocket Lab",
    "title": "Flight Software Intern Summer 2027",
    "location": "Littleton, CO",
    "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7989722003",
@@ -23353,15 +23517,15 @@
   {
    "company": "Rocket Lab",
    "title": "Government Operations Intern Summer 2027",
-   "location": "Littleton, CO",
-   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8001401003",
+   "location": "Washington, DC",
+   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7992754003",
    "reason": "scored 14, below tier B"
   },
   {
    "company": "Rocket Lab",
    "title": "Government Operations Intern Summer 2027",
-   "location": "Washington, DC",
-   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7992754003",
+   "location": "Littleton, CO",
+   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8001401003",
    "reason": "scored 14, below tier B"
   },
   {
@@ -23374,16 +23538,16 @@
   {
    "company": "Rocket Lab",
    "title": "Manufacturing Engineering Intern Summer 2027",
-   "location": "Wallops Island, VA",
-   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7996623003",
-   "reason": "scored 28, below tier B"
+   "location": "Middle River, MD",
+   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7988835003",
+   "reason": "scored 31, below tier B"
   },
   {
    "company": "Rocket Lab",
    "title": "Manufacturing Engineering Intern Summer 2027",
-   "location": "Middle River, MD",
-   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7988835003",
-   "reason": "scored 31, below tier B"
+   "location": "Wallops Island, VA",
+   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7996623003",
+   "reason": "scored 28, below tier B"
   },
   {
    "company": "Rocket Lab",
@@ -23416,8 +23580,8 @@
   {
    "company": "Rocket Lab",
    "title": "Security Analyst Intern Summer 2027",
-   "location": "Middle River, MD",
-   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986963003",
+   "location": "Albuquerque, NM",
+   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986874003",
    "reason": "non-ME discipline"
   },
   {
@@ -23437,8 +23601,8 @@
   {
    "company": "Rocket Lab",
    "title": "Security Analyst Intern Summer 2027",
-   "location": "Albuquerque, NM",
-   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986874003",
+   "location": "Middle River, MD",
+   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7986963003",
    "reason": "non-ME discipline"
   },
   {
@@ -24292,6 +24456,13 @@
    "company": "Tektronix",
    "title": "Financial Planning & Analysis (FP&A) Intern - Summer 2027",
    "location": "Beaverton, OR, US",
+   "url": "https://ralliant.eightfold.ai/careers/job/1133915908136",
+   "reason": "scored 16, below tier B"
+  },
+  {
+   "company": "Tektronix",
+   "title": "Financial Planning & Analysis (FP&A) Intern - Summer 2027",
+   "location": "Beaverton, OR, US",
    "url": "https://ralliant.eightfold.ai/careers/job/1133915545417",
    "reason": "scored 16, below tier B"
   },
@@ -24300,13 +24471,6 @@
    "title": "Financial Planning & Analysis (FP&A) Intern - Summer 2027",
    "location": "Beaverton, OR, US",
    "url": "https://ralliant.eightfold.ai/careers/job/1133915908134",
-   "reason": "scored 16, below tier B"
-  },
-  {
-   "company": "Tektronix",
-   "title": "Financial Planning & Analysis (FP&A) Intern - Summer 2027",
-   "location": "Beaverton, OR, US",
-   "url": "https://ralliant.eightfold.ai/careers/job/1133915908136",
    "reason": "scored 16, below tier B"
   },
   {
@@ -25309,6 +25473,13 @@
    "location": "Anoka, MN, US",
    "url": "https://nvent.wd5.myworkdayjobs.com/nVent/job/Anoka-MN-US/Supply-Chain-Purchasing-Intern--June---August-2027-_R23535",
    "reason": "non-ME discipline"
+  },
+  {
+   "company": "onsemi",
+   "title": "Summer 2027 - Device Characterization Engineering Intern",
+   "location": "Hopewell Junction, NY, United States",
+   "url": "https://hctz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/2506970",
+   "reason": "scored 24, below tier B"
   },
   {
    "company": "onsemi",
