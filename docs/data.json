@@ -1,23 +1,38 @@
 {
- "generated": "2026-10-16T20:57:32+00:00",
- "run_url": "https://github.com/irogers5890/jobwatch/actions/runs/38965957863",
- "scanned": 25764,
+ "generated": "2026-10-16T23:28:37+00:00",
+ "run_url": "https://github.com/irogers5890/jobwatch/actions/runs/38981623975",
+ "scanned": 25711,
  "boards": 280,
  "errors": [
   {
-   "company": "Jabil",
+   "company": "Burkert",
    "board": "workday",
+   "error": "failed after 3 tries: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+   "company": "Microsoft",
+   "board": "eightfold",
    "error": "failed after 3 tries: HTTP 429"
+  },
+  {
+   "company": "Revvity",
+   "board": "workday",
+   "error": "failed after 3 tries: Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+   "company": "Sulzer",
+   "board": "workday",
+   "error": "failed after 3 tries: Expecting value: line 1 column 1 (char 0)"
   }
  ],
  "dropped": {
-  "non-ME discipline": 777,
-  "no Summer/Fall 2027": 4506,
+  "non-ME discipline": 780,
+  "no Summer/Fall 2027": 4440,
   "degree-level blocker": 9,
-  "below threshold": 481,
-  "no mechanical signal": 206,
-  "not a student req": 19005,
-  "off-target season in title": 410
+  "below threshold": 487,
+  "no mechanical signal": 209,
+  "not a student req": 19010,
+  "off-target season in title": 406
  },
  "jobs": [
   {
@@ -40,7 +55,7 @@
      44.0
     ],
     "fresh": 0,
-    "age": 23.9,
+    "age": 24.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -100,7 +115,7 @@
      40.0
     ],
     "fresh": 9,
-    "age": 2.9,
+    "age": 3.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -157,7 +172,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.9,
+    "age": 2.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -217,7 +232,7 @@
      45.0
     ],
     "fresh": -8,
-    "age": 127.9,
+    "age": 128.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -277,7 +292,7 @@
      32.0
     ],
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -337,7 +352,7 @@
      41.0
     ],
     "fresh": -4,
-    "age": 42.9,
+    "age": 43.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -397,7 +412,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 10.9,
+    "age": 11.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -454,7 +469,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 44.9,
+    "age": 45.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -511,7 +526,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 44.9,
+    "age": 45.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -571,7 +586,7 @@
      48.0
     ],
     "fresh": -4,
-    "age": 37.9,
+    "age": 38.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -628,7 +643,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -688,7 +703,7 @@
      32.0
     ],
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -745,7 +760,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.9,
+    "age": 3.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -805,7 +820,7 @@
      32.0
     ],
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -862,7 +877,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 59.9,
+    "age": 60.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -919,7 +934,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 59.9,
+    "age": 60.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -979,7 +994,7 @@
      50.0
     ],
     "fresh": -4,
-    "age": 42.9,
+    "age": 43.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1036,7 +1051,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 42.9,
+    "age": 43.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1096,7 +1111,7 @@
      45.0
     ],
     "fresh": 0,
-    "age": 22.9,
+    "age": 23.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1156,7 +1171,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 15.9,
+    "age": 16.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1216,7 +1231,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 15.9,
+    "age": 16.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1276,7 +1291,7 @@
      30.0
     ],
     "fresh": 0,
-    "age": 29.9,
+    "age": 30.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1333,7 +1348,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 8.9,
+    "age": 9.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1393,7 +1408,7 @@
      50.0
     ],
     "fresh": 3,
-    "age": 11.9,
+    "age": 12.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1453,7 +1468,7 @@
      50.0
     ],
     "fresh": 3,
-    "age": 11.9,
+    "age": 12.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1510,7 +1525,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.9,
+    "age": 2.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1567,7 +1582,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.9,
+    "age": 3.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1624,7 +1639,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 74.9,
+    "age": 75.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1684,7 +1699,7 @@
      42.0
     ],
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1740,7 +1755,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 50.9,
+    "age": 51.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1800,7 +1815,7 @@
      32.0
     ],
     "fresh": -4,
-    "age": 44.9,
+    "age": 45.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1860,7 +1875,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 11.9,
+    "age": 12.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1920,7 +1935,7 @@
      38.0
     ],
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -1977,7 +1992,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 16.9,
+    "age": 17.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2037,7 +2052,7 @@
      34.0
     ],
     "fresh": 0,
-    "age": 28.9,
+    "age": 29.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2097,7 +2112,7 @@
      58.75
     ],
     "fresh": 3,
-    "age": 16.9,
+    "age": 17.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2157,7 +2172,7 @@
      38.0
     ],
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2214,7 +2229,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 28.9,
+    "age": 29.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2271,7 +2286,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.9,
+    "age": 3.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2327,7 +2342,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 37.9,
+    "age": 38.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2387,7 +2402,7 @@
      41.0
     ],
     "fresh": 9,
-    "age": 2.9,
+    "age": 3.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2447,7 +2462,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 15.9,
+    "age": 16.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2504,7 +2519,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 38.9,
+    "age": 39.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2561,7 +2576,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 38.9,
+    "age": 39.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2618,7 +2633,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 59.9,
+    "age": 60.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2675,7 +2690,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 59.9,
+    "age": 60.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2732,7 +2747,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 28.9,
+    "age": 29.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2792,7 +2807,7 @@
      38.0
     ],
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2849,7 +2864,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2906,7 +2921,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 28.9,
+    "age": 29.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -2966,7 +2981,7 @@
      45.25
     ],
     "fresh": 12,
-    "age": 0.9,
+    "age": 1.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3026,7 +3041,7 @@
      58.75
     ],
     "fresh": 3,
-    "age": 16.9,
+    "age": 17.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3079,7 +3094,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 65.9,
+    "age": 66.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3136,7 +3151,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 65.9,
+    "age": 66.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3193,7 +3208,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 45.9,
+    "age": 46.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3253,7 +3268,7 @@
      31.0
     ],
     "fresh": -8,
-    "age": 85.9,
+    "age": 86.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3310,7 +3325,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 28.9,
+    "age": 29.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3367,7 +3382,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3424,7 +3439,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 77.9,
+    "age": 78.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3481,7 +3496,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.9,
+    "age": 2.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3541,7 +3556,7 @@
      30.0
     ],
     "fresh": 0,
-    "age": 32.9,
+    "age": 33.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3598,7 +3613,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 0.9,
+    "age": 1.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3651,7 +3666,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 25.9,
+    "age": 26.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3707,7 +3722,7 @@
      34.0
     ],
     "fresh": 0,
-    "age": 32.9,
+    "age": 33.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3764,7 +3779,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 0.9,
+    "age": 1.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3805,7 +3820,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 0.9,
+    "age": 1.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3849,7 +3864,7 @@
      32.0
     ],
     "fresh": 9,
-    "age": 2.9,
+    "age": 3.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3909,7 +3924,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 53.9,
+    "age": 54.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -3969,7 +3984,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 15.9,
+    "age": 16.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4029,7 +4044,7 @@
      34.0
     ],
     "fresh": 0,
-    "age": 32.9,
+    "age": 33.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4086,7 +4101,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 35.9,
+    "age": 36.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4146,7 +4161,7 @@
      31.67
     ],
     "fresh": 12,
-    "age": 1.9,
+    "age": 2.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4199,7 +4214,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 13.9,
+    "age": 14.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4252,7 +4267,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 10.9,
+    "age": 11.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4300,7 +4315,7 @@
      48.0
     ],
     "fresh": 3,
-    "age": 10.9,
+    "age": 11.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4352,7 +4367,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 59.9,
+    "age": 60.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4393,46 +4408,6 @@
    "first_seen": "2026-10-13T23:28:52+00:00"
   },
   {
-   "id": "ef:microsoft.com:200060962",
-   "title": "Researcher Intern, CoreAI",
-   "location": "Redmond, WA, US; Mountain View, CA, US",
-   "url": "https://apply.careers.microsoft.com/careers/job/1970393557027387",
-   "posted": "2026-10-15",
-   "body": "Overview The Code|AI team leads applied research and data science for GitHub Copilot and VS Code, working on the future of AI for developers. We are a diverse, entrepreneurial, and multi-disciplinary group of scientists, researchers, and engineers with a passion for using AI to improve the productivity of millions of developers around the world. We have released AI for code advancements in Github Copilot, VS Code, Visual Studio and Copilot extensions in other IDEs. Our team focuses on post-training code specific models like code completion, code embedding models and agentic research for Copilot Coding Agent, Copilot CLI and Copilot Code Review. We embrace open source and continue to share our research and work with the developer and research communities to advance AI in Developer tools. We are seeking entrepreneurial and creative Applied Researcher Interns to lead groundbreaking research projects, taking these from research into product. You will collaborate with scientists, engineers, and designers across Microsoft Research, Microsoft product teams, and Github. You will have an opportunity to build and train state-of-the-art models, and opportunities to both apply and advance existing approaches of using LLMs for software engineering, from using RAG to evaluation. Most importantly, you will have an opportunity to work closely with several developer product teams to run experiments, evaluate, iterate, and improve your AI projects on a large scale. Microsoft\u2019s mission is to empower every person and every organization on the planet to achieve more. As employees, we come together with a growth mindset, innovate to empower others and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond. This is for a Summer 2027 Internship. #Code|AI #CoreAI #EiP Responsibilities Contributes to projects on the future of AI for developers. Collaborates across disciplines with product teams across Microsoft and Github. Stays up to date with the research literature and product advances in AI for software engineering. Creates new datasets from both the world's public code and Microsoft's internal data. Builds and manages large-scale ML experiments and models. Embodies our Culture and Values Qualifications Required qualifications Currently enrolled in a Doctorate Degree program in a relevant field. Must be enrolled in a Doctorate Degree program in a relevant field for the role during the academic term immediately before the internship. Must have at least one additional quarter/semester of a Doctorate Degree program program in area relevant for the role remaining following the completion of the internship. Additional Qualifications: 1+ year(s) experience in Calculus, Probability and Statistics and/or Machine Learning. 1+ year(s) experience in one or more general purpose programming languages including: C/C++, Java, R or Python, and domain relevant libraries and frameworks (e.g., PyTorch). 1+ year(s) experience (classroom or work related) in one or more areas of computer science, such as Natural Language Understanding, Neural Networks, Computer Vision, Machine Learning, Deep Learning, Algorithmic Foundations of Optimization, Data Science, Privacy, etc. The base pay range for this internship is USD $5,690.00 - $11,210.00 per month. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $7,410.00 - $12,250.00 per month. Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-intern-pay Microsoft accepts applications and processes offers for these roles on an ongoing basis throughout the academic calendar (September - April) This position will be open for a minimum of 5 days, with applications accepted on an ongoing basis until the position is filled. Microsoft is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance with religious accommodations and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",
-   "company": "Microsoft",
-   "score": {
-    "total": 59,
-    "base": 47,
-    "fit": 8,
-    "loc": 8,
-    "traj": 19,
-    "pay": 12,
-    "rate": [
-     32.89,
-     70.81
-    ],
-    "fresh": 12,
-    "age": 1.9,
-    "age_basis": "posted",
-    "tier": "B",
-    "why": [
-     [
-      "pay $52/hr",
-      12
-     ],
-     [
-      "body: python",
-      4
-     ],
-     [
-      "body: computer vision",
-      4
-     ]
-    ]
-   },
-   "first_seen": "2026-10-15T09:17:02+00:00"
-  },
-  {
    "id": "gh:rocketlab:7986794003",
    "title": "Fluid Systems Intern Summer 2027",
    "location": "Long Beach, CA",
@@ -4452,7 +4427,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 37.9,
+    "age": 38.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4512,7 +4487,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 46.9,
+    "age": 47.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4569,7 +4544,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 15.9,
+    "age": 16.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -4626,7 +4601,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.9,
+    "age": 3.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4667,7 +4642,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 4.9,
+    "age": 5.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4712,7 +4687,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4765,7 +4740,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 0.9,
+    "age": 1.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4809,7 +4784,7 @@
      32.0
     ],
     "fresh": 9,
-    "age": 2.9,
+    "age": 3.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4862,7 +4837,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.9,
+    "age": 2.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4911,7 +4886,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.9,
+    "age": 2.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -4963,7 +4938,7 @@
      28.0
     ],
     "fresh": 0,
-    "age": 30.9,
+    "age": 31.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5020,7 +4995,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5073,7 +5048,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.9,
+    "age": 2.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5121,7 +5096,7 @@
      48.0
     ],
     "fresh": 3,
-    "age": 16.9,
+    "age": 17.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5170,7 +5145,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 44.9,
+    "age": 45.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5219,7 +5194,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5264,7 +5239,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 59.9,
+    "age": 60.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5320,7 +5295,7 @@
      20.0
     ],
     "fresh": 0,
-    "age": 25.9,
+    "age": 26.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5380,7 +5355,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 25.9,
+    "age": 26.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5432,7 +5407,7 @@
      32.0
     ],
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5484,7 +5459,7 @@
      37.25
     ],
     "fresh": 9,
-    "age": 2.9,
+    "age": 3.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5541,7 +5516,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 4.9,
+    "age": 5.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5590,7 +5565,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 16.9,
+    "age": 17.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5639,7 +5614,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.9,
+    "age": 59.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5684,7 +5659,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 17.9,
+    "age": 18.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5736,7 +5711,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 56.9,
+    "age": 57.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5796,7 +5771,7 @@
      50.82
     ],
     "fresh": -4,
-    "age": 44.9,
+    "age": 45.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5856,7 +5831,7 @@
      28.15
     ],
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -5913,7 +5888,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 28.9,
+    "age": 29.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -5969,7 +5944,7 @@
      35.0
     ],
     "fresh": 3,
-    "age": 18.9,
+    "age": 19.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6025,7 +6000,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 15.9,
+    "age": 16.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6082,7 +6057,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 56.9,
+    "age": 57.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6138,7 +6113,7 @@
      50.0
     ],
     "fresh": 3,
-    "age": 16.9,
+    "age": 17.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -6190,7 +6165,7 @@
      45.0
     ],
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -6238,7 +6213,7 @@
      37.0
     ],
     "fresh": -4,
-    "age": 57.9,
+    "age": 58.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6298,7 +6273,7 @@
      24.23
     ],
     "fresh": 0,
-    "age": 30.9,
+    "age": 31.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6354,7 +6329,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 23.9,
+    "age": 24.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6402,7 +6377,7 @@
      38.0
     ],
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -6443,6 +6418,62 @@
    "first_seen": "2026-10-13T20:39:35+00:00"
   },
   {
+   "id": "wd:generalmotors:JR-202619285",
+   "title": "2027 Summer Intern - Human Interface Design",
+   "location": "Warren, Michigan, United States of America; Pasadena Design Studio - Pasadena Design Studio - Bldg. 3",
+   "url": "https://generalmotors.wd5.myworkdayjobs.com/Careers_GM/job/Warren-Michigan-United-States-of-America/XMLNAME-2027-Summer-Intern---Human-Interface-Design_JR-202619285",
+   "posted": "2026-10-16",
+   "body": "Job Description The Role: At General Motors, we combine the passion of a startup with the influence of a global powerhouse. We pride ourselves on designing, building, and selling the world's best vehicles and transportation solutions, and we seek to transform the future of personal mobility. We are seeking a new generation of visionaries to help launch bold Design initiatives and shape new directions for General Motors. As a Design Intern, you will work with a team to design next-generation in-vehicle experiences. The Team: As a designer within GM\u2019s Human Interface Design organization, you will craft intuitive, human-centered experiences across vehicles, digital platforms, and design systems. You will work independently on complex design challenges, collaborating across disciplines to deliver solutions that align with GM\u2019s vision of Zero Crashes, Zero Emissions, and Zero Congestion. We are hiring interns across three focus areas for Summer 2027: \u2022 Vehicle Experiences \u2013 Designs the future of in-vehicle digital ecosystems, from operating systems and cabin interfaces to connected customer experiences across digital touchpoints. This team partners closely with engineering and product to deliver intuitive, accessible, and delightful experiences that enhance driving and connect millions of users worldwide. Sitting at the intersection of industrial and digital design, these designers work on forward-looking strategies that shape how users interact with evolving systems. \u2022 Advanced UX \u2013 Explores next-generation vehicle experiences through conceptual visualization and rapid prototyping. This team pushes boundaries with bold ideation and human-centered design to shape seamless interactions across hardware and software. Designers here blend creativity and technical know-how to envision future mobility experiences that are intuitive, inclusive, and aesthetically refined. \u2022 Services & Web Platform \u2013 Shapes the future of web and app experiences across GM and its marquee brands. This team ensures GM\u2019s digital ecosystem feels effortless, engaging, and safe, connecting drivers and passengers to their vehicles and services through thoughtful, human-centered design. What You\u2019ll Do: \u2022 Collaborate closely with team members and cross-functional teams to craft a premier user experience across products and platforms. \u2022 Balance user needs, technical constraints, and business objectives to solve problems effectively. \u2022 Develop production interaction designs following design guidelines. \u2022 Create design deliverables to communicate your work, including sketches, drawings, mockups, animations, and prototypes. \u2022 Release production specifications and assets to software engineering teams. \u2022 Present work to peers and leadership. \u2022 Work with product teams and engineers to execute user interface designs as a seamless part of the overall user experience, advocating aesthetics and visual design principles. \u2022 Participate in design critiques to guide design decisions. Please note, you must submit a portfolio to be considered for this position \u2013 see instructions below. Required Qualifications: \u2022 Pursuit of a bachelor's degree or advanced degree in User Experience Design, Human Computer Interaction, Integrated Design, Design Science, Product Design, Fine Arts - Interaction/Interactive Design, Digital Media/Media Arts, Design & Technology, or a similar field. \u2022 Must be graduating between December 2027 and May 2029. \u2022 Able to work full-time, 40 hours per week during the summer months. Preferred Qualifications: \u2022 Proficiency in common design tools such as Figma, Adobe Creative Suite, and prototyping software. \u2022 Outstanding interpersonal and relationship-management skills to effectively collaborate with varying levels of the organization as needed. \u2022 Excellent written and verbal communication skills with the ability to distill complex subjects to a wider audience. \u2022 Emerging partnership and collaboration skills and the ability to learn from and share knowledge with coworkers in a fast-paced environment. \u2022 High level of integrity, ability to deal with ambiguity, and initiative/self-direction. \u2022 Evidence of strong character with honesty, accountability, and trust. \u2022 Consistently demonstrates innovative, customer-centric thinking. GM does not provide immigration-related sponsorship for this role. Do not apply for this role if you will need GM immigration sponsorship now or in the future. This includes direct company sponsorship, entry of GM as the immigration employer of record on a government form, and any work authorization requiring a written submission or other immigration support from the company (e.g., H1-B, OPT, STEM OPT, CPT, TN, J-1, etc.). Work Arrangement: Hybrid: This role is categorized as hybrid. This position does not require an employee to be onsite full-time, but the general expectation is that the employee be onsite an average of three (3) days each week if located within 50 miles of a Global Technical Center in Warren, MI. GM will provide a one-time lump sum taxable stipend payment to eligible students selected for the 2027 Student Program. To help facilitate administration of relocation benefits if you are selected, please apply using the permanent address you would move from. Compensation: \u2022 The salary for this role is $6,100 monthly. Start Dates: Start dates for this internship role are May & June of 2027. What You\u2019ll Get From Us (Benefits): \u2022 Paid U.S. GM Holidays \u2022 GM Family First Vehicle Discount Program \u2022 Result-based potential for growth within GM \u2022 Intern events to network with company leaders and peers Portfolio Submission Instructions: We strongly encourage you to include a link to your online portfolio in the \"website\" section of your application or directly on your resume. This allows us to easily access larger files and view your work in its intended format. Please do not submit Dropbox files or Google Docs. 1. Save your portfolio as a PDF document. 2. Name your portfolio LAST NAME, FIRST NAME. Example: Candidate name is John Smith. Portfolio PDF file name is: Smith, John.pdf. 3. Upload it as an attachment; you may have to condense the file. DISCLAIMER: The works included in your career portfolio must not be subject to any nondisclosure and/or confidentiality agreement. If the works in your career portfolio are owned by your current or former employer, or by any other third party, there must be express written consent from the owner allowing the works to be included in your career portfolio for sharing with General Motors (\"GM\"). By sharing your career portfolio, you grant to GM the right to quote, paraphrase, reproduce, distribute, or otherwise use all or any portion of the career portfolio for purposes of making a hiring determination. By sharing your career portfolio, you also agree to release and discharge GM, and its licensees, successors, and assigns, from any and all claims, demands, or causes of action that you may have regarding any use of the career portfolio, including (but not limited to) any claims based on the right to privacy, the right to publicity, copyright, libel, defamation, or any other right. About GM Our vision is a world with Zero Crashes, Zero Emissions and Zero Congestion and we embrace the responsibility to lead the change that will make our world better, safer and more equitable for all. Why Join Us We believe we all must make a choice every day \u2013 individually and collectively \u2013 to drive meaningful change through our words, our deeds and our culture. Every day, we want every employee to feel they belong to one General Motors team. Benefits Overview From day one, we're looking out for your well-being\u2013at work and at home\u2013so you can focus on realizing your ambitions. Learn how GM supports a rewarding career that rewards you personally by visiting Total Rewards resources . Non-Discrimination and Equal Employment Opportunities (U.S.) General Motors is committed to being a workplace that is not only free of unlawful discrimination, but one that genuinely fosters inclusion and belonging. We strongly believe that providing an inclusive workplace creates an environment in which our employees can thrive and develop better products for our customers. All employment decisions are made on a non-discriminatory basis without regard to sex, race, color, national origin, citizenship status, religion, age, disability, pregnancy or maternity status, sexual orientation, gender identity, status as a veteran or protected veteran, or any other similarly protected status in accordance with federal, state and local laws. We encourage interested candidates to review the key responsibilities and qualifications for each role and apply for any positions that match their skills and capabilities. Applicants in the recruitment process may be required, where applicable, to successfully complete a role-related assessment(s) and/or a pre-employment screening prior to beginning employment. To learn more, visit How we Hire . Accommodations General Motors offers opportunities to all job seekers including individuals with disabilities. If you need a reasonable accommodation to assist with your job search or application for employment, email us or call us at 1-800-865-7580. In your email, please include a description of the specific accommodation you are requesting as well as the job title and requisition number of the position for which you are applying.",
+   "company": "General Motors",
+   "score": {
+    "total": 51,
+    "base": 39,
+    "fit": 25,
+    "loc": 0,
+    "traj": 11,
+    "pay": 3,
+    "rate": [
+     35.26,
+     35.26
+    ],
+    "fresh": 12,
+    "age": 1.0,
+    "age_basis": "posted",
+    "tier": "B",
+    "why": [
+     [
+      "body: product design",
+      6
+     ],
+     [
+      "body: rapid prototyping",
+      5
+     ],
+     [
+      "body: prototype",
+      4
+     ],
+     [
+      "body: relocation",
+      4
+     ],
+     [
+      "body: doe",
+      3
+     ],
+     [
+      "body: drawings",
+      3
+     ],
+     [
+      "pay $35/hr",
+      3
+     ]
+    ]
+   },
+   "first_seen": "2026-10-16T23:28:37+00:00"
+  },
+  {
    "id": "ef:qualcomm.com:3095750",
    "title": "Wireless Systems Engineering Internship - Summer 2027",
    "location": "San Diego, CA, US; Boxborough, MA, US; NJ,US; Santa Clara, CA, US",
@@ -6459,7 +6490,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 28.9,
+    "age": 29.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6512,7 +6543,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -6568,7 +6599,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 42.9,
+    "age": 43.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6628,7 +6659,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 46.9,
+    "age": 47.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6688,7 +6719,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 46.9,
+    "age": 47.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6748,7 +6779,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 46.9,
+    "age": 47.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6808,7 +6839,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 46.9,
+    "age": 47.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -6868,7 +6899,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 14.9,
+    "age": 15.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -6920,7 +6951,7 @@
      30.0
     ],
     "fresh": 3,
-    "age": 17.9,
+    "age": 18.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -6977,7 +7008,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 11.9,
+    "age": 12.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7014,7 +7045,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 28.9,
+    "age": 29.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -7067,7 +7098,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7115,7 +7146,7 @@
      32.0
     ],
     "fresh": 9,
-    "age": 2.9,
+    "age": 3.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7160,7 +7191,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 45.9,
+    "age": 46.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -7220,7 +7251,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 18.9,
+    "age": 19.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7276,7 +7307,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 18.9,
+    "age": 19.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7321,7 +7352,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.9,
+    "age": 3.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7370,7 +7401,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.9,
+    "age": 3.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7422,7 +7453,7 @@
      25.0
     ],
     "fresh": 0,
-    "age": 30.9,
+    "age": 31.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7482,7 +7513,7 @@
      28.0
     ],
     "fresh": 0,
-    "age": 30.9,
+    "age": 31.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7542,7 +7573,7 @@
      22.0
     ],
     "fresh": 6,
-    "age": 9.9,
+    "age": 10.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7602,7 +7633,7 @@
      35.45
     ],
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7655,7 +7686,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 7.9,
+    "age": 8.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7707,7 +7738,7 @@
      24.0
     ],
     "fresh": 3,
-    "age": 16.9,
+    "age": 17.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7767,7 +7798,7 @@
      34.0
     ],
     "fresh": 3,
-    "age": 14.9,
+    "age": 15.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7824,7 +7855,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 31.9,
+    "age": 32.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7872,7 +7903,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 56.9,
+    "age": 57.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -7929,7 +7960,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 4.9,
+    "age": 5.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -7985,7 +8016,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 16.9,
+    "age": 17.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8030,7 +8061,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.9,
+    "age": 2.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8071,7 +8102,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 8.9,
+    "age": 9.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8123,7 +8154,7 @@
      28.0
     ],
     "fresh": 0,
-    "age": 29.9,
+    "age": 30.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8183,7 +8214,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 37.9,
+    "age": 38.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -8240,7 +8271,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 64.9,
+    "age": 65.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -8297,7 +8328,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.9,
+    "age": 2.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8349,7 +8380,7 @@
      21.6
     ],
     "fresh": 3,
-    "age": 14.9,
+    "age": 15.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8402,7 +8433,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 29.9,
+    "age": 30.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8443,7 +8474,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.9,
+    "age": 2.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8491,7 +8522,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 42.9,
+    "age": 43.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -8544,7 +8575,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 59.9,
+    "age": 60.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -8588,7 +8619,7 @@
      35.45
     ],
     "fresh": 12,
-    "age": 0.9,
+    "age": 1.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8640,7 +8671,7 @@
      40.0
     ],
     "fresh": 12,
-    "age": 0.9,
+    "age": 1.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8688,7 +8719,7 @@
      40.0
     ],
     "fresh": 12,
-    "age": 0.9,
+    "age": 1.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8732,7 +8763,7 @@
      40.0
     ],
     "fresh": 12,
-    "age": 1.9,
+    "age": 2.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8780,7 +8811,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 18.9,
+    "age": 19.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8832,7 +8863,7 @@
      48.0
     ],
     "fresh": -4,
-    "age": 50.9,
+    "age": 51.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -8884,7 +8915,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 16.9,
+    "age": 17.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8932,7 +8963,7 @@
      50.0
     ],
     "fresh": 12,
-    "age": 1.9,
+    "age": 2.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -8973,7 +9004,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 14.9,
+    "age": 15.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9022,7 +9053,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 28.9,
+    "age": 29.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9071,7 +9102,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.9,
+    "age": 2.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9116,7 +9147,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 12,
-    "age": 1.9,
+    "age": 2.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9161,7 +9192,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.9,
+    "age": 3.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9206,7 +9237,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 4.9,
+    "age": 5.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9251,7 +9282,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 11.9,
+    "age": 12.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9300,7 +9331,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 10.9,
+    "age": 11.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9348,7 +9379,7 @@
      28.0
     ],
     "fresh": 0,
-    "age": 32.9,
+    "age": 33.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9408,7 +9439,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 22.9,
+    "age": 23.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9456,7 +9487,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 28.9,
+    "age": 29.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9512,7 +9543,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 58.9,
+    "age": 59.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9569,7 +9600,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.9,
+    "age": 3.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9614,7 +9645,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 38.9,
+    "age": 39.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9659,7 +9690,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 4.9,
+    "age": 5.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9692,7 +9723,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9740,7 +9771,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 15.9,
+    "age": 16.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9800,7 +9831,7 @@
      41.0
     ],
     "fresh": 6,
-    "age": 7.9,
+    "age": 8.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9848,7 +9879,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 27.9,
+    "age": 28.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9893,7 +9924,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 4.9,
+    "age": 5.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9933,7 +9964,7 @@
      38.0
     ],
     "fresh": 9,
-    "age": 2.9,
+    "age": 3.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -9989,7 +10020,7 @@
      40.0
     ],
     "fresh": 3,
-    "age": 18.9,
+    "age": 19.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10034,7 +10065,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10067,7 +10098,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 25.9,
+    "age": 26.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10115,7 +10146,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 37.9,
+    "age": 38.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10171,7 +10202,7 @@
      33.0
     ],
     "fresh": 3,
-    "age": 15.9,
+    "age": 16.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10228,7 +10259,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 59.9,
+    "age": 60.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10281,7 +10312,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 59.9,
+    "age": 60.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10337,7 +10368,7 @@
      25.0
     ],
     "fresh": 0,
-    "age": 29.9,
+    "age": 30.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10397,7 +10428,7 @@
      44.0
     ],
     "fresh": -4,
-    "age": 57.9,
+    "age": 58.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10445,7 +10476,7 @@
      24.23
     ],
     "fresh": -4,
-    "age": 45.9,
+    "age": 46.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10505,7 +10536,7 @@
      29.0
     ],
     "fresh": 3,
-    "age": 16.9,
+    "age": 17.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10550,7 +10581,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 15.9,
+    "age": 16.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10587,7 +10618,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 23.9,
+    "age": 24.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10639,7 +10670,7 @@
      40.0
     ],
     "fresh": 9,
-    "age": 2.9,
+    "age": 3.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10687,7 +10718,7 @@
      48.0
     ],
     "fresh": 3,
-    "age": 17.9,
+    "age": 18.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10735,7 +10766,7 @@
      59.0
     ],
     "fresh": 3,
-    "age": 17.9,
+    "age": 18.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10779,7 +10810,7 @@
      30.0
     ],
     "fresh": 0,
-    "age": 32.9,
+    "age": 33.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10820,7 +10851,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.9,
+    "age": 3.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10852,7 +10883,7 @@
      45.25
     ],
     "fresh": -4,
-    "age": 45.9,
+    "age": 46.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10901,7 +10932,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 6,
-    "age": 7.9,
+    "age": 8.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10954,7 +10985,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -10999,7 +11030,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 17.9,
+    "age": 18.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11052,7 +11083,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 17.9,
+    "age": 18.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11108,7 +11139,7 @@
      25.0
     ],
     "fresh": 0,
-    "age": 22.9,
+    "age": 23.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11168,7 +11199,7 @@
      28.0
     ],
     "fresh": 0,
-    "age": 25.9,
+    "age": 26.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11225,7 +11256,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 36.9,
+    "age": 37.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11273,7 +11304,7 @@
      30.0
     ],
     "fresh": -8,
-    "age": 64.9,
+    "age": 65.0,
     "age_basis": "posted",
     "tier": "A",
     "why": [
@@ -11333,7 +11364,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 58.9,
+    "age": 59.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11393,7 +11424,7 @@
      24.0
     ],
     "fresh": 9,
-    "age": 4.9,
+    "age": 5.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11442,7 +11473,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 2.9,
+    "age": 3.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11479,7 +11510,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 42.9,
+    "age": 43.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11523,7 +11554,7 @@
      37.25
     ],
     "fresh": 9,
-    "age": 2.9,
+    "age": 3.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11575,7 +11606,7 @@
      28.85
     ],
     "fresh": -4,
-    "age": 35.9,
+    "age": 36.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11632,7 +11663,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 37.9,
+    "age": 38.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11684,7 +11715,7 @@
      40.0
     ],
     "fresh": -8,
-    "age": 127.9,
+    "age": 128.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11732,7 +11763,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 27.9,
+    "age": 28.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11784,7 +11815,7 @@
      38.0
     ],
     "fresh": 9,
-    "age": 2.9,
+    "age": 3.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11833,7 +11864,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 29.9,
+    "age": 30.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11870,7 +11901,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 24.9,
+    "age": 25.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11907,7 +11938,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 31.9,
+    "age": 32.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11948,7 +11979,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 9,
-    "age": 3.9,
+    "age": 4.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -11989,7 +12020,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 28.9,
+    "age": 29.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12034,7 +12065,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 18.9,
+    "age": 19.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12086,7 +12117,7 @@
      25.0
     ],
     "fresh": 0,
-    "age": 29.9,
+    "age": 30.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12146,7 +12177,7 @@
      47.0
     ],
     "fresh": -4,
-    "age": 43.9,
+    "age": 44.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12191,7 +12222,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 14.9,
+    "age": 15.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12235,7 +12266,7 @@
      34.0
     ],
     "fresh": -4,
-    "age": 43.9,
+    "age": 44.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12283,7 +12314,7 @@
      30.0
     ],
     "fresh": 0,
-    "age": 29.9,
+    "age": 30.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12332,7 +12363,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 10.9,
+    "age": 11.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12377,7 +12408,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 10.9,
+    "age": 11.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12422,7 +12453,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 10.9,
+    "age": 11.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12467,7 +12498,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 15.9,
+    "age": 16.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12512,7 +12543,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 15.9,
+    "age": 16.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12557,7 +12588,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 15.9,
+    "age": 16.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12605,7 +12636,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 37.9,
+    "age": 38.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12665,7 +12696,7 @@
      22.0
     ],
     "fresh": 6,
-    "age": 9.9,
+    "age": 10.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12713,7 +12744,7 @@
      43.27
     ],
     "fresh": -8,
-    "age": 74.9,
+    "age": 75.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12773,7 +12804,7 @@
      44.09
     ],
     "fresh": 3,
-    "age": 15.9,
+    "age": 16.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12825,7 +12856,7 @@
      50.0
     ],
     "fresh": 6,
-    "age": 9.9,
+    "age": 10.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12870,7 +12901,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 14.9,
+    "age": 15.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12911,7 +12942,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 67.9,
+    "age": 68.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -12952,7 +12983,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 35.9,
+    "age": 36.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13004,7 +13035,7 @@
      24.23
     ],
     "fresh": -4,
-    "age": 45.9,
+    "age": 46.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13056,7 +13087,7 @@
      24.23
     ],
     "fresh": -4,
-    "age": 45.9,
+    "age": 46.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13108,7 +13139,7 @@
      57.6
     ],
     "fresh": -4,
-    "age": 44.9,
+    "age": 45.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13160,7 +13191,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 22.9,
+    "age": 23.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13201,7 +13232,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 17.9,
+    "age": 18.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13237,7 +13268,7 @@
      34.29
     ],
     "fresh": 0,
-    "age": 30.9,
+    "age": 31.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13281,7 +13312,7 @@
      48.0
     ],
     "fresh": -4,
-    "age": 37.9,
+    "age": 38.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13330,7 +13361,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 17.9,
+    "age": 18.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13375,7 +13406,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 17.9,
+    "age": 18.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13420,7 +13451,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 25.9,
+    "age": 26.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13460,7 +13491,7 @@
      41.0
     ],
     "fresh": -4,
-    "age": 42.9,
+    "age": 43.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13497,7 +13528,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 38.9,
+    "age": 39.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13542,7 +13573,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 25.9,
+    "age": 26.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13594,7 +13625,7 @@
      34.0
     ],
     "fresh": 0,
-    "age": 30.9,
+    "age": 31.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13643,7 +13674,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 30.9,
+    "age": 31.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13687,7 +13718,7 @@
      27.69
     ],
     "fresh": 0,
-    "age": 24.9,
+    "age": 25.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13747,7 +13778,7 @@
      50.0
     ],
     "fresh": -4,
-    "age": 57.9,
+    "age": 58.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13796,7 +13827,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 15.9,
+    "age": 16.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13845,7 +13876,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 44.9,
+    "age": 45.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13886,7 +13917,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 32.9,
+    "age": 33.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13926,7 +13957,7 @@
      46.51
     ],
     "fresh": 3,
-    "age": 15.9,
+    "age": 16.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -13967,7 +13998,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 15.9,
+    "age": 16.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14012,7 +14043,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 15.9,
+    "age": 16.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14057,7 +14088,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 22.9,
+    "age": 23.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14105,7 +14136,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 37.9,
+    "age": 38.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14165,7 +14196,7 @@
      20.0
     ],
     "fresh": -4,
-    "age": 37.9,
+    "age": 38.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14225,7 +14256,7 @@
      25.0
     ],
     "fresh": 3,
-    "age": 18.9,
+    "age": 19.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14273,7 +14304,7 @@
      60.0
     ],
     "fresh": 0,
-    "age": 22.9,
+    "age": 23.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14321,7 +14352,7 @@
      24.23
     ],
     "fresh": -4,
-    "age": 44.9,
+    "age": 45.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14377,7 +14408,7 @@
      48.0
     ],
     "fresh": -4,
-    "age": 39.9,
+    "age": 40.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14437,7 +14468,7 @@
      45.0
     ],
     "fresh": 0,
-    "age": 23.9,
+    "age": 24.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14477,7 +14508,7 @@
      32.0
     ],
     "fresh": -4,
-    "age": 51.9,
+    "age": 52.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14529,7 +14560,7 @@
      31.0
     ],
     "fresh": -8,
-    "age": 85.9,
+    "age": 86.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14586,7 +14617,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 16.9,
+    "age": 17.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14631,7 +14662,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 16.9,
+    "age": 17.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14676,7 +14707,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 16.9,
+    "age": 17.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14721,7 +14752,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 11.9,
+    "age": 12.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14762,7 +14793,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 11.9,
+    "age": 12.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14803,7 +14834,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 21.9,
+    "age": 22.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14855,7 +14886,7 @@
      45.0
     ],
     "fresh": -4,
-    "age": 42.9,
+    "age": 43.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14896,7 +14927,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 18.9,
+    "age": 19.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14941,7 +14972,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 18.9,
+    "age": 19.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -14986,7 +15017,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 18.9,
+    "age": 19.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15034,7 +15065,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 51.9,
+    "age": 52.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15079,7 +15110,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 44.9,
+    "age": 45.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15135,7 +15166,7 @@
      50.82
     ],
     "fresh": -4,
-    "age": 44.9,
+    "age": 45.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15184,7 +15215,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 42.9,
+    "age": 43.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15217,7 +15248,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 42.9,
+    "age": 43.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15250,7 +15281,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 3,
-    "age": 13.9,
+    "age": 14.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15290,7 +15321,7 @@
      43.0
     ],
     "fresh": 3,
-    "age": 10.9,
+    "age": 11.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15331,7 +15362,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 38.9,
+    "age": 39.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15380,7 +15411,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 36.9,
+    "age": 37.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15424,7 +15455,7 @@
      48.0
     ],
     "fresh": -4,
-    "age": 39.9,
+    "age": 40.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15472,7 +15503,7 @@
      28.0
     ],
     "fresh": 0,
-    "age": 30.9,
+    "age": 31.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15528,7 +15559,7 @@
      40.0
     ],
     "fresh": 0,
-    "age": 21.9,
+    "age": 22.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15576,7 +15607,7 @@
      40.0
     ],
     "fresh": 0,
-    "age": 21.9,
+    "age": 22.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15621,7 +15652,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 32.9,
+    "age": 33.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15658,7 +15689,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 42.9,
+    "age": 43.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15695,7 +15726,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 42.9,
+    "age": 43.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15735,7 +15766,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 37.9,
+    "age": 38.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15779,7 +15810,7 @@
      25.0
     ],
     "fresh": 0,
-    "age": 29.9,
+    "age": 30.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15835,7 +15866,7 @@
      25.0
     ],
     "fresh": 0,
-    "age": 29.9,
+    "age": 30.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15891,7 +15922,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 46.9,
+    "age": 47.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15936,7 +15967,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 38.9,
+    "age": 39.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -15980,7 +16011,7 @@
      24.23
     ],
     "fresh": -4,
-    "age": 45.9,
+    "age": 46.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16032,7 +16063,7 @@
      34.0
     ],
     "fresh": -4,
-    "age": 36.9,
+    "age": 37.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16089,7 +16120,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 42.9,
+    "age": 43.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16129,7 +16160,7 @@
      29.0
     ],
     "fresh": 0,
-    "age": 23.9,
+    "age": 24.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16166,7 +16197,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 30.9,
+    "age": 31.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16207,7 +16238,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 50.9,
+    "age": 51.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16248,7 +16279,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 23.9,
+    "age": 24.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16293,7 +16324,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 25.9,
+    "age": 26.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16342,7 +16373,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 29.9,
+    "age": 30.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16387,7 +16418,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 43.9,
+    "age": 44.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16440,7 +16471,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 22.9,
+    "age": 23.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16484,7 +16515,7 @@
      60.0
     ],
     "fresh": -4,
-    "age": 57.9,
+    "age": 58.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16528,7 +16559,7 @@
      29.0
     ],
     "fresh": -8,
-    "age": 62.9,
+    "age": 63.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16569,7 +16600,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 21.9,
+    "age": 22.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16610,7 +16641,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 25.9,
+    "age": 26.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16655,7 +16686,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 24.9,
+    "age": 25.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16695,7 +16726,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 51.9,
+    "age": 52.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16743,7 +16774,7 @@
      30.0
     ],
     "fresh": -4,
-    "age": 51.9,
+    "age": 52.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16788,7 +16819,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 32.9,
+    "age": 33.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16817,7 +16848,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 29.9,
+    "age": 30.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16865,7 +16896,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 36.9,
+    "age": 37.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16917,7 +16948,7 @@
      36.0
     ],
     "fresh": -8,
-    "age": 74.9,
+    "age": 75.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -16969,7 +17000,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 38.9,
+    "age": 39.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17025,7 +17056,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 38.9,
+    "age": 39.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17078,7 +17109,7 @@
     "pay": 0,
     "rate": null,
     "fresh": 0,
-    "age": 31.9,
+    "age": 32.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17122,7 +17153,7 @@
      29.0
     ],
     "fresh": -8,
-    "age": 62.9,
+    "age": 63.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17170,7 +17201,7 @@
      40.0
     ],
     "fresh": -8,
-    "age": 81.9,
+    "age": 82.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17214,7 +17245,7 @@
      20.0
     ],
     "fresh": -4,
-    "age": 59.9,
+    "age": 60.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17263,7 +17294,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 45.9,
+    "age": 46.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17300,7 +17331,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 42.9,
+    "age": 43.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17333,7 +17364,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 37.9,
+    "age": 38.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17377,7 +17408,7 @@
      37.0
     ],
     "fresh": -4,
-    "age": 46.9,
+    "age": 47.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17422,7 +17453,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 37.9,
+    "age": 38.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17466,7 +17497,7 @@
      28.0
     ],
     "fresh": -4,
-    "age": 37.9,
+    "age": 38.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17518,7 +17549,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 45.9,
+    "age": 46.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17562,7 +17593,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 50.9,
+    "age": 51.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17614,7 +17645,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 50.9,
+    "age": 51.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17666,7 +17697,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 50.9,
+    "age": 51.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17718,7 +17749,7 @@
      40.0
     ],
     "fresh": -4,
-    "age": 50.9,
+    "age": 51.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17767,7 +17798,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 46.9,
+    "age": 47.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17808,7 +17839,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.9,
+    "age": 59.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17849,7 +17880,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.9,
+    "age": 59.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17890,7 +17921,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.9,
+    "age": 59.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17934,7 +17965,7 @@
      45.0
     ],
     "fresh": -4,
-    "age": 37.9,
+    "age": 38.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -17970,7 +18001,7 @@
      50.0
     ],
     "fresh": -4,
-    "age": 50.9,
+    "age": 51.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18007,7 +18038,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 45.9,
+    "age": 46.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18048,7 +18079,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 46.9,
+    "age": 47.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18089,7 +18120,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 58.9,
+    "age": 59.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18126,7 +18157,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 35.9,
+    "age": 36.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18171,7 +18202,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 38.9,
+    "age": 39.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18204,7 +18235,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 45.9,
+    "age": 46.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18237,7 +18268,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -4,
-    "age": 37.9,
+    "age": 38.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18277,7 +18308,7 @@
      35.0
     ],
     "fresh": -4,
-    "age": 38.9,
+    "age": 39.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18325,7 +18356,7 @@
      33.0
     ],
     "fresh": -4,
-    "age": 38.9,
+    "age": 39.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18369,7 +18400,7 @@
      30.0
     ],
     "fresh": -8,
-    "age": 64.9,
+    "age": 65.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18418,7 +18449,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 71.9,
+    "age": 72.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18447,7 +18478,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 63.9,
+    "age": 64.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18476,7 +18507,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 67.9,
+    "age": 68.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18513,7 +18544,7 @@
     "pay": 0,
     "rate": null,
     "fresh": -8,
-    "age": 63.9,
+    "age": 64.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18561,7 +18592,7 @@
      20.0
     ],
     "fresh": -8,
-    "age": 60.9,
+    "age": 61.0,
     "age_basis": "posted",
     "tier": "B",
     "why": [
@@ -18622,6 +18653,13 @@
    "location": "US, Minnesota, Maplewood",
    "url": "https://3m.wd1.myworkdayjobs.com/Search/job/US-Minnesota-Maplewood/Internship---Spring-2027---Fall-2027-Packaging-Solutions-Co-op_R01171453",
    "reason": "no mechanical signal"
+  },
+  {
+   "company": "ADT",
+   "title": "Hardware Engineering & Connected Devices Intern",
+   "location": "Boca Raton, FL",
+   "url": "https://fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3022475",
+   "reason": "scored 30, below tier B"
   },
   {
    "company": "AMCA",
@@ -20081,6 +20119,13 @@
   },
   {
    "company": "CesiumAstro",
+   "title": "Summer 2027 - Flight Dynamics Internship",
+   "location": "Huntsville, AL",
+   "url": "https://jobs.lever.co/CesiumAstro/385a6217-7931-4bb4-861a-1e5651e3a998",
+   "reason": "no mechanical signal"
+  },
+  {
+   "company": "CesiumAstro",
    "title": "Summer 2027 - Manufacturing Internship",
    "location": "Austin, TX",
    "url": "https://jobs.lever.co/CesiumAstro/79d56d02-19bb-42fa-a7c6-ae19659120d6",
@@ -21187,6 +21232,13 @@
   },
   {
    "company": "GlobalFoundries",
+   "title": "Industrial Engineering Intern (Summer 2027)",
+   "location": "USA - New York - Malta",
+   "url": "https://globalfoundries.wd1.myworkdayjobs.com/External/job/USA---New-York---Malta/Industrial-Engineering-Intern--Summer-2027-_JR-2604575",
+   "reason": "scored 21, below tier B"
+  },
+  {
+   "company": "GlobalFoundries",
    "title": "Internal Audit Intern (Summer 2027)",
    "location": "USA - Texas - Austin; USA - New York - Malta",
    "url": "https://globalfoundries.wd1.myworkdayjobs.com/External/job/USA---Texas---Austin/Internal-Audit-Intern--Summer-2027-_JR-2604484",
@@ -21219,13 +21271,6 @@
    "location": "USA - New York - Malta",
    "url": "https://globalfoundries.wd1.myworkdayjobs.com/External/job/USA---New-York---Malta/Logistics-Operations-Intern--Summer-2027-_JR-2604469",
    "reason": "scored 21, below tier B"
-  },
-  {
-   "company": "GlobalFoundries",
-   "title": "Marketing Intern (Summer 2027)",
-   "location": "USA - Texas - Austin",
-   "url": "https://globalfoundries.wd1.myworkdayjobs.com/External/job/USA---Texas---Austin/Marketing-Intern--Summer-2027-_JR-2604227",
-   "reason": "non-ME discipline"
   },
   {
    "company": "GlobalFoundries",
@@ -21933,6 +21978,27 @@
    "location": "US, California, Santa Clara; US, Oregon, Hillsboro; US, California, Folsom; US, Arizona, Phoenix",
    "url": "https://intel.wd1.myworkdayjobs.com/External/job/US-California-Santa-Clara/Technical-Sales---Intern--Graduate_JR0286831",
    "reason": "non-ME discipline"
+  },
+  {
+   "company": "Jabil",
+   "title": "Automation Engineering Intern",
+   "location": "Clinton, MA; Devens, MA",
+   "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/Clinton-MA/Automation-Engineering-Intern_J2466618",
+   "reason": "scored 27, below tier B"
+  },
+  {
+   "company": "Jabil",
+   "title": "Computer Systems Analyst Intern",
+   "location": "St. Petersburg/Tampa, FL",
+   "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/St-PetersburgTampa-FL/Computer-Systems-Analyst-Intern_J2464586-1",
+   "reason": "no mechanical signal"
+  },
+  {
+   "company": "Jabil",
+   "title": "Enterprise Solutions Intern",
+   "location": "St. Petersburg/Tampa, FL",
+   "url": "https://jabil.wd5.myworkdayjobs.com/Jabil_Careers/job/St-PetersburgTampa-FL/Enterprise-Solutions-Intern_J2464889",
+   "reason": "scored 14, below tier B"
   },
   {
    "company": "Johnson Controls",
@@ -23673,8 +23739,8 @@
   {
    "company": "Rocket Lab",
    "title": "Electrical Engineering Intern Summer 2027",
-   "location": "Pasadena, CA",
-   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7998598003",
+   "location": "Long Beach, CA",
+   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7990683003",
    "reason": "non-ME discipline"
   },
   {
@@ -23687,8 +23753,8 @@
   {
    "company": "Rocket Lab",
    "title": "Electrical Engineering Intern Summer 2027",
-   "location": "Long Beach, CA",
-   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7990683003",
+   "location": "Pasadena, CA",
+   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7998598003",
    "reason": "non-ME discipline"
   },
   {
@@ -23799,13 +23865,6 @@
   {
    "company": "Rocket Lab",
    "title": "Supply Chain Intern Summer 2027",
-   "location": "Silver Spring, MD",
-   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7999237003",
-   "reason": "non-ME discipline"
-  },
-  {
-   "company": "Rocket Lab",
-   "title": "Supply Chain Intern Summer 2027",
    "location": "Middle River, MD",
    "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7990063003",
    "reason": "non-ME discipline"
@@ -23815,6 +23874,13 @@
    "title": "Supply Chain Intern Summer 2027",
    "location": "Long Beach, CA",
    "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7984568003",
+   "reason": "non-ME discipline"
+  },
+  {
+   "company": "Rocket Lab",
+   "title": "Supply Chain Intern Summer 2027",
+   "location": "Silver Spring, MD",
+   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7999237003",
    "reason": "non-ME discipline"
   },
   {
@@ -23914,6 +23980,20 @@
    "location": "Chicago, IL, United States",
    "url": "https://ejia.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/107356",
    "reason": "scored 28, below tier B"
+  },
+  {
+   "company": "SRC, Inc",
+   "title": "Engineering Intern",
+   "location": "Syracuse, NY",
+   "url": "https://jobs.jobvite.com/src-inc/job/on4GAfwr?nl=1&nl=1&fr=false",
+   "reason": "scored 14, below tier B"
+  },
+  {
+   "company": "SRC, Inc",
+   "title": "Engineering Technician Intern",
+   "location": "Syracuse, NY",
+   "url": "https://jobs.jobvite.com/src-inc/job/ow4GAfwA?nl=1&nl=1&fr=false",
+   "reason": "no mechanical signal"
   },
   {
    "company": "Saab",
@@ -24691,6 +24771,13 @@
    "location": "Alpharetta, GA",
    "url": "https://jobs.stryten.com/jobs/5799?icims=1",
    "reason": "scored 11, below tier B"
+  },
+  {
+   "company": "Synopsys",
+   "title": "Technical-Engineering Intern",
+   "location": "Mississauga, ON, Canada",
+   "url": "https://synopsys.avature.net/careers/JobDetail/19195",
+   "reason": "scored 14, below tier B"
   },
   {
    "company": "Tektronix",
