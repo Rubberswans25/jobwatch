@@ -38,6 +38,13 @@
   "trajectory": 15,
   "verified": true
  },
+ "AMETEK": {
+  "board": "pinpoint",
+  "postings": 5,
+  "slug": "ametek",
+  "trajectory": 11,
+  "weak": "one-word name, owner 'Jobs at Ametek | Ametek Careers'"
+ },
  "ASML": {
   "board": "workday",
   "host": "wd3",
@@ -135,6 +142,10 @@
   "slug": "jobs-aligntech",
   "trajectory": 12,
   "verified": true
+ },
+ "Aligned Data Centers": {
+  "board": null,
+  "trajectory": 11
  },
  "Amazon Lab126": {
   "board": null,
@@ -499,6 +510,13 @@
   "trajectory": 14,
   "verified": true
  },
+ "Boyd": {
+  "board": null,
+  "rejected": [
+   "workday/boydcorp/Boyd_Careers: suspect, one-word name, owner adds other words: 'Boyd Thermal Solutions Inc. | Boyd Thermal Solutions Inc. | '"
+  ],
+  "trajectory": 11
+ },
  "Bright Machines": {
   "board": "lever",
   "postings": 16,
@@ -544,6 +562,10 @@
   "trajectory": 13,
   "verified": true
  },
+ "Cabot Corporation": {
+  "board": null,
+  "trajectory": 10
+ },
  "Capella Space": {
   "board": "greenhouse",
   "match": "Capella",
@@ -581,6 +603,10 @@
   ],
   "trajectory": 12
  },
+ "Celestica": {
+  "board": null,
+  "trajectory": 11
+ },
  "CesiumAstro": {
   "board": "lever",
   "postings": 339,
@@ -611,6 +637,10 @@
   "trajectory": 13,
   "verified": true
  },
+ "Coherent": {
+  "board": null,
+  "trajectory": 12
+ },
  "Collins Aerospace": {
   "board": null,
   "covered_by": "RTX",
@@ -626,6 +656,17 @@
   "board": null,
   "trajectory": 12
  },
+ "CoreWeave": {
+  "board": "greenhouse",
+  "postings": 307,
+  "slug": "coreweave",
+  "trajectory": 17,
+  "weak": "one-word name, owner 'CoreWeave'"
+ },
+ "Corning": {
+  "board": null,
+  "trajectory": 12
+ },
  "Crane Aerospace and Electronics": {
   "board": "workday",
   "host": "wd5",
@@ -634,6 +675,13 @@
   "tenant": "cranecompany",
   "trajectory": 11,
   "verified": true
+ },
+ "Crusoe": {
+  "board": "ashby",
+  "postings": 349,
+  "slug": "crusoe",
+  "trajectory": 15,
+  "weak": "one-word name, owner 'Crusoe https://crusoe.ai'"
  },
  "Cummins": {
   "board": null,
@@ -690,6 +738,10 @@
   "slug": "dexterity",
   "trajectory": 12,
   "weak": "one-word name, owner 'Dexterity https://dexterity.ai/'"
+ },
+ "Digital Realty": {
+  "board": null,
+  "trajectory": 11
  },
  "Donaldson": {
   "board": "workday",
@@ -823,6 +875,10 @@
   "trajectory": 13,
   "verified": true
  },
+ "Equinix": {
+  "board": null,
+  "trajectory": 12
+ },
  "Etched": {
   "board": "ashby",
   "slug": "Etched",
@@ -863,6 +919,13 @@
    "ClearCompany HRMDirect HTML; no adapter"
   ],
   "trajectory": 11
+ },
+ "Flex": {
+  "board": "greenhouse",
+  "postings": 32,
+  "slug": "flex",
+  "trajectory": 11,
+  "weak": "one-word name, owner 'Flex'"
  },
  "Flowserve": {
   "board": "workday",
@@ -1123,6 +1186,10 @@
   "trajectory": 12,
   "verified": true
  },
+ "Hexagon": {
+  "board": null,
+  "trajectory": 11
+ },
  "Hexcel": {
   "board": "workday",
   "host": "wd5",
@@ -1280,6 +1347,13 @@
   "trajectory": 16,
   "verified": true
  },
+ "Inversion Space": {
+  "board": "greenhouse",
+  "slug": "inversionspace",
+  "source": "simplify",
+  "trajectory": 11,
+  "verified": true
+ },
  "Jabil": {
   "board": "workday",
   "host": "wd5",
@@ -1329,6 +1403,24 @@
   "trajectory": 16,
   "verified": true
  },
+ "KLA (workday)": {
+  "board": "workday",
+  "host": "wd1",
+  "site": "UR",
+  "source": "simplify",
+  "tenant": "kla",
+  "trajectory": 11,
+  "verified": true
+ },
+ "KLA Corporation": {
+  "board": "workday",
+  "host": "wd1",
+  "site": "annarbor",
+  "source": "simplify",
+  "tenant": "kla",
+  "trajectory": 11,
+  "verified": true
+ },
  "Kairos Power": {
   "board": "greenhouse",
   "postings": 35,
@@ -1374,12 +1466,28 @@
   "trajectory": 16,
   "verified": true
  },
+ "Lambda": {
+  "board": "ashby",
+  "postings": 92,
+  "slug": "lambda",
+  "trajectory": 15,
+  "weak": "one-word name, owner 'Lambda https://lambda.ai/'"
+ },
  "Legrand": {
   "board": "oracle",
   "careers": "iadugs.fa.ocs.oraclecloud.com",
   "host": "iadugs.fa.ocs.oraclecloud.com",
   "site": "CX_1001",
   "source": "simplify",
+  "trajectory": 11,
+  "verified": true
+ },
+ "Leidos": {
+  "board": "workday",
+  "host": "wd5",
+  "site": "External",
+  "source": "simplify",
+  "tenant": "leidos",
   "trajectory": 11,
   "verified": true
  },
@@ -1521,6 +1629,10 @@
  "Milwaukee Tool": {
   "board": null,
   "trajectory": 11
+ },
+ "Mitutoyo": {
+  "board": null,
+  "trajectory": 10
  },
  "Modine": {
   "board": null,
@@ -1957,12 +2069,32 @@
   ],
   "trajectory": 10
  },
+ "Saab": {
+  "board": "workday",
+  "host": "wd1",
+  "site": "saab_careers",
+  "source": "simplify",
+  "tenant": "saabusa",
+  "trajectory": 11,
+  "verified": true
+ },
  "Safran": {
   "board": null,
   "rejected": [
    "safran-group.com/jobs blocked (403)"
   ],
   "trajectory": 11
+ },
+ "Saint-Gobain": {
+  "board": null,
+  "rejected": [
+   "smartrecruiters/saintgobain: stale, newest posting over a year old, owner 'Saint Gobain'"
+  ],
+  "trajectory": 11
+ },
+ "Sanmina": {
+  "board": null,
+  "trajectory": 10
  },
  "Saronic": {
   "board": "ashby",
@@ -2150,6 +2282,10 @@
   "trajectory": 10,
   "verified": true
  },
+ "Supermicro": {
+  "board": null,
+  "trajectory": 13
+ },
  "Swagelok": {
   "base": "https://jobs.swagelok.com/us/en",
   "board": "phenom",
@@ -2199,6 +2335,10 @@
   "note": "parent Ralliant's board",
   "trajectory": 12,
   "verified": true
+ },
+ "Teledyne": {
+  "board": null,
+  "trajectory": 12
  },
  "Teledyne FLIR": {
   "board": "workday",
@@ -2332,6 +2472,10 @@
   "slug": "valaratomics",
   "trajectory": 10,
   "verified": true
+ },
+ "Vantage Data Centers": {
+  "board": null,
+  "trajectory": 11
  },
  "Varda": {
   "board": "greenhouse",
