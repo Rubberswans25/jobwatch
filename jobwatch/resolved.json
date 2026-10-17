@@ -25,6 +25,22 @@
   "board": null,
   "trajectory": 11
  },
+ "ADT": {
+  "board": "oracle",
+  "careers": "fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com",
+  "host": "fa-erqb-saasfaprod1.fa.ocs.oraclecloud.com",
+  "site": "CX_1",
+  "source": "simplify",
+  "trajectory": 11,
+  "verified": true
+ },
+ "AGCO": {
+  "base": "https://careers.agcocorp.com",
+  "board": "successfactors",
+  "source": "simplify",
+  "trajectory": 11,
+  "verified": true
+ },
  "AMCA": {
   "board": "greenhouse",
   "slug": "amca",
@@ -105,6 +121,10 @@
   "trajectory": 14,
   "verified": true
  },
+ "Air Liquide": {
+  "board": null,
+  "trajectory": 11
+ },
  "Air Products": {
   "board": "workday",
   "host": "wd5",
@@ -146,6 +166,18 @@
  "Aligned Data Centers": {
   "board": null,
   "trajectory": 11
+ },
+ "Alliance Laundry Systems": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Alstom": {
+  "board": null,
+  "trajectory": 10
+ },
+ "Amazon": {
+  "board": null,
+  "trajectory": 18
  },
  "Amazon Lab126": {
   "board": null,
@@ -319,6 +351,13 @@
   "trajectory": 11,
   "verified": true
  },
+ "Axon": {
+  "board": "greenhouse",
+  "slug": "axontalentcommunity",
+  "source": "simplify",
+  "trajectory": 11,
+  "verified": true
+ },
  "Azenta": {
   "board": "workday",
   "host": "wd1",
@@ -436,6 +475,10 @@
   "trajectory": 15,
   "verified": true
  },
+ "Blue Robotics": {
+  "board": null,
+  "trajectory": 10
+ },
  "BlueHalo": {
   "board": null,
   "covered_by": "AeroVironment",
@@ -546,6 +589,13 @@
   "trajectory": 10,
   "verified": true
  },
+ "ByteDance": {
+  "board": null,
+  "rejected": [
+   "smartrecruiters/bytedance: stale, newest posting over a year old, owner 'bytedance'"
+  ],
+  "trajectory": 16
+ },
  "CACI": {
   "board": "workday",
   "host": "wd1",
@@ -628,6 +678,10 @@
   "tenant": "ciena",
   "trajectory": 11,
   "verified": true
+ },
+ "Cirrus Logic": {
+  "board": null,
+  "trajectory": 11
  },
  "Cognex": {
   "board": "workday",
@@ -749,6 +803,13 @@
   "site": "DonaldsonCareers",
   "tenant": "donaldson",
   "trajectory": 10,
+  "verified": true
+ },
+ "DoorDash": {
+  "board": "greenhouse",
+  "slug": "doordashusa",
+  "source": "simplify",
+  "trajectory": 11,
   "verified": true
  },
  "Draper": {
@@ -878,6 +939,10 @@
  "Equinix": {
   "board": null,
   "trajectory": 12
+ },
+ "EquipmentShare": {
+  "board": null,
+  "trajectory": 11
  },
  "Etched": {
   "board": "ashby",
@@ -1152,6 +1217,10 @@
   "slug": "hadrian-automation",
   "trajectory": 14,
   "verified": true
+ },
+ "Halliburton": {
+  "board": null,
+  "trajectory": 11
  },
  "Hamilton Company": {
   "board": "workday",
@@ -1491,6 +1560,10 @@
   "trajectory": 11,
   "verified": true
  },
+ "Linde": {
+  "board": null,
+  "trajectory": 11
+ },
  "Lockheed Martin": {
   "board": "eightfold",
   "domain": "lockheedmartin.com",
@@ -1630,6 +1703,10 @@
   "board": null,
   "trajectory": 11
  },
+ "Mitsubishi Power": {
+  "board": null,
+  "trajectory": 11
+ },
  "Mitutoyo": {
   "board": null,
   "trajectory": 10
@@ -1676,6 +1753,10 @@
   "slug": "muonspace",
   "trajectory": 11,
   "verified": true
+ },
+ "NOV": {
+  "board": null,
+  "trajectory": 10
  },
  "NVIDIA": {
   "board": "workday",
@@ -1737,6 +1818,14 @@
   "slug": "nuro",
   "trajectory": 12,
   "weak": "one-word name, owner 'Nuro'"
+ },
+ "Ocean Infinity": {
+  "board": null,
+  "trajectory": 11
+ },
+ "Oceaneering": {
+  "board": null,
+  "trajectory": 11
  },
  "Oklo": {
   "board": "greenhouse",
@@ -2055,6 +2144,13 @@
   "trajectory": 10,
   "verified": true
  },
+ "SLB": {
+  "board": null,
+  "rejected": [
+   "workable/slb: suspect, one-word name, owner adds other words: 'SLB Capturi'"
+  ],
+  "trajectory": 14
+ },
  "SMC Corporation": {
   "board": null,
   "rejected": [
@@ -2084,6 +2180,13 @@
    "safran-group.com/jobs blocked (403)"
   ],
   "trajectory": 11
+ },
+ "Saildrone": {
+  "board": "greenhouse",
+  "postings": 42,
+  "slug": "saildroneinc",
+  "trajectory": 11,
+  "weak": "one-word name, owner 'Saildrone'"
  },
  "Saint-Gobain": {
   "board": null,
@@ -2160,6 +2263,10 @@
   "board": null,
   "trajectory": 12
  },
+ "Siemens Energy": {
+  "board": null,
+  "trajectory": 12
+ },
  "Sierra Nevada Corporation": {
   "board": "workday",
   "host": "wd1",
@@ -2191,6 +2298,10 @@
   "slug": "skydio",
   "trajectory": 13,
   "verified": true
+ },
+ "Solar Turbines": {
+  "board": null,
+  "trajectory": 11
  },
  "Solidigm": {
   "board": "smartrecruiters",
@@ -2326,6 +2437,10 @@
   "board": "successfactors",
   "trajectory": 11,
   "verified": true
+ },
+ "TechnipFMC": {
+  "board": null,
+  "trajectory": 11
  },
  "Tektronix": {
   "board": "eightfold",
@@ -2551,6 +2666,13 @@
    "smartrecruiters/vulcanformsinc: stale, 5 postings all from 2019"
   ],
   "trajectory": 12
+ },
+ "Wabtec": {
+  "board": "smartrecruiters",
+  "postings": 782,
+  "slug": "wabtec",
+  "trajectory": 10,
+  "weak": "one-word name, owner 'Wabtec'"
  },
  "Waters Corporation": {
   "board": null,

@@ -413,3 +413,9 @@ Leidos|11
 Inversion Space|11
 KLA Corporation|11
 KLA (workday)|11
+Axon|11
+AGCO|11
+ADT|11
+DoorDash|11
+SRC, Inc|11
+Synopsys|11
